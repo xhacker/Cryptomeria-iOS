@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A7C320416FC990C00F5A71A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320316FC990C00F5A71A /* UIKit.framework */; };
+		1A7C320616FC990C00F5A71A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320516FC990C00F5A71A /* Foundation.framework */; };
+		1A7C320816FC990C00F5A71A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320716FC990C00F5A71A /* CoreGraphics.framework */; };
+		1A7C320E16FC990C00F5A71A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C320C16FC990C00F5A71A /* InfoPlist.strings */; };
+		1A7C321016FC990C00F5A71A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C320F16FC990C00F5A71A /* main.m */; };
+		1A7C321416FC990C00F5A71A /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C321316FC990C00F5A71A /* CMAppDelegate.m */; };
+		1A7C321616FC990C00F5A71A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C321516FC990C00F5A71A /* Default.png */; };
+		1A7C321816FC990C00F5A71A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C321716FC990C00F5A71A /* Default@2x.png */; };
+		1A7C321A16FC990C00F5A71A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C321916FC990C00F5A71A /* Default-568h@2x.png */; };
+		1A7C321D16FC990C00F5A71A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */; };
+		1A7C322016FC990C00F5A71A /* CMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C321F16FC990C00F5A71A /* CMFirstViewController.m */; };
+		1A7C322216FC990C00F5A71A /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C322116FC990C00F5A71A /* first.png */; };
+		1A7C322416FC990C00F5A71A /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C322316FC990C00F5A71A /* first@2x.png */; };
+		1A7C322716FC990C00F5A71A /* CMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C322616FC990C00F5A71A /* CMSecondViewController.m */; };
+		1A7C322916FC990C00F5A71A /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C322816FC990C00F5A71A /* second.png */; };
+		1A7C322B16FC990C00F5A71A /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C322A16FC990C00F5A71A /* second@2x.png */; };
+		1A7C323316FC990D00F5A71A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C323216FC990D00F5A71A /* SenTestingKit.framework */; };
+		1A7C323416FC990D00F5A71A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320316FC990C00F5A71A /* UIKit.framework */; };
+		1A7C323516FC990D00F5A71A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320516FC990C00F5A71A /* Foundation.framework */; };
+		1A7C323D16FC990D00F5A71A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C323B16FC990D00F5A71A /* InfoPlist.strings */; };
+		1A7C324016FC990D00F5A71A /* CryptomeriaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C323F16FC990D00F5A71A /* CryptomeriaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A7C323616FC990D00F5A71A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A7C31F816FC990C00F5A71A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A7C31FF16FC990C00F5A71A;
+			remoteInfo = Cryptomeria;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A7C320016FC990C00F5A71A /* Cryptomeria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptomeria.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7C320316FC990C00F5A71A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A7C320516FC990C00F5A71A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A7C320716FC990C00F5A71A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1A7C320B16FC990C00F5A71A /* Cryptomeria-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Cryptomeria-Info.plist"; sourceTree = "<group>"; };
+		1A7C320D16FC990C00F5A71A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A7C320F16FC990C00F5A71A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A7C321116FC990C00F5A71A /* Cryptomeria-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cryptomeria-Prefix.pch"; sourceTree = "<group>"; };
+		1A7C321216FC990C00F5A71A /* CMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMAppDelegate.h; sourceTree = "<group>"; };
+		1A7C321316FC990C00F5A71A /* CMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
+		1A7C321516FC990C00F5A71A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1A7C321716FC990C00F5A71A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1A7C321916FC990C00F5A71A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1A7C321C16FC990C00F5A71A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1A7C321E16FC990C00F5A71A /* CMFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMFirstViewController.h; sourceTree = "<group>"; };
+		1A7C321F16FC990C00F5A71A /* CMFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMFirstViewController.m; sourceTree = "<group>"; };
+		1A7C322116FC990C00F5A71A /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		1A7C322316FC990C00F5A71A /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		1A7C322516FC990C00F5A71A /* CMSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMSecondViewController.h; sourceTree = "<group>"; };
+		1A7C322616FC990C00F5A71A /* CMSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMSecondViewController.m; sourceTree = "<group>"; };
+		1A7C322816FC990C00F5A71A /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		1A7C322A16FC990C00F5A71A /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		1A7C323116FC990D00F5A71A /* CryptomeriaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptomeriaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A7C323216FC990D00F5A71A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1A7C323A16FC990D00F5A71A /* CryptomeriaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CryptomeriaTests-Info.plist"; sourceTree = "<group>"; };
+		1A7C323C16FC990D00F5A71A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1A7C323E16FC990D00F5A71A /* CryptomeriaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptomeriaTests.h; sourceTree = "<group>"; };
+		1A7C323F16FC990D00F5A71A /* CryptomeriaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptomeriaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A7C31FD16FC990C00F5A71A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7C320416FC990C00F5A71A /* UIKit.framework in Frameworks */,
+				1A7C320616FC990C00F5A71A /* Foundation.framework in Frameworks */,
+				1A7C320816FC990C00F5A71A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7C322D16FC990D00F5A71A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7C323316FC990D00F5A71A /* SenTestingKit.framework in Frameworks */,
+				1A7C323416FC990D00F5A71A /* UIKit.framework in Frameworks */,
+				1A7C323516FC990D00F5A71A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A7C31F716FC990C00F5A71A = {
+			isa = PBXGroup;
+			children = (
+				1A7C320916FC990C00F5A71A /* Cryptomeria */,
+				1A7C323816FC990D00F5A71A /* CryptomeriaTests */,
+				1A7C320216FC990C00F5A71A /* Frameworks */,
+				1A7C320116FC990C00F5A71A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A7C320116FC990C00F5A71A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A7C320016FC990C00F5A71A /* Cryptomeria.app */,
+				1A7C323116FC990D00F5A71A /* CryptomeriaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A7C320216FC990C00F5A71A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A7C320316FC990C00F5A71A /* UIKit.framework */,
+				1A7C320516FC990C00F5A71A /* Foundation.framework */,
+				1A7C320716FC990C00F5A71A /* CoreGraphics.framework */,
+				1A7C323216FC990D00F5A71A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A7C320916FC990C00F5A71A /* Cryptomeria */ = {
+			isa = PBXGroup;
+			children = (
+				1A7C321216FC990C00F5A71A /* CMAppDelegate.h */,
+				1A7C321316FC990C00F5A71A /* CMAppDelegate.m */,
+				1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */,
+				1A7C321E16FC990C00F5A71A /* CMFirstViewController.h */,
+				1A7C321F16FC990C00F5A71A /* CMFirstViewController.m */,
+				1A7C322116FC990C00F5A71A /* first.png */,
+				1A7C322316FC990C00F5A71A /* first@2x.png */,
+				1A7C322516FC990C00F5A71A /* CMSecondViewController.h */,
+				1A7C322616FC990C00F5A71A /* CMSecondViewController.m */,
+				1A7C322816FC990C00F5A71A /* second.png */,
+				1A7C322A16FC990C00F5A71A /* second@2x.png */,
+				1A7C320A16FC990C00F5A71A /* Supporting Files */,
+			);
+			path = Cryptomeria;
+			sourceTree = "<group>";
+		};
+		1A7C320A16FC990C00F5A71A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A7C320B16FC990C00F5A71A /* Cryptomeria-Info.plist */,
+				1A7C320C16FC990C00F5A71A /* InfoPlist.strings */,
+				1A7C320F16FC990C00F5A71A /* main.m */,
+				1A7C321116FC990C00F5A71A /* Cryptomeria-Prefix.pch */,
+				1A7C321516FC990C00F5A71A /* Default.png */,
+				1A7C321716FC990C00F5A71A /* Default@2x.png */,
+				1A7C321916FC990C00F5A71A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A7C323816FC990D00F5A71A /* CryptomeriaTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A7C323E16FC990D00F5A71A /* CryptomeriaTests.h */,
+				1A7C323F16FC990D00F5A71A /* CryptomeriaTests.m */,
+				1A7C323916FC990D00F5A71A /* Supporting Files */,
+			);
+			path = CryptomeriaTests;
+			sourceTree = "<group>";
+		};
+		1A7C323916FC990D00F5A71A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A7C323A16FC990D00F5A71A /* CryptomeriaTests-Info.plist */,
+				1A7C323B16FC990D00F5A71A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A7C31FF16FC990C00F5A71A /* Cryptomeria */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7C324316FC990D00F5A71A /* Build configuration list for PBXNativeTarget "Cryptomeria" */;
+			buildPhases = (
+				1A7C31FC16FC990C00F5A71A /* Sources */,
+				1A7C31FD16FC990C00F5A71A /* Frameworks */,
+				1A7C31FE16FC990C00F5A71A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cryptomeria;
+			productName = Cryptomeria;
+			productReference = 1A7C320016FC990C00F5A71A /* Cryptomeria.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A7C323016FC990D00F5A71A /* CryptomeriaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A7C324616FC990D00F5A71A /* Build configuration list for PBXNativeTarget "CryptomeriaTests" */;
+			buildPhases = (
+				1A7C322C16FC990D00F5A71A /* Sources */,
+				1A7C322D16FC990D00F5A71A /* Frameworks */,
+				1A7C322E16FC990D00F5A71A /* Resources */,
+				1A7C322F16FC990D00F5A71A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A7C323716FC990D00F5A71A /* PBXTargetDependency */,
+			);
+			name = CryptomeriaTests;
+			productName = CryptomeriaTests;
+			productReference = 1A7C323116FC990D00F5A71A /* CryptomeriaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A7C31F816FC990C00F5A71A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Xhacker;
+			};
+			buildConfigurationList = 1A7C31FB16FC990C00F5A71A /* Build configuration list for PBXProject "Cryptomeria" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1A7C31F716FC990C00F5A71A;
+			productRefGroup = 1A7C320116FC990C00F5A71A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A7C31FF16FC990C00F5A71A /* Cryptomeria */,
+				1A7C323016FC990D00F5A71A /* CryptomeriaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A7C31FE16FC990C00F5A71A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7C320E16FC990C00F5A71A /* InfoPlist.strings in Resources */,
+				1A7C321616FC990C00F5A71A /* Default.png in Resources */,
+				1A7C321816FC990C00F5A71A /* Default@2x.png in Resources */,
+				1A7C321A16FC990C00F5A71A /* Default-568h@2x.png in Resources */,
+				1A7C321D16FC990C00F5A71A /* MainStoryboard.storyboard in Resources */,
+				1A7C322216FC990C00F5A71A /* first.png in Resources */,
+				1A7C322416FC990C00F5A71A /* first@2x.png in Resources */,
+				1A7C322916FC990C00F5A71A /* second.png in Resources */,
+				1A7C322B16FC990C00F5A71A /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7C322E16FC990D00F5A71A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7C323D16FC990D00F5A71A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A7C322F16FC990D00F5A71A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A7C31FC16FC990C00F5A71A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7C321016FC990C00F5A71A /* main.m in Sources */,
+				1A7C321416FC990C00F5A71A /* CMAppDelegate.m in Sources */,
+				1A7C322016FC990C00F5A71A /* CMFirstViewController.m in Sources */,
+				1A7C322716FC990C00F5A71A /* CMSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A7C322C16FC990D00F5A71A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A7C324016FC990D00F5A71A /* CryptomeriaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A7C323716FC990D00F5A71A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A7C31FF16FC990C00F5A71A /* Cryptomeria */;
+			targetProxy = 1A7C323616FC990D00F5A71A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1A7C320C16FC990C00F5A71A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A7C320D16FC990C00F5A71A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A7C321C16FC990C00F5A71A /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		1A7C323B16FC990D00F5A71A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A7C323C16FC990D00F5A71A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1A7C324116FC990D00F5A71A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1A7C324216FC990D00F5A71A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A7C324416FC990D00F5A71A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
+				INFOPLIST_FILE = "Cryptomeria/Cryptomeria-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1A7C324516FC990D00F5A71A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
+				INFOPLIST_FILE = "Cryptomeria/Cryptomeria-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1A7C324716FC990D00F5A71A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cryptomeria.app/Cryptomeria";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
+				INFOPLIST_FILE = "CryptomeriaTests/CryptomeriaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1A7C324816FC990D00F5A71A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Cryptomeria.app/Cryptomeria";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
+				INFOPLIST_FILE = "CryptomeriaTests/CryptomeriaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A7C31FB16FC990C00F5A71A /* Build configuration list for PBXProject "Cryptomeria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7C324116FC990D00F5A71A /* Debug */,
+				1A7C324216FC990D00F5A71A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A7C324316FC990D00F5A71A /* Build configuration list for PBXNativeTarget "Cryptomeria" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7C324416FC990D00F5A71A /* Debug */,
+				1A7C324516FC990D00F5A71A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1A7C324616FC990D00F5A71A /* Build configuration list for PBXNativeTarget "CryptomeriaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7C324716FC990D00F5A71A /* Debug */,
+				1A7C324816FC990D00F5A71A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A7C31F816FC990C00F5A71A /* Project object */;
+}
