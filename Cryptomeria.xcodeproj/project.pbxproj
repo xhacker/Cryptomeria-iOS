@@ -17,10 +17,10 @@
 		1A7C321816FC990C00F5A71A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C321716FC990C00F5A71A /* Default@2x.png */; };
 		1A7C321A16FC990C00F5A71A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C321916FC990C00F5A71A /* Default-568h@2x.png */; };
 		1A7C321D16FC990C00F5A71A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */; };
-		1A7C322016FC990C00F5A71A /* CMFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C321F16FC990C00F5A71A /* CMFirstViewController.m */; };
+		1A7C322016FC990C00F5A71A /* CMChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C321F16FC990C00F5A71A /* CMChartViewController.m */; };
 		1A7C322216FC990C00F5A71A /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C322116FC990C00F5A71A /* first.png */; };
 		1A7C322416FC990C00F5A71A /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C322316FC990C00F5A71A /* first@2x.png */; };
-		1A7C322716FC990C00F5A71A /* CMSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C322616FC990C00F5A71A /* CMSecondViewController.m */; };
+		1A7C322716FC990C00F5A71A /* CMTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C322616FC990C00F5A71A /* CMTestViewController.m */; };
 		1A7C322916FC990C00F5A71A /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C322816FC990C00F5A71A /* second.png */; };
 		1A7C322B16FC990C00F5A71A /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C322A16FC990C00F5A71A /* second@2x.png */; };
 		1A7C323316FC990D00F5A71A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C323216FC990D00F5A71A /* SenTestingKit.framework */; };
@@ -28,6 +28,7 @@
 		1A7C323516FC990D00F5A71A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320516FC990C00F5A71A /* Foundation.framework */; };
 		1A7C323D16FC990D00F5A71A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C323B16FC990D00F5A71A /* InfoPlist.strings */; };
 		1A7C324016FC990D00F5A71A /* CryptomeriaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C323F16FC990D00F5A71A /* CryptomeriaTests.m */; };
+		1A7C324B16FCA5B200F5A71A /* CMVocabularyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +56,12 @@
 		1A7C321716FC990C00F5A71A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1A7C321916FC990C00F5A71A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1A7C321C16FC990C00F5A71A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1A7C321E16FC990C00F5A71A /* CMFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMFirstViewController.h; sourceTree = "<group>"; };
-		1A7C321F16FC990C00F5A71A /* CMFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMFirstViewController.m; sourceTree = "<group>"; };
+		1A7C321E16FC990C00F5A71A /* CMChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMChartViewController.h; sourceTree = "<group>"; };
+		1A7C321F16FC990C00F5A71A /* CMChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMChartViewController.m; sourceTree = "<group>"; };
 		1A7C322116FC990C00F5A71A /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		1A7C322316FC990C00F5A71A /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		1A7C322516FC990C00F5A71A /* CMSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMSecondViewController.h; sourceTree = "<group>"; };
-		1A7C322616FC990C00F5A71A /* CMSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMSecondViewController.m; sourceTree = "<group>"; };
+		1A7C322516FC990C00F5A71A /* CMTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMTestViewController.h; sourceTree = "<group>"; };
+		1A7C322616FC990C00F5A71A /* CMTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMTestViewController.m; sourceTree = "<group>"; };
 		1A7C322816FC990C00F5A71A /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		1A7C322A16FC990C00F5A71A /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		1A7C323116FC990D00F5A71A /* CryptomeriaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptomeriaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +70,8 @@
 		1A7C323C16FC990D00F5A71A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A7C323E16FC990D00F5A71A /* CryptomeriaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CryptomeriaTests.h; sourceTree = "<group>"; };
 		1A7C323F16FC990D00F5A71A /* CryptomeriaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptomeriaTests.m; sourceTree = "<group>"; };
+		1A7C324916FCA5B200F5A71A /* CMVocabularyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMVocabularyViewController.h; sourceTree = "<group>"; };
+		1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMVocabularyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,12 +134,14 @@
 				1A7C321216FC990C00F5A71A /* CMAppDelegate.h */,
 				1A7C321316FC990C00F5A71A /* CMAppDelegate.m */,
 				1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */,
-				1A7C321E16FC990C00F5A71A /* CMFirstViewController.h */,
-				1A7C321F16FC990C00F5A71A /* CMFirstViewController.m */,
+				1A7C321E16FC990C00F5A71A /* CMChartViewController.h */,
+				1A7C321F16FC990C00F5A71A /* CMChartViewController.m */,
+				1A7C322516FC990C00F5A71A /* CMTestViewController.h */,
+				1A7C322616FC990C00F5A71A /* CMTestViewController.m */,
+				1A7C324916FCA5B200F5A71A /* CMVocabularyViewController.h */,
+				1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */,
 				1A7C322116FC990C00F5A71A /* first.png */,
 				1A7C322316FC990C00F5A71A /* first@2x.png */,
-				1A7C322516FC990C00F5A71A /* CMSecondViewController.h */,
-				1A7C322616FC990C00F5A71A /* CMSecondViewController.m */,
 				1A7C322816FC990C00F5A71A /* second.png */,
 				1A7C322A16FC990C00F5A71A /* second@2x.png */,
 				1A7C320A16FC990C00F5A71A /* Supporting Files */,
@@ -294,8 +299,9 @@
 			files = (
 				1A7C321016FC990C00F5A71A /* main.m in Sources */,
 				1A7C321416FC990C00F5A71A /* CMAppDelegate.m in Sources */,
-				1A7C322016FC990C00F5A71A /* CMFirstViewController.m in Sources */,
-				1A7C322716FC990C00F5A71A /* CMSecondViewController.m in Sources */,
+				1A7C322016FC990C00F5A71A /* CMChartViewController.m in Sources */,
+				1A7C322716FC990C00F5A71A /* CMTestViewController.m in Sources */,
+				1A7C324B16FCA5B200F5A71A /* CMVocabularyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +482,7 @@
 				1A7C324516FC990D00F5A71A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A7C324616FC990D00F5A71A /* Build configuration list for PBXNativeTarget "CryptomeriaTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +491,7 @@
 				1A7C324816FC990D00F5A71A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

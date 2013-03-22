@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CMFirstViewController : UIViewController
+@interface CMChartViewController : UIViewController
 
 @end

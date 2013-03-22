@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CMSecondViewController : UIViewController
+@interface CMTestViewController : UIViewController
 
 @end

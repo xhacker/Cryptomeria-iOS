@@ -1,18 +1,18 @@
 //
-//  CMSecondViewController.m
+//  CMFirstViewController.m
 //  Cryptomeria
 //
 //  Created by Xhacker on 2013-03-22.
 //  Copyright (c) 2013 Xhacker. All rights reserved.
 //
 
-#import "CMSecondViewController.h"
+#import "CMChartViewController.h"
 
-@interface CMSecondViewController ()
+@interface CMChartViewController ()
 
 @end
 
-@implementation CMSecondViewController
+@implementation CMChartViewController
 
 - (void)viewDidLoad
 {
