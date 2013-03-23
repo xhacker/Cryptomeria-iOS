@@ -10,7 +10,8 @@
 
 @interface CMChartCell : UITableViewCell
 
-@property (nonatomic, weak) IBOutlet UILabel *kanaTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *kanaTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *romajiTitleLabel;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *hiraganaLabels;
 
 @end

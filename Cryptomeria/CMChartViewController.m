@@ -45,13 +45,12 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {    
     CMChartCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChartCell"];
-
-    //    if (cell == nil) {
-//        cell = [[CMChartCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"ChartCell"];
-//    }
     
     cell.kanaTitleLabel.text = [CMChartData hiragana][indexPath.row][0];
 	cell.romajiTitleLabel.text = [CMChartData romaji][indexPath.row][0];
+    for (NSInteger i = 0; i < 5; ++i) {
+        ((UILabel *)cell.hiraganaLabels[i]).text = [CMChartData hiragana][indexPath.row][i];
+    }
     
     return cell;
 }
