@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Xhacker. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "CMChartViewController.h"
 #import "CMChartData.h"
 #import "CMChartCell.h"
@@ -14,6 +15,10 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property NSArray *romajiData;
+@property NSArray *hiraganaData;
+@property NSArray *katakanaData;
+
 @end
 
 @implementation CMChartViewController
@@ -21,6 +26,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.romajiData = [CMChartData romaji];
+    self.hiraganaData = [CMChartData hiragana];
+    self.katakanaData = [CMChartData katakana];
     
     self.tableView.dataSource = self;
 }
@@ -46,13 +55,16 @@
 {    
     CMChartCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChartCell"];
     
-    cell.kanaTitleLabel.text = [CMChartData hiragana][indexPath.row][0];
-	cell.romajiTitleLabel.text = [CMChartData romaji][indexPath.row][0];
+    cell.kanaTitleLabel.text = self.hiraganaData[indexPath.row][0];
+	cell.romajiTitleLabel.text = self.romajiData[indexPath.row][0];
     for (NSInteger i = 0; i < 5; ++i) {
-        ((UILabel *)cell.hiraganaLabels[i]).text = [CMChartData hiragana][indexPath.row][i];
-        ((UILabel *)cell.katakanaLabels[i]).text = [CMChartData katakana][indexPath.row][i];
-        ((UILabel *)cell.romajiLabels[i]).text = [CMChartData romaji][indexPath.row][i];
+        ((UILabel *)cell.hiraganaLabels[i]).text = self.hiraganaData[indexPath.row][i];
+        ((UILabel *)cell.katakanaLabels[i]).text = self.katakanaData[indexPath.row][i];
+        ((UILabel *)cell.romajiLabels[i]).text = self.romajiData[indexPath.row][i];
     }
+    
+    cell.layer.shouldRasterize = YES;
+    cell.layer.rasterizationScale = [UIScreen mainScreen].scale;
     
     return cell;
 }
