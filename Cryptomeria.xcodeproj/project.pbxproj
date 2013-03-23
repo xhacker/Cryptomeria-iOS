@@ -29,6 +29,7 @@
 		1A7C323D16FC990D00F5A71A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C323B16FC990D00F5A71A /* InfoPlist.strings */; };
 		1A7C324016FC990D00F5A71A /* CryptomeriaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C323F16FC990D00F5A71A /* CryptomeriaTests.m */; };
 		1A7C324B16FCA5B200F5A71A /* CMVocabularyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */; };
+		1A7C325116FDB16200F5A71A /* CMChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C325016FDB16200F5A71A /* CMChartData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		1A7C323F16FC990D00F5A71A /* CryptomeriaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CryptomeriaTests.m; sourceTree = "<group>"; };
 		1A7C324916FCA5B200F5A71A /* CMVocabularyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMVocabularyViewController.h; sourceTree = "<group>"; };
 		1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMVocabularyViewController.m; sourceTree = "<group>"; };
+		1A7C324F16FDB16200F5A71A /* CMChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMChartData.h; path = data/CMChartData.h; sourceTree = "<group>"; };
+		1A7C325016FDB16200F5A71A /* CMChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMChartData.m; path = data/CMChartData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,7 @@
 		1A7C320916FC990C00F5A71A /* Cryptomeria */ = {
 			isa = PBXGroup;
 			children = (
+				1A7C324E16FDB0B000F5A71A /* Data */,
 				1A7C321216FC990C00F5A71A /* CMAppDelegate.h */,
 				1A7C321316FC990C00F5A71A /* CMAppDelegate.m */,
 				1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */,
@@ -180,6 +184,15 @@
 				1A7C323B16FC990D00F5A71A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A7C324E16FDB0B000F5A71A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1A7C324F16FDB16200F5A71A /* CMChartData.h */,
+				1A7C325016FDB16200F5A71A /* CMChartData.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +315,7 @@
 				1A7C322016FC990C00F5A71A /* CMChartViewController.m in Sources */,
 				1A7C322716FC990C00F5A71A /* CMTestViewController.m in Sources */,
 				1A7C324B16FCA5B200F5A71A /* CMVocabularyViewController.m in Sources */,
+				1A7C325116FDB16200F5A71A /* CMChartData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
