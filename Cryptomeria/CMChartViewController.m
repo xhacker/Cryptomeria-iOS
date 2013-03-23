@@ -50,6 +50,8 @@
 	cell.romajiTitleLabel.text = [CMChartData romaji][indexPath.row][0];
     for (NSInteger i = 0; i < 5; ++i) {
         ((UILabel *)cell.hiraganaLabels[i]).text = [CMChartData hiragana][indexPath.row][i];
+        ((UILabel *)cell.katakanaLabels[i]).text = [CMChartData katakana][indexPath.row][i];
+        ((UILabel *)cell.romajiLabels[i]).text = [CMChartData romaji][indexPath.row][i];
     }
     
     return cell;

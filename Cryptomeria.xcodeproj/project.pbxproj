@@ -197,10 +197,10 @@
 		1A7C325216FDC75100F5A71A /* CMChartView */ = {
 			isa = PBXGroup;
 			children = (
-				1A7C321E16FC990C00F5A71A /* CMChartViewController.h */,
-				1A7C321F16FC990C00F5A71A /* CMChartViewController.m */,
 				1A7C325416FDCF9A00F5A71A /* CMChartCell.h */,
 				1A7C325516FDCF9A00F5A71A /* CMChartCell.m */,
+				1A7C321E16FC990C00F5A71A /* CMChartViewController.h */,
+				1A7C321F16FC990C00F5A71A /* CMChartViewController.m */,
 			);
 			name = CMChartView;
 			sourceTree = "<group>";

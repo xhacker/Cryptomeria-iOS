@@ -13,5 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *kanaTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *romajiTitleLabel;
 @property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *hiraganaLabels;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *katakanaLabels;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *romajiLabels;
 
 @end
