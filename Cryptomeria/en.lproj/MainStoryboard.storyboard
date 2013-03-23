@@ -14,6 +14,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Chart" image="first" id="7"/>
+                    <connections>
+                        <outlet property="tableView" destination="F6h-2L-yMh" id="7uq-Hh-Z5k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,6 +114,9 @@
     <classes>
         <class className="CMChartViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CMChartViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="CMTestViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CMTestViewController.h"/>

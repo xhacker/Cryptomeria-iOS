@@ -13,16 +13,16 @@
 + (NSArray *)romaji
 {
     NSArray *rs = [NSArray arrayWithObjects:
-                   [NSArray arrayWithObjects:@'a', @'i', @'u', @'e', @'o', nil],
-                   [NSArray arrayWithObjects:@'a', @'i', @'u', @'e', @'o', nil],
-                   [NSArray arrayWithObjects:@'a', @'i', @'u', @'e', @'o', nil],
-                   [NSArray arrayWithObjects:@'a', @'i', @'u', @'e', @'o', nil],
-                   [NSArray arrayWithObjects:@'a', @'i', @'u', @'e', @'o', nil],
-                   [NSArray arrayWithObjects:@'a', @'i', @'u', @'e', @'o', nil],
-                   [NSArray arrayWithObjects:@'a', @'i', @'u', @'e', @'o', nil],
-                   [NSArray arrayWithObjects:@'a', @'i', @'u', @'e', @'o', nil],
-                   [NSArray arrayWithObjects:@'a', @'i', @'u', @'e', @'o', nil],
-                   [NSArray arrayWithObjects:@'a', @'i', @'u', @'e', @'o', nil],
+                   [NSArray arrayWithObjects:@"a", @"i", @"u", @"e", @"o", nil],
+                   [NSArray arrayWithObjects:@"a", @"i", @"u", @"e", @"o", nil],
+                   [NSArray arrayWithObjects:@"a", @"i", @"u", @"e", @"o", nil],
+                   [NSArray arrayWithObjects:@"a", @"i", @"u", @"e", @"o", nil],
+                   [NSArray arrayWithObjects:@"a", @"i", @"u", @"e", @"o", nil],
+                   [NSArray arrayWithObjects:@"a", @"i", @"u", @"e", @"o", nil],
+                   [NSArray arrayWithObjects:@"a", @"i", @"u", @"e", @"o", nil],
+                   [NSArray arrayWithObjects:@"a", @"i", @"u", @"e", @"o", nil],
+                   [NSArray arrayWithObjects:@"a", @"i", @"u", @"e", @"o", nil],
+                   [NSArray arrayWithObjects:@"a", @"i", @"u", @"e", @"o", nil],
                    nil];
     return rs;
 }
