@@ -30,6 +30,7 @@
 		1A7C324016FC990D00F5A71A /* CryptomeriaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C323F16FC990D00F5A71A /* CryptomeriaTests.m */; };
 		1A7C324B16FCA5B200F5A71A /* CMVocabularyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */; };
 		1A7C325116FDB16200F5A71A /* CMChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C325016FDB16200F5A71A /* CMChartData.m */; };
+		1A7C325616FDCF9A00F5A71A /* CMChartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C325516FDCF9A00F5A71A /* CMChartCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMVocabularyViewController.m; sourceTree = "<group>"; };
 		1A7C324F16FDB16200F5A71A /* CMChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMChartData.h; path = data/CMChartData.h; sourceTree = "<group>"; };
 		1A7C325016FDB16200F5A71A /* CMChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMChartData.m; path = data/CMChartData.m; sourceTree = "<group>"; };
+		1A7C325416FDCF9A00F5A71A /* CMChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMChartCell.h; sourceTree = "<group>"; };
+		1A7C325516FDCF9A00F5A71A /* CMChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMChartCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				1A7C320916FC990C00F5A71A /* Cryptomeria */,
+				1A7C325316FDC76900F5A71A /* Resource */,
 				1A7C323816FC990D00F5A71A /* CryptomeriaTests */,
 				1A7C320216FC990C00F5A71A /* Frameworks */,
 				1A7C320116FC990C00F5A71A /* Products */,
@@ -135,19 +139,14 @@
 			isa = PBXGroup;
 			children = (
 				1A7C324E16FDB0B000F5A71A /* Data */,
-				1A7C321216FC990C00F5A71A /* CMAppDelegate.h */,
-				1A7C321316FC990C00F5A71A /* CMAppDelegate.m */,
-				1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */,
-				1A7C321E16FC990C00F5A71A /* CMChartViewController.h */,
-				1A7C321F16FC990C00F5A71A /* CMChartViewController.m */,
+				1A7C325216FDC75100F5A71A /* CMChartView */,
 				1A7C322516FC990C00F5A71A /* CMTestViewController.h */,
 				1A7C322616FC990C00F5A71A /* CMTestViewController.m */,
 				1A7C324916FCA5B200F5A71A /* CMVocabularyViewController.h */,
 				1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */,
-				1A7C322116FC990C00F5A71A /* first.png */,
-				1A7C322316FC990C00F5A71A /* first@2x.png */,
-				1A7C322816FC990C00F5A71A /* second.png */,
-				1A7C322A16FC990C00F5A71A /* second@2x.png */,
+				1A7C321216FC990C00F5A71A /* CMAppDelegate.h */,
+				1A7C321316FC990C00F5A71A /* CMAppDelegate.m */,
+				1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */,
 				1A7C320A16FC990C00F5A71A /* Supporting Files */,
 			);
 			path = Cryptomeria;
@@ -193,6 +192,29 @@
 				1A7C325016FDB16200F5A71A /* CMChartData.m */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		1A7C325216FDC75100F5A71A /* CMChartView */ = {
+			isa = PBXGroup;
+			children = (
+				1A7C321E16FC990C00F5A71A /* CMChartViewController.h */,
+				1A7C321F16FC990C00F5A71A /* CMChartViewController.m */,
+				1A7C325416FDCF9A00F5A71A /* CMChartCell.h */,
+				1A7C325516FDCF9A00F5A71A /* CMChartCell.m */,
+			);
+			name = CMChartView;
+			sourceTree = "<group>";
+		};
+		1A7C325316FDC76900F5A71A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				1A7C322116FC990C00F5A71A /* first.png */,
+				1A7C322316FC990C00F5A71A /* first@2x.png */,
+				1A7C322816FC990C00F5A71A /* second.png */,
+				1A7C322A16FC990C00F5A71A /* second@2x.png */,
+			);
+			name = Resource;
+			path = Cryptomeria;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +338,7 @@
 				1A7C322716FC990C00F5A71A /* CMTestViewController.m in Sources */,
 				1A7C324B16FCA5B200F5A71A /* CMVocabularyViewController.m in Sources */,
 				1A7C325116FDB16200F5A71A /* CMChartData.m in Sources */,
+				1A7C325616FDCF9A00F5A71A /* CMChartCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
