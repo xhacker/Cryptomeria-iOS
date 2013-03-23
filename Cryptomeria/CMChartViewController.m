@@ -52,7 +52,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{    
+{
     CMChartCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChartCell"];
     
     cell.kanaTitleLabel.text = self.hiraganaData[indexPath.row][0];
