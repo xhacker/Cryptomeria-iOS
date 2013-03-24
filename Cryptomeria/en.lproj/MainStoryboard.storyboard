@@ -176,6 +176,125 @@
                                     <outletCollection property="romajiLabels" destination="eIb-2V-r4G" id="Wex-eM-Pja"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="YouonChartCell" rowHeight="145" id="IcJ-iH-e5M" customClass="CMChartCell">
+                                <rect key="frame" x="0.0" y="167" width="320" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="きゃ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9Z-yG-qvo">
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="86" id="PiK-hl-iMg"/>
+                                                <constraint firstAttribute="height" constant="60" id="YU7-QE-0mw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="32"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="kya" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tv3-Rx-80S">
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="36" id="UaW-Rj-IOl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="きゃキャ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="66" translatesAutoresizingMaskIntoConstraints="NO" id="Sfv-RO-AuL">
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="66" id="OjC-6U-8JI"/>
+                                                <constraint firstAttribute="height" constant="100" id="aJG-Pj-ANW"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="26"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="きゅキュ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="66" translatesAutoresizingMaskIntoConstraints="NO" id="Tq7-HQ-HED">
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="66" id="YSU-G3-zCE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="26"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="きょキョ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="66" translatesAutoresizingMaskIntoConstraints="NO" id="z3p-5M-Yja">
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="66" id="FuD-Ee-pYy"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="26"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="kya" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="dqe-x1-pul">
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="46" id="DZ8-yM-46U"/>
+                                                <constraint firstAttribute="height" constant="30" id="U8n-X2-khB"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="kyu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="CIx-hM-qDR">
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="46" id="aXj-0T-glr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="kyo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="hSp-Du-seW">
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="46" id="MVO-wL-ryO"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="Tq7-HQ-HED" firstAttribute="top" secondItem="Sfv-RO-AuL" secondAttribute="top" type="default" id="1sf-HS-62f"/>
+                                    <constraint firstItem="Sfv-RO-AuL" firstAttribute="leading" secondItem="IcJ-iH-e5M" secondAttribute="leading" constant="92" id="3Sp-m6-9m9"/>
+                                    <constraint firstItem="hSp-Du-seW" firstAttribute="baseline" secondItem="CIx-hM-qDR" secondAttribute="baseline" type="default" id="8k5-f7-GwF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tq7-HQ-HED" secondAttribute="trailing" constant="91" id="8oT-pb-fnw"/>
+                                    <constraint firstItem="dqe-x1-pul" firstAttribute="centerX" secondItem="Sfv-RO-AuL" secondAttribute="centerX" type="default" id="A5a-xD-tMh"/>
+                                    <constraint firstItem="Tq7-HQ-HED" firstAttribute="baseline" secondItem="z3p-5M-Yja" secondAttribute="baseline" type="default" id="BlR-jf-Wjp"/>
+                                    <constraint firstAttribute="bottom" secondItem="dqe-x1-pul" secondAttribute="bottom" constant="15" id="F9f-f4-Xua"/>
+                                    <constraint firstItem="CIx-hM-qDR" firstAttribute="baseline" secondItem="dqe-x1-pul" secondAttribute="baseline" type="default" id="Gka-sQ-5cr"/>
+                                    <constraint firstItem="b9Z-yG-qvo" firstAttribute="top" secondItem="IcJ-iH-e5M" secondAttribute="top" constant="38" id="HNS-gn-qUd"/>
+                                    <constraint firstItem="hSp-Du-seW" firstAttribute="centerX" secondItem="z3p-5M-Yja" secondAttribute="centerX" type="default" id="OyB-Ss-L9d"/>
+                                    <constraint firstItem="hSp-Du-seW" firstAttribute="top" secondItem="CIx-hM-qDR" secondAttribute="top" type="default" id="QHa-Ar-zlw"/>
+                                    <constraint firstItem="b9Z-yG-qvo" firstAttribute="leading" secondItem="IcJ-iH-e5M" secondAttribute="leading" constant="9" id="Qfv-LP-cHw"/>
+                                    <constraint firstAttribute="trailing" secondItem="z3p-5M-Yja" secondAttribute="trailing" constant="21" id="WNg-lw-KPZ"/>
+                                    <constraint firstItem="CIx-hM-qDR" firstAttribute="top" secondItem="dqe-x1-pul" secondAttribute="top" type="default" id="YMR-4f-kgy"/>
+                                    <constraint firstItem="tv3-Rx-80S" firstAttribute="leading" secondItem="b9Z-yG-qvo" secondAttribute="leading" type="default" id="fgD-TH-al5"/>
+                                    <constraint firstItem="Sfv-RO-AuL" firstAttribute="top" secondItem="IcJ-iH-e5M" secondAttribute="top" constant="15" id="j1l-c0-RRJ"/>
+                                    <constraint firstItem="Sfv-RO-AuL" firstAttribute="baseline" secondItem="Tq7-HQ-HED" secondAttribute="baseline" type="default" id="krZ-Jg-mf7"/>
+                                    <constraint firstItem="Tq7-HQ-HED" firstAttribute="top" secondItem="z3p-5M-Yja" secondAttribute="top" type="default" id="ler-xS-9G1"/>
+                                    <constraint firstAttribute="bottom" secondItem="tv3-Rx-80S" secondAttribute="bottom" constant="31" id="nm2-US-klW"/>
+                                    <constraint firstItem="CIx-hM-qDR" firstAttribute="centerX" secondItem="Tq7-HQ-HED" secondAttribute="centerX" type="default" id="pyE-Qc-U3J"/>
+                                    <constraint firstItem="tv3-Rx-80S" firstAttribute="trailing" secondItem="b9Z-yG-qvo" secondAttribute="trailing" type="default" id="vhT-iN-Azf"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="kanaTitleLabel" destination="b9Z-yG-qvo" id="XGf-Dx-E7j"/>
+                                    <outlet property="romajiTitleLabel" destination="tv3-Rx-80S" id="gPf-Vx-sGE"/>
+                                    <outletCollection property="kanaLabels" destination="Sfv-RO-AuL" id="8Y2-kh-6Zd"/>
+                                    <outletCollection property="kanaLabels" destination="Tq7-HQ-HED" id="khZ-Qb-vM4"/>
+                                    <outletCollection property="kanaLabels" destination="z3p-5M-Yja" id="UBg-6C-PAn"/>
+                                    <outletCollection property="romajiLabels" destination="dqe-x1-pul" id="tQy-0a-Wey"/>
+                                    <outletCollection property="romajiLabels" destination="CIx-hM-qDR" id="no8-In-YuN"/>
+                                    <outletCollection property="romajiLabels" destination="hSp-Du-seW" id="77L-cM-af1"/>
+                                </connections>
+                            </tableViewCell>
                         </prototypes>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Chart" image="first" id="7"/>

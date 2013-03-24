@@ -53,11 +53,19 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    CMChartCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChartCell"];
+    CMChartCell *cell;
+    NSInteger kanaCount = ((NSArray *)self.hiraganaData[indexPath.row]).count;
+    if (kanaCount == 5) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"ChartCell"];
+    }
+    else {
+        // youon
+        cell = [tableView dequeueReusableCellWithIdentifier:@"YouonChartCell"];
+    }
     
     cell.kanaTitleLabel.text = self.hiraganaData[indexPath.row][0];
 	cell.romajiTitleLabel.text = self.romajiData[indexPath.row][0];
-    for (NSInteger i = 0; i < 5; ++i) {
+    for (NSInteger i = 0; i < kanaCount; ++i) {
         ((UILabel *)cell.kanaLabels[i]).text = [NSString stringWithFormat:@"%@\n%@", self.hiraganaData[indexPath.row][i], self.katakanaData[indexPath.row][i]];
         ((UILabel *)cell.romajiLabels[i]).text = self.romajiData[indexPath.row][i];
     }
