@@ -79,7 +79,7 @@
 		1A7C325016FDB16200F5A71A /* CMChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMChartData.m; path = data/CMChartData.m; sourceTree = "<group>"; };
 		1A7C325416FDCF9A00F5A71A /* CMChartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMChartCell.h; sourceTree = "<group>"; };
 		1A7C325516FDCF9A00F5A71A /* CMChartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMChartCell.m; sourceTree = "<group>"; };
-		1AD2A89416FED6CA004137FE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		1AD2A89416FED6CA004137FE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,6 @@
 		1A7C31F716FC990C00F5A71A = {
 			isa = PBXGroup;
 			children = (
-				1AD2A89416FED6CA004137FE /* icon.png */,
 				1A7C320916FC990C00F5A71A /* Cryptomeria */,
 				1A7C325316FDC76900F5A71A /* Resource */,
 				1A7C323816FC990D00F5A71A /* CryptomeriaTests */,
@@ -211,6 +210,7 @@
 		1A7C325316FDC76900F5A71A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				1AD2A89416FED6CA004137FE /* icon.png */,
 				1A7C322116FC990C00F5A71A /* first.png */,
 				1A7C322316FC990C00F5A71A /* first@2x.png */,
 				1A7C322816FC990C00F5A71A /* second.png */,

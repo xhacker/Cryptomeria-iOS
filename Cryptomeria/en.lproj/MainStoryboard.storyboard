@@ -314,13 +314,16 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cWf-ms-f2g">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cWf-ms-f2g">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="DPw-KW-kBR"/>
+                                </constraints>
                                 <segments>
                                     <segment title="あ→a"/>
                                     <segment title="a→あ"/>
                                 </segments>
                             </segmentedControl>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1ma-hR-1MS">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1ma-hR-1MS">
                                 <segments>
                                     <segment title="あ"/>
                                     <segment title="ア"/>
@@ -329,10 +332,10 @@
                             </segmentedControl>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="お" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="176" id="FVc-fr-f9O"/>
                                     <constraint firstAttribute="height" constant="202" id="IYT-ji-Bin"/>
+                                    <constraint firstAttribute="width" constant="176" id="nwR-HV-cfY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="140"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="150"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -340,7 +343,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="eOw-YJ-hy3"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <state key="normal" title="o">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -353,7 +356,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="UG9-B2-MGI"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <state key="normal" title="a">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -366,7 +369,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="dYU-v2-O9t"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <state key="normal" title="i">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -379,7 +382,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="BDh-oy-TQz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <state key="normal" title="u">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -390,7 +393,11 @@
                             </button>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="25" translatesAutoresizingMaskIntoConstraints="NO" id="YFT-N0-Nvf"/>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="あ-あ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hvt-av-mAV">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="7Y5-8F-1fI"/>
+                                    <constraint firstAttribute="height" constant="32" id="mQq-N9-ZCh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -398,23 +405,24 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="zXy-4r-0ur" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="1Ep-pc-dqO"/>
-                            <constraint firstItem="Hvt-av-mAV" firstAttribute="leading" secondItem="zXy-4r-0ur" secondAttribute="leading" type="default" id="4Ug-Ia-IOX"/>
-                            <constraint firstItem="YFT-N0-Nvf" firstAttribute="top" secondItem="17" secondAttribute="top" constant="131" id="AbF-Gf-dwn"/>
+                            <constraint firstItem="yZV-g4-aRC" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="93" id="4rp-t9-J1j"/>
+                            <constraint firstAttribute="trailing" secondItem="Hvt-av-mAV" secondAttribute="trailing" constant="11" id="6lk-eb-mjr"/>
+                            <constraint firstAttribute="trailing" secondItem="1ma-hR-1MS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="6wI-le-dhf"/>
+                            <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="cWf-ms-f2g" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ac7-PU-Te5"/>
+                            <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BMB-aM-TkD"/>
                             <constraint firstAttribute="bottom" secondItem="yZV-g4-aRC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="C0V-r8-gMS"/>
-                            <constraint firstItem="YFT-N0-Nvf" firstAttribute="trailing" secondItem="yZV-g4-aRC" secondAttribute="trailing" type="default" id="CIP-w6-OUz"/>
                             <constraint firstAttribute="bottom" secondItem="DMP-c1-JIh" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="CPZ-3l-vgl"/>
-                            <constraint firstItem="Hvt-av-mAV" firstAttribute="centerY" secondItem="YFT-N0-Nvf" secondAttribute="centerY" type="default" id="LEf-KW-Obf"/>
+                            <constraint firstItem="1ma-hR-1MS" firstAttribute="centerX" secondItem="oRg-tF-7jh" secondAttribute="centerX" type="default" id="FOD-pg-Og7"/>
+                            <constraint firstItem="YFT-N0-Nvf" firstAttribute="trailing" secondItem="oRg-tF-7jh" secondAttribute="trailing" type="default" id="Gxy-j8-Ggi"/>
+                            <constraint firstItem="oRg-tF-7jh" firstAttribute="top" secondItem="17" secondAttribute="top" constant="155" id="Li5-7W-IgJ"/>
                             <constraint firstAttribute="bottom" secondItem="6Zk-5m-Qgc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="N7c-2A-1A7"/>
                             <constraint firstItem="6Zk-5m-Qgc" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PdE-zU-oZR"/>
-                            <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="aG0-mO-pVL"/>
+                            <constraint firstItem="YFT-N0-Nvf" firstAttribute="centerY" secondItem="cWf-ms-f2g" secondAttribute="centerY" type="default" id="TzF-aY-2EN"/>
                             <constraint firstItem="cWf-ms-f2g" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="dMh-UB-Z6x"/>
-                            <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="cWf-ms-f2g" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="eV5-5p-Inu"/>
-                            <constraint firstItem="YFT-N0-Nvf" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="59" id="fbc-wJ-xdV"/>
                             <constraint firstAttribute="trailing" secondItem="zXy-4r-0ur" secondAttribute="trailing" constant="93" id="kPo-yF-sC3"/>
                             <constraint firstAttribute="trailing" secondItem="DMP-c1-JIh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="nAh-Sd-UY2"/>
                             <constraint firstItem="cWf-ms-f2g" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qw5-hh-Vln"/>
-                            <constraint firstItem="oRg-tF-7jh" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" type="default" id="rby-9M-vol"/>
-                            <constraint firstItem="oRg-tF-7jh" firstAttribute="top" secondItem="YFT-N0-Nvf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="zds-2T-lwc"/>
+                            <constraint firstItem="Hvt-av-mAV" firstAttribute="top" secondItem="17" secondAttribute="top" constant="23" id="voL-e7-3hg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Test" image="second" id="6"/>
