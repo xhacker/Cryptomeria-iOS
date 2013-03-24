@@ -6,7 +6,6 @@
 //  Copyright (c) 2013 Xhacker. All rights reserved.
 //
 
-#import <QuartzCore/QuartzCore.h>
 #import "CMChartViewController.h"
 #import "CMChartData.h"
 #import "CMChartCell.h"

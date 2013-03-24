@@ -142,10 +142,8 @@
 			children = (
 				1A7C324E16FDB0B000F5A71A /* Data */,
 				1A7C325216FDC75100F5A71A /* CMChartView */,
-				1A7C322516FC990C00F5A71A /* CMTestViewController.h */,
-				1A7C322616FC990C00F5A71A /* CMTestViewController.m */,
-				1A7C324916FCA5B200F5A71A /* CMVocabularyViewController.h */,
-				1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */,
+				1AD2A89716FEF383004137FE /* CMTestView */,
+				1AD2A89616FEF375004137FE /* CMVocabularyView */,
 				1A7C321216FC990C00F5A71A /* CMAppDelegate.h */,
 				1A7C321316FC990C00F5A71A /* CMAppDelegate.m */,
 				1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */,
@@ -218,6 +216,24 @@
 			);
 			name = Resource;
 			path = Cryptomeria;
+			sourceTree = "<group>";
+		};
+		1AD2A89616FEF375004137FE /* CMVocabularyView */ = {
+			isa = PBXGroup;
+			children = (
+				1A7C324916FCA5B200F5A71A /* CMVocabularyViewController.h */,
+				1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */,
+			);
+			name = CMVocabularyView;
+			sourceTree = "<group>";
+		};
+		1AD2A89716FEF383004137FE /* CMTestView */ = {
+			isa = PBXGroup;
+			children = (
+				1A7C322516FC990C00F5A71A /* CMTestViewController.h */,
+				1A7C322616FC990C00F5A71A /* CMTestViewController.m */,
+			);
+			name = CMTestView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
