@@ -58,13 +58,9 @@
     cell.kanaTitleLabel.text = self.hiraganaData[indexPath.row][0];
 	cell.romajiTitleLabel.text = self.romajiData[indexPath.row][0];
     for (NSInteger i = 0; i < 5; ++i) {
-        ((UILabel *)cell.hiraganaLabels[i]).text = self.hiraganaData[indexPath.row][i];
-        ((UILabel *)cell.katakanaLabels[i]).text = self.katakanaData[indexPath.row][i];
+        ((UILabel *)cell.kanaLabels[i]).text = [NSString stringWithFormat:@"%@\n%@", self.hiraganaData[indexPath.row][i], self.katakanaData[indexPath.row][i]];
         ((UILabel *)cell.romajiLabels[i]).text = self.romajiData[indexPath.row][i];
     }
-    
-    cell.layer.shouldRasterize = YES;
-    cell.layer.rasterizationScale = [UIScreen mainScreen].scale;
     
     return cell;
 }

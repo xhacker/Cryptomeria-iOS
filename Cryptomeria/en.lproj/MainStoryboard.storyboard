@@ -39,131 +39,82 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="あ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nT-pm-7b4">
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="あア" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="3nT-pm-7b4">
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="49" id="bhD-XG-6ad"/>
+                                                <constraint firstAttribute="height" constant="100" id="mNR-sR-xQl"/>
+                                                <constraint firstAttribute="width" constant="46" id="yxN-QJ-Czu"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="28"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="い" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9M-X3-spj">
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="28"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="う" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50W-HJ-8t6">
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="28"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="え" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBT-Rb-rab">
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="28"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="お" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUp-Bs-Py8">
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="いイ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="K9M-X3-spj">
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="49" id="oqb-hw-skg"/>
+                                                <constraint firstAttribute="width" constant="46" id="z6k-dw-xU6"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="28"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ア" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5KP-F5-4xd">
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="うウ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="50W-HJ-8t6">
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="48" id="QcH-6w-dqc"/>
-                                                <constraint firstAttribute="height" constant="49" id="khS-WM-xUG"/>
+                                                <constraint firstAttribute="width" constant="46" id="tYc-yQ-RC2"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="28"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="イ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOF-Ip-IGq">
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="えエ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="rBT-Rb-rab">
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="48" id="Qqb-7s-TsV"/>
+                                                <constraint firstAttribute="width" constant="46" id="mIG-o3-pvm"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="28"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ウ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aHH-2e-PiK">
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="おオ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="xUp-Bs-Py8">
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="48" id="FHg-ei-LcQ"/>
+                                                <constraint firstAttribute="width" constant="46" id="0k6-0N-F83"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="28"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="エ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIN-3S-INw">
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="a" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="5VP-8w-Zzk">
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="48" id="tRY-DT-5lR"/>
+                                                <constraint firstAttribute="height" constant="30" id="KIw-qO-Fg8"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="28"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="オ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MBf-qq-XLL">
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="i" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="zu1-eQ-C3X">
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="48" id="UoV-Up-UM0"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="28"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3p-4W-5jU">
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="u" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="TzZ-zZ-ai9">
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="35" id="C3a-MR-sSG"/>
-                                                <constraint firstAttribute="height" constant="33" id="jem-Zu-iS9"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="i" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUH-Oy-F7l">
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="e" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="Q7H-Hq-yCJ">
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="35" id="eio-3s-kJf"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="u" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b5-U0-nBh">
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="o" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="46" translatesAutoresizingMaskIntoConstraints="NO" id="eIb-2V-r4G">
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="35" id="HRl-Mi-pUy"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="e" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8A-ra-Pv8">
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="35" id="l8u-mV-52O"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </label>
-                                        <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="o" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWJ-gw-nmc">
-                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="35" id="VXG-oD-31y"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
@@ -171,81 +122,58 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="ynu-mf-arx" firstAttribute="bottom" secondItem="5KP-F5-4xd" secondAttribute="bottom" type="default" id="1xb-ly-z56"/>
-                                    <constraint firstItem="3nT-pm-7b4" firstAttribute="leading" secondItem="qqg-xj-jfm" secondAttribute="leading" constant="69" id="2Cp-xx-3Ty"/>
-                                    <constraint firstItem="gOF-Ip-IGq" firstAttribute="centerX" secondItem="K9M-X3-spj" secondAttribute="centerX" type="default" id="3IE-19-IRl"/>
-                                    <constraint firstItem="gOF-Ip-IGq" firstAttribute="top" secondItem="aHH-2e-PiK" secondAttribute="top" type="default" id="3vC-4y-rOi"/>
-                                    <constraint firstAttribute="trailing" secondItem="rBT-Rb-rab" secondAttribute="trailing" constant="64" id="4Tw-FM-IOf"/>
-                                    <constraint firstItem="rBT-Rb-rab" firstAttribute="baseline" secondItem="xUp-Bs-Py8" secondAttribute="baseline" type="default" id="5ZI-5r-hnV"/>
-                                    <constraint firstItem="b8A-ra-Pv8" firstAttribute="centerX" secondItem="ZIN-3S-INw" secondAttribute="centerX" type="default" id="5ti-7c-CWz"/>
+                                    <constraint firstItem="eIb-2V-r4G" firstAttribute="leading" secondItem="xUp-Bs-Py8" secondAttribute="leading" type="default" id="2Bv-mf-ewx"/>
+                                    <constraint firstItem="3nT-pm-7b4" firstAttribute="baseline" secondItem="K9M-X3-spj" secondAttribute="baseline" type="default" id="2DA-tU-Y2o"/>
+                                    <constraint firstItem="zu1-eQ-C3X" firstAttribute="trailing" secondItem="K9M-X3-spj" secondAttribute="trailing" type="default" id="3oG-KZ-3Oi"/>
+                                    <constraint firstItem="Q7H-Hq-yCJ" firstAttribute="top" secondItem="TzZ-zZ-ai9" secondAttribute="top" type="default" id="4mV-ks-NyY"/>
                                     <constraint firstItem="ynu-mf-arx" firstAttribute="trailing" secondItem="RmH-5m-dHP" secondAttribute="trailing" type="default" id="644-wJ-dGE"/>
-                                    <constraint firstItem="ZIN-3S-INw" firstAttribute="centerX" secondItem="rBT-Rb-rab" secondAttribute="centerX" type="default" id="6JT-HY-amH"/>
-                                    <constraint firstAttribute="trailing" secondItem="xUp-Bs-Py8" secondAttribute="trailing" constant="18" id="BiP-T7-Ek0"/>
-                                    <constraint firstItem="RmH-5m-dHP" firstAttribute="top" secondItem="qqg-xj-jfm" secondAttribute="top" constant="37" id="C4B-JQ-4Nt"/>
-                                    <constraint firstItem="ZIN-3S-INw" firstAttribute="top" secondItem="MBf-qq-XLL" secondAttribute="top" type="default" id="DLD-Ko-gn4"/>
-                                    <constraint firstItem="5KP-F5-4xd" firstAttribute="leading" secondItem="3nT-pm-7b4" secondAttribute="leading" type="default" id="Dwv-JQ-VXJ"/>
-                                    <constraint firstItem="d3p-4W-5jU" firstAttribute="centerX" secondItem="5KP-F5-4xd" secondAttribute="centerX" type="default" id="F5L-eD-PIj"/>
-                                    <constraint firstItem="rBT-Rb-rab" firstAttribute="top" secondItem="xUp-Bs-Py8" secondAttribute="top" type="default" id="H5v-gV-x2U"/>
-                                    <constraint firstItem="2b5-U0-nBh" firstAttribute="baseline" secondItem="mUH-Oy-F7l" secondAttribute="baseline" type="default" id="II1-xP-eFv"/>
-                                    <constraint firstItem="aHH-2e-PiK" firstAttribute="baseline" secondItem="ZIN-3S-INw" secondAttribute="baseline" type="default" id="IPU-k0-pa6"/>
-                                    <constraint firstItem="3nT-pm-7b4" firstAttribute="top" secondItem="K9M-X3-spj" secondAttribute="top" type="default" id="Jxx-KX-hjd"/>
-                                    <constraint firstItem="3nT-pm-7b4" firstAttribute="top" secondItem="qqg-xj-jfm" secondAttribute="top" constant="19" id="NEd-1P-qNe"/>
-                                    <constraint firstItem="ZIN-3S-INw" firstAttribute="baseline" secondItem="MBf-qq-XLL" secondAttribute="baseline" type="default" id="Ph7-9t-myN"/>
-                                    <constraint firstItem="b8A-ra-Pv8" firstAttribute="top" secondItem="2b5-U0-nBh" secondAttribute="top" type="default" id="RB9-bh-pH2"/>
-                                    <constraint firstItem="gOF-Ip-IGq" firstAttribute="baseline" secondItem="aHH-2e-PiK" secondAttribute="baseline" type="default" id="RQN-OT-JUo"/>
-                                    <constraint firstItem="2b5-U0-nBh" firstAttribute="centerX" secondItem="aHH-2e-PiK" secondAttribute="centerX" type="default" id="RpU-vg-l4H"/>
+                                    <constraint firstItem="K9M-X3-spj" firstAttribute="leading" secondItem="qqg-xj-jfm" secondAttribute="leading" constant="116" id="86x-gS-BOu"/>
+                                    <constraint firstItem="3nT-pm-7b4" firstAttribute="leading" secondItem="qqg-xj-jfm" secondAttribute="leading" constant="70" id="Ab8-RN-N7j"/>
+                                    <constraint firstItem="K9M-X3-spj" firstAttribute="top" secondItem="3nT-pm-7b4" secondAttribute="top" type="default" id="Abm-g0-3Py"/>
+                                    <constraint firstItem="eIb-2V-r4G" firstAttribute="baseline" secondItem="Q7H-Hq-yCJ" secondAttribute="baseline" type="default" id="Cid-fw-9cm"/>
+                                    <constraint firstAttribute="bottom" secondItem="ynu-mf-arx" secondAttribute="bottom" constant="31" id="GRh-Az-U3r"/>
+                                    <constraint firstItem="TzZ-zZ-ai9" firstAttribute="top" secondItem="zu1-eQ-C3X" secondAttribute="top" type="default" id="Hto-rH-qgs"/>
+                                    <constraint firstAttribute="trailing" secondItem="xUp-Bs-Py8" secondAttribute="trailing" constant="20" type="default" id="Mhk-Bv-ihS"/>
+                                    <constraint firstItem="50W-HJ-8t6" firstAttribute="baseline" secondItem="rBT-Rb-rab" secondAttribute="baseline" type="default" id="PAm-Ww-L7Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="rBT-Rb-rab" secondAttribute="trailing" constant="66" id="Q2X-GU-gXG"/>
+                                    <constraint firstItem="5VP-8w-Zzk" firstAttribute="trailing" secondItem="3nT-pm-7b4" secondAttribute="trailing" type="default" id="R1R-hb-gid"/>
+                                    <constraint firstItem="K9M-X3-spj" firstAttribute="top" secondItem="50W-HJ-8t6" secondAttribute="top" type="default" id="RWz-L5-3tC"/>
+                                    <constraint firstAttribute="trailing" secondItem="50W-HJ-8t6" secondAttribute="trailing" constant="112" id="Rmb-GT-hYO"/>
+                                    <constraint firstItem="Q7H-Hq-yCJ" firstAttribute="trailing" secondItem="rBT-Rb-rab" secondAttribute="trailing" type="default" id="U17-hU-ciO"/>
                                     <constraint firstItem="ynu-mf-arx" firstAttribute="leading" secondItem="RmH-5m-dHP" secondAttribute="leading" type="default" id="UD2-L9-AvC"/>
-                                    <constraint firstItem="K9M-X3-spj" firstAttribute="leading" secondItem="qqg-xj-jfm" secondAttribute="leading" constant="115" id="UJ0-Zl-EA8"/>
-                                    <constraint firstItem="mUH-Oy-F7l" firstAttribute="top" secondItem="2b5-U0-nBh" secondAttribute="top" type="default" id="UXE-ku-iUl"/>
-                                    <constraint firstItem="MBf-qq-XLL" firstAttribute="trailing" secondItem="xUp-Bs-Py8" secondAttribute="trailing" type="default" id="X71-CS-DpQ"/>
-                                    <constraint firstItem="50W-HJ-8t6" firstAttribute="top" secondItem="rBT-Rb-rab" secondAttribute="top" type="default" id="aoi-2j-Guw"/>
-                                    <constraint firstItem="mUH-Oy-F7l" firstAttribute="top" secondItem="d3p-4W-5jU" secondAttribute="top" type="default" id="bX4-BK-wHI"/>
-                                    <constraint firstItem="RWJ-gw-nmc" firstAttribute="baseline" secondItem="b8A-ra-Pv8" secondAttribute="baseline" type="default" id="cd8-H6-irE"/>
-                                    <constraint firstItem="aHH-2e-PiK" firstAttribute="centerX" secondItem="50W-HJ-8t6" secondAttribute="centerX" type="default" id="csO-bh-etY"/>
-                                    <constraint firstItem="aHH-2e-PiK" firstAttribute="leading" secondItem="50W-HJ-8t6" secondAttribute="leading" type="default" id="dBt-Ne-xzD"/>
+                                    <constraint firstItem="Q7H-Hq-yCJ" firstAttribute="leading" secondItem="rBT-Rb-rab" secondAttribute="leading" type="default" id="Wfh-JQ-wMZ"/>
+                                    <constraint firstItem="TzZ-zZ-ai9" firstAttribute="baseline" secondItem="zu1-eQ-C3X" secondAttribute="baseline" type="default" id="ZwH-fn-CVG"/>
+                                    <constraint firstAttribute="trailing" secondItem="eIb-2V-r4G" secondAttribute="trailing" constant="20" type="default" id="a30-CF-Ta6"/>
+                                    <constraint firstItem="K9M-X3-spj" firstAttribute="baseline" secondItem="50W-HJ-8t6" secondAttribute="baseline" type="default" id="a6S-2i-kXG"/>
+                                    <constraint firstItem="Q7H-Hq-yCJ" firstAttribute="baseline" secondItem="TzZ-zZ-ai9" secondAttribute="baseline" type="default" id="bRb-ty-a76"/>
                                     <constraint firstItem="RmH-5m-dHP" firstAttribute="leading" secondItem="qqg-xj-jfm" secondAttribute="leading" constant="5" id="fct-lz-J2t"/>
-                                    <constraint firstItem="5KP-F5-4xd" firstAttribute="top" secondItem="qqg-xj-jfm" secondAttribute="top" constant="64" id="hc8-U0-mrw"/>
-                                    <constraint firstItem="5KP-F5-4xd" firstAttribute="centerX" secondItem="3nT-pm-7b4" secondAttribute="centerX" type="default" id="jFp-4F-9HL"/>
-                                    <constraint firstItem="5KP-F5-4xd" firstAttribute="top" secondItem="gOF-Ip-IGq" secondAttribute="top" type="default" id="jNk-eb-aZG"/>
-                                    <constraint firstItem="mUH-Oy-F7l" firstAttribute="baseline" secondItem="d3p-4W-5jU" secondAttribute="baseline" type="default" id="joD-S9-5Bw"/>
-                                    <constraint firstItem="RWJ-gw-nmc" firstAttribute="centerX" secondItem="xUp-Bs-Py8" secondAttribute="centerX" type="default" id="k3Y-hZ-i4v"/>
-                                    <constraint firstItem="3nT-pm-7b4" firstAttribute="baseline" secondItem="K9M-X3-spj" secondAttribute="baseline" type="default" id="kec-2s-53Z"/>
-                                    <constraint firstItem="gOF-Ip-IGq" firstAttribute="leading" secondItem="K9M-X3-spj" secondAttribute="leading" type="default" id="lkZ-Rv-hsA"/>
-                                    <constraint firstItem="ZIN-3S-INw" firstAttribute="leading" secondItem="rBT-Rb-rab" secondAttribute="leading" type="default" id="mHi-4K-FlH"/>
-                                    <constraint firstItem="50W-HJ-8t6" firstAttribute="baseline" secondItem="rBT-Rb-rab" secondAttribute="baseline" type="default" id="nhT-9v-DYA"/>
-                                    <constraint firstItem="5KP-F5-4xd" firstAttribute="baseline" secondItem="gOF-Ip-IGq" secondAttribute="baseline" type="default" id="nzv-SB-Ikj"/>
-                                    <constraint firstAttribute="trailing" secondItem="50W-HJ-8t6" secondAttribute="trailing" constant="110" id="ovc-ab-oWc"/>
-                                    <constraint firstItem="K9M-X3-spj" firstAttribute="top" secondItem="50W-HJ-8t6" secondAttribute="top" type="default" id="qIW-rq-rf1"/>
-                                    <constraint firstItem="mUH-Oy-F7l" firstAttribute="centerX" secondItem="gOF-Ip-IGq" secondAttribute="centerX" type="default" id="qed-Bu-3h7"/>
-                                    <constraint firstItem="aHH-2e-PiK" firstAttribute="top" secondItem="ZIN-3S-INw" secondAttribute="top" type="default" id="ti0-l8-bxT"/>
-                                    <constraint firstAttribute="bottom" secondItem="d3p-4W-5jU" secondAttribute="bottom" constant="10" id="xKo-dN-2lf"/>
-                                    <constraint firstItem="RWJ-gw-nmc" firstAttribute="top" secondItem="b8A-ra-Pv8" secondAttribute="top" type="default" id="yW1-L7-V6G"/>
-                                    <constraint firstItem="b8A-ra-Pv8" firstAttribute="baseline" secondItem="2b5-U0-nBh" secondAttribute="baseline" type="default" id="yxl-Na-4Fo"/>
-                                    <constraint firstItem="K9M-X3-spj" firstAttribute="baseline" secondItem="50W-HJ-8t6" secondAttribute="baseline" type="default" id="zcX-fm-L1l"/>
+                                    <constraint firstItem="TzZ-zZ-ai9" firstAttribute="leading" secondItem="50W-HJ-8t6" secondAttribute="leading" type="default" id="i7R-cI-Wke"/>
+                                    <constraint firstAttribute="bottom" secondItem="5VP-8w-Zzk" secondAttribute="bottom" constant="14" id="idB-F1-32c"/>
+                                    <constraint firstItem="RmH-5m-dHP" firstAttribute="top" secondItem="qqg-xj-jfm" secondAttribute="top" constant="38" id="isC-Bo-sq2"/>
+                                    <constraint firstItem="3nT-pm-7b4" firstAttribute="top" secondItem="qqg-xj-jfm" secondAttribute="top" constant="15" id="mkO-Tc-yL1"/>
+                                    <constraint firstItem="TzZ-zZ-ai9" firstAttribute="trailing" secondItem="50W-HJ-8t6" secondAttribute="trailing" type="default" id="oP0-4h-C37"/>
+                                    <constraint firstItem="xUp-Bs-Py8" firstAttribute="top" secondItem="rBT-Rb-rab" secondAttribute="top" type="default" id="sGg-J5-oQg"/>
+                                    <constraint firstItem="zu1-eQ-C3X" firstAttribute="baseline" secondItem="5VP-8w-Zzk" secondAttribute="baseline" type="default" id="sXX-qx-UjG"/>
+                                    <constraint firstItem="rBT-Rb-rab" firstAttribute="baseline" secondItem="xUp-Bs-Py8" secondAttribute="baseline" type="default" id="u0Y-ha-A0I"/>
+                                    <constraint firstItem="zu1-eQ-C3X" firstAttribute="top" secondItem="5VP-8w-Zzk" secondAttribute="top" type="default" id="v0f-GH-k6m"/>
+                                    <constraint firstItem="50W-HJ-8t6" firstAttribute="top" secondItem="rBT-Rb-rab" secondAttribute="top" type="default" id="vKT-iA-RU6"/>
+                                    <constraint firstItem="5VP-8w-Zzk" firstAttribute="leading" secondItem="3nT-pm-7b4" secondAttribute="leading" type="default" id="vVT-0G-rcF"/>
+                                    <constraint firstItem="eIb-2V-r4G" firstAttribute="top" secondItem="Q7H-Hq-yCJ" secondAttribute="top" type="default" id="xMC-h0-LD2"/>
+                                    <constraint firstItem="zu1-eQ-C3X" firstAttribute="leading" secondItem="K9M-X3-spj" secondAttribute="leading" type="default" id="xQw-Ga-chY"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="kanaTitleLabel" destination="RmH-5m-dHP" id="qtk-lL-Igj"/>
                                     <outlet property="romajiTitleLabel" destination="ynu-mf-arx" id="ApK-ww-29j"/>
-                                    <outletCollection property="hiraganaLabels" destination="3nT-pm-7b4" id="MWe-Vm-Lub"/>
-                                    <outletCollection property="hiraganaLabels" destination="K9M-X3-spj" id="2WB-ox-Xjd"/>
-                                    <outletCollection property="hiraganaLabels" destination="50W-HJ-8t6" id="VKi-oM-Htt"/>
-                                    <outletCollection property="hiraganaLabels" destination="rBT-Rb-rab" id="3Uh-6P-hzs"/>
-                                    <outletCollection property="hiraganaLabels" destination="xUp-Bs-Py8" id="yud-ds-HU4"/>
-                                    <outletCollection property="hiraganaLabels" destination="3nT-pm-7b4" id="kTx-7J-v1L"/>
-                                    <outletCollection property="hiraganaLabels" destination="K9M-X3-spj" id="uT7-aw-iUC"/>
-                                    <outletCollection property="hiraganaLabels" destination="50W-HJ-8t6" id="sE9-oL-YK5"/>
-                                    <outletCollection property="hiraganaLabels" destination="rBT-Rb-rab" id="00W-Rw-bH2"/>
-                                    <outletCollection property="hiraganaLabels" destination="xUp-Bs-Py8" id="ecm-RW-7tq"/>
-                                    <outletCollection property="katakanaLabels" destination="5KP-F5-4xd" id="uoi-3g-vtZ"/>
-                                    <outletCollection property="katakanaLabels" destination="gOF-Ip-IGq" id="zFd-Lx-13a"/>
-                                    <outletCollection property="katakanaLabels" destination="aHH-2e-PiK" id="bBu-Dn-6Lk"/>
-                                    <outletCollection property="katakanaLabels" destination="ZIN-3S-INw" id="D3A-jA-7qf"/>
-                                    <outletCollection property="katakanaLabels" destination="MBf-qq-XLL" id="TsA-at-7XX"/>
-                                    <outletCollection property="romajiLabels" destination="d3p-4W-5jU" id="1Q4-W1-BRq"/>
-                                    <outletCollection property="romajiLabels" destination="mUH-Oy-F7l" id="OBv-2D-1a7"/>
-                                    <outletCollection property="romajiLabels" destination="2b5-U0-nBh" id="FtS-dg-HJy"/>
-                                    <outletCollection property="romajiLabels" destination="b8A-ra-Pv8" id="0bS-0q-8z4"/>
-                                    <outletCollection property="romajiLabels" destination="RWJ-gw-nmc" id="z7R-TZ-mfg"/>
+                                    <outletCollection property="kanaLabels" destination="3nT-pm-7b4" id="ILQ-hh-rp4"/>
+                                    <outletCollection property="kanaLabels" destination="K9M-X3-spj" id="xcW-66-z3c"/>
+                                    <outletCollection property="kanaLabels" destination="50W-HJ-8t6" id="VB7-lJ-vdn"/>
+                                    <outletCollection property="kanaLabels" destination="rBT-Rb-rab" id="RZT-6o-Wda"/>
+                                    <outletCollection property="kanaLabels" destination="xUp-Bs-Py8" id="bb5-ne-NP3"/>
+                                    <outletCollection property="romajiLabels" destination="5VP-8w-Zzk" id="8CJ-2o-R4n"/>
+                                    <outletCollection property="romajiLabels" destination="zu1-eQ-C3X" id="KRA-ph-F58"/>
+                                    <outletCollection property="romajiLabels" destination="TzZ-zZ-ai9" id="UVs-qn-ul1"/>
+                                    <outletCollection property="romajiLabels" destination="Q7H-Hq-yCJ" id="K0c-3m-0yo"/>
+                                    <outletCollection property="romajiLabels" destination="eIb-2V-r4G" id="Wex-eM-Pja"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -354,8 +282,7 @@
             <relationships>
                 <relationship kind="outlet" name="kanaTitleLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="romajiTitleLabel" candidateClass="UILabel"/>
-                <relationship kind="outletCollection" name="hiraganaLabels" candidateClass="UILabel"/>
-                <relationship kind="outletCollection" name="katakanaLabels" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="kanaLabels" candidateClass="UILabel"/>
                 <relationship kind="outletCollection" name="romajiLabels" candidateClass="UILabel"/>
             </relationships>
         </class>
