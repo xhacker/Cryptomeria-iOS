@@ -88,16 +88,22 @@ typedef enum {
 {
     [self.defaults setInteger:(NSInteger)sender.value forKey:@"KanaRange"];
     [self updateRangeLabel:sender.value];
+    [self generateKanaList];
+    [self next];
 }
 
 - (IBAction)directionChanged:(UISegmentedControl *)sender
 {
     [self.defaults setInteger:sender.selectedSegmentIndex forKey:@"Direction"];
+    [self generateKanaList];
+    [self next];
 }
 
 - (IBAction)horkChanged:(UISegmentedControl *)sender
 {
     [self.defaults setInteger:sender.selectedSegmentIndex forKey:@"Hork"];
+    [self generateKanaList];
+    [self next];
 }
 
 - (void)updateRangeLabel:(NSInteger)range
