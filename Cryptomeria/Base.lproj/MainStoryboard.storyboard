@@ -336,10 +336,10 @@
                                     <action selector="horkChanged:" destination="3" eventType="valueChanged" id="wtc-ii-XWf"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="お" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="お" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumScaleFactor="0.70000000000000007" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="202" id="IYT-ji-Bin"/>
-                                    <constraint firstAttribute="width" constant="176" id="nwR-HV-cfY"/>
+                                    <constraint firstAttribute="height" constant="264" id="ISr-mm-xQ5"/>
+                                    <constraint firstAttribute="width" constant="251" id="l7E-b9-xyg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="150"/>
                                 <color key="textColor" white="0.13572080291970803" alpha="1" colorSpace="calibratedWhite"/>
@@ -428,14 +428,14 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="zXy-4r-0ur" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="1Ep-pc-dqO"/>
                             <constraint firstItem="yZV-g4-aRC" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="93" id="4rp-t9-J1j"/>
-                            <constraint firstAttribute="trailing" secondItem="1ma-hR-1MS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="6wI-le-dhf"/>
+                            <constraint firstAttribute="trailing" secondItem="1ma-hR-1MS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7R4-su-IZ6"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="cWf-ms-f2g" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ac7-PU-Te5"/>
+                            <constraint firstItem="oRg-tF-7jh" firstAttribute="top" secondItem="17" secondAttribute="top" constant="115" id="Ae7-LL-fjX"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BMB-aM-TkD"/>
                             <constraint firstAttribute="bottom" secondItem="yZV-g4-aRC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="C0V-r8-gMS"/>
                             <constraint firstAttribute="bottom" secondItem="DMP-c1-JIh" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="CPZ-3l-vgl"/>
-                            <constraint firstItem="1ma-hR-1MS" firstAttribute="centerX" secondItem="oRg-tF-7jh" secondAttribute="centerX" type="default" id="FOD-pg-Og7"/>
-                            <constraint firstItem="oRg-tF-7jh" firstAttribute="top" secondItem="17" secondAttribute="top" constant="155" id="Li5-7W-IgJ"/>
                             <constraint firstAttribute="bottom" secondItem="6Zk-5m-Qgc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="N7c-2A-1A7"/>
+                            <constraint firstItem="oRg-tF-7jh" firstAttribute="centerX" secondItem="1ma-hR-1MS" secondAttribute="centerX" type="default" id="NQ8-h4-uQF"/>
                             <constraint firstItem="6Zk-5m-Qgc" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PdE-zU-oZR"/>
                             <constraint firstItem="YFT-N0-Nvf" firstAttribute="centerY" secondItem="cWf-ms-f2g" secondAttribute="centerY" type="default" id="TzF-aY-2EN"/>
                             <constraint firstItem="YFT-N0-Nvf" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="144" id="Woi-H2-j1s"/>
@@ -532,10 +532,6 @@
         <class className="CMTestViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CMTestViewController.h"/>
             <relationships>
-                <relationship kind="action" name="directionChanged:" candidateClass="UISegmentedControl"/>
-                <relationship kind="action" name="horkChanged:" candidateClass="UISegmentedControl"/>
-                <relationship kind="action" name="optionClicked:" candidateClass="UIButton"/>
-                <relationship kind="action" name="rangeChanged:" candidateClass="UIStepper"/>
                 <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="horkControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="mainKanaLabel" candidateClass="UILabel"/>
