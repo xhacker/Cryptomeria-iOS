@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A72658F1700A33900C9A0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1A7C320016FC990C00F5A71A /* Cryptomeria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptomeria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7C320316FC990C00F5A71A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A7C320516FC990C00F5A71A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,7 +59,6 @@
 		1A7C321516FC990C00F5A71A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1A7C321716FC990C00F5A71A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1A7C321916FC990C00F5A71A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		1A7C321C16FC990C00F5A71A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1A7C321E16FC990C00F5A71A /* CMChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMChartViewController.h; sourceTree = "<group>"; };
 		1A7C321F16FC990C00F5A71A /* CMChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMChartViewController.m; sourceTree = "<group>"; };
 		1A7C322116FC990C00F5A71A /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
@@ -291,6 +291,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 1A7C31F716FC990C00F5A71A;
 			productRefGroup = 1A7C320116FC990C00F5A71A /* Products */;
@@ -392,7 +393,7 @@
 		1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1A7C321C16FC990C00F5A71A /* en */,
+				1A72658F1700A33900C9A0CB /* Base */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
