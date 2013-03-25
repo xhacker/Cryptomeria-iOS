@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */; };
 		1A7C320416FC990C00F5A71A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320316FC990C00F5A71A /* UIKit.framework */; };
 		1A7C320616FC990C00F5A71A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320516FC990C00F5A71A /* Foundation.framework */; };
 		1A7C320816FC990C00F5A71A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320716FC990C00F5A71A /* CoreGraphics.framework */; };
@@ -46,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		1A72658F1700A33900C9A0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1A7265931700B06F00C9A0CB /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
+		1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
 		1A7C320016FC990C00F5A71A /* Cryptomeria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptomeria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7C320316FC990C00F5A71A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A7C320516FC990C00F5A71A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -230,6 +233,8 @@
 		1AD2A89716FEF383004137FE /* CMTestView */ = {
 			isa = PBXGroup;
 			children = (
+				1A7265931700B06F00C9A0CB /* NSMutableArray+Shuffling.h */,
+				1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */,
 				1A7C322516FC990C00F5A71A /* CMTestViewController.h */,
 				1A7C322616FC990C00F5A71A /* CMTestViewController.m */,
 			);
@@ -360,6 +365,7 @@
 				1A7C324B16FCA5B200F5A71A /* CMVocabularyViewController.m in Sources */,
 				1A7C325116FDB16200F5A71A /* CMChartData.m in Sources */,
 				1A7C325616FDCF9A00F5A71A /* CMChartCell.m in Sources */,
+				1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
