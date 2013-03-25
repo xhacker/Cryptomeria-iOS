@@ -47,6 +47,7 @@ typedef enum {
     self.defaults = [NSUserDefaults standardUserDefaults];
     
     NSInteger kanaRange = [self.defaults integerForKey:@"KanaRange"];
+    [self.rangeStepper setValue:(double)kanaRange];
     [self updateRangeLabel:kanaRange];
     NSInteger direction = [self.defaults integerForKey:@"Direction"];
     [self.directionControl setSelectedSegmentIndex:direction];
@@ -60,10 +61,24 @@ typedef enum {
 - (void)generateKanaList
 {
     NSInteger kanaRange = [self.defaults integerForKey:@"KanaRange"];
-    self.kanaList = [[NSMutableArray alloc] init];
+    NSInteger hork = [self.defaults integerForKey:@"Hork"];
     
-    for (NSInteger i = 0; i <= kanaRange; ++i) {
-        for (NSString *kana in [CMChartData hiragana][i]) {
+    self.kanaList = [[NSMutableArray alloc] init];
+    NSArray *kanaBase;
+    if (hork == Hiragana) {
+        kanaBase = [[CMChartData hiragana] subarrayWithRange:NSMakeRange(0, kanaRange)];
+    }
+    else if (hork == Katakana) {
+        kanaBase = [[CMChartData katakana] subarrayWithRange:NSMakeRange(0, kanaRange)];
+    }
+    else {
+        kanaBase = [[[CMChartData hiragana] subarrayWithRange:NSMakeRange(0, kanaRange)]
+                    arrayByAddingObjectsFromArray:
+                    [[CMChartData katakana] subarrayWithRange:NSMakeRange(0, kanaRange)]];
+    }
+    
+    for (NSArray *row in kanaBase) {
+        for (NSString *kana in row) {
             if (kana.length > 0 && ![kana hasPrefix:@"("]) {
                 [self.kanaList addObject:kana];
             }
@@ -81,7 +96,6 @@ typedef enum {
     NSString *kana = [self.kanaList lastObject];
     [self.kanaList removeLastObject];
     self.mainKanaLabel.text = kana;
-    NSLog(@"%@", kana);
 }
 
 - (IBAction)rangeChanged:(UIStepper *)sender
