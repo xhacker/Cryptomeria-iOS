@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UIStepper *rangeStepper;
 @property (weak, nonatomic) IBOutlet UILabel *rangeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mainKanaLabel;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *optionButtons;
 
 @property NSUserDefaults *defaults;
 @property NSMutableArray *kanaList;
@@ -96,6 +97,30 @@ typedef enum {
     NSString *kana = [self.kanaList lastObject];
     [self.kanaList removeLastObject];
     self.mainKanaLabel.text = kana;
+    
+    // place options
+    //    var option_range = get_section_range_by_id(kana_id);
+    //    if (option_range.end > kana_range - 1) {
+    //        option_range.end = kana_range - 1;
+    //    }
+    NSArray *optionBase = [CMChartData romaji];
+    NSInteger rightOption = arc4random() % 4;
+    [self.optionButtons[rightOption] setTitle:kana forState:UIControlStateNormal];
+    NSMutableArray *usedKana = [[NSMutableArray alloc] initWithObjects:kana, nil];
+
+    
+    for (NSInteger i = 0; i <= 3; ++i) {
+        if (i == rightOption) {
+            continue;
+        }
+        NSString *optionText;
+        do {
+            // TODO
+            optionText = optionBase[arc4random() % optionBase.count][0];
+        } while ([usedKana containsObject:optionText] || kana.length == 0 || [kana hasPrefix:@"("]);
+        [usedKana addObject:optionText];
+        [self.optionButtons[i] setTitle:optionText forState:UIControlStateNormal];
+    }
 }
 
 - (IBAction)rangeChanged:(UIStepper *)sender

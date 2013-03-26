@@ -454,6 +454,10 @@
                         <outlet property="mainKanaLabel" destination="oRg-tF-7jh" id="trR-7B-q0s"/>
                         <outlet property="rangeLabel" destination="Hvt-av-mAV" id="q1w-pR-jRy"/>
                         <outlet property="rangeStepper" destination="YFT-N0-Nvf" id="ire-NB-F3j"/>
+                        <outletCollection property="optionButtons" destination="6Zk-5m-Qgc" id="ZvK-9K-dKA"/>
+                        <outletCollection property="optionButtons" destination="yZV-g4-aRC" id="kzZ-ih-Tj7"/>
+                        <outletCollection property="optionButtons" destination="zXy-4r-0ur" id="ZiJ-eV-nuk"/>
+                        <outletCollection property="optionButtons" destination="DMP-c1-JIh" id="U5y-Em-abV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
@@ -513,39 +517,6 @@
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
-    <classes>
-        <class className="CMChartCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMChartCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="kanaTitleLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="romajiTitleLabel" candidateClass="UILabel"/>
-                <relationship kind="outletCollection" name="kanaLabels" candidateClass="UILabel"/>
-                <relationship kind="outletCollection" name="romajiLabels" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CMChartViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMChartViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="CMTestViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMTestViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="horkControl" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="mainKanaLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="rangeLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="rangeStepper" candidateClass="UIStepper"/>
-            </relationships>
-        </class>
-        <class className="CMVocabularyViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMVocabularyViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
