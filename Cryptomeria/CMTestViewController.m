@@ -34,6 +34,7 @@
 - (void)generateSequence;
 - (void)resetScore;
 - (void)next;
+- (void)changeMainFont;
 
 @end
 
@@ -67,6 +68,7 @@ typedef enum {
     self.prevHork = Katakana;
     [self generateSequence];
     [self resetScore];
+    [self changeMainFont];
     self.inGuess = YES;
     [self next];
 }
@@ -180,7 +182,25 @@ typedef enum {
     [self.defaults setInteger:sender.selectedSegmentIndex forKey:@"Direction"];
     [self generateSequence];
     [self resetScore];
+    [self changeMainFont];
     [self next];
+}
+
+- (void)changeMainFont
+{
+    NSInteger direction = [self.defaults integerForKey:@"Direction"];    
+    if (direction == KanaRomaji) {
+        self.mainKanaLabel.font = [UIFont fontWithName:@"Hiragino Mincho ProN" size:140.0];
+        for (UIButton *optionButton in self.optionButtons) {
+            optionButton.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Medium" size:20.0];
+        }
+    }
+    else {
+        self.mainKanaLabel.font = [UIFont fontWithName:@"Gill Sans" size:132.0];
+        for (UIButton *optionButton in self.optionButtons) {
+            optionButton.titleLabel.font = [UIFont fontWithName:@"HiraKakuProN-W3" size:20.0];
+        }
+    }
 }
 
 - (IBAction)horkChanged:(UISegmentedControl *)sender
