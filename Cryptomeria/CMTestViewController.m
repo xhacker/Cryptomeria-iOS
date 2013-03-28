@@ -10,6 +10,8 @@
 #import "CMChartData.h"
 #import "NSMutableArray+Shuffling.h"
 
+#define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+
 @interface CMTestViewController ()
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *directionControl;
@@ -18,14 +20,19 @@
 @property (weak, nonatomic) IBOutlet UILabel *rangeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mainKanaLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *optionButtons;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 @property NSUserDefaults *defaults;
 @property NSMutableArray *sequence;
 @property NSInteger prevHork;
 @property NSString *rightText;
+@property NSInteger correctCount;
+@property NSInteger totalCount;
+@property BOOL inGuess;
 
 - (void)updateRangeLabel:(NSInteger)range;
 - (void)generateSequence;
+- (void)resetScore;
 - (void)next;
 
 @end
@@ -59,6 +66,8 @@ typedef enum {
     
     self.prevHork = Katakana;
     [self generateSequence];
+    [self resetScore];
+    self.inGuess = YES;
     [self next];
 }
 
@@ -73,6 +82,13 @@ typedef enum {
     }
     
     [self.sequence shuffle];
+}
+
+- (void)resetScore
+{
+    self.correctCount = 0;
+    self.totalCount = 0;
+    self.scoreLabel.hidden = YES;
 }
 
 - (void)next
@@ -155,6 +171,7 @@ typedef enum {
     [self.defaults setInteger:(NSInteger)sender.value forKey:@"KanaRange"];
     [self updateRangeLabel:sender.value];
     [self generateSequence];
+    [self resetScore];
     [self next];
 }
 
@@ -162,6 +179,7 @@ typedef enum {
 {
     [self.defaults setInteger:sender.selectedSegmentIndex forKey:@"Direction"];
     [self generateSequence];
+    [self resetScore];
     [self next];
 }
 
@@ -169,6 +187,7 @@ typedef enum {
 {
     [self.defaults setInteger:sender.selectedSegmentIndex forKey:@"Hork"];
     [self generateSequence];
+    [self resetScore];
     [self next];
 }
 
@@ -178,9 +197,29 @@ typedef enum {
 }
 
 - (IBAction)optionClicked:(UIButton *)sender {
+    if (self.inGuess) {
+        self.totalCount += 1;
+    }
+    
     if (sender.currentTitle == self.rightText) {
+        if (self.inGuess) {
+            self.correctCount += 1;
+        }
+        self.inGuess = YES;
         [self next];
     }
+    else {
+        self.inGuess = NO;
+        // display the correct option
+    }
+    
+    NSString *correctText = [[NSString alloc] initWithFormat:@"%d", self.correctCount];
+    NSString *totalText = [[NSString alloc] initWithFormat:@"%d", self.totalCount];
+    NSString *scoreText = [[NSString alloc] initWithFormat:@"%@ / %@", correctText, totalText];
+    NSMutableAttributedString *scoreAttributedString = [[NSMutableAttributedString alloc] initWithString:scoreText];
+    [scoreAttributedString addAttribute:NSForegroundColorAttributeName value:RGBA(103, 153, 32, 1) range:NSMakeRange(0, correctText.length)];
+    self.scoreLabel.hidden = NO;
+    self.scoreLabel.attributedText = scoreAttributedString;
 }
 
 - (void)didReceiveMemoryWarning

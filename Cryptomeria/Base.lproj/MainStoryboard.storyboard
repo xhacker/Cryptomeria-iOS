@@ -341,8 +341,8 @@
                                     <constraint firstAttribute="height" constant="264" id="ISr-mm-xQ5"/>
                                     <constraint firstAttribute="width" constant="251" id="l7E-b9-xyg"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="150"/>
-                                <color key="textColor" white="0.13572080291970803" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="140"/>
+                                <color key="textColor" white="0.1712477189781022" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-5m-Qgc">
@@ -423,6 +423,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="66 / 233" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhM-5p-Pv9">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="ChH-EL-O50"/>
+                                    <constraint firstAttribute="height" constant="21" id="Zjg-Aa-oTp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -442,8 +451,10 @@
                             <constraint firstItem="cWf-ms-f2g" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="dMh-UB-Z6x"/>
                             <constraint firstAttribute="trailing" secondItem="zXy-4r-0ur" secondAttribute="trailing" constant="93" id="kPo-yF-sC3"/>
                             <constraint firstAttribute="trailing" secondItem="DMP-c1-JIh" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="nAh-Sd-UY2"/>
+                            <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="oqf-E2-eEd"/>
                             <constraint firstItem="cWf-ms-f2g" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qw5-hh-Vln"/>
                             <constraint firstItem="Hvt-av-mAV" firstAttribute="top" secondItem="17" secondAttribute="top" constant="23" id="voL-e7-3hg"/>
+                            <constraint firstItem="GhM-5p-Pv9" firstAttribute="top" secondItem="17" secondAttribute="top" constant="101" id="wjR-ge-5Kc"/>
                             <constraint firstAttribute="trailing" secondItem="Hvt-av-mAV" secondAttribute="trailing" constant="6" id="zhW-GX-rDA"/>
                         </constraints>
                     </view>
@@ -454,6 +465,7 @@
                         <outlet property="mainKanaLabel" destination="oRg-tF-7jh" id="trR-7B-q0s"/>
                         <outlet property="rangeLabel" destination="Hvt-av-mAV" id="q1w-pR-jRy"/>
                         <outlet property="rangeStepper" destination="YFT-N0-Nvf" id="ire-NB-F3j"/>
+                        <outlet property="scoreLabel" destination="GhM-5p-Pv9" id="8rq-B1-Lqg"/>
                         <outletCollection property="optionButtons" destination="6Zk-5m-Qgc" id="ZvK-9K-dKA"/>
                         <outletCollection property="optionButtons" destination="yZV-g4-aRC" id="kzZ-ih-Tj7"/>
                         <outletCollection property="optionButtons" destination="zXy-4r-0ur" id="ZiJ-eV-nuk"/>
@@ -517,6 +529,45 @@
         <image name="first" width="16" height="16"/>
         <image name="second" width="16" height="16"/>
     </resources>
+    <classes>
+        <class className="CMChartCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMChartCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="kanaTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="romajiTitleLabel" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="kanaLabels" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="romajiLabels" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CMChartViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMChartViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="CMTestViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMTestViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="directionChanged:" candidateClass="UISegmentedControl"/>
+                <relationship kind="action" name="horkChanged:" candidateClass="UISegmentedControl"/>
+                <relationship kind="action" name="optionClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="rangeChanged:" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="horkControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="mainKanaLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rangeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="rangeStepper" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="optionButtons" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="CMVocabularyViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMVocabularyViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
