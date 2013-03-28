@@ -22,6 +22,7 @@
 @property NSUserDefaults *defaults;
 @property NSMutableArray *sequence;
 @property NSInteger prevHork;
+@property NSInteger rightOption;
 
 - (void)updateRangeLabel:(NSInteger)range;
 - (void)generateSequence;
@@ -115,6 +116,7 @@ typedef enum {
     //        option_range.end = kana_range - 1;
     //    }
     NSInteger rightOption = arc4random() % 4;
+    self.rightOption = rightOption;
     if (direction == KanaRomaji) {
         [self.optionButtons[rightOption] setTitle:flattenedRomaji[thisID] forState:UIControlStateNormal];
     }
@@ -177,7 +179,9 @@ typedef enum {
 }
 
 - (IBAction)optionClicked:(UIButton *)sender {
-    [self next];
+    if (sender.tag - 100 == self.rightOption) {
+        [self next];
+    }
 }
 
 - (void)didReceiveMemoryWarning
