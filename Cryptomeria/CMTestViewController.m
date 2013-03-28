@@ -78,6 +78,7 @@ typedef enum {
 {
     NSInteger hork = [self.defaults integerForKey:@"Hork"];
     NSInteger direction = [self.defaults integerForKey:@"Direction"];
+    NSInteger kanaRange = [self.defaults integerForKey:@"KanaRange"];
     
     NSArray *flattenedRomaji = [[CMChartData romaji] flatten];
     NSArray *flattenedHiragana = [[CMChartData hiragana] flatten];
@@ -108,29 +109,44 @@ typedef enum {
     }
     
     
-    // place options
+    // options
     //    var option_range = get_section_range_by_id(kana_id);
     //    if (option_range.end > kana_range - 1) {
     //        option_range.end = kana_range - 1;
     //    }
-//    NSArray *optionBase = [CMChartData romaji];
-//    NSInteger rightOption = arc4random() % 4;
-//    [self.optionButtons[rightOption] setTitle:kana forState:UIControlStateNormal];
-//    NSMutableArray *usedKana = [[NSMutableArray alloc] initWithObjects:kana, nil];
-//
-//    
-//    for (NSInteger i = 0; i <= 3; ++i) {
-//        if (i == rightOption) {
-//            continue;
-//        }
-//        NSString *optionText;
-//        do {
-//            // TODO
-//            optionText = optionBase[arc4random() % optionBase.count][0];
-//        } while ([usedKana containsObject:optionText] || kana.length == 0 || [kana hasPrefix:@"("]);
-//        [usedKana addObject:optionText];
-//        [self.optionButtons[i] setTitle:optionText forState:UIControlStateNormal];
-//    }
+    NSInteger rightOption = arc4random() % 4;
+    if (direction == KanaRomaji) {
+        [self.optionButtons[rightOption] setTitle:flattenedRomaji[thisID] forState:UIControlStateNormal];
+    }
+    else if (thisHork == Hiragana) {
+        [self.optionButtons[rightOption] setTitle:flattenedHiragana[thisID] forState:UIControlStateNormal];
+    }
+    else if (thisHork == Katakana) {
+        [self.optionButtons[rightOption] setTitle:flattenedKatakana[thisID] forState:UIControlStateNormal];
+    }
+    NSMutableArray *usedID = [[NSMutableArray alloc] initWithObjects:@(thisID), nil];
+
+
+    for (NSInteger i = 0; i <= 3; ++i) {
+        if (i == rightOption) {
+            continue;
+        }
+        NSInteger optionID;
+        do {
+            optionID = arc4random() % ((NSNumber *)[CMChartData lastInRow][kanaRange]).integerValue;
+        } while ([usedID containsObject:@(optionID)]);
+        [usedID addObject:@(optionID)];
+        
+        if (direction == KanaRomaji) {
+            [self.optionButtons[i] setTitle:flattenedRomaji[optionID] forState:UIControlStateNormal];
+        }
+        else if (thisHork == Hiragana) {
+            [self.optionButtons[i] setTitle:flattenedHiragana[optionID] forState:UIControlStateNormal];
+        }
+        else if (thisHork == Katakana) {
+            [self.optionButtons[i] setTitle:flattenedKatakana[optionID] forState:UIControlStateNormal];
+        }
+    }
 }
 
 - (IBAction)rangeChanged:(UIStepper *)sender
