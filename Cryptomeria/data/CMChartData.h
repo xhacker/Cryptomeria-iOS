@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSArray+Flatten.h"
 
 @interface CMChartData : NSObject
 
 + (NSArray *)romaji;
 + (NSArray *)hiragana;
 + (NSArray *)katakana;
++ (NSArray *)lastInRow;
++ (NSArray *)lastInSection;
 
 @end

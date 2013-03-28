@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A5980E51703E25300A7F34B /* NSArray+Flatten.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5980E41703E25300A7F34B /* NSArray+Flatten.m */; };
 		1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */; };
 		1A7C320416FC990C00F5A71A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320316FC990C00F5A71A /* UIKit.framework */; };
 		1A7C320616FC990C00F5A71A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320516FC990C00F5A71A /* Foundation.framework */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A5980E31703E25300A7F34B /* NSArray+Flatten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Flatten.h"; path = "data/NSArray+Flatten.h"; sourceTree = "<group>"; };
+		1A5980E41703E25300A7F34B /* NSArray+Flatten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Flatten.m"; path = "data/NSArray+Flatten.m"; sourceTree = "<group>"; };
 		1A72658F1700A33900C9A0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1A7265931700B06F00C9A0CB /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
 		1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 			children = (
 				1A7C324F16FDB16200F5A71A /* CMChartData.h */,
 				1A7C325016FDB16200F5A71A /* CMChartData.m */,
+				1A5980E31703E25300A7F34B /* NSArray+Flatten.h */,
+				1A5980E41703E25300A7F34B /* NSArray+Flatten.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -366,6 +371,7 @@
 				1A7C325116FDB16200F5A71A /* CMChartData.m in Sources */,
 				1A7C325616FDCF9A00F5A71A /* CMChartCell.m in Sources */,
 				1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */,
+				1A5980E51703E25300A7F34B /* NSArray+Flatten.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
