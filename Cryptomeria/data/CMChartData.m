@@ -116,7 +116,7 @@
              @72, @75, @78, @81, @84, @87, @90, @93, @96, @99];
 }
 
-+ (NSArray *)LastInSection
++ (NSArray *)lastInSection
 {
     return @[@44, @69, @99];
 }

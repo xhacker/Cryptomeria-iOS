@@ -22,7 +22,7 @@
 @property NSUserDefaults *defaults;
 @property NSMutableArray *sequence;
 @property NSInteger prevHork;
-@property NSInteger rightOption;
+@property NSString *rightText;
 
 - (void)updateRangeLabel:(NSInteger)range;
 - (void)generateSequence;
@@ -116,18 +116,17 @@ typedef enum {
     //        option_range.end = kana_range - 1;
     //    }
     NSInteger rightOption = arc4random() % 4;
-    self.rightOption = rightOption;
     if (direction == KanaRomaji) {
-        [self.optionButtons[rightOption] setTitle:flattenedRomaji[thisID] forState:UIControlStateNormal];
+        self.rightText = flattenedRomaji[thisID];
     }
     else if (thisHork == Hiragana) {
-        [self.optionButtons[rightOption] setTitle:flattenedHiragana[thisID] forState:UIControlStateNormal];
+        self.rightText = flattenedHiragana[thisID];
     }
     else if (thisHork == Katakana) {
-        [self.optionButtons[rightOption] setTitle:flattenedKatakana[thisID] forState:UIControlStateNormal];
+        self.rightText = flattenedKatakana[thisID];
     }
+    [self.optionButtons[rightOption] setTitle:self.rightText forState:UIControlStateNormal];
     NSMutableArray *usedID = [[NSMutableArray alloc] initWithObjects:@(thisID), nil];
-
 
     for (NSInteger i = 0; i <= 3; ++i) {
         if (i == rightOption) {
@@ -179,7 +178,7 @@ typedef enum {
 }
 
 - (IBAction)optionClicked:(UIButton *)sender {
-    if (sender.tag - 100 == self.rightOption) {
+    if (sender.currentTitle == self.rightText) {
         [self next];
     }
 }
