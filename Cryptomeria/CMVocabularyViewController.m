@@ -55,6 +55,15 @@
     return self.hiragana[section][0];
 }
 
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    NSMutableArray *index = [[NSMutableArray alloc] init];
+    for (NSInteger i = 0; i < self.vocabulary.count; ++i) {
+        [index addObject:self.hiragana[i][0]];
+    }
+    return index;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return ((NSArray *)self.vocabulary[section]).count;
