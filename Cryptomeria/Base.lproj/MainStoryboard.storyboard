@@ -484,20 +484,100 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wsz-WN-ok8">
-                                <segments>
-                                    <segment title="あ→a"/>
-                                    <segment title="a→あ"/>
-                                </segments>
-                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GEb-No-amE">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="TitleCell" id="HLH-l8-8wb">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wsz-WN-ok8">
+                                                    <segments>
+                                                        <segment title="あ→a"/>
+                                                        <segment title="a→あ"/>
+                                                    </segments>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="Wsz-WN-ok8" firstAttribute="top" secondItem="HLH-l8-8wb" secondAttribute="top" constant="17" id="abO-rv-J3V"/>
+                                            <constraint firstItem="Wsz-WN-ok8" firstAttribute="leading" secondItem="HLH-l8-8wb" secondAttribute="leading" constant="20" type="default" id="niC-4C-b1T"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wsz-WN-ok8" secondAttribute="trailing" constant="20" type="default" id="uy8-hc-A2g"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="" selectionStyle="none" indentationWidth="10" reuseIdentifier="VocabularyCell" rowHeight="64" id="gEK-Q8-Zz4" customClass="CMVocabularyCell">
+                                        <rect key="frame" x="0.0" y="86" width="320" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="あい" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32Y-aN-eYa">
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="137" id="rVN-uR-lWc"/>
+                                                        <constraint firstAttribute="height" constant="58" id="z9s-xC-3j3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="30"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="love" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xey-3P-07N">
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="67" id="W9Y-vV-Lss"/>
+                                                        <constraint firstAttribute="height" constant="56" id="YuD-hg-IUA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="romaji" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0C-KE-xFm">
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="67" id="Ogk-wJ-iEd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="32Y-aN-eYa" firstAttribute="leading" secondItem="gEK-Q8-Zz4" secondAttribute="leading" constant="20" type="default" id="ARI-eQ-3NW"/>
+                                            <constraint firstItem="Xey-3P-07N" firstAttribute="leading" secondItem="32Y-aN-eYa" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="B1j-LX-oDQ"/>
+                                            <constraint firstItem="32Y-aN-eYa" firstAttribute="top" secondItem="gEK-Q8-Zz4" secondAttribute="top" constant="11" id="FT6-pM-YMI"/>
+                                            <constraint firstItem="e0C-KE-xFm" firstAttribute="leading" secondItem="Xey-3P-07N" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="UzH-eW-LFt"/>
+                                            <constraint firstItem="e0C-KE-xFm" firstAttribute="centerY" secondItem="gEK-Q8-Zz4" secondAttribute="centerY" type="default" id="pn0-Ao-jTX"/>
+                                            <constraint firstItem="e0C-KE-xFm" firstAttribute="baseline" secondItem="Xey-3P-07N" secondAttribute="baseline" type="default" id="uUf-xM-qjc"/>
+                                            <constraint firstItem="e0C-KE-xFm" firstAttribute="top" secondItem="Xey-3P-07N" secondAttribute="top" type="default" id="xPy-52-yRc"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="kanaLabel" destination="32Y-aN-eYa" id="8Vn-7P-3g5"/>
+                                            <outlet property="meaningLabel" destination="Xey-3P-07N" id="ulu-dC-9dq"/>
+                                            <outlet property="romajiLabel" destination="e0C-KE-xFm" id="izH-nD-VNr"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Wsz-WN-ok8" firstAttribute="top" secondItem="86T-21-tGh" secondAttribute="top" constant="31" id="PZe-sG-1cp"/>
-                            <constraint firstItem="Wsz-WN-ok8" firstAttribute="centerX" secondItem="86T-21-tGh" secondAttribute="centerX" type="default" id="UBF-en-aWQ"/>
+                            <constraint firstItem="GEb-No-amE" firstAttribute="top" secondItem="86T-21-tGh" secondAttribute="top" type="default" id="JEg-TZ-SJQ"/>
+                            <constraint firstItem="GEb-No-amE" firstAttribute="leading" secondItem="86T-21-tGh" secondAttribute="leading" type="default" id="NLR-bG-ft1"/>
+                            <constraint firstItem="GEb-No-amE" firstAttribute="bottom" secondItem="86T-21-tGh" secondAttribute="bottom" type="default" id="gu1-IP-d4u"/>
+                            <constraint firstItem="GEb-No-amE" firstAttribute="trailing" secondItem="86T-21-tGh" secondAttribute="trailing" type="default" id="wpN-WT-lf7"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Vocabulary" image="first" id="2Sm-H5-Js5"/>
+                    <connections>
+                        <outlet property="tableView" destination="GEb-No-amE" id="uaK-XF-8BE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ss1-Ox-qIs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -548,10 +628,7 @@
         <class className="CMTestViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CMTestViewController.h"/>
             <relationships>
-                <relationship kind="action" name="directionChanged:" candidateClass="UISegmentedControl"/>
                 <relationship kind="action" name="horkChanged:" candidateClass="UISegmentedControl"/>
-                <relationship kind="action" name="optionClicked:" candidateClass="UIButton"/>
-                <relationship kind="action" name="rangeChanged:" candidateClass="UIStepper"/>
                 <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="horkControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="mainKanaLabel" candidateClass="UILabel"/>
@@ -561,8 +638,19 @@
                 <relationship kind="outletCollection" name="optionButtons" candidateClass="UIButton"/>
             </relationships>
         </class>
+        <class className="CMVocabularyCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMVocabularyCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="kanaLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="meaningLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="romajiLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="CMVocabularyViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CMVocabularyViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
