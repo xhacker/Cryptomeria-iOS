@@ -484,7 +484,7 @@
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GEb-No-amE">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GEb-No-amE">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="TitleCell" id="HLH-l8-8wb">
@@ -516,7 +516,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="あい" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32Y-aN-eYa">
+                                                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="あい" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="32Y-aN-eYa">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="137" id="rVN-uR-lWc"/>
@@ -526,10 +526,10 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="love" textAlignment="right" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xey-3P-07N">
+                                                <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="love" textAlignment="right" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xey-3P-07N">
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="67" id="W9Y-vV-Lss"/>
+                                                        <constraint firstAttribute="width" constant="86" id="TuS-iF-zqO"/>
                                                         <constraint firstAttribute="height" constant="56" id="YuD-hg-IUA"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
@@ -549,8 +549,8 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="Xey-3P-07N" firstAttribute="leading" secondItem="gEK-Q8-Zz4" secondAttribute="leading" constant="146" id="55F-Fx-X5s"/>
                                             <constraint firstItem="32Y-aN-eYa" firstAttribute="leading" secondItem="gEK-Q8-Zz4" secondAttribute="leading" constant="20" type="default" id="ARI-eQ-3NW"/>
-                                            <constraint firstItem="Xey-3P-07N" firstAttribute="leading" secondItem="32Y-aN-eYa" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="B1j-LX-oDQ"/>
                                             <constraint firstItem="32Y-aN-eYa" firstAttribute="top" secondItem="gEK-Q8-Zz4" secondAttribute="top" constant="11" id="FT6-pM-YMI"/>
                                             <constraint firstItem="e0C-KE-xFm" firstAttribute="leading" secondItem="Xey-3P-07N" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="UzH-eW-LFt"/>
                                             <constraint firstItem="e0C-KE-xFm" firstAttribute="centerY" secondItem="gEK-Q8-Zz4" secondAttribute="centerY" type="default" id="pn0-Ao-jTX"/>
@@ -628,7 +628,10 @@
         <class className="CMTestViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CMTestViewController.h"/>
             <relationships>
+                <relationship kind="action" name="directionChanged:" candidateClass="UISegmentedControl"/>
                 <relationship kind="action" name="horkChanged:" candidateClass="UISegmentedControl"/>
+                <relationship kind="action" name="optionClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="rangeChanged:" candidateClass="UIStepper"/>
                 <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="horkControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="mainKanaLabel" candidateClass="UILabel"/>
