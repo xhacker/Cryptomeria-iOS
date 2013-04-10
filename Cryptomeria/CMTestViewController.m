@@ -165,10 +165,7 @@ typedef enum {
         else if (thisHork == Katakana) {
             [self.optionButtons[i] setTitle:flattenedKatakana[optionID] forState:UIControlStateNormal];
         }
-    }
-  
-    for (UIButton *ob in self.optionButtons) {
-        ob.enabled = YES;
+        ((UIButton *)self.optionButtons[i]).enabled = YES;
     }
 }
 
