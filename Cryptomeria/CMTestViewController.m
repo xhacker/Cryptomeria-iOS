@@ -166,6 +166,10 @@ typedef enum {
             [self.optionButtons[i] setTitle:flattenedKatakana[optionID] forState:UIControlStateNormal];
         }
     }
+  
+    for (UIButton *ob in _optionButtons) {
+        ob.enabled = YES;
+    }
 }
 
 - (IBAction)rangeChanged:(UIStepper *)sender
@@ -230,6 +234,7 @@ typedef enum {
     }
     else {
         self.inGuess = NO;
+        sender.enabled = NO;
         // display the correct option
     }
     
