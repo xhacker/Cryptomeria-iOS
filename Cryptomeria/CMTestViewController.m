@@ -167,7 +167,7 @@ typedef enum {
         }
     }
   
-    for (UIButton *ob in _optionButtons) {
+    for (UIButton *ob in self.optionButtons) {
         ob.enabled = YES;
     }
 }
