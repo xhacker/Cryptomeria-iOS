@@ -10,6 +10,11 @@
 
 @implementation CMChartData
 
+CMSection CMMakeSection(NSUInteger first, NSUInteger last) {
+    CMSection section = {first, last};
+    return section;
+}
+
 + (NSArray *)romaji
 {
     NSArray *data = @[
@@ -109,16 +114,27 @@
     return data;
 }
 
-+ (NSArray *)lastInRow
++ (NSUInteger)lastInRow:(NSUInteger)row
 {
-    return @[@4, @9, @14, @19, @24, @29, @34, @37, @42, @44, @45,
-             @49, @54, @59, @64, @69,
-             @72, @75, @78, @81, @84, @87, @90, @93, @96, @99];
+    NSUInteger lastID[] = {4, 9, 14, 19, 24, 29, 34, 37, 42, 44, 45,
+        49, 54, 59, 64, 69,
+        72, 75, 78, 81, 84, 87, 90, 93, 96, 99};
+    return lastID[row];
 }
 
-+ (NSArray *)lastInSection
+// I like MAGIC NUMBERS!
+
++ (CMSection)getSection:(NSUInteger)kanaID
 {
-    return @[@44, @69, @99];
+    if (kanaID <= 45) {
+        return CMMakeSection(0, 45);
+    }
+    else if (kanaID <= 69) {
+        return CMMakeSection(46, 69);
+    }
+    else {
+        return CMMakeSection(70, 99);
+    }
 }
 
 @end

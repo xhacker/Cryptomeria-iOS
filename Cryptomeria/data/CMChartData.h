@@ -11,10 +11,17 @@
 
 @interface CMChartData : NSObject
 
+typedef struct _CMSection {
+    NSUInteger first;
+    NSUInteger last;
+} CMSection;
+
+CMSection CMMakeSection(NSUInteger first, NSUInteger last);
+
 + (NSArray *)romaji;
 + (NSArray *)hiragana;
 + (NSArray *)katakana;
-+ (NSArray *)lastInRow;
-+ (NSArray *)lastInSection;
++ (NSUInteger)lastInRow:(NSUInteger)row;
++ (CMSection)getSection:(NSUInteger)kanaId;
 
 @end

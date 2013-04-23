@@ -76,8 +76,8 @@ typedef enum {
 - (void)generateSequence
 {
     self.sequence = [[NSMutableArray alloc] init];
-    NSInteger kanaRange = [self.defaults integerForKey:@"KanaRange"];
-    NSInteger last = ((NSNumber *)[CMChartData lastInRow][kanaRange]).integerValue;
+    NSUInteger kanaRange = [self.defaults integerForKey:@"KanaRange"];
+    NSUInteger last = [CMChartData lastInRow:kanaRange];
     
     for (NSInteger i = 0; i <= last; ++i) {
         [self.sequence addObject:@(i)];
@@ -127,12 +127,12 @@ typedef enum {
         self.mainKanaLabel.text = flattenedKatakana[thisID];
     }
     
-    
-    // options
-    //    var option_range = get_section_range_by_id(kana_id);
-    //    if (option_range.end > kana_range - 1) {
-    //        option_range.end = kana_range - 1;
-    //    }
+    CMSection section = [CMChartData getSection:thisID];
+    NSUInteger lastInRange = [CMChartData lastInRow:kanaRange];
+    if (section.last > lastInRange) {
+        section.last = lastInRange;
+    }
+ 
     NSInteger rightOption = arc4random() % 4;
     if (direction == KanaRomaji) {
         self.rightText = flattenedRomaji[thisID];
@@ -152,7 +152,7 @@ typedef enum {
         }
         NSInteger optionID;
         do {
-            optionID = arc4random() % ((NSNumber *)[CMChartData lastInRow][kanaRange]).integerValue;
+            optionID = section.first + arc4random() % (section.last - section.first + 1);
         } while ([usedID containsObject:@(optionID)]);
         [usedID addObject:@(optionID)];
         
