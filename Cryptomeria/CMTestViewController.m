@@ -147,6 +147,8 @@ typedef enum {
     NSMutableArray *usedID = [[NSMutableArray alloc] initWithObjects:@(thisID), nil];
 
     for (NSInteger i = 0; i <= 3; ++i) {
+        ((UIButton *)self.optionButtons[i]).enabled = YES;
+        
         if (i == rightOption) {
             continue;
         }
@@ -165,7 +167,6 @@ typedef enum {
         else if (thisHork == Katakana) {
             [self.optionButtons[i] setTitle:flattenedKatakana[optionID] forState:UIControlStateNormal];
         }
-        ((UIButton *)self.optionButtons[i]).enabled = YES;
     }
 }
 
