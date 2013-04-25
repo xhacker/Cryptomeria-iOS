@@ -26,6 +26,7 @@
 @property NSMutableArray *sequence;
 @property NSInteger prevHork;
 @property NSString *rightText;
+@property UIButton *rightButton;
 @property NSInteger correctCount;
 @property NSInteger totalCount;
 @property BOOL inGuess;
@@ -144,6 +145,7 @@ typedef enum {
         self.rightText = flattenedKatakana[thisID];
     }
     [self.optionButtons[rightOption] setTitle:self.rightText forState:UIControlStateNormal];
+    self.rightButton = self.optionButtons[rightOption];
     NSMutableArray *usedID = [[NSMutableArray alloc] initWithObjects:@(thisID), nil];
 
     for (NSInteger i = 0; i <= 3; ++i) {
@@ -233,7 +235,8 @@ typedef enum {
     else {
         self.inGuess = NO;
         sender.enabled = NO;
-        // display the correct option
+        
+        self.rightButton.titleLabel.textColor = [UIColor greenColor];
     }
     
     NSString *correctText = [[NSString alloc] initWithFormat:@"%d", self.correctCount];
