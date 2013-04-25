@@ -236,7 +236,7 @@ typedef enum {
         self.inGuess = NO;
         sender.enabled = NO;
         
-        self.rightButton.titleLabel.textColor = [UIColor greenColor];
+        self.rightButton.titleLabel.textColor = RGBA(60, 200, 20, 1);
     }
     
     NSString *correctText = [[NSString alloc] initWithFormat:@"%d", self.correctCount];

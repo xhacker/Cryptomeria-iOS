@@ -1,0 +1,79 @@
+/* @group Resetting */
+
+::selection {
+	background: fade(black, 70);
+	color: white;
+	text-shadow: none;
+}
+
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	font-size: 12px;
+	line-height: 1;
+	font-family: Helvetica, "Heiti SC", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul, li, dl, dt, dd {
+	margin: 0;
+	padding: 0;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* @end */
+
+/* @group Layout */
+
+body {
+	background-color: lighten(black, 20);
+	padding: 40px 0 0 60px;
+	
+	@media only screen and (max-device-width: 480px) {
+		padding: 0;
+	}
+}
+
+.screen {
+	overflow: hidden;
+	position: relative;
+	width: 320px;
+	height: 480px;
+	background-color: white;
+}
+
+.StatusBar {
+	position: relative;
+	height: 20px;
+	line-height: 20px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	background-color: black;
+	
+	@media only screen and (max-device-width: 480px) {
+		display: none;
+	}
+}
+
+.TabBar {
+	position: absolute;
+	bottom: 0;
+	height: 44px;
+	line-height: 44px;
+
+	li {
+		float: left;
+		width: 320px / 3;
+		text-align: center;
+		height: 44px;
+	}
+}
+
