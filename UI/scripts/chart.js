@@ -29,9 +29,24 @@ $(document).ready(function() {
                 dup: function() {
                     return hs[kana_id][0] == '(';
                 },
-                hiragana: hs[kana_id],
-                katakana: ks[kana_id],
-                latin: ls[kana_id]
+                hiragana: function() {
+                    if (hs[kana_id][0] == '(') {
+                        return hs[kana_id].slice(1, -1);
+                    }
+                    return hs[kana_id];
+                },
+                katakana: function() {
+                    if (ks[kana_id][0] == '(') {
+                        return ks[kana_id].slice(1, -1);
+                    }
+                    return ks[kana_id];
+                },
+                latin: function() {
+                    if (ls[kana_id][0] == '(') {
+                        return ls[kana_id].slice(1, -1);
+                    }
+                    return ls[kana_id];
+                }
             };
             html += Mustache.render('<div class="item{{#dup}} dup{{/dup}}">\
                 <p class="kana">{{ hiragana }}</p>\
