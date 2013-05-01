@@ -32,10 +32,19 @@ a {
 
 /* @group Layout */
 
+.clearfix:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+}
+
 body {
 	background-color: lighten(black, 20);
 	padding: 40px 0 0 60px;
-	
+
 	@media only screen and (max-device-width: 480px) {
 		padding: 0;
 	}
@@ -61,7 +70,7 @@ body {
 	font-weight: bold;
 	text-align: center;
 	background-color: black;
-	
+
 	@media only screen and (max-device-width: 480px) {
 		display: none;
 	}
@@ -81,3 +90,18 @@ body {
 	}
 }
 
+/* @group Fonts */
+
+@UIFontFamily: "Lucida Grande", "Lucida Sans Unicode", Ubuntu, "DejaVu Sans", Verdana, "Hiragino Kaku Gothic ProN", "Kochi Gothic", Meiryo, "MS Gothic" sans-serif;
+@UITitleFontFamily: "Myriad Pro", "Segoe UI", AvenirNext-Medium, "Gill Sans", Ubuntu, sans-serif;
+@UIHelveticaFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@LatinBigFontFamily: "Gill Sans", Ubuntu, "Segoe UI", "Lucida Sans Unicode", Verdana, sans-serif;
+
+@JapaneseGothicFontFamily: "Hiragino Kaku Gothic ProN", "Kochi Gothic", Meiryo, "MS Gothic", sans-serif;
+@JapaneseMinchoFontFamily: "Hiragino Mincho ProN", "Kochi Mincho", "MS Mincho", serif;
+@JapaneseTitleFontFamily: "M+ 1c", "Hiragino Kaku Gothic ProN", "Kochi Gothic", Meiryo, "MS Gothic", sans-serif;
+
+@MixedMinchoFontFamily: Georgia, @JapaneseMinchoFontFamily;
+
+/* @end */
