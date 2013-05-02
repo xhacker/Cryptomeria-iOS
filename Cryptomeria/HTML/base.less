@@ -1,0 +1,32 @@
+/* @group Resetting */
+
+body {
+	margin: 0;
+	font-size: 12px;
+	line-height: 1;
+	font-family: @UIFontFamily;
+}
+
+ul {
+	list-style-type: none;
+}
+
+p, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+@UIFontFamily: "Avenir Next", "Hiragino Kaku Gothic ProN", sans-serif;
+@UITitleFontFamily: "Myriad Pro", AvenirNext-Medium, sans-serif;
+@LatinBigFontFamily: "Gill Sans", sans-serif;
+@JapaneseGothicFontFamily: "Hiragino Kaku Gothic ProN", sans-serif;
+@JapaneseMinchoFontFamily: "Hiragino Mincho ProN", serif;

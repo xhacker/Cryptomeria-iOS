@@ -1,0 +1,83 @@
+/* @group Resetting */
+body {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1;
+  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ul#kana-chart li {
+  border-top: 1px solid #ddd;
+  padding: 12px 5px 16px 5px;
+}
+ul#kana-chart li .head {
+  float: left;
+  padding-top: 19px;
+  margin: 10px 16px 0 16px;
+  text-align: center;
+}
+ul#kana-chart li .head .kana {
+  font-size: 28px;
+  line-height: 28px;
+  padding: 6px;
+  font-weight: bold;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  border-radius: 6px;
+  background-color: #aaa;
+  color: #fff;
+  float: left;
+}
+ul#kana-chart li .head .romaji {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 38px;
+  color: #aaa;
+}
+ul#kana-chart li .item {
+  float: left;
+  width: 45px;
+  text-align: center;
+}
+ul#kana-chart li .item .kana {
+  font-size: 32px;
+  line-height: 46px;
+  font-family: "Hiragino Mincho ProN", serif;
+}
+ul#kana-chart li .item .romaji {
+  margin-top: 7px;
+  font-size: 15px;
+}
+ul#kana-chart li .dup {
+  color: #aaa;
+}
+ul#kana-chart li.youon .head {
+  margin-right: 11px;
+}
+ul#kana-chart li.youon .head .kana {
+  font-size: 26px;
+}
+ul#kana-chart li.youon .head .romaji {
+  font-size: 19px;
+}
+ul#kana-chart li.youon .item {
+  width: 66px;
+}
+ul#kana-chart li.youon .item .kana {
+  font-size: 27px;
+}
