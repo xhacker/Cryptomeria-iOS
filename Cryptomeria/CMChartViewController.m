@@ -8,7 +8,7 @@
 
 #import "CMChartViewController.h"
 
-@interface CMChartViewController () <UITableViewDataSource>
+@interface CMChartViewController () <UITableViewDataSource, UIWebViewDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
@@ -30,6 +30,11 @@
     NSString *HTML = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"chart" ofType:@"html"]  encoding:NSUTF8StringEncoding error:nil];
     NSURL *baseURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] resourcePath]];
     [self.webView loadHTMLString:HTML baseURL:baseURL];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    NSLog(@"FinishLoad");
 }
 
 - (void)didReceiveMemoryWarning
