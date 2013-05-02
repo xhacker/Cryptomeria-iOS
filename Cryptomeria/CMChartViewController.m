@@ -21,6 +21,12 @@
 {
     [super viewDidLoad];
     
+    for (UIView *shadowView in [[[self.webView subviews] objectAtIndex:0] subviews]) {
+        if([shadowView isKindOfClass:[UIImageView class]]) {
+            shadowView.hidden = YES;
+        }
+    }
+    
     NSString *HTML = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"chart" ofType:@"html"]  encoding:NSUTF8StringEncoding error:nil];
     NSURL *baseURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] resourcePath]];
     [self.webView loadHTMLString:HTML baseURL:baseURL];
