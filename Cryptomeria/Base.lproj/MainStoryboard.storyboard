@@ -16,7 +16,7 @@
                             <outlet property="delegate" destination="2" id="n66-Fh-IYx"/>
                         </connections>
                     </webView>
-                    <tabBarItem key="tabBarItem" title="Chart" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Chart" image="40-dialpad.png" id="7"/>
                     <connections>
                         <outlet property="webView" destination="V0i-Sn-eIE" id="Yku-Vc-uBK"/>
                     </connections>
@@ -192,7 +192,7 @@
                             <constraint firstAttribute="trailing" secondItem="Hvt-av-mAV" secondAttribute="trailing" constant="6" id="zhW-GX-rDA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Test" image="second" id="6"/>
+                    <tabBarItem key="tabBarItem" title="Test" image="282-cards.png" id="6"/>
                     <connections>
                         <outlet property="directionControl" destination="cWf-ms-f2g" id="8Mb-zJ-OAL"/>
                         <outlet property="horkControl" destination="1ma-hR-1MS" id="t1p-TB-Jxt"/>
@@ -344,8 +344,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="282-cards.png" width="30" height="27"/>
+        <image name="40-dialpad.png" width="22" height="22"/>
         <image name="first" width="16" height="16"/>
-        <image name="second" width="16" height="16"/>
     </resources>
     <classes>
         <class className="CMChartViewController" superclassName="UIViewController">
