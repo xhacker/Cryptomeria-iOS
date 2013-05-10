@@ -56,11 +56,15 @@ button.red:not(.active):not(.not-active):not(.text):hover { background-image: -w
 
 .control {
 	margin: 0;
-	padding: 3px 12px;
+	padding: 3px 10px;
 	font-size: 13px;
 	line-height: 15px;
 	position: static;
 	float: left;
+}
+.control.narrow {
+	padding: 3px 0;
+	width: 22px;
 }
 .control-mid {
 	border-radius: 0;
@@ -74,7 +78,6 @@ button.red:not(.active):not(.not-active):not(.text):hover { background-image: -w
 	border-bottom-left-radius: 0;
 	border-top-left-radius: 0;
 	border-left: 0 !important;
-	margin-right: 10px;
 }
 .control.active {
 	font-weight: bold;
@@ -89,25 +92,37 @@ button.red:not(.active):not(.not-active):not(.text):hover { background-image: -w
 .MainView {
 	position: relative;
 }
+#pref {
+	.control {
+		box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.25), 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+		color: #666;
+		background-image: -webkit-linear-gradient(top, #f8f8f8, #e3e3e3);
+		border-top: 1px solid #c5c5c5;
+		border-right: 1px solid #bfbfbf;
+		border-bottom: 1px solid #b0b0b0;
+		border-left: 1px solid #bfbfbf;
+	}
+}
 #pref-range {
 	position: absolute;
 	top: 10px;
-	left: 10px;
+	right: 128px;
 }
 #pref-direction {
 	position: absolute;
 	top: 10px;
-	left: 140px;
+	right: 10px;
 }
 #pref-hork {
 	position: absolute;
 	top: 42px;
-	left: 10px;
+	right: 10px;
 }
 #counter {
 	position: absolute;
-	top: 76px;
-	left: 10px;
+	top: 16px;
+	left: 16px;
 	color: #666;
 	float: right;
 	font-size: 15px;
@@ -115,23 +130,23 @@ button.red:not(.active):not(.not-active):not(.text):hover { background-image: -w
 }
 #counter-ac {
 	color: #679920;
+	font-weight: 600;
 }
 #kana {
 	position: absolute;
 	width: 100%;
 	top: 72px;
+	color: #333;
 }
 #kana[lang=ja] {
 	font-size: 160px;
 	line-height: 160px;
-	color: #333;
 	margin: 60px 0 40px 0;
 	font-family: @JapaneseMinchoFontFamily;
 }
 #kana[lang=en] {
 	font-size: 190px;
 	line-height: 190px;
-	color: #333;
 	margin: 100px 0 100px 0;
 	font-family: @LatinBigFontFamily;
 }
