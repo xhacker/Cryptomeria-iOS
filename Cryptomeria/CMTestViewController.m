@@ -11,6 +11,10 @@
 #import "NSMutableArray+Shuffling.h"
 
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define NORMAL_SHADOW_COLOR RGBA(32, 85, 154, 1)
+#define RIGHT_SHADOW_COLOR RGBA(122, 163, 46, 1)
+#define WRONG_SHADOW_COLOR RGBA(153, 48, 32, 1)
+#define SCORE_RIGHT_COLOR RGBA(103, 153, 32, 1)
 
 @interface CMTestViewController ()
 
@@ -149,7 +153,9 @@ typedef enum {
     NSMutableArray *usedID = [[NSMutableArray alloc] initWithObjects:@(thisID), nil];
 
     for (NSInteger i = 0; i <= 3; ++i) {
-        ((UIButton *)self.optionButtons[i]).enabled = YES;
+        // refresh buttons
+        [((UIButton *)self.optionButtons[i]) setBackgroundImage:[UIImage imageNamed:@"option-normal"] forState:UIControlStateNormal];
+        [((UIButton *)self.optionButtons[i]) setTitleShadowColor:NORMAL_SHADOW_COLOR forState:UIControlStateNormal];
         
         if (i == rightOption) {
             continue;
@@ -234,16 +240,18 @@ typedef enum {
     }
     else {
         self.inGuess = NO;
-        sender.enabled = NO;
+        [sender setBackgroundImage:[UIImage imageNamed:@"option-wrong"] forState:UIControlStateNormal];
+        [sender setTitleShadowColor:WRONG_SHADOW_COLOR forState:UIControlStateNormal];
         
-        self.rightButton.titleLabel.textColor = RGBA(60, 200, 20, 1);
+        [self.rightButton setBackgroundImage:[UIImage imageNamed:@"option-right"] forState:UIControlStateNormal];
+        [self.rightButton setTitleShadowColor:RIGHT_SHADOW_COLOR forState:UIControlStateNormal];
     }
     
     NSString *correctText = [[NSString alloc] initWithFormat:@"%d", self.correctCount];
     NSString *totalText = [[NSString alloc] initWithFormat:@"%d", self.totalCount];
     NSString *scoreText = [[NSString alloc] initWithFormat:@"%@ / %@", correctText, totalText];
     NSMutableAttributedString *scoreAttributedString = [[NSMutableAttributedString alloc] initWithString:scoreText];
-    [scoreAttributedString addAttribute:NSForegroundColorAttributeName value:RGBA(103, 153, 32, 1) range:NSMakeRange(0, correctText.length)];
+    [scoreAttributedString addAttribute:NSForegroundColorAttributeName value:SCORE_RIGHT_COLOR range:NSMakeRange(0, correctText.length)];
     self.scoreLabel.hidden = NO;
     self.scoreLabel.attributedText = scoreAttributedString;
 }
