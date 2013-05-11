@@ -9,6 +9,7 @@
 #import "CMTestViewController.h"
 #import "CMChartData.h"
 #import "NSMutableArray+Shuffling.h"
+#import "UIButton+AttributedString.h"
 
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define NORMAL_SHADOW_COLOR RGBA(32, 85, 154, 1)
@@ -34,6 +35,10 @@
 @property NSInteger correctCount;
 @property NSInteger totalCount;
 @property BOOL inGuess;
+
+@property NSMutableParagraphStyle *noSpacingParagraphStyle;
+
+#define NO_SPACING(s) [[NSAttributedString alloc] initWithString:s attributes:@{NSParagraphStyleAttributeName:self.noSpacingParagraphStyle}]
 
 - (void)updateRangeLabel:(NSInteger)range;
 - (void)generateSequence;
@@ -61,6 +66,9 @@ typedef enum {
     [super viewDidLoad];
 	
     self.defaults = [NSUserDefaults standardUserDefaults];
+    
+    self.noSpacingParagraphStyle = [[NSMutableParagraphStyle alloc] init];
+    [self.noSpacingParagraphStyle setLineSpacing:0];
     
     NSInteger kanaRange = [self.defaults integerForKey:@"KanaRange"];
     [self.rangeStepper setValue:(double)kanaRange];
@@ -148,15 +156,11 @@ typedef enum {
     else if (thisHork == Katakana) {
         self.rightText = flattenedKatakana[thisID];
     }
-    [self.optionButtons[rightOption] setTitle:self.rightText forState:UIControlStateNormal];
+    [self.optionButtons[rightOption] setAttributedTitle:NO_SPACING(self.rightText) forState:UIControlStateNormal];
     self.rightButton = self.optionButtons[rightOption];
     NSMutableArray *usedID = [[NSMutableArray alloc] initWithObjects:@(thisID), nil];
-
+    
     for (NSInteger i = 0; i <= 3; ++i) {
-        // refresh buttons
-        [((UIButton *)self.optionButtons[i]) setBackgroundImage:[UIImage imageNamed:@"option-normal"] forState:UIControlStateNormal];
-        [((UIButton *)self.optionButtons[i]) setTitleShadowColor:NORMAL_SHADOW_COLOR forState:UIControlStateNormal];
-        
         if (i == rightOption) {
             continue;
         }
@@ -166,15 +170,23 @@ typedef enum {
         } while ([usedID containsObject:@(optionID)]);
         [usedID addObject:@(optionID)];
         
+        NSString *thisText;
         if (direction == KanaRomaji) {
-            [self.optionButtons[i] setTitle:flattenedRomaji[optionID] forState:UIControlStateNormal];
+            thisText = flattenedRomaji[optionID];
         }
         else if (thisHork == Hiragana) {
-            [self.optionButtons[i] setTitle:flattenedHiragana[optionID] forState:UIControlStateNormal];
+            thisText = flattenedHiragana[optionID];
         }
         else if (thisHork == Katakana) {
-            [self.optionButtons[i] setTitle:flattenedKatakana[optionID] forState:UIControlStateNormal];
+            thisText = flattenedKatakana[optionID];
         }
+        [self.optionButtons[i] setAttributedTitle:NO_SPACING(thisText) forState:UIControlStateNormal];
+    }
+
+    // refresh buttons
+    for (UIButton *button in self.optionButtons) {
+        [button setBackgroundImage:[UIImage imageNamed:@"option-normal"] forState:UIControlStateNormal];
+        [button setAttributedShadowWithColor:NORMAL_SHADOW_COLOR forState:UIControlStateNormal];
     }
 }
 
@@ -231,7 +243,7 @@ typedef enum {
         self.totalCount += 1;
     }
     
-    if (sender.currentTitle == self.rightText) {
+    if ([sender.currentAttributedTitle.string isEqualToString:self.rightText]) {
         if (self.inGuess) {
             self.correctCount += 1;
         }
@@ -241,10 +253,10 @@ typedef enum {
     else {
         self.inGuess = NO;
         [sender setBackgroundImage:[UIImage imageNamed:@"option-wrong"] forState:UIControlStateNormal];
-        [sender setTitleShadowColor:WRONG_SHADOW_COLOR forState:UIControlStateNormal];
+        [sender setAttributedShadowWithColor:WRONG_SHADOW_COLOR forState:UIControlStateNormal];
         
         [self.rightButton setBackgroundImage:[UIImage imageNamed:@"option-right"] forState:UIControlStateNormal];
-        [self.rightButton setTitleShadowColor:RIGHT_SHADOW_COLOR forState:UIControlStateNormal];
+        [self.rightButton setAttributedShadowWithColor:RIGHT_SHADOW_COLOR forState:UIControlStateNormal];
     }
     
     NSString *correctText = [[NSString alloc] initWithFormat:@"%d", self.correctCount];
