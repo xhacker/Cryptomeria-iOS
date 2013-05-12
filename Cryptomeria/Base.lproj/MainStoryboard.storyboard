@@ -55,13 +55,22 @@
                                     <action selector="horkChanged:" destination="3" eventType="valueChanged" id="wtc-ii-XWf"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="お" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumScaleFactor="0.70000000000000007" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
+                            <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="wa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="264" id="ISr-mm-xQ5"/>
-                                    <constraint firstAttribute="width" constant="251" id="l7E-b9-xyg"/>
+                                    <constraint firstAttribute="height" constant="209" id="A9A-bB-lNU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="160"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="132"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ぎょ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4c-5R-aC4">
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="209" id="J5a-3x-lIO"/>
+                                    <constraint firstAttribute="width" constant="250" id="gTU-Yg-hDb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="140"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -174,29 +183,32 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="oRg-tF-7jh" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="0RA-aW-9Wn"/>
+                            <constraint firstItem="yZV-g4-aRC" firstAttribute="top" secondItem="6Zk-5m-Qgc" secondAttribute="top" type="default" id="0ng-Gl-efX"/>
                             <constraint firstAttribute="bottom" secondItem="zXy-4r-0ur" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="0q2-a4-I0k"/>
+                            <constraint firstItem="DMP-c1-JIh" firstAttribute="top" secondItem="zXy-4r-0ur" secondAttribute="top" type="default" id="4Kb-TQ-n8k"/>
+                            <constraint firstItem="oRg-tF-7jh" firstAttribute="top" secondItem="17" secondAttribute="top" constant="113" id="4oq-jd-nEO"/>
                             <constraint firstItem="yZV-g4-aRC" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="91" id="5jE-Jr-od3"/>
+                            <constraint firstItem="n4c-5R-aC4" firstAttribute="top" secondItem="17" secondAttribute="top" constant="149" id="64E-me-QWT"/>
                             <constraint firstAttribute="trailing" secondItem="1ma-hR-1MS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7R4-su-IZ6"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="cWf-ms-f2g" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Ac7-PU-Te5"/>
-                            <constraint firstItem="oRg-tF-7jh" firstAttribute="top" secondItem="17" secondAttribute="top" constant="115" id="Ae7-LL-fjX"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BMB-aM-TkD"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="24" id="F4l-WK-fCX"/>
-                            <constraint firstItem="yZV-g4-aRC" firstAttribute="top" secondItem="6Zk-5m-Qgc" secondAttribute="top" type="default" id="GHw-J7-xpz"/>
-                            <constraint firstItem="oRg-tF-7jh" firstAttribute="centerX" secondItem="1ma-hR-1MS" secondAttribute="centerX" type="default" id="NQ8-h4-uQF"/>
+                            <constraint firstItem="GhM-5p-Pv9" firstAttribute="top" secondItem="17" secondAttribute="top" constant="101" id="PVd-wu-LCf"/>
                             <constraint firstItem="YFT-N0-Nvf" firstAttribute="centerY" secondItem="cWf-ms-f2g" secondAttribute="centerY" type="default" id="TzF-aY-2EN"/>
                             <constraint firstAttribute="trailing" secondItem="DMP-c1-JIh" secondAttribute="trailing" constant="19" id="VSk-xg-7bV"/>
                             <constraint firstItem="YFT-N0-Nvf" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="144" id="Woi-H2-j1s"/>
-                            <constraint firstItem="zXy-4r-0ur" firstAttribute="top" secondItem="yZV-g4-aRC" secondAttribute="top" type="default" id="XE7-qZ-lL4"/>
+                            <constraint firstItem="yZV-g4-aRC" firstAttribute="top" secondItem="zXy-4r-0ur" secondAttribute="top" type="default" id="avw-O9-kf9"/>
                             <constraint firstItem="6Zk-5m-Qgc" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="18" id="bAl-iC-mvN"/>
                             <constraint firstAttribute="bottom" secondItem="6Zk-5m-Qgc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="dGm-jT-pJH"/>
                             <constraint firstItem="cWf-ms-f2g" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="dMh-UB-Z6x"/>
+                            <constraint firstItem="n4c-5R-aC4" firstAttribute="centerX" secondItem="oRg-tF-7jh" secondAttribute="centerX" type="default" id="g5C-43-h1m"/>
                             <constraint firstItem="DMP-c1-JIh" firstAttribute="leading" secondItem="zXy-4r-0ur" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="kJv-ZO-WCw"/>
                             <constraint firstItem="cWf-ms-f2g" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qw5-hh-Vln"/>
+                            <constraint firstItem="oRg-tF-7jh" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="teG-lT-ldo"/>
                             <constraint firstItem="Hvt-av-mAV" firstAttribute="top" secondItem="17" secondAttribute="top" constant="23" id="voL-e7-3hg"/>
                             <constraint firstAttribute="bottom" secondItem="yZV-g4-aRC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="wXP-fq-9ap"/>
-                            <constraint firstItem="GhM-5p-Pv9" firstAttribute="top" secondItem="17" secondAttribute="top" constant="101" id="wjR-ge-5Kc"/>
                             <constraint firstAttribute="bottom" secondItem="DMP-c1-JIh" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="xua-Ks-MUl"/>
-                            <constraint firstItem="zXy-4r-0ur" firstAttribute="top" secondItem="DMP-c1-JIh" secondAttribute="top" type="default" id="y3K-aC-Q1v"/>
                             <constraint firstAttribute="trailing" secondItem="Hvt-av-mAV" secondAttribute="trailing" constant="6" id="zhW-GX-rDA"/>
                         </constraints>
                     </view>
@@ -204,7 +216,8 @@
                     <connections>
                         <outlet property="directionControl" destination="cWf-ms-f2g" id="8Mb-zJ-OAL"/>
                         <outlet property="horkControl" destination="1ma-hR-1MS" id="t1p-TB-Jxt"/>
-                        <outlet property="mainKanaLabel" destination="oRg-tF-7jh" id="trR-7B-q0s"/>
+                        <outlet property="mainKanaLabel" destination="n4c-5R-aC4" id="BgK-9n-mAD"/>
+                        <outlet property="mainRomajiLabel" destination="oRg-tF-7jh" id="lUO-R8-opJ"/>
                         <outlet property="rangeLabel" destination="Hvt-av-mAV" id="q1w-pR-jRy"/>
                         <outlet property="rangeStepper" destination="YFT-N0-Nvf" id="ire-NB-F3j"/>
                         <outlet property="scoreLabel" destination="GhM-5p-Pv9" id="8rq-B1-Lqg"/>
@@ -374,6 +387,7 @@
                 <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="horkControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="mainKanaLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mainRomajiLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="rangeLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="rangeStepper" candidateClass="UIStepper"/>
                 <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>

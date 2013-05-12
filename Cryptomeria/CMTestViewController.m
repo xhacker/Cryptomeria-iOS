@@ -23,10 +23,12 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *horkControl;
 @property (weak, nonatomic) IBOutlet UIStepper *rangeStepper;
 @property (weak, nonatomic) IBOutlet UILabel *rangeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *mainRomajiLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mainKanaLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *optionButtons;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
+@property (weak) UILabel *mainLabel;
 @property NSUserDefaults *defaults;
 @property NSMutableArray *sequence;
 @property NSInteger prevHork;
@@ -38,13 +40,13 @@
 
 @property NSMutableParagraphStyle *noSpacingParagraphStyle;
 
-#define NO_SPACING(s) [[NSAttributedString alloc] initWithString:s attributes:@{NSParagraphStyleAttributeName:self.noSpacingParagraphStyle}]
+#define NO_LINE_SPACING(s) [[NSAttributedString alloc] initWithString:s attributes:@{NSParagraphStyleAttributeName:self.noSpacingParagraphStyle}]
 
 - (void)updateRangeLabel:(NSInteger)range;
 - (void)generateSequence;
 - (void)resetScore;
 - (void)next;
-- (void)changeMainFont;
+- (void)changeFont;
 
 @end
 
@@ -68,7 +70,7 @@ typedef enum {
     self.defaults = [NSUserDefaults standardUserDefaults];
     
     self.noSpacingParagraphStyle = [[NSMutableParagraphStyle alloc] init];
-    [self.noSpacingParagraphStyle setLineSpacing:0];
+    self.noSpacingParagraphStyle.lineSpacing = 0.0;
     
     NSInteger kanaRange = [self.defaults integerForKey:@"KanaRange"];
     [self.rangeStepper setValue:(double)kanaRange];
@@ -81,7 +83,7 @@ typedef enum {
     self.prevHork = Katakana;
     [self generateSequence];
     [self resetScore];
-    [self changeMainFont];
+    [self changeFont];
     self.inGuess = YES;
     [self next];
 }
@@ -130,15 +132,17 @@ typedef enum {
     }
     
     // main label
+    NSString *mainText;
     if (direction == RomajiKana) {
-        self.mainKanaLabel.text = flattenedRomaji[thisID];
+        mainText = flattenedRomaji[thisID];
     }
     else if (thisHork == Hiragana) {
-        self.mainKanaLabel.text = flattenedHiragana[thisID];
+        mainText = flattenedHiragana[thisID];
     }
     else if (thisHork == Katakana) {
-        self.mainKanaLabel.text = flattenedKatakana[thisID];
+        mainText = flattenedKatakana[thisID];
     }
+    self.mainLabel.text = mainText;
     
     CMSection section = [CMChartData getSection:thisID];
     NSUInteger lastInRange = [CMChartData lastInRow:kanaRange];
@@ -156,7 +160,7 @@ typedef enum {
     else if (thisHork == Katakana) {
         self.rightText = flattenedKatakana[thisID];
     }
-    [self.optionButtons[rightOption] setAttributedTitle:NO_SPACING(self.rightText) forState:UIControlStateNormal];
+    [self.optionButtons[rightOption] setAttributedTitle:NO_LINE_SPACING(self.rightText) forState:UIControlStateNormal];
     self.rightButton = self.optionButtons[rightOption];
     NSMutableArray *usedID = [[NSMutableArray alloc] initWithObjects:@(thisID), nil];
     
@@ -180,7 +184,7 @@ typedef enum {
         else if (thisHork == Katakana) {
             thisText = flattenedKatakana[optionID];
         }
-        [self.optionButtons[i] setAttributedTitle:NO_SPACING(thisText) forState:UIControlStateNormal];
+        [self.optionButtons[i] setAttributedTitle:NO_LINE_SPACING(thisText) forState:UIControlStateNormal];
     }
 
     // refresh buttons
@@ -204,21 +208,25 @@ typedef enum {
     [self.defaults setInteger:sender.selectedSegmentIndex forKey:@"Direction"];
     [self generateSequence];
     [self resetScore];
-    [self changeMainFont];
+    [self changeFont];
     [self next];
 }
 
-- (void)changeMainFont
+- (void)changeFont
 {
     NSInteger direction = [self.defaults integerForKey:@"Direction"];    
     if (direction == KanaRomaji) {
-        self.mainKanaLabel.font = [UIFont fontWithName:@"Hiragino Mincho ProN" size:140.0];
+        self.mainRomajiLabel.hidden = YES;
+        self.mainKanaLabel.hidden = NO;
+        self.mainLabel = self.mainKanaLabel;
         for (UIButton *optionButton in self.optionButtons) {
             optionButton.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Medium" size:20.0];
         }
     }
     else {
-        self.mainKanaLabel.font = [UIFont fontWithName:@"Gill Sans" size:132.0];
+        self.mainKanaLabel.hidden = YES;
+        self.mainRomajiLabel.hidden = NO;
+        self.mainLabel = self.mainRomajiLabel;
         for (UIButton *optionButton in self.optionButtons) {
             optionButton.titleLabel.font = [UIFont fontWithName:@"HiraKakuProN-W3" size:20.0];
         }
