@@ -12,10 +12,10 @@
 #import "UIButton+AttributedString.h"
 
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
-#define NORMAL_SHADOW_COLOR RGBA(32, 85, 154, 1)
-#define RIGHT_SHADOW_COLOR RGBA(122, 163, 46, 1)
-#define WRONG_SHADOW_COLOR RGBA(153, 48, 32, 1)
-#define SCORE_RIGHT_COLOR RGBA(103, 153, 32, 1)
+#define kNormalShadowColor RGBA(32, 85, 154, 1)
+#define kRightShadowColor RGBA(122, 163, 46, 1)
+#define kWrongShadowColor RGBA(153, 48, 32, 1)
+#define kScoreRightColor RGBA(103, 153, 32, 1)
 
 @interface CMTestViewController ()
 
@@ -79,6 +79,19 @@ typedef enum {
     [self.directionControl setSelectedSegmentIndex:direction];
     NSInteger hork = [self.defaults integerForKey:@"Hork"];
     [self.horkControl setSelectedSegmentIndex:hork];
+    
+    // segmented control style
+    UIImage *segmentBackground = [[UIImage imageNamed:@"segment"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+    [[UISegmentedControl appearance] setBackgroundImage:segmentBackground
+                                               forState:UIControlStateNormal
+                                             barMetrics:UIBarMetricsDefault];
+    [[UISegmentedControl appearance] setBackgroundImage:segmentBackground
+                                               forState:UIControlStateSelected
+                                             barMetrics:UIBarMetricsDefault];
+    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamed:@"segment-divider"]
+                                 forLeftSegmentState:UIControlStateNormal
+                                   rightSegmentState:UIControlStateNormal
+                                          barMetrics:UIBarMetricsDefault];
     
     self.prevHork = Katakana;
     [self generateSequence];
@@ -190,7 +203,7 @@ typedef enum {
     // refresh buttons
     for (UIButton *button in self.optionButtons) {
         [button setBackgroundImage:[UIImage imageNamed:@"option-normal"] forState:UIControlStateNormal];
-        [button setAttributedShadowWithColor:NORMAL_SHADOW_COLOR forState:UIControlStateNormal];
+        [button setAttributedShadowWithColor:kNormalShadowColor forState:UIControlStateNormal];
     }
 }
 
@@ -261,17 +274,17 @@ typedef enum {
     else {
         self.inGuess = NO;
         [sender setBackgroundImage:[UIImage imageNamed:@"option-wrong"] forState:UIControlStateNormal];
-        [sender setAttributedShadowWithColor:WRONG_SHADOW_COLOR forState:UIControlStateNormal];
+        [sender setAttributedShadowWithColor:kWrongShadowColor forState:UIControlStateNormal];
         
         [self.rightButton setBackgroundImage:[UIImage imageNamed:@"option-right"] forState:UIControlStateNormal];
-        [self.rightButton setAttributedShadowWithColor:RIGHT_SHADOW_COLOR forState:UIControlStateNormal];
+        [self.rightButton setAttributedShadowWithColor:kRightShadowColor forState:UIControlStateNormal];
     }
     
     NSString *correctText = [[NSString alloc] initWithFormat:@"%d", self.correctCount];
     NSString *totalText = [[NSString alloc] initWithFormat:@"%d", self.totalCount];
     NSString *scoreText = [[NSString alloc] initWithFormat:@"%@ / %@", correctText, totalText];
     NSMutableAttributedString *scoreAttributedString = [[NSMutableAttributedString alloc] initWithString:scoreText];
-    [scoreAttributedString addAttribute:NSForegroundColorAttributeName value:SCORE_RIGHT_COLOR range:NSMakeRange(0, correctText.length)];
+    [scoreAttributedString addAttribute:NSForegroundColorAttributeName value:kScoreRightColor range:NSMakeRange(0, correctText.length)];
     self.scoreLabel.hidden = NO;
     self.scoreLabel.attributedText = scoreAttributedString;
 }

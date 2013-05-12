@@ -35,6 +35,10 @@
 		1A7C325116FDB16200F5A71A /* CMChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C325016FDB16200F5A71A /* CMChartData.m */; };
 		1A95E4F5170534AA00DB0193 /* CMVocabularyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A95E4F4170534AA00DB0193 /* CMVocabularyData.m */; };
 		1A95E4F71705367B00DB0193 /* vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A95E4F61705367B00DB0193 /* vocabulary.json */; };
+		1A95FE3A173F4A450008DEE5 /* segment-divider.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A95FE38173F4A450008DEE5 /* segment-divider.png */; };
+		1A95FE3B173F4A450008DEE5 /* segment-divider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A95FE39173F4A450008DEE5 /* segment-divider@2x.png */; };
+		1A95FE3E173F4BC20008DEE5 /* segment.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A95FE3C173F4BC20008DEE5 /* segment.png */; };
+		1A95FE3F173F4BC20008DEE5 /* segment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A95FE3D173F4BC20008DEE5 /* segment@2x.png */; };
 		1AD2A89516FED6CA004137FE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD2A89416FED6CA004137FE /* icon.png */; };
 		1ADA76A51705DC23007F6190 /* CMVocabularyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA76A41705DC23007F6190 /* CMVocabularyCell.m */; };
 		1ADA76A61705E019007F6190 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */; };
@@ -100,6 +104,10 @@
 		1A95E4F3170534AA00DB0193 /* CMVocabularyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMVocabularyData.h; path = data/CMVocabularyData.h; sourceTree = "<group>"; };
 		1A95E4F4170534AA00DB0193 /* CMVocabularyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMVocabularyData.m; path = data/CMVocabularyData.m; sourceTree = "<group>"; };
 		1A95E4F61705367B00DB0193 /* vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = vocabulary.json; path = data/vocabulary.json; sourceTree = "<group>"; };
+		1A95FE38173F4A450008DEE5 /* segment-divider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "segment-divider.png"; path = "resources/segment-divider.png"; sourceTree = "<group>"; };
+		1A95FE39173F4A450008DEE5 /* segment-divider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "segment-divider@2x.png"; path = "resources/segment-divider@2x.png"; sourceTree = "<group>"; };
+		1A95FE3C173F4BC20008DEE5 /* segment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = segment.png; path = resources/segment.png; sourceTree = "<group>"; };
+		1A95FE3D173F4BC20008DEE5 /* segment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "segment@2x.png"; path = "resources/segment@2x.png"; sourceTree = "<group>"; };
 		1AD2A89416FED6CA004137FE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		1ADA76A31705DC23007F6190 /* CMVocabularyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMVocabularyCell.h; sourceTree = "<group>"; };
 		1ADA76A41705DC23007F6190 /* CMVocabularyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMVocabularyCell.m; sourceTree = "<group>"; };
@@ -257,6 +265,10 @@
 		1A7C325316FDC76900F5A71A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1A95FE3C173F4BC20008DEE5 /* segment.png */,
+				1A95FE3D173F4BC20008DEE5 /* segment@2x.png */,
+				1A95FE38173F4A450008DEE5 /* segment-divider.png */,
+				1A95FE39173F4A450008DEE5 /* segment-divider@2x.png */,
 				1AFAFC98173E65410057BB82 /* option-normal.png */,
 				1AFAFC99173E65410057BB82 /* option-normal@2x.png */,
 				1AFAFC9A173E65410057BB82 /* option-right.png */,
@@ -390,6 +402,10 @@
 				1AFAFC9F173E65410057BB82 /* option-right@2x.png in Resources */,
 				1AFAFCA2173E68020057BB82 /* option-wrong.png in Resources */,
 				1AFAFCA3173E68020057BB82 /* option-wrong@2x.png in Resources */,
+				1A95FE3A173F4A450008DEE5 /* segment-divider.png in Resources */,
+				1A95FE3B173F4A450008DEE5 /* segment-divider@2x.png in Resources */,
+				1A95FE3E173F4BC20008DEE5 /* segment.png in Resources */,
+				1A95FE3F173F4BC20008DEE5 /* segment@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
