@@ -26,7 +26,7 @@ NSInteger const kRangeMax = 25;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *horkControl;
 @property (weak, nonatomic) IBOutlet UIButton *rangeDecreaseButton;
 @property (weak, nonatomic) IBOutlet UIButton *rangeIncreaseButton;
-@property (weak, nonatomic) IBOutlet UILabel *rangeLabel;
+@property (weak, nonatomic) IBOutlet UIButton *rangeLabelButton;
 @property (weak, nonatomic) IBOutlet UILabel *mainRomajiLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mainKanaLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *optionButtons;
@@ -94,11 +94,6 @@ typedef enum {
                                  forLeftSegmentState:UIControlStateNormal
                                    rightSegmentState:UIControlStateNormal
                                           barMetrics:UIBarMetricsDefault];
-    
-    // range buttons style
-    UIImage *buttonBackground = [[UIImage imageNamed:@"segment"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
-    [self.rangeDecreaseButton setBackgroundImage:buttonBackground forState:UIControlStateNormal];
-    [self.rangeIncreaseButton setBackgroundImage:buttonBackground forState:UIControlStateNormal];
     
     self.prevHork = Katakana;
     [self generateSequence];
@@ -289,7 +284,7 @@ typedef enum {
 - (void)updateRangeLabel
 {
     NSInteger range = [self.defaults integerForKey:kKanaRangeKey];
-    self.rangeLabel.text = [NSString stringWithFormat:@"あ-%@", [CMChartData hiragana][range][0]];
+    self.rangeLabelButton.titleLabel.text = [NSString stringWithFormat:@"あ-%@", [CMChartData hiragana][range][0]];
 }
 
 - (IBAction)optionClicked:(UIButton *)sender {
