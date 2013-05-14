@@ -17,11 +17,15 @@
 #define kWrongShadowColor RGBA(153, 48, 32, 1)
 #define kScoreRightColor RGBA(103, 153, 32, 1)
 
+NSString * const kKanaRangeKey = @"KanaRange";
+NSInteger const kRangeMax = 25;
+
 @interface CMTestViewController ()
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *directionControl;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *horkControl;
-@property (weak, nonatomic) IBOutlet UIStepper *rangeStepper;
+@property (weak, nonatomic) IBOutlet UIButton *rangeDecreaseButton;
+@property (weak, nonatomic) IBOutlet UIButton *rangeIncreaseButton;
 @property (weak, nonatomic) IBOutlet UILabel *rangeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mainRomajiLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mainKanaLabel;
@@ -42,7 +46,7 @@
 
 #define NO_LINE_SPACING(s) [[NSAttributedString alloc] initWithString:s attributes:@{NSParagraphStyleAttributeName:self.noSpacingParagraphStyle}]
 
-- (void)updateRangeLabel:(NSInteger)range;
+- (void)updateRangeLabel;
 - (void)generateSequence;
 - (void)resetScore;
 - (void)next;
@@ -72,9 +76,7 @@ typedef enum {
     self.noSpacingParagraphStyle = [[NSMutableParagraphStyle alloc] init];
     self.noSpacingParagraphStyle.lineSpacing = 0.0;
     
-    NSInteger kanaRange = [self.defaults integerForKey:@"KanaRange"];
-    [self.rangeStepper setValue:(double)kanaRange];
-    [self updateRangeLabel:kanaRange];
+    [self updateRangeLabel];
     NSInteger direction = [self.defaults integerForKey:@"Direction"];
     [self.directionControl setSelectedSegmentIndex:direction];
     NSInteger hork = [self.defaults integerForKey:@"Hork"];
@@ -93,6 +95,11 @@ typedef enum {
                                    rightSegmentState:UIControlStateNormal
                                           barMetrics:UIBarMetricsDefault];
     
+    // range buttons style
+    UIImage *buttonBackground = [[UIImage imageNamed:@"segment"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+    [self.rangeDecreaseButton setBackgroundImage:buttonBackground forState:UIControlStateNormal];
+    [self.rangeIncreaseButton setBackgroundImage:buttonBackground forState:UIControlStateNormal];
+    
     self.prevHork = Katakana;
     [self generateSequence];
     [self resetScore];
@@ -104,7 +111,7 @@ typedef enum {
 - (void)generateSequence
 {
     self.sequence = [[NSMutableArray alloc] init];
-    NSUInteger kanaRange = [self.defaults integerForKey:@"KanaRange"];
+    NSUInteger kanaRange = [self.defaults integerForKey:kKanaRangeKey];
     NSUInteger last = [CMChartData lastInRow:kanaRange];
     
     for (NSInteger i = 0; i <= last; ++i) {
@@ -125,7 +132,7 @@ typedef enum {
 {
     NSInteger hork = [self.defaults integerForKey:@"Hork"];
     NSInteger direction = [self.defaults integerForKey:@"Direction"];
-    NSInteger kanaRange = [self.defaults integerForKey:@"KanaRange"];
+    NSInteger kanaRange = [self.defaults integerForKey:kKanaRangeKey];
     
     NSArray *flattenedRomaji = [[CMChartData romaji] flatten];
     NSArray *flattenedHiragana = [[CMChartData hiragana] flatten];
@@ -207,10 +214,35 @@ typedef enum {
     }
 }
 
-- (IBAction)rangeChanged:(UIStepper *)sender
+- (IBAction)rangeDecreased:(UIButton *)sender {
+    NSInteger range = [self.defaults integerForKey:kKanaRangeKey];
+    if (range > 0) {
+        range -= 1;
+        if (range == 0) {
+            self.rangeDecreaseButton.enabled = NO;
+        }
+        self.rangeIncreaseButton.enabled = YES;
+    }
+    [self.defaults setInteger:range forKey:kKanaRangeKey];
+    [self rangeChanged];
+}
+
+- (IBAction)rangeIncreased:(UIButton *)sender {
+    NSInteger range = [self.defaults integerForKey:kKanaRangeKey];
+    if (range < kRangeMax) {
+        range += 1;
+        if (range == kRangeMax) {
+            self.rangeIncreaseButton.enabled = NO;
+        }
+        self.rangeDecreaseButton.enabled = YES;
+    }
+    [self.defaults setInteger:range forKey:kKanaRangeKey];
+    [self rangeChanged];
+}
+
+- (void)rangeChanged
 {
-    [self.defaults setInteger:(NSInteger)sender.value forKey:@"KanaRange"];
-    [self updateRangeLabel:sender.value];
+    [self updateRangeLabel];
     [self generateSequence];
     [self resetScore];
     [self next];
@@ -254,8 +286,9 @@ typedef enum {
     [self next];
 }
 
-- (void)updateRangeLabel:(NSInteger)range
+- (void)updateRangeLabel
 {
+    NSInteger range = [self.defaults integerForKey:kKanaRangeKey];
     self.rangeLabel.text = [NSString stringWithFormat:@"あ-%@", [CMChartData hiragana][range][0]];
 }
 
