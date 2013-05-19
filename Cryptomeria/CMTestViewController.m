@@ -17,6 +17,13 @@
 #define kWrongShadowColor RGBA(153, 48, 32, 1)
 #define kScoreRightColor RGBA(103, 153, 32, 1)
 
+#define kNormalButtonImage @"option-normal"
+#define kNormalPressingButtonImage @"option-normal-pressing"
+#define kWrongButtonImage @"option-wrong"
+#define kWrongPressingButtonImage @"option-wrong-pressing"
+#define kRightButtonImage @"option-right"
+#define kRightPressingButtonImage @"option-right-pressing"
+
 NSString * const kKanaRangeKey = @"KanaRange";
 NSInteger const kRangeMax = 25;
 
@@ -204,7 +211,8 @@ typedef enum {
 
     // refresh buttons
     for (UIButton *button in self.optionButtons) {
-        [button setBackgroundImage:[UIImage imageNamed:@"option-normal"] forState:UIControlStateNormal];
+        [button setBackgroundImage:[UIImage imageNamed:kNormalButtonImage] forState:UIControlStateNormal];
+        [button setBackgroundImage:[UIImage imageNamed:kNormalPressingButtonImage] forState:UIControlStateHighlighted];
         [button setAttributedShadowWithColor:kNormalShadowColor forState:UIControlStateNormal];
     }
 }
@@ -301,10 +309,12 @@ typedef enum {
     }
     else {
         self.inGuess = NO;
-        [sender setBackgroundImage:[UIImage imageNamed:@"option-wrong"] forState:UIControlStateNormal];
+        [sender setBackgroundImage:[UIImage imageNamed:kWrongButtonImage] forState:UIControlStateNormal];
+        [sender setBackgroundImage:[UIImage imageNamed:kWrongPressingButtonImage] forState:UIControlStateHighlighted];
         [sender setAttributedShadowWithColor:kWrongShadowColor forState:UIControlStateNormal];
         
-        [self.rightButton setBackgroundImage:[UIImage imageNamed:@"option-right"] forState:UIControlStateNormal];
+        [self.rightButton setBackgroundImage:[UIImage imageNamed:kRightButtonImage] forState:UIControlStateNormal];
+        [self.rightButton setBackgroundImage:[UIImage imageNamed:kRightPressingButtonImage] forState:UIControlStateHighlighted];
         [self.rightButton setAttributedShadowWithColor:kRightShadowColor forState:UIControlStateNormal];
     }
     
