@@ -101,6 +101,11 @@ typedef enum {
                                  forLeftSegmentState:UIControlStateNormal
                                    rightSegmentState:UIControlStateNormal
                                           barMetrics:UIBarMetricsDefault];
+    [[UISegmentedControl appearance] setTitleTextAttributes:@{
+                                   UITextAttributeTextColor:RGBA(102, 102, 102, 1),
+                             UITextAttributeTextShadowColor:RGBA(255, 255, 255, 0.8),
+                            UITextAttributeTextShadowOffset:[NSValue valueWithUIOffset:UIOffsetMake(0, 1)]}
+                                                   forState:UIControlStateNormal];
     
     self.prevHork = Katakana;
     [self generateSequence];
