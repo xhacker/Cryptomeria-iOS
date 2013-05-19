@@ -11,6 +11,7 @@
 		1A06A502173D34FB0070B555 /* 282-cards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A06A500173D34FB0070B555 /* 282-cards@2x.png */; };
 		1A06A509173D38D30070B555 /* 40-dialpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A06A507173D38D30070B555 /* 40-dialpad.png */; };
 		1A06A50A173D38D30070B555 /* 40-dialpad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A06A508173D38D30070B555 /* 40-dialpad@2x.png */; };
+		1A5655BA1748B16000361FA3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5655B91748B16000361FA3 /* CoreText.framework */; };
 		1A5980E51703E25300A7F34B /* NSArray+Flatten.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5980E41703E25300A7F34B /* NSArray+Flatten.m */; };
 		1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */; };
 		1A750328173254BD0071D087 /* chart.html in Resources */ = {isa = PBXBuildFile; fileRef = 1A750327173254BD0071D087 /* chart.html */; };
@@ -73,6 +74,7 @@
 		1A06A500173D34FB0070B555 /* 282-cards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "282-cards@2x.png"; path = "resources/282-cards@2x.png"; sourceTree = "<group>"; };
 		1A06A507173D38D30070B555 /* 40-dialpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "40-dialpad.png"; path = "resources/40-dialpad.png"; sourceTree = "<group>"; };
 		1A06A508173D38D30070B555 /* 40-dialpad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "40-dialpad@2x.png"; path = "resources/40-dialpad@2x.png"; sourceTree = "<group>"; };
+		1A5655B91748B16000361FA3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		1A5980E31703E25300A7F34B /* NSArray+Flatten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Flatten.h"; path = "data/NSArray+Flatten.h"; sourceTree = "<group>"; };
 		1A5980E41703E25300A7F34B /* NSArray+Flatten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Flatten.m"; path = "data/NSArray+Flatten.m"; sourceTree = "<group>"; };
 		1A72658F1700A33900C9A0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5655BA1748B16000361FA3 /* CoreText.framework in Frameworks */,
 				1A7C320416FC990C00F5A71A /* UIKit.framework in Frameworks */,
 				1A7C320616FC990C00F5A71A /* Foundation.framework in Frameworks */,
 				1A7C320816FC990C00F5A71A /* CoreGraphics.framework in Frameworks */,
@@ -172,6 +175,7 @@
 		1A7C31F716FC990C00F5A71A = {
 			isa = PBXGroup;
 			children = (
+				1A5655B91748B16000361FA3 /* CoreText.framework */,
 				1A7C320916FC990C00F5A71A /* Cryptomeria */,
 				1A7C325316FDC76900F5A71A /* Resources */,
 				1A7C323816FC990D00F5A71A /* CryptomeriaTests */,
