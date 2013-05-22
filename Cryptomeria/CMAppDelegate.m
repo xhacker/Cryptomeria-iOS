@@ -12,14 +12,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    self.splashView = [[UIImageView alloc] initWithFrame:screenRect];
+    if (screenRect.size.height == 568) {
+        self.splashView.image = [UIImage imageNamed:@"Default-568h"];
+    }
+    else {
+        self.splashView.image = [UIImage imageNamed:@"Default"];
+    }
+    [self.window addSubview:self.splashView];
+    [self.window bringSubviewToFront:self.splashView];
+    
     [self configureGlobalAppearance];
+    
     return YES;
 }
 
 - (void)configureGlobalAppearance {
 	[[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"]];
 	[[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar-selected"]];
-    [[UITabBar appearance] setSelectedImageTintColor:[UIColor lightGrayColor]];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

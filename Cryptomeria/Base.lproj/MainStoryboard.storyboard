@@ -8,10 +8,10 @@
         <scene sceneID="11">
             <objects>
                 <viewController title="Chart" id="2" customClass="CMChartViewController" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" id="V0i-Sn-eIE">
+                    <webView key="view" opaque="NO" contentMode="scaleToFill" id="V0i-Sn-eIE">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <connections>
                             <outlet property="delegate" destination="2" id="n66-Fh-IYx"/>
                         </connections>
@@ -217,23 +217,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CX-zx-aaE">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="fC7-du-hHc"/>
-                                    <constraint firstAttribute="width" constant="73" id="qfK-WU-apy"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="gIL-ql-Y7D" kind="modal" id="fiq-dh-ASX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -250,14 +233,12 @@
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BMB-aM-TkD"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="24" id="F4l-WK-fCX"/>
                             <constraint firstItem="PWS-u2-k9T" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="GS4-XM-4v5"/>
-                            <constraint firstItem="4CX-zx-aaE" firstAttribute="top" secondItem="GhM-5p-Pv9" secondAttribute="top" type="default" id="Lt3-di-DxQ"/>
                             <constraint firstItem="ftv-zW-uyi" firstAttribute="bottom" secondItem="PWS-u2-k9T" secondAttribute="bottom" type="default" id="MDm-YH-Gc8"/>
                             <constraint firstItem="uzY-R5-eJu" firstAttribute="bottom" secondItem="PWS-u2-k9T" secondAttribute="bottom" type="default" id="OAJ-x4-SvY"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="top" secondItem="17" secondAttribute="top" constant="101" id="PVd-wu-LCf"/>
                             <constraint firstAttribute="trailing" secondItem="uzY-R5-eJu" secondAttribute="trailing" constant="19" id="S1j-Cc-47o"/>
                             <constraint firstItem="uzY-R5-eJu" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="W3g-cR-dph"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="cWf-ms-f2g" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XPq-gY-wyh"/>
-                            <constraint firstAttribute="trailing" secondItem="4CX-zx-aaE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="YOM-rD-Ubu"/>
                             <constraint firstItem="yZV-g4-aRC" firstAttribute="top" secondItem="zXy-4r-0ur" secondAttribute="top" type="default" id="avw-O9-kf9"/>
                             <constraint firstItem="6Zk-5m-Qgc" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="18" id="bAl-iC-mvN"/>
                             <constraint firstAttribute="bottom" secondItem="6Zk-5m-Qgc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="dGm-jT-pJH"/>
@@ -286,6 +267,7 @@
                         <outletCollection property="optionButtons" destination="yZV-g4-aRC" id="kzZ-ih-Tj7"/>
                         <outletCollection property="optionButtons" destination="zXy-4r-0ur" id="ZiJ-eV-nuk"/>
                         <outletCollection property="optionButtons" destination="DMP-c1-JIh" id="U5y-Em-abV"/>
+                        <segue destination="gIL-ql-Y7D" kind="modal" id="u0E-eF-ecF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>

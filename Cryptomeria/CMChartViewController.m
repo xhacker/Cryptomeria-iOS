@@ -31,11 +31,6 @@
     [self.webView loadHTMLString:HTML baseURL:baseURL];
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView
-{
-    NSLog(@"FinishLoad");
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
