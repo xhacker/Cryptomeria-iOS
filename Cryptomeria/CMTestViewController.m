@@ -54,6 +54,9 @@ static NSInteger  const kRangeMax = 25;
 @property UIButton *rightButton;
 @property NSInteger correctCount;
 @property NSInteger totalCount;
+@property NSArray *flattenedRomaji;
+@property NSArray *flattenedHiragana;
+@property NSArray *flattenedKatakana;
 @property BOOL inGuess;
 
 @property NSMutableParagraphStyle *noSpacingParagraphStyle;
@@ -90,7 +93,22 @@ typedef enum {
     NSInteger hork = [self.defaults integerForKey:kHorkKey];
     [self.horkControl setSelectedSegmentIndex:hork];
     
-    // control style
+    self.flattenedRomaji = [[CMChartData romaji] flatten];
+    self.flattenedHiragana = [[CMChartData hiragana] flatten];
+    self.flattenedKatakana = [[CMChartData katakana] flatten];
+    
+    [self configureStyle];
+    
+    self.prevHork = Katakana;
+    [self generateSequence];
+    [self resetScore];
+    [self changeFont];
+    self.inGuess = YES;
+    [self next];
+}
+
+- (void)configureStyle
+{
     UIImage *segmentBackground = [[UIImage imageNamed:@"segment"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
     UIImage *segmentBackgroundSelected = [[UIImage imageNamed:@"segment-selected"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
     [[UISegmentedControl appearance] setBackgroundImage:segmentBackground
@@ -117,20 +135,15 @@ typedef enum {
                              UITextAttributeTextShadowColor:RGBA(255, 255, 255, 0.8),
                             UITextAttributeTextShadowOffset:[NSValue valueWithUIOffset:UIOffsetMake(0, 1)]}
                                                    forState:UIControlStateNormal];
+    
     CGFloat const yOffset = 4.0;
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:2];
     [self.directionControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
     [self.directionControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
-    self.rangeLabelButton.titleLabel.textAlignment = NSTextAlignmentCenter;
     
-    self.prevHork = Katakana;
-    [self generateSequence];
-    [self resetScore];
-    [self changeFont];
-    self.inGuess = YES;
-    [self next];
+    self.rangeLabelButton.titleLabel.textAlignment = NSTextAlignmentCenter;
 }
 
 - (void)generateSequence
@@ -159,10 +172,6 @@ typedef enum {
     NSInteger direction = [self.defaults integerForKey:kDirectionKey];
     NSInteger kanaRange = [self.defaults integerForKey:kKanaRangeKey];
     
-    NSArray *flattenedRomaji = [[CMChartData romaji] flatten];
-    NSArray *flattenedHiragana = [[CMChartData hiragana] flatten];
-    NSArray *flattenedKatakana = [[CMChartData katakana] flatten];
-    
     if (self.sequence.count == 0) {
         [self generateSequence];
     }
@@ -179,13 +188,13 @@ typedef enum {
     // main label
     NSString *mainText;
     if (direction == RomajiKana) {
-        mainText = flattenedRomaji[thisID];
+        mainText = self.flattenedRomaji[thisID];
     }
     else if (thisHork == Hiragana) {
-        mainText = flattenedHiragana[thisID];
+        mainText = self.flattenedHiragana[thisID];
     }
     else if (thisHork == Katakana) {
-        mainText = flattenedKatakana[thisID];
+        mainText = self.flattenedKatakana[thisID];
     }
     self.mainLabel.text = mainText;
     
@@ -197,13 +206,13 @@ typedef enum {
  
     NSInteger rightOption = arc4random() % 4;
     if (direction == KanaRomaji) {
-        self.rightText = flattenedRomaji[thisID];
+        self.rightText = self.flattenedRomaji[thisID];
     }
     else if (thisHork == Hiragana) {
-        self.rightText = flattenedHiragana[thisID];
+        self.rightText = self.flattenedHiragana[thisID];
     }
     else if (thisHork == Katakana) {
-        self.rightText = flattenedKatakana[thisID];
+        self.rightText = self.flattenedKatakana[thisID];
     }
     [self.optionButtons[rightOption] setAttributedTitle:NO_LINE_SPACING(self.rightText) forState:UIControlStateNormal];
     self.rightButton = self.optionButtons[rightOption];
@@ -221,13 +230,13 @@ typedef enum {
         
         NSString *thisText;
         if (direction == KanaRomaji) {
-            thisText = flattenedRomaji[optionID];
+            thisText = self.flattenedRomaji[optionID];
         }
         else if (thisHork == Hiragana) {
-            thisText = flattenedHiragana[optionID];
+            thisText = self.flattenedHiragana[optionID];
         }
         else if (thisHork == Katakana) {
-            thisText = flattenedKatakana[optionID];
+            thisText = self.flattenedKatakana[optionID];
         }
         [self.optionButtons[i] setAttributedTitle:NO_LINE_SPACING(thisText) forState:UIControlStateNormal];
     }
