@@ -17,17 +17,22 @@
 #define kWrongShadowColor RGBA(153, 48, 32, 1)
 #define kScoreRightColor RGBA(103, 153, 32, 1)
 
-#define kNormalButtonImage @"option-normal"
-#define kNormalPressingButtonImage @"option-normal-pressing"
-#define kWrongButtonImage @"option-wrong"
-#define kWrongPressingButtonImage @"option-wrong-pressing"
-#define kRightButtonImage @"option-right"
-#define kRightPressingButtonImage @"option-right-pressing"
+static NSString * const kNormalButtonImage = @"option-normal";
+static NSString * const kNormalPressingButtonImage = @"option-normal-pressing";
+static NSString * const kWrongButtonImage = @"option-wrong";
+static NSString * const kWrongPressingButtonImage = @"option-wrong-pressing";
+static NSString * const kRightButtonImage = @"option-right";
+static NSString * const kRightPressingButtonImage = @"option-right-pressing";
 
-#define kKanaSansBoldFont @"HiraKakuProN-W6"
+static NSString * const kAvenirFont = @"AvenirNext-Medium";
+static NSString * const kAvenirBoldFont = @"AvenirNext-Bold";
+static NSString * const kHiraKakuFont = @"HiraKakuProN-W3";
+static NSString * const kHiraKakuBoldFont = @"HiraKakuProN-W6";
 
-NSString * const kKanaRangeKey = @"KanaRange";
-NSInteger const kRangeMax = 25;
+static NSString * const kKanaRangeKey = @"KanaRange";
+static NSString * const kDirectionKey = @"Direction";
+static NSString * const kHorkKey = @"Hork";
+static NSInteger  const kRangeMax = 25;
 
 @interface CMTestViewController ()
 
@@ -86,9 +91,9 @@ typedef enum {
     self.noSpacingParagraphStyle.lineSpacing = 0.0;
     
     [self updateRangeLabel];
-    NSInteger direction = [self.defaults integerForKey:@"Direction"];
+    NSInteger direction = [self.defaults integerForKey:kDirectionKey];
     [self.directionControl setSelectedSegmentIndex:direction];
-    NSInteger hork = [self.defaults integerForKey:@"Hork"];
+    NSInteger hork = [self.defaults integerForKey:kHorkKey];
     [self.horkControl setSelectedSegmentIndex:hork];
     
     // control style
@@ -113,7 +118,7 @@ typedef enum {
                                    rightSegmentState:UIControlStateNormal
                                           barMetrics:UIBarMetricsDefault];
     [[UISegmentedControl appearance] setTitleTextAttributes:@{
-                                        UITextAttributeFont:[UIFont fontWithName:kKanaSansBoldFont size:13.0],
+                                        UITextAttributeFont:[UIFont fontWithName:kHiraKakuBoldFont size:13.0],
                                    UITextAttributeTextColor:RGBA(102, 102, 102, 1),
                              UITextAttributeTextShadowColor:RGBA(255, 255, 255, 0.8),
                             UITextAttributeTextShadowOffset:[NSValue valueWithUIOffset:UIOffsetMake(0, 1)]}
@@ -157,8 +162,8 @@ typedef enum {
 
 - (void)next
 {
-    NSInteger hork = [self.defaults integerForKey:@"Hork"];
-    NSInteger direction = [self.defaults integerForKey:@"Direction"];
+    NSInteger hork = [self.defaults integerForKey:kHorkKey];
+    NSInteger direction = [self.defaults integerForKey:kDirectionKey];
     NSInteger kanaRange = [self.defaults integerForKey:kKanaRangeKey];
     
     NSArray *flattenedRomaji = [[CMChartData romaji] flatten];
@@ -278,7 +283,7 @@ typedef enum {
 
 - (IBAction)directionChanged:(UISegmentedControl *)sender
 {
-    [self.defaults setInteger:sender.selectedSegmentIndex forKey:@"Direction"];
+    [self.defaults setInteger:sender.selectedSegmentIndex forKey:kDirectionKey];
     [self generateSequence];
     [self resetScore];
     [self changeFont];
@@ -287,13 +292,13 @@ typedef enum {
 
 - (void)changeFont
 {
-    NSInteger direction = [self.defaults integerForKey:@"Direction"];    
+    NSInteger direction = [self.defaults integerForKey:kDirectionKey];
     if (direction == KanaRomaji) {
         self.mainRomajiLabel.hidden = YES;
         self.mainKanaLabel.hidden = NO;
         self.mainLabel = self.mainKanaLabel;
         for (UIButton *optionButton in self.optionButtons) {
-            optionButton.titleLabel.font = [UIFont fontWithName:@"AvenirNext-Medium" size:20.0];
+            optionButton.titleLabel.font = [UIFont fontWithName:kAvenirFont size:20.0];
         }
     }
     else {
@@ -301,14 +306,14 @@ typedef enum {
         self.mainRomajiLabel.hidden = NO;
         self.mainLabel = self.mainRomajiLabel;
         for (UIButton *optionButton in self.optionButtons) {
-            optionButton.titleLabel.font = [UIFont fontWithName:@"HiraKakuProN-W3" size:20.0];
+            optionButton.titleLabel.font = [UIFont fontWithName:kHiraKakuFont size:20.0];
         }
     }
 }
 
 - (IBAction)horkChanged:(UISegmentedControl *)sender
 {
-    [self.defaults setInteger:sender.selectedSegmentIndex forKey:@"Hork"];
+    [self.defaults setInteger:sender.selectedSegmentIndex forKey:kHorkKey];
     [self generateSequence];
     [self resetScore];
     [self next];
