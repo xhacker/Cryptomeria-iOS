@@ -41,8 +41,10 @@ static NSInteger  const kRangeMax = 25;
 @property (weak, nonatomic) IBOutlet UIButton *rangeDecreaseButton;
 @property (weak, nonatomic) IBOutlet UIButton *rangeIncreaseButton;
 @property (weak, nonatomic) IBOutlet UIButton *rangeLabelButton;
-@property (weak, nonatomic) IBOutlet UILabel *mainRomajiLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mainKanaLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mainKanaLabelTopConstraint;
+@property (weak, nonatomic) IBOutlet UILabel *mainRomajiLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mainRomajiLabelTopConstraint;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *optionButtons;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
@@ -97,6 +99,7 @@ typedef enum {
     self.flattenedHiragana = [[CMChartData hiragana] flatten];
     self.flattenedKatakana = [[CMChartData katakana] flatten];
     
+    [self configurePosition];
     [self configureStyle];
     
     self.prevHork = Katakana;
@@ -105,6 +108,16 @@ typedef enum {
     [self changeFont];
     self.inGuess = YES;
     [self next];
+}
+
+- (void)configurePosition
+{
+    if ([[UIScreen mainScreen] bounds].size.height == 568) {
+        // 肾5！壕！
+        CGFloat offset = (568 - 480) / 2;
+        self.mainKanaLabelTopConstraint.constant += offset;
+        self.mainRomajiLabelTopConstraint.constant += offset;
+    }
 }
 
 - (void)configureStyle
@@ -278,7 +291,6 @@ typedef enum {
 - (void)updateRangeLabelAndButton
 {
     NSInteger range = [self.defaults integerForKey:kKanaRangeKey];
-    NSLog(@"Range: %d", range);
     
     if (range <= 0) {
         self.rangeDecreaseButton.enabled = NO;

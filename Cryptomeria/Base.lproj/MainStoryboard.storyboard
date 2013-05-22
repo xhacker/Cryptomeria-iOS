@@ -221,13 +221,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="oRg-tF-7jh" firstAttribute="leading" secondItem="17" secondAttribute="leading" type="default" id="0RA-aW-9Wn"/>
-                            <constraint firstItem="oRg-tF-7jh" firstAttribute="top" secondItem="17" secondAttribute="top" constant="110" id="0SX-ob-Evd"/>
+                            <constraint firstItem="oRg-tF-7jh" firstAttribute="top" secondItem="17" secondAttribute="top" constant="110" type="user" id="0SX-ob-Evd"/>
                             <constraint firstItem="yZV-g4-aRC" firstAttribute="top" secondItem="6Zk-5m-Qgc" secondAttribute="top" type="default" id="0ng-Gl-efX"/>
                             <constraint firstAttribute="bottom" secondItem="zXy-4r-0ur" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="0q2-a4-I0k"/>
                             <constraint firstItem="ftv-zW-uyi" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="1JR-AG-jsr"/>
                             <constraint firstItem="DMP-c1-JIh" firstAttribute="top" secondItem="zXy-4r-0ur" secondAttribute="top" type="default" id="4Kb-TQ-n8k"/>
                             <constraint firstItem="yZV-g4-aRC" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="91" id="5jE-Jr-od3"/>
-                            <constraint firstItem="n4c-5R-aC4" firstAttribute="top" secondItem="17" secondAttribute="top" constant="149" id="64E-me-QWT"/>
+                            <constraint firstItem="n4c-5R-aC4" firstAttribute="top" secondItem="17" secondAttribute="top" constant="149" type="user" id="64E-me-QWT"/>
                             <constraint firstAttribute="trailing" secondItem="1ma-hR-1MS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7R4-su-IZ6"/>
                             <constraint firstItem="uzY-R5-eJu" firstAttribute="trailing" secondItem="DMP-c1-JIh" secondAttribute="trailing" type="default" id="82Q-bc-bYO"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BMB-aM-TkD"/>
@@ -258,7 +258,9 @@
                         <outlet property="directionControl" destination="cWf-ms-f2g" id="8Mb-zJ-OAL"/>
                         <outlet property="horkControl" destination="1ma-hR-1MS" id="t1p-TB-Jxt"/>
                         <outlet property="mainKanaLabel" destination="n4c-5R-aC4" id="BgK-9n-mAD"/>
+                        <outlet property="mainKanaLabelTopConstraint" destination="64E-me-QWT" id="1fg-QA-g4A"/>
                         <outlet property="mainRomajiLabel" destination="oRg-tF-7jh" id="lUO-R8-opJ"/>
+                        <outlet property="mainRomajiLabelTopConstraint" destination="0SX-ob-Evd" id="J3B-4H-v0i"/>
                         <outlet property="rangeDecreaseButton" destination="ftv-zW-uyi" id="Pk2-OY-FiF"/>
                         <outlet property="rangeIncreaseButton" destination="uzY-R5-eJu" id="yhI-7e-lMT"/>
                         <outlet property="rangeLabelButton" destination="PWS-u2-k9T" id="uL7-tx-Uer"/>
@@ -429,10 +431,17 @@
         <class className="CMTestViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CMTestViewController.h"/>
             <relationships>
+                <relationship kind="action" name="directionChanged:" candidateClass="UISegmentedControl"/>
+                <relationship kind="action" name="horkChanged:" candidateClass="UISegmentedControl"/>
+                <relationship kind="action" name="optionClicked:" candidateClass="UIButton"/>
+                <relationship kind="action" name="rangeDecreased:" candidateClass="UIButton"/>
+                <relationship kind="action" name="rangeIncreased:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="horkControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="mainKanaLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mainKanaLabelTopConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="mainRomajiLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mainRomajiLabelTopConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="rangeDecreaseButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="rangeIncreaseButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="rangeLabelButton" candidateClass="UIButton"/>
