@@ -166,33 +166,37 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftv-zW-uyi">
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="WnP-em-9sa"/>
-                                    <constraint firstAttribute="width" constant="30" id="htE-Fh-jdV"/>
+                                    <constraint firstAttribute="width" constant="30" id="Xe3-d0-JQ1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="-" backgroundImage="button-decrease.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="disabled" backgroundImage="button-decrease-disabled.png"/>
+                                <state key="highlighted" backgroundImage="button-decrease-pressing.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="rangeDecreased:" destination="3" eventType="touchUpInside" id="fmz-pj-7Ss"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzY-R5-eJu">
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="OEn-1z-I7J"/>
+                                    <constraint firstAttribute="width" constant="30" id="IxQ-Db-uoH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="+" backgroundImage="button-increase.png">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="disabled" backgroundImage="button-increase-disabled.png"/>
+                                <state key="highlighted" backgroundImage="button-increase-pressing.png">
+                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="rangeIncreased:" destination="3" eventType="touchUpInside" id="WY6-lg-ldo"/>
@@ -200,12 +204,14 @@
                             </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWS-u2-k9T">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="71" id="IsB-58-cip"/>
+                                    <constraint firstAttribute="width" constant="72" id="lew-PB-rBk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="あ-あ" backgroundImage="label-background.png">
+                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="13"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="あ-ぎょ" backgroundImage="label-background.png">
                                     <color key="titleColor" white="0.40000000000000002" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 </state>
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -240,6 +246,7 @@
                             <constraint firstItem="yZV-g4-aRC" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="91" id="5jE-Jr-od3"/>
                             <constraint firstItem="n4c-5R-aC4" firstAttribute="top" secondItem="17" secondAttribute="top" constant="149" id="64E-me-QWT"/>
                             <constraint firstAttribute="trailing" secondItem="1ma-hR-1MS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7R4-su-IZ6"/>
+                            <constraint firstItem="uzY-R5-eJu" firstAttribute="trailing" secondItem="DMP-c1-JIh" secondAttribute="trailing" type="default" id="82Q-bc-bYO"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BMB-aM-TkD"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="24" id="F4l-WK-fCX"/>
                             <constraint firstItem="PWS-u2-k9T" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="GS4-XM-4v5"/>
@@ -247,19 +254,18 @@
                             <constraint firstItem="ftv-zW-uyi" firstAttribute="bottom" secondItem="PWS-u2-k9T" secondAttribute="bottom" type="default" id="MDm-YH-Gc8"/>
                             <constraint firstItem="uzY-R5-eJu" firstAttribute="bottom" secondItem="PWS-u2-k9T" secondAttribute="bottom" type="default" id="OAJ-x4-SvY"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="top" secondItem="17" secondAttribute="top" constant="101" id="PVd-wu-LCf"/>
-                            <constraint firstAttribute="trailing" secondItem="PWS-u2-k9T" secondAttribute="trailing" constant="50" id="ToR-yL-myK"/>
+                            <constraint firstAttribute="trailing" secondItem="uzY-R5-eJu" secondAttribute="trailing" constant="19" id="S1j-Cc-47o"/>
                             <constraint firstItem="uzY-R5-eJu" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="W3g-cR-dph"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="cWf-ms-f2g" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XPq-gY-wyh"/>
                             <constraint firstAttribute="trailing" secondItem="4CX-zx-aaE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="YOM-rD-Ubu"/>
                             <constraint firstItem="yZV-g4-aRC" firstAttribute="top" secondItem="zXy-4r-0ur" secondAttribute="top" type="default" id="avw-O9-kf9"/>
                             <constraint firstItem="6Zk-5m-Qgc" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="18" id="bAl-iC-mvN"/>
-                            <constraint firstAttribute="trailing" secondItem="uzY-R5-eJu" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="c4v-nw-eMh"/>
                             <constraint firstAttribute="bottom" secondItem="6Zk-5m-Qgc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="dGm-jT-pJH"/>
                             <constraint firstItem="cWf-ms-f2g" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="dMh-UB-Z6x"/>
                             <constraint firstItem="n4c-5R-aC4" firstAttribute="centerX" secondItem="oRg-tF-7jh" secondAttribute="centerX" type="default" id="g5C-43-h1m"/>
                             <constraint firstItem="DMP-c1-JIh" firstAttribute="leading" secondItem="zXy-4r-0ur" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="kJv-ZO-WCw"/>
+                            <constraint firstAttribute="trailing" secondItem="PWS-u2-k9T" secondAttribute="trailing" constant="49" id="plg-1A-Fdb"/>
                             <constraint firstItem="cWf-ms-f2g" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="qw5-hh-Vln"/>
-                            <constraint firstAttribute="trailing" secondItem="DMP-c1-JIh" secondAttribute="trailing" constant="19" id="tYD-YG-Sdn"/>
                             <constraint firstItem="oRg-tF-7jh" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="teG-lT-ldo"/>
                             <constraint firstAttribute="bottom" secondItem="yZV-g4-aRC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="wXP-fq-9ap"/>
                             <constraint firstAttribute="bottom" secondItem="DMP-c1-JIh" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="xua-Ks-MUl"/>
@@ -417,52 +423,17 @@
     <resources>
         <image name="282-cards.png" width="30" height="27"/>
         <image name="40-dialpad.png" width="22" height="22"/>
+        <image name="button-decrease-disabled.png" width="30" height="30"/>
+        <image name="button-decrease-pressing.png" width="30" height="30"/>
         <image name="button-decrease.png" width="30" height="30"/>
+        <image name="button-increase-disabled.png" width="30" height="30"/>
+        <image name="button-increase-pressing.png" width="30" height="30"/>
         <image name="button-increase.png" width="30" height="30"/>
         <image name="first" width="16" height="16"/>
         <image name="label-background.png" width="1" height="30"/>
         <image name="option-normal-pressing.png" width="64" height="44"/>
         <image name="option-normal.png" width="64" height="44"/>
     </resources>
-    <classes>
-        <class className="CMChartViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMChartViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="CMTestViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMTestViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="horkControl" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="mainKanaLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mainRomajiLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="rangeDecreaseButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="rangeIncreaseButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="rangeLabelButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outletCollection" name="optionButtons" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="CMVocabularyCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMVocabularyCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="kanaLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="meaningLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="romajiLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CMVocabularyViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMVocabularyViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

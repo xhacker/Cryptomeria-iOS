@@ -24,6 +24,8 @@
 #define kRightButtonImage @"option-right"
 #define kRightPressingButtonImage @"option-right-pressing"
 
+#define kKanaSansBoldFont @"HiraKakuProN-W6"
+
 NSString * const kKanaRangeKey = @"KanaRange";
 NSInteger const kRangeMax = 25;
 
@@ -89,23 +91,41 @@ typedef enum {
     NSInteger hork = [self.defaults integerForKey:@"Hork"];
     [self.horkControl setSelectedSegmentIndex:hork];
     
-    // segmented control style
+    // control style
     UIImage *segmentBackground = [[UIImage imageNamed:@"segment"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+    UIImage *segmentBackgroundSelected = [[UIImage imageNamed:@"segment-selected"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
     [[UISegmentedControl appearance] setBackgroundImage:segmentBackground
                                                forState:UIControlStateNormal
                                              barMetrics:UIBarMetricsDefault];
-    [[UISegmentedControl appearance] setBackgroundImage:segmentBackground
+    [[UISegmentedControl appearance] setBackgroundImage:segmentBackgroundSelected
                                                forState:UIControlStateSelected
                                              barMetrics:UIBarMetricsDefault];
-    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamed:@"segment-divider"]
+    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamed:@"segment-divider-00"]
                                  forLeftSegmentState:UIControlStateNormal
                                    rightSegmentState:UIControlStateNormal
                                           barMetrics:UIBarMetricsDefault];
+    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamed:@"segment-divider-01"]
+                                 forLeftSegmentState:UIControlStateNormal
+                                   rightSegmentState:UIControlStateSelected
+                                          barMetrics:UIBarMetricsDefault];
+    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamed:@"segment-divider-10"]
+                                 forLeftSegmentState:UIControlStateSelected
+                                   rightSegmentState:UIControlStateNormal
+                                          barMetrics:UIBarMetricsDefault];
     [[UISegmentedControl appearance] setTitleTextAttributes:@{
+                                        UITextAttributeFont:[UIFont fontWithName:kKanaSansBoldFont size:13.0],
                                    UITextAttributeTextColor:RGBA(102, 102, 102, 1),
                              UITextAttributeTextShadowColor:RGBA(255, 255, 255, 0.8),
                             UITextAttributeTextShadowOffset:[NSValue valueWithUIOffset:UIOffsetMake(0, 1)]}
                                                    forState:UIControlStateNormal];
+    
+    CGFloat const yOffset = 4.0;
+    [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
+    [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
+    [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:2];
+    [self.directionControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
+    [self.directionControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
+    self.rangeLabelButton.titleLabel.textAlignment = NSTextAlignmentCenter;
     
     self.prevHork = Katakana;
     [self generateSequence];
