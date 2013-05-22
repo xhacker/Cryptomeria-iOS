@@ -60,12 +60,6 @@ static NSInteger  const kRangeMax = 25;
 
 #define NO_LINE_SPACING(s) [[NSAttributedString alloc] initWithString:s attributes:@{NSParagraphStyleAttributeName:self.noSpacingParagraphStyle}]
 
-- (void)updateRangeLabel;
-- (void)generateSequence;
-- (void)resetScore;
-- (void)next;
-- (void)changeFont;
-
 @end
 
 typedef enum {

@@ -33,6 +33,11 @@
 		1A3CBB27174C9D180012A9FF /* segment-divider-10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB1F174C9D180012A9FF /* segment-divider-10@2x.png */; };
 		1A3CBB2C174C9D370012A9FF /* segment-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB2A174C9D370012A9FF /* segment-selected.png */; };
 		1A3CBB2D174C9D370012A9FF /* segment-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB2B174C9D370012A9FF /* segment-selected@2x.png */; };
+		1A3CBB3A174CB1230012A9FF /* tabbar-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB36174CB1220012A9FF /* tabbar-selected.png */; };
+		1A3CBB3B174CB1230012A9FF /* tabbar-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB37174CB1220012A9FF /* tabbar-selected@2x.png */; };
+		1A3CBB3C174CB1230012A9FF /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB38174CB1220012A9FF /* tabbar.png */; };
+		1A3CBB3D174CB1230012A9FF /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB39174CB1220012A9FF /* tabbar@2x.png */; };
+		1A3CBB4A174CC0950012A9FF /* CMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CBB49174CC0950012A9FF /* CMTabBarController.m */; };
 		1A5655BA1748B16000361FA3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5655B91748B16000361FA3 /* CoreText.framework */; };
 		1A5980E51703E25300A7F34B /* NSArray+Flatten.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5980E41703E25300A7F34B /* NSArray+Flatten.m */; };
 		1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */; };
@@ -116,6 +121,12 @@
 		1A3CBB1F174C9D180012A9FF /* segment-divider-10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "segment-divider-10@2x.png"; path = "resources/segment-divider-10@2x.png"; sourceTree = "<group>"; };
 		1A3CBB2A174C9D370012A9FF /* segment-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "segment-selected.png"; path = "resources/segment-selected.png"; sourceTree = "<group>"; };
 		1A3CBB2B174C9D370012A9FF /* segment-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "segment-selected@2x.png"; path = "resources/segment-selected@2x.png"; sourceTree = "<group>"; };
+		1A3CBB36174CB1220012A9FF /* tabbar-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-selected.png"; path = "resources/tabbar-selected.png"; sourceTree = "<group>"; };
+		1A3CBB37174CB1220012A9FF /* tabbar-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar-selected@2x.png"; path = "resources/tabbar-selected@2x.png"; sourceTree = "<group>"; };
+		1A3CBB38174CB1220012A9FF /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tabbar.png; path = resources/tabbar.png; sourceTree = "<group>"; };
+		1A3CBB39174CB1220012A9FF /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar@2x.png"; path = "resources/tabbar@2x.png"; sourceTree = "<group>"; };
+		1A3CBB48174CC0950012A9FF /* CMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTabBarController.h; sourceTree = "<group>"; };
+		1A3CBB49174CC0950012A9FF /* CMTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTabBarController.m; sourceTree = "<group>"; };
 		1A5655B91748B16000361FA3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		1A5980E31703E25300A7F34B /* NSArray+Flatten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Flatten.h"; path = "data/NSArray+Flatten.h"; sourceTree = "<group>"; };
 		1A5980E41703E25300A7F34B /* NSArray+Flatten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Flatten.m"; path = "data/NSArray+Flatten.m"; sourceTree = "<group>"; };
@@ -233,6 +244,48 @@
 			name = Options;
 			sourceTree = "<group>";
 		};
+		1A3CBB3E174CB1270012A9FF /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				1A3CBB38174CB1220012A9FF /* tabbar.png */,
+				1A3CBB39174CB1220012A9FF /* tabbar@2x.png */,
+				1A3CBB36174CB1220012A9FF /* tabbar-selected.png */,
+				1A3CBB37174CB1220012A9FF /* tabbar-selected@2x.png */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		1A3CBB3F174CB1300012A9FF /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				1A9A11D917422AB300CD9972 /* button-decrease.png */,
+				1A9A11DA17422AB300CD9972 /* button-decrease@2x.png */,
+				1A3CBB04174C98960012A9FF /* button-decrease-disabled.png */,
+				1A3CBB05174C98960012A9FF /* button-decrease-disabled@2x.png */,
+				1A3CBB06174C98960012A9FF /* button-decrease-pressing.png */,
+				1A3CBB07174C98960012A9FF /* button-decrease-pressing@2x.png */,
+				1A9A11DB17422AB300CD9972 /* button-increase.png */,
+				1A9A11DC17422AB300CD9972 /* button-increase@2x.png */,
+				1A3CBB08174C98960012A9FF /* button-increase-disabled.png */,
+				1A3CBB09174C98960012A9FF /* button-increase-disabled@2x.png */,
+				1A3CBB0A174C98960012A9FF /* button-increase-pressing.png */,
+				1A3CBB0B174C98960012A9FF /* button-increase-pressing@2x.png */,
+				1A9A11D51742260F00CD9972 /* label-background.png */,
+				1A9A11D61742260F00CD9972 /* label-background@2x.png */,
+				1A95FE3C173F4BC20008DEE5 /* segment.png */,
+				1A95FE3D173F4BC20008DEE5 /* segment@2x.png */,
+				1A3CBB2A174C9D370012A9FF /* segment-selected.png */,
+				1A3CBB2B174C9D370012A9FF /* segment-selected@2x.png */,
+				1A3CBB1A174C9D180012A9FF /* segment-divider-00.png */,
+				1A3CBB1B174C9D180012A9FF /* segment-divider-00@2x.png */,
+				1A3CBB1C174C9D180012A9FF /* segment-divider-01.png */,
+				1A3CBB1D174C9D180012A9FF /* segment-divider-01@2x.png */,
+				1A3CBB1E174C9D180012A9FF /* segment-divider-10.png */,
+				1A3CBB1F174C9D180012A9FF /* segment-divider-10@2x.png */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
 		1A750353173257820071D087 /* HTML */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +338,8 @@
 				1AD2A89616FEF375004137FE /* CMVocabularyView */,
 				1A7C321216FC990C00F5A71A /* CMAppDelegate.h */,
 				1A7C321316FC990C00F5A71A /* CMAppDelegate.m */,
+				1A3CBB48174CC0950012A9FF /* CMTabBarController.h */,
+				1A3CBB49174CC0950012A9FF /* CMTabBarController.m */,
 				1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */,
 				1A7C320A16FC990C00F5A71A /* Supporting Files */,
 			);
@@ -351,30 +406,8 @@
 		1A7C325316FDC76900F5A71A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1A9A11D917422AB300CD9972 /* button-decrease.png */,
-				1A9A11DA17422AB300CD9972 /* button-decrease@2x.png */,
-				1A3CBB04174C98960012A9FF /* button-decrease-disabled.png */,
-				1A3CBB05174C98960012A9FF /* button-decrease-disabled@2x.png */,
-				1A3CBB06174C98960012A9FF /* button-decrease-pressing.png */,
-				1A3CBB07174C98960012A9FF /* button-decrease-pressing@2x.png */,
-				1A9A11DB17422AB300CD9972 /* button-increase.png */,
-				1A9A11DC17422AB300CD9972 /* button-increase@2x.png */,
-				1A3CBB08174C98960012A9FF /* button-increase-disabled.png */,
-				1A3CBB09174C98960012A9FF /* button-increase-disabled@2x.png */,
-				1A3CBB0A174C98960012A9FF /* button-increase-pressing.png */,
-				1A3CBB0B174C98960012A9FF /* button-increase-pressing@2x.png */,
-				1A9A11D51742260F00CD9972 /* label-background.png */,
-				1A9A11D61742260F00CD9972 /* label-background@2x.png */,
-				1A95FE3C173F4BC20008DEE5 /* segment.png */,
-				1A95FE3D173F4BC20008DEE5 /* segment@2x.png */,
-				1A3CBB2A174C9D370012A9FF /* segment-selected.png */,
-				1A3CBB2B174C9D370012A9FF /* segment-selected@2x.png */,
-				1A3CBB1A174C9D180012A9FF /* segment-divider-00.png */,
-				1A3CBB1B174C9D180012A9FF /* segment-divider-00@2x.png */,
-				1A3CBB1C174C9D180012A9FF /* segment-divider-01.png */,
-				1A3CBB1D174C9D180012A9FF /* segment-divider-01@2x.png */,
-				1A3CBB1E174C9D180012A9FF /* segment-divider-10.png */,
-				1A3CBB1F174C9D180012A9FF /* segment-divider-10@2x.png */,
+				1A3CBB3F174CB1300012A9FF /* Controls */,
+				1A3CBB3E174CB1270012A9FF /* TabBar */,
 				1A3CBB19174C9CFD0012A9FF /* Options */,
 				1A3CBB18174C9CF80012A9FF /* Icons */,
 				1AD2A89416FED6CA004137FE /* icon.png */,
@@ -530,6 +563,10 @@
 				1A3CBB27174C9D180012A9FF /* segment-divider-10@2x.png in Resources */,
 				1A3CBB2C174C9D370012A9FF /* segment-selected.png in Resources */,
 				1A3CBB2D174C9D370012A9FF /* segment-selected@2x.png in Resources */,
+				1A3CBB3A174CB1230012A9FF /* tabbar-selected.png in Resources */,
+				1A3CBB3B174CB1230012A9FF /* tabbar-selected@2x.png in Resources */,
+				1A3CBB3C174CB1230012A9FF /* tabbar.png in Resources */,
+				1A3CBB3D174CB1230012A9FF /* tabbar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +626,7 @@
 				1A95E4F5170534AA00DB0193 /* CMVocabularyData.m in Sources */,
 				1ADA76A51705DC23007F6190 /* CMVocabularyCell.m in Sources */,
 				1AFAFCA9173E96210057BB82 /* UIButton+AttributedString.m in Sources */,
+				1A3CBB4A174CC0950012A9FF /* CMTabBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

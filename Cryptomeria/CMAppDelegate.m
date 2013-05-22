@@ -12,8 +12,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self configureGlobalAppearance];
     return YES;
+}
+
+- (void)configureGlobalAppearance {
+	[[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"]];
+	[[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar-selected"]];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
