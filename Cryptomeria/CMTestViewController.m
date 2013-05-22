@@ -123,7 +123,6 @@ typedef enum {
                              UITextAttributeTextShadowColor:RGBA(255, 255, 255, 0.8),
                             UITextAttributeTextShadowOffset:[NSValue valueWithUIOffset:UIOffsetMake(0, 1)]}
                                                    forState:UIControlStateNormal];
-    
     CGFloat const yOffset = 4.0;
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
@@ -352,7 +351,9 @@ typedef enum {
     NSString *totalText = [[NSString alloc] initWithFormat:@"%d", self.totalCount];
     NSString *scoreText = [[NSString alloc] initWithFormat:@"%@ / %@", correctText, totalText];
     NSMutableAttributedString *scoreAttributedString = [[NSMutableAttributedString alloc] initWithString:scoreText];
-    [scoreAttributedString addAttribute:NSForegroundColorAttributeName value:kScoreRightColor range:NSMakeRange(0, correctText.length)];
+    NSDictionary *attributes = @{NSForegroundColorAttributeName: kScoreRightColor,
+                                 NSFontAttributeName: [UIFont fontWithName:kAvenirBoldFont size:17.0]};
+    [scoreAttributedString addAttributes:attributes range:NSMakeRange(0, correctText.length)];
     self.scoreLabel.hidden = NO;
     self.scoreLabel.attributedText = scoreAttributedString;
 }
