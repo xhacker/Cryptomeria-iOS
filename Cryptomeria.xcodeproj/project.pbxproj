@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A06A501173D34FB0070B555 /* 282-cards.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A06A4FF173D34FB0070B555 /* 282-cards.png */; };
-		1A06A502173D34FB0070B555 /* 282-cards@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A06A500173D34FB0070B555 /* 282-cards@2x.png */; };
-		1A06A509173D38D30070B555 /* 40-dialpad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A06A507173D38D30070B555 /* 40-dialpad.png */; };
-		1A06A50A173D38D30070B555 /* 40-dialpad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A06A508173D38D30070B555 /* 40-dialpad@2x.png */; };
 		1A2CBB6C1748C9C70037E20D /* option-normal-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6A1748C9C70037E20D /* option-normal-pressing.png */; };
 		1A2CBB6D1748C9C70037E20D /* option-normal-pressing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6B1748C9C70037E20D /* option-normal-pressing@2x.png */; };
 		1A2CBB721748D2430037E20D /* option-right-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6E1748D2430037E20D /* option-right-pressing.png */; };
@@ -38,6 +34,14 @@
 		1A3CBB3C174CB1230012A9FF /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB38174CB1220012A9FF /* tabbar.png */; };
 		1A3CBB3D174CB1230012A9FF /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB39174CB1220012A9FF /* tabbar@2x.png */; };
 		1A3CBB4A174CC0950012A9FF /* CMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CBB49174CC0950012A9FF /* CMTabBarController.m */; };
+		1A3CBB5B174CCA2B0012A9FF /* icon-chart-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB53174CCA2B0012A9FF /* icon-chart-highlight.png */; };
+		1A3CBB5C174CCA2B0012A9FF /* icon-chart-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB54174CCA2B0012A9FF /* icon-chart-highlight@2x.png */; };
+		1A3CBB5D174CCA2B0012A9FF /* icon-chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB55174CCA2B0012A9FF /* icon-chart.png */; };
+		1A3CBB5E174CCA2B0012A9FF /* icon-chart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB56174CCA2B0012A9FF /* icon-chart@2x.png */; };
+		1A3CBB5F174CCA2B0012A9FF /* icon-test-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB57174CCA2B0012A9FF /* icon-test-highlight.png */; };
+		1A3CBB60174CCA2B0012A9FF /* icon-test-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB58174CCA2B0012A9FF /* icon-test-highlight@2x.png */; };
+		1A3CBB61174CCA2B0012A9FF /* icon-test.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB59174CCA2B0012A9FF /* icon-test.png */; };
+		1A3CBB62174CCA2B0012A9FF /* icon-test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB5A174CCA2B0012A9FF /* icon-test@2x.png */; };
 		1A5655BA1748B16000361FA3 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5655B91748B16000361FA3 /* CoreText.framework */; };
 		1A5980E51703E25300A7F34B /* NSArray+Flatten.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5980E41703E25300A7F34B /* NSArray+Flatten.m */; };
 		1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */; };
@@ -95,10 +99,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A06A4FF173D34FB0070B555 /* 282-cards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "282-cards.png"; path = "resources/282-cards.png"; sourceTree = "<group>"; };
-		1A06A500173D34FB0070B555 /* 282-cards@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "282-cards@2x.png"; path = "resources/282-cards@2x.png"; sourceTree = "<group>"; };
-		1A06A507173D38D30070B555 /* 40-dialpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "40-dialpad.png"; path = "resources/40-dialpad.png"; sourceTree = "<group>"; };
-		1A06A508173D38D30070B555 /* 40-dialpad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "40-dialpad@2x.png"; path = "resources/40-dialpad@2x.png"; sourceTree = "<group>"; };
 		1A2CBB6A1748C9C70037E20D /* option-normal-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal-pressing.png"; path = "resources/option-normal-pressing.png"; sourceTree = "<group>"; };
 		1A2CBB6B1748C9C70037E20D /* option-normal-pressing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal-pressing@2x.png"; path = "resources/option-normal-pressing@2x.png"; sourceTree = "<group>"; };
 		1A2CBB6E1748D2430037E20D /* option-right-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-right-pressing.png"; path = "resources/option-right-pressing.png"; sourceTree = "<group>"; };
@@ -127,6 +127,14 @@
 		1A3CBB39174CB1220012A9FF /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbar@2x.png"; path = "resources/tabbar@2x.png"; sourceTree = "<group>"; };
 		1A3CBB48174CC0950012A9FF /* CMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTabBarController.h; sourceTree = "<group>"; };
 		1A3CBB49174CC0950012A9FF /* CMTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTabBarController.m; sourceTree = "<group>"; };
+		1A3CBB53174CCA2B0012A9FF /* icon-chart-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-chart-highlight.png"; path = "resources/icon-chart-highlight.png"; sourceTree = "<group>"; };
+		1A3CBB54174CCA2B0012A9FF /* icon-chart-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-chart-highlight@2x.png"; path = "resources/icon-chart-highlight@2x.png"; sourceTree = "<group>"; };
+		1A3CBB55174CCA2B0012A9FF /* icon-chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-chart.png"; path = "resources/icon-chart.png"; sourceTree = "<group>"; };
+		1A3CBB56174CCA2B0012A9FF /* icon-chart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-chart@2x.png"; path = "resources/icon-chart@2x.png"; sourceTree = "<group>"; };
+		1A3CBB57174CCA2B0012A9FF /* icon-test-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-test-highlight.png"; path = "resources/icon-test-highlight.png"; sourceTree = "<group>"; };
+		1A3CBB58174CCA2B0012A9FF /* icon-test-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-test-highlight@2x.png"; path = "resources/icon-test-highlight@2x.png"; sourceTree = "<group>"; };
+		1A3CBB59174CCA2B0012A9FF /* icon-test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-test.png"; path = "resources/icon-test.png"; sourceTree = "<group>"; };
+		1A3CBB5A174CCA2B0012A9FF /* icon-test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-test@2x.png"; path = "resources/icon-test@2x.png"; sourceTree = "<group>"; };
 		1A5655B91748B16000361FA3 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		1A5980E31703E25300A7F34B /* NSArray+Flatten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Flatten.h"; path = "data/NSArray+Flatten.h"; sourceTree = "<group>"; };
 		1A5980E41703E25300A7F34B /* NSArray+Flatten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Flatten.m"; path = "data/NSArray+Flatten.m"; sourceTree = "<group>"; };
@@ -217,10 +225,14 @@
 		1A3CBB18174C9CF80012A9FF /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				1A06A507173D38D30070B555 /* 40-dialpad.png */,
-				1A06A508173D38D30070B555 /* 40-dialpad@2x.png */,
-				1A06A4FF173D34FB0070B555 /* 282-cards.png */,
-				1A06A500173D34FB0070B555 /* 282-cards@2x.png */,
+				1A3CBB53174CCA2B0012A9FF /* icon-chart-highlight.png */,
+				1A3CBB54174CCA2B0012A9FF /* icon-chart-highlight@2x.png */,
+				1A3CBB55174CCA2B0012A9FF /* icon-chart.png */,
+				1A3CBB56174CCA2B0012A9FF /* icon-chart@2x.png */,
+				1A3CBB57174CCA2B0012A9FF /* icon-test-highlight.png */,
+				1A3CBB58174CCA2B0012A9FF /* icon-test-highlight@2x.png */,
+				1A3CBB59174CCA2B0012A9FF /* icon-test.png */,
+				1A3CBB5A174CCA2B0012A9FF /* icon-test@2x.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -523,10 +535,6 @@
 				1A95E4F71705367B00DB0193 /* vocabulary.json in Resources */,
 				1A750328173254BD0071D087 /* chart.html in Resources */,
 				1A75035517325BDD0071D087 /* chart.css in Resources */,
-				1A06A501173D34FB0070B555 /* 282-cards.png in Resources */,
-				1A06A502173D34FB0070B555 /* 282-cards@2x.png in Resources */,
-				1A06A509173D38D30070B555 /* 40-dialpad.png in Resources */,
-				1A06A50A173D38D30070B555 /* 40-dialpad@2x.png in Resources */,
 				1AFAFC9C173E65410057BB82 /* option-normal.png in Resources */,
 				1AFAFC9D173E65410057BB82 /* option-normal@2x.png in Resources */,
 				1AFAFC9E173E65410057BB82 /* option-right.png in Resources */,
@@ -567,6 +575,14 @@
 				1A3CBB3B174CB1230012A9FF /* tabbar-selected@2x.png in Resources */,
 				1A3CBB3C174CB1230012A9FF /* tabbar.png in Resources */,
 				1A3CBB3D174CB1230012A9FF /* tabbar@2x.png in Resources */,
+				1A3CBB5B174CCA2B0012A9FF /* icon-chart-highlight.png in Resources */,
+				1A3CBB5C174CCA2B0012A9FF /* icon-chart-highlight@2x.png in Resources */,
+				1A3CBB5D174CCA2B0012A9FF /* icon-chart.png in Resources */,
+				1A3CBB5E174CCA2B0012A9FF /* icon-chart@2x.png in Resources */,
+				1A3CBB5F174CCA2B0012A9FF /* icon-test-highlight.png in Resources */,
+				1A3CBB60174CCA2B0012A9FF /* icon-test-highlight@2x.png in Resources */,
+				1A3CBB61174CCA2B0012A9FF /* icon-test.png in Resources */,
+				1A3CBB62174CCA2B0012A9FF /* icon-test@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

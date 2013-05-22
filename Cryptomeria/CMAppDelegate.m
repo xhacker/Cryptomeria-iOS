@@ -19,6 +19,7 @@
 - (void)configureGlobalAppearance {
 	[[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"]];
 	[[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar-selected"]];
+    [[UITabBar appearance] setSelectedImageTintColor:[UIColor lightGrayColor]];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
