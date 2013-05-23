@@ -48,18 +48,18 @@ static NSInteger  const kRangeMax = 25;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *optionButtons;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
-@property (weak) UILabel *mainLabel;
-@property NSUserDefaults *defaults;
-@property NSMutableArray *sequence;
-@property NSInteger prevHork;
-@property NSString *rightText;
-@property UIButton *rightButton;
-@property NSInteger correctCount;
-@property NSInteger totalCount;
-@property NSArray *flattenedRomaji;
-@property NSArray *flattenedHiragana;
-@property NSArray *flattenedKatakana;
-@property BOOL inGuess;
+@property (weak, nonatomic) UILabel *mainLabel;
+@property (strong, nonatomic) NSUserDefaults *defaults;
+@property (strong, nonatomic) NSMutableArray *sequence;
+@property (nonatomic) NSInteger prevHork;
+@property (strong, nonatomic) NSString *rightText;
+@property (strong, nonatomic) UIButton *rightButton;
+@property (nonatomic) NSInteger correctCount;
+@property (nonatomic) NSInteger totalCount;
+@property (strong, nonatomic) NSArray *flattenedRomaji;
+@property (strong, nonatomic) NSArray *flattenedHiragana;
+@property (strong, nonatomic) NSArray *flattenedKatakana;
+@property (nonatomic) BOOL inGuess;
 
 @property NSMutableParagraphStyle *noSpacingParagraphStyle;
 
