@@ -144,10 +144,13 @@ typedef enum {
                                           barMetrics:UIBarMetricsDefault];
     [[UISegmentedControl appearance] setTitleTextAttributes:@{
                                         UITextAttributeFont:[UIFont fontWithName:kHiraKakuBoldFont size:13.0],
-                                   UITextAttributeTextColor:RGBA(102, 102, 102, 1),
+                                   UITextAttributeTextColor:RGBA(140, 140, 140, 1),
                              UITextAttributeTextShadowColor:RGBA(255, 255, 255, 0.8),
                             UITextAttributeTextShadowOffset:[NSValue valueWithUIOffset:UIOffsetMake(0, 1)]}
                                                    forState:UIControlStateNormal];
+    [[UISegmentedControl appearance] setTitleTextAttributes:@{
+                                   UITextAttributeTextColor:RGBA(102, 102, 102, 1)}
+                                                   forState:UIControlStateSelected];
     
     CGFloat const yOffset = 4.0;
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];

@@ -269,7 +269,7 @@
                         <outletCollection property="optionButtons" destination="yZV-g4-aRC" id="kzZ-ih-Tj7"/>
                         <outletCollection property="optionButtons" destination="zXy-4r-0ur" id="ZiJ-eV-nuk"/>
                         <outletCollection property="optionButtons" destination="DMP-c1-JIh" id="U5y-Em-abV"/>
-                        <segue destination="gIL-ql-Y7D" kind="modal" id="u0E-eF-ecF"/>
+                        <segue destination="gIL-ql-Y7D" kind="modal" identifier="wordlist" id="u0E-eF-ecF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
