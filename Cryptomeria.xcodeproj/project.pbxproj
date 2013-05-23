@@ -42,6 +42,8 @@
 		1A3CBB60174CCA2B0012A9FF /* icon-test-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB58174CCA2B0012A9FF /* icon-test-highlight@2x.png */; };
 		1A3CBB61174CCA2B0012A9FF /* icon-test.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB59174CCA2B0012A9FF /* icon-test.png */; };
 		1A3CBB62174CCA2B0012A9FF /* icon-test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A3CBB5A174CCA2B0012A9FF /* icon-test@2x.png */; };
+		1A580577174DF7D900A21B6D /* icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A580576174DF7D900A21B6D /* icon-57.png */; };
+		1A580579174DF7DD00A21B6D /* icon-57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A580578174DF7DD00A21B6D /* icon-57@2x.png */; };
 		1A5980E51703E25300A7F34B /* NSArray+Flatten.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5980E41703E25300A7F34B /* NSArray+Flatten.m */; };
 		1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */; };
 		1A750328173254BD0071D087 /* chart.html in Resources */ = {isa = PBXBuildFile; fileRef = 1A750327173254BD0071D087 /* chart.html */; };
@@ -74,7 +76,6 @@
 		1A9A11DE17422AB300CD9972 /* button-decrease@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A11DA17422AB300CD9972 /* button-decrease@2x.png */; };
 		1A9A11DF17422AB300CD9972 /* button-increase.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A11DB17422AB300CD9972 /* button-increase.png */; };
 		1A9A11E017422AB300CD9972 /* button-increase@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A11DC17422AB300CD9972 /* button-increase@2x.png */; };
-		1AD2A89516FED6CA004137FE /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AD2A89416FED6CA004137FE /* icon.png */; };
 		1ADA76A51705DC23007F6190 /* CMVocabularyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA76A41705DC23007F6190 /* CMVocabularyCell.m */; };
 		1ADA76A61705E019007F6190 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */; };
 		1AFAFC9C173E65410057BB82 /* option-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAFC98173E65410057BB82 /* option-normal.png */; };
@@ -134,6 +135,8 @@
 		1A3CBB58174CCA2B0012A9FF /* icon-test-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-test-highlight@2x.png"; path = "resources/icon-test-highlight@2x.png"; sourceTree = "<group>"; };
 		1A3CBB59174CCA2B0012A9FF /* icon-test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-test.png"; path = "resources/icon-test.png"; sourceTree = "<group>"; };
 		1A3CBB5A174CCA2B0012A9FF /* icon-test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-test@2x.png"; path = "resources/icon-test@2x.png"; sourceTree = "<group>"; };
+		1A580576174DF7D900A21B6D /* icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-57.png"; path = "../icon-57.png"; sourceTree = "<group>"; };
+		1A580578174DF7DD00A21B6D /* icon-57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-57@2x.png"; path = "../icon-57@2x.png"; sourceTree = "<group>"; };
 		1A5980E31703E25300A7F34B /* NSArray+Flatten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Flatten.h"; path = "data/NSArray+Flatten.h"; sourceTree = "<group>"; };
 		1A5980E41703E25300A7F34B /* NSArray+Flatten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Flatten.m"; path = "data/NSArray+Flatten.m"; sourceTree = "<group>"; };
 		1A72658F1700A33900C9A0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -179,7 +182,6 @@
 		1A9A11DA17422AB300CD9972 /* button-decrease@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-decrease@2x.png"; path = "resources/button-decrease@2x.png"; sourceTree = "<group>"; };
 		1A9A11DB17422AB300CD9972 /* button-increase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-increase.png"; path = "resources/button-increase.png"; sourceTree = "<group>"; };
 		1A9A11DC17422AB300CD9972 /* button-increase@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "button-increase@2x.png"; path = "resources/button-increase@2x.png"; sourceTree = "<group>"; };
-		1AD2A89416FED6CA004137FE /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../icon.png; sourceTree = "<group>"; };
 		1ADA76A31705DC23007F6190 /* CMVocabularyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMVocabularyCell.h; sourceTree = "<group>"; };
 		1ADA76A41705DC23007F6190 /* CMVocabularyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMVocabularyCell.m; sourceTree = "<group>"; };
 		1AFAFC98173E65410057BB82 /* option-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal.png"; path = "resources/option-normal.png"; sourceTree = "<group>"; };
@@ -414,11 +416,12 @@
 		1A7C325316FDC76900F5A71A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1A580578174DF7DD00A21B6D /* icon-57@2x.png */,
+				1A580576174DF7D900A21B6D /* icon-57.png */,
 				1A3CBB3F174CB1300012A9FF /* Controls */,
 				1A3CBB3E174CB1270012A9FF /* TabBar */,
 				1A3CBB19174C9CFD0012A9FF /* Options */,
 				1A3CBB18174C9CF80012A9FF /* Icons */,
-				1AD2A89416FED6CA004137FE /* icon.png */,
 			);
 			name = Resources;
 			path = Cryptomeria;
@@ -527,7 +530,6 @@
 				1A7C321616FC990C00F5A71A /* Default.png in Resources */,
 				1A7C321816FC990C00F5A71A /* Default@2x.png in Resources */,
 				1A7C321A16FC990C00F5A71A /* Default-568h@2x.png in Resources */,
-				1AD2A89516FED6CA004137FE /* icon.png in Resources */,
 				1A95E4F71705367B00DB0193 /* vocabulary.json in Resources */,
 				1A750328173254BD0071D087 /* chart.html in Resources */,
 				1A75035517325BDD0071D087 /* chart.css in Resources */,
@@ -579,6 +581,8 @@
 				1A3CBB60174CCA2B0012A9FF /* icon-test-highlight@2x.png in Resources */,
 				1A3CBB61174CCA2B0012A9FF /* icon-test.png in Resources */,
 				1A3CBB62174CCA2B0012A9FF /* icon-test@2x.png in Resources */,
+				1A580577174DF7D900A21B6D /* icon-57.png in Resources */,
+				1A580579174DF7DD00A21B6D /* icon-57@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
