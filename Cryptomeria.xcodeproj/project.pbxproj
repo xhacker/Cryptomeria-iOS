@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A049712175858D400BE0E8D /* MainStoryboard~iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A049710175858D400BE0E8D /* MainStoryboard~iPad.storyboard */; };
 		1A2CBB6C1748C9C70037E20D /* option-normal-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6A1748C9C70037E20D /* option-normal-pressing.png */; };
 		1A2CBB6D1748C9C70037E20D /* option-normal-pressing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6B1748C9C70037E20D /* option-normal-pressing@2x.png */; };
 		1A2CBB721748D2430037E20D /* option-right-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6E1748D2430037E20D /* option-right-pressing.png */; };
@@ -103,6 +104,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A049711175858D400BE0E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/MainStoryboard~iPad.storyboard"; sourceTree = "<group>"; };
 		1A2CBB6A1748C9C70037E20D /* option-normal-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal-pressing.png"; path = "resources/option-normal-pressing.png"; sourceTree = "<group>"; };
 		1A2CBB6B1748C9C70037E20D /* option-normal-pressing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal-pressing@2x.png"; path = "resources/option-normal-pressing@2x.png"; sourceTree = "<group>"; };
 		1A2CBB6E1748D2430037E20D /* option-right-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-right-pressing.png"; path = "resources/option-right-pressing.png"; sourceTree = "<group>"; };
@@ -372,6 +374,7 @@
 				1A3CBB48174CC0950012A9FF /* CMTabBarController.h */,
 				1A3CBB49174CC0950012A9FF /* CMTabBarController.m */,
 				1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */,
+				1A049710175858D400BE0E8D /* MainStoryboard~iPad.storyboard */,
 				1A7C320A16FC990C00F5A71A /* Supporting Files */,
 			);
 			path = Cryptomeria;
@@ -546,6 +549,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ADA76A61705E019007F6190 /* MainStoryboard.storyboard in Resources */,
+				1A049712175858D400BE0E8D /* MainStoryboard~iPad.storyboard in Resources */,
 				1A7C320E16FC990C00F5A71A /* InfoPlist.strings in Resources */,
 				1A7C321616FC990C00F5A71A /* Default.png in Resources */,
 				1A7C321816FC990C00F5A71A /* Default@2x.png in Resources */,
@@ -689,6 +693,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		1A049710175858D400BE0E8D /* MainStoryboard~iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A049711175858D400BE0E8D /* Base */,
+			);
+			name = "MainStoryboard~iPad.storyboard";
+			sourceTree = "<group>";
+		};
 		1A7C320C16FC990C00F5A71A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -784,7 +796,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
 				INFOPLIST_FILE = "Cryptomeria/Cryptomeria-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -796,7 +810,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
 				INFOPLIST_FILE = "Cryptomeria/Cryptomeria-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

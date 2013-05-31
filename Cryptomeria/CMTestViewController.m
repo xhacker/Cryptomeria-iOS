@@ -378,7 +378,7 @@ typedef enum {
     NSString *scoreText = [[NSString alloc] initWithFormat:@"%@ / %@", correctText, totalText];
     NSMutableAttributedString *scoreAttributedString = [[NSMutableAttributedString alloc] initWithString:scoreText];
     NSDictionary *attributes = @{NSForegroundColorAttributeName: kScoreRightColor,
-                                 NSFontAttributeName: [UIFont fontWithName:kAvenirBoldFont size:17.0]};
+                                 NSFontAttributeName: [UIFont fontWithName:kAvenirBoldFont size:self.scoreLabel.font.pointSize]};
     [scoreAttributedString addAttributes:attributes range:NSMakeRange(0, correctText.length)];
     self.scoreLabel.hidden = NO;
     self.scoreLabel.attributedText = scoreAttributedString;
