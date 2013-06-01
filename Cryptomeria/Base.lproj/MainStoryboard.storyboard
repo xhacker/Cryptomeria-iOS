@@ -165,37 +165,39 @@
                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftv-zW-uyi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftv-zW-uyi">
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="WnP-em-9sa"/>
-                                    <constraint firstAttribute="width" constant="30" id="Xe3-d0-JQ1"/>
+                                    <constraint firstAttribute="width" constant="36" id="5c8-jI-ZQR"/>
+                                    <constraint firstAttribute="height" constant="48" id="DrL-wm-h84"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="-" backgroundImage="button-decrease.png">
+                                <inset key="contentEdgeInsets" minX="6" minY="6" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="-" image="button-decrease.png">
                                     <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="disabled" backgroundImage="button-decrease-disabled.png"/>
-                                <state key="highlighted" backgroundImage="button-decrease-pressing.png">
+                                <state key="disabled" image="button-decrease-disabled.png"/>
+                                <state key="highlighted" image="button-decrease-pressing.png">
                                     <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="rangeDecreased:" destination="3" eventType="touchUpInside" id="fmz-pj-7Ss"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzY-R5-eJu">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzY-R5-eJu">
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="IxQ-Db-uoH"/>
+                                    <constraint firstAttribute="width" constant="42" id="q4p-8l-DXu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="+" backgroundImage="button-increase.png">
+                                <inset key="contentEdgeInsets" minX="0.0" minY="6" maxX="12" maxY="0.0"/>
+                                <state key="normal" title="+" image="button-increase.png">
                                     <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="disabled" backgroundImage="button-increase-disabled.png"/>
-                                <state key="highlighted" backgroundImage="button-increase-pressing.png">
+                                <state key="disabled" image="button-increase-disabled.png"/>
+                                <state key="highlighted" image="button-increase-pressing.png">
                                     <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -204,6 +206,7 @@
                             </button>
                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWS-u2-k9T">
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XBY-4N-TLd"/>
                                     <constraint firstAttribute="width" constant="72" id="lew-PB-rBk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="13"/>
@@ -224,20 +227,19 @@
                             <constraint firstItem="oRg-tF-7jh" firstAttribute="top" secondItem="17" secondAttribute="top" constant="110" type="user" id="0SX-ob-Evd"/>
                             <constraint firstItem="yZV-g4-aRC" firstAttribute="top" secondItem="6Zk-5m-Qgc" secondAttribute="top" type="default" id="0ng-Gl-efX"/>
                             <constraint firstAttribute="bottom" secondItem="zXy-4r-0ur" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="0q2-a4-I0k"/>
-                            <constraint firstItem="ftv-zW-uyi" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="1JR-AG-jsr"/>
+                            <constraint firstItem="uzY-R5-eJu" firstAttribute="top" secondItem="ftv-zW-uyi" secondAttribute="top" type="default" id="1G7-rE-Drj"/>
                             <constraint firstItem="DMP-c1-JIh" firstAttribute="top" secondItem="zXy-4r-0ur" secondAttribute="top" type="default" id="4Kb-TQ-n8k"/>
                             <constraint firstItem="yZV-g4-aRC" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="91" id="5jE-Jr-od3"/>
                             <constraint firstItem="n4c-5R-aC4" firstAttribute="top" secondItem="17" secondAttribute="top" constant="149" type="user" id="64E-me-QWT"/>
                             <constraint firstAttribute="trailing" secondItem="1ma-hR-1MS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7R4-su-IZ6"/>
-                            <constraint firstItem="uzY-R5-eJu" firstAttribute="trailing" secondItem="DMP-c1-JIh" secondAttribute="trailing" type="default" id="82Q-bc-bYO"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BMB-aM-TkD"/>
+                            <constraint firstAttribute="trailing" secondItem="DMP-c1-JIh" secondAttribute="trailing" constant="19" id="CoO-U5-o45"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="24" id="F4l-WK-fCX"/>
                             <constraint firstItem="PWS-u2-k9T" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="GS4-XM-4v5"/>
-                            <constraint firstItem="ftv-zW-uyi" firstAttribute="bottom" secondItem="PWS-u2-k9T" secondAttribute="bottom" type="default" id="MDm-YH-Gc8"/>
-                            <constraint firstItem="uzY-R5-eJu" firstAttribute="bottom" secondItem="PWS-u2-k9T" secondAttribute="bottom" type="default" id="OAJ-x4-SvY"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="top" secondItem="17" secondAttribute="top" constant="101" id="PVd-wu-LCf"/>
-                            <constraint firstAttribute="trailing" secondItem="uzY-R5-eJu" secondAttribute="trailing" constant="19" id="S1j-Cc-47o"/>
-                            <constraint firstItem="uzY-R5-eJu" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="W3g-cR-dph"/>
+                            <constraint firstAttribute="trailing" secondItem="ftv-zW-uyi" secondAttribute="trailing" constant="121" id="Psb-Bi-ucG"/>
+                            <constraint firstAttribute="trailing" secondItem="uzY-R5-eJu" secondAttribute="trailing" constant="7" id="RXg-Zi-saV"/>
+                            <constraint firstItem="ftv-zW-uyi" firstAttribute="top" secondItem="17" secondAttribute="top" constant="8" id="Tsf-SL-0RE"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="cWf-ms-f2g" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XPq-gY-wyh"/>
                             <constraint firstItem="yZV-g4-aRC" firstAttribute="top" secondItem="zXy-4r-0ur" secondAttribute="top" type="default" id="avw-O9-kf9"/>
                             <constraint firstItem="6Zk-5m-Qgc" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="18" id="bAl-iC-mvN"/>
@@ -250,7 +252,7 @@
                             <constraint firstItem="oRg-tF-7jh" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" type="default" id="teG-lT-ldo"/>
                             <constraint firstAttribute="bottom" secondItem="yZV-g4-aRC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="wXP-fq-9ap"/>
                             <constraint firstAttribute="bottom" secondItem="DMP-c1-JIh" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="xua-Ks-MUl"/>
-                            <constraint firstItem="ftv-zW-uyi" firstAttribute="leading" secondItem="cWf-ms-f2g" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="y8N-0z-v4u"/>
+                            <constraint firstItem="uzY-R5-eJu" firstAttribute="bottom" secondItem="ftv-zW-uyi" secondAttribute="bottom" type="default" id="zlw-E2-kN2"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Test" image="icon-test.png" id="6"/>
@@ -431,11 +433,6 @@
         <class className="CMTestViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CMTestViewController.h"/>
             <relationships>
-                <relationship kind="action" name="directionChanged:" candidateClass="UISegmentedControl"/>
-                <relationship kind="action" name="horkChanged:" candidateClass="UISegmentedControl"/>
-                <relationship kind="action" name="optionClicked:" candidateClass="UIButton"/>
-                <relationship kind="action" name="rangeDecreased:" candidateClass="UIButton"/>
-                <relationship kind="action" name="rangeIncreased:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="horkControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="mainKanaLabel" candidateClass="UILabel"/>
