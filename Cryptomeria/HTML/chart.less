@@ -5,65 +5,139 @@ ul#kana-chart {
 
 	li {
 		border-top: 1px solid #ddd;
-		padding: 12px 5px 16px 5px;
 
 		.head {
 			float: left;
-			padding-top: 19px;
-			margin: 10px 16px 0 16px;
 			text-align: center;
 			.kana {
-				font-size: 28px;
-				line-height: 28px;
-				padding: 6px;
 				font-weight: bold;
 				font-family: @JapaneseGothicFontFamily;
-				border-radius: 6px;
 				background-color: #aaa;
 				color: #fff;
 				float: left;
 			}
 			.romaji {
-				font-size: 20px;
 				font-weight: 600;
-				line-height: 38px;
 				color: #aaa;
 			}
 		}
 
 		.item {
 			float: left;
-			width: 45px;
 			text-align: center;
 			.kana {
-				font-size: 32px;
-				line-height: 46px;
 				font-family: @JapaneseMinchoFontFamily;
 			}
-			.romaji {
-				margin-top: 7px;
-				font-size: 15px;
-			}
+			.romaji {}
 		}
 		.dup {
 			color: #aaa;
 		}
 	}
+}
 
-	li.youon {
-		.head {
-			margin-right: 11px;
-			.kana {
-				font-size: 26px;
+// iPhone Portrait
+@media only screen and (device-width: 320px) and (orientation: portrait) {
+	ul#kana-chart {
+		li {
+			padding: 12px 5px 16px 5px;
+
+			.head {
+				padding-top: 19px;
+				margin: 10px 16px 0 16px;
+				.kana {
+					font-size: 28px;
+					line-height: 28px;
+					padding: 6px;
+					border-radius: 6px;
+				}
+				.romaji {
+					font-size: 20px;
+					line-height: 38px;
+				}
 			}
-			.romaji {
-				font-size: 19px;
+
+			.item {
+				width: 45px;
+				.kana {
+					font-size: 32px;
+					line-height: 46px;
+				}
+				.romaji {
+					margin-top: 7px;
+					font-size: 15px;
+				}
 			}
 		}
-		.item {
-			width: 66px;
-			.kana {
-				font-size: 27px;
+
+		li.youon {
+			.head {
+				margin-right: 11px;
+				.kana {
+					font-size: 26px;
+				}
+				.romaji {
+					font-size: 19px;
+				}
+			}
+			.item {
+				width: 66px;
+				.kana {
+					font-size: 27px;
+				}
+			}
+		}
+	}
+}
+
+// iPad
+@media only screen and (device-width: 768px) {
+	ul#kana-chart {
+		li {
+			padding: 20px 5px 24px 5px;
+
+			.head {
+				padding-top: 44px;
+				margin: 10px 36px 0 66px;
+				.kana {
+					font-size: 40px;
+					line-height: 40px;
+					padding: 11px;
+					border-radius: 11px;
+				}
+				.romaji {
+					font-size: 28px;
+					line-height: 46px;
+				}
+			}
+
+			.item {
+				width: 108px;
+				.kana {
+					font-size: 50px;
+					line-height: 76px;
+				}
+				.romaji {
+					margin-top: 9px;
+					font-size: 23px;
+				}
+			}
+		}
+
+		li.youon {
+			.item {
+				width: 165px;
+			}
+		}
+	}
+}
+
+// iPad Landscape
+@media only screen and (device-width: 768px) and (orientation: landscape) {
+	ul#kana-chart {
+		li {
+			.head {
+				margin: 10px 36px 0 185px;
 			}
 		}
 	}
