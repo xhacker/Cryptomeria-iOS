@@ -103,39 +103,38 @@ ul#kana-chart li .dup {
 }
 @media only screen and (device-width: 768px) {
   ul#kana-chart li {
-    padding: 20px 5px 24px 5px;
+    padding: 20px 0 24px 0;
   }
-  ul#kana-chart li .head {
+  ul#kana-chart li .inner {
+    width: 768px;
+    margin: 0 auto;
+  }
+  ul#kana-chart li .inner .head {
     padding-top: 44px;
-    margin: 10px 36px 0 66px;
+    margin: 10px 36px 0px 72px;
   }
-  ul#kana-chart li .head .kana {
+  ul#kana-chart li .inner .head .kana {
     font-size: 40px;
     line-height: 40px;
     padding: 11px;
     border-radius: 11px;
   }
-  ul#kana-chart li .head .romaji {
+  ul#kana-chart li .inner .head .romaji {
     font-size: 28px;
     line-height: 46px;
   }
-  ul#kana-chart li .item {
+  ul#kana-chart li .inner .item {
     width: 108px;
   }
-  ul#kana-chart li .item .kana {
+  ul#kana-chart li .inner .item .kana {
     font-size: 50px;
     line-height: 76px;
   }
-  ul#kana-chart li .item .romaji {
+  ul#kana-chart li .inner .item .romaji {
     margin-top: 9px;
     font-size: 23px;
   }
   ul#kana-chart li.youon .item {
     width: 165px;
-  }
-}
-@media only screen and (device-width: 768px) and (orientation: landscape) {
-  ul#kana-chart li .head {
-    margin: 10px 36px 0 185px;
   }
 }

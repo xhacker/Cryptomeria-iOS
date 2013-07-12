@@ -94,32 +94,37 @@ ul#kana-chart {
 @media only screen and (device-width: 768px) {
 	ul#kana-chart {
 		li {
-			padding: 20px 5px 24px 5px;
+			padding: 20px 0 24px 0;
 
-			.head {
-				padding-top: 44px;
-				margin: 10px 36px 0 66px;
-				.kana {
-					font-size: 40px;
-					line-height: 40px;
-					padding: 11px;
-					border-radius: 11px;
-				}
-				.romaji {
-					font-size: 28px;
-					line-height: 46px;
-				}
-			}
+			.inner {
+				width: 768px;
+				margin: 0 auto;
 
-			.item {
-				width: 108px;
-				.kana {
-					font-size: 50px;
-					line-height: 76px;
+				.head {
+					padding-top: 44px;
+					margin: 10px 36px 0px 72px;
+					.kana {
+						font-size: 40px;
+						line-height: 40px;
+						padding: 11px;
+						border-radius: 11px;
+					}
+					.romaji {
+						font-size: 28px;
+						line-height: 46px;
+					}
 				}
-				.romaji {
-					margin-top: 9px;
-					font-size: 23px;
+
+				.item {
+					width: 108px;
+					.kana {
+						font-size: 50px;
+						line-height: 76px;
+					}
+					.romaji {
+						margin-top: 9px;
+						font-size: 23px;
+					}
 				}
 			}
 		}
@@ -127,17 +132,6 @@ ul#kana-chart {
 		li.youon {
 			.item {
 				width: 165px;
-			}
-		}
-	}
-}
-
-// iPad Landscape
-@media only screen and (device-width: 768px) and (orientation: landscape) {
-	ul#kana-chart {
-		li {
-			.head {
-				margin: 10px 36px 0 185px;
 			}
 		}
 	}

@@ -424,50 +424,6 @@
         <image name="option-normal-pressing.png" width="64" height="44"/>
         <image name="option-normal.png" width="64" height="44"/>
     </resources>
-    <classes>
-        <class className="CMChartViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMChartViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="CMTabBarController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMTabBarController.h"/>
-        </class>
-        <class className="CMTestViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMTestViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="horkControl" candidateClass="UISegmentedControl"/>
-                <relationship kind="outlet" name="mainKanaLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mainKanaLabelTopConstraint" candidateClass="NSLayoutConstraint"/>
-                <relationship kind="outlet" name="mainRomajiLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mainRomajiLabelTopConstraint" candidateClass="NSLayoutConstraint"/>
-                <relationship kind="outlet" name="rangeDecreaseButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="rangeIncreaseButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="rangeLabelButton" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="scoreLabel" candidateClass="UILabel"/>
-                <relationship kind="outletCollection" name="optionButtons" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="CMVocabularyCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMVocabularyCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="kanaLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="meaningLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="romajiLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CMVocabularyViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CMVocabularyViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
