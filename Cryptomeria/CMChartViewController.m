@@ -26,6 +26,8 @@
         }
     }
     
+    self.webView.scrollView.decelerationRate = UIScrollViewDecelerationRateNormal;
+    
     NSString *HTML = [NSString stringWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"chart" ofType:@"html"]  encoding:NSUTF8StringEncoding error:nil];
     NSURL *baseURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] resourcePath]];
     [self.webView loadHTMLString:HTML baseURL:baseURL];
