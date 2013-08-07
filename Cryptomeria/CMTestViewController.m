@@ -10,6 +10,9 @@
 #import "CMChartData.h"
 #import "NSMutableArray+Shuffling.h"
 #import "UIButton+AttributedString.h"
+#import "UIImage+Device.h"
+
+#define IS_IPAD() (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define kNormalShadowColor RGBA(32, 85, 154, 1)
@@ -122,28 +125,31 @@ typedef enum {
 
 - (void)configureStyle
 {
-    UIImage *segmentBackground = [[UIImage imageNamed:@"segment"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
-    UIImage *segmentBackgroundSelected = [[UIImage imageNamed:@"segment-selected"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 5, 0, 5)];
+    CGFloat edgeInset = IS_IPAD() ? 7.0 : 5.0;
+    UIImage *segmentBackground = [[UIImage imageNamedForCurrentDevice:@"segment"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, edgeInset, 0, edgeInset)];
+    UIImage *segmentBackgroundSelected = [[UIImage imageNamedForCurrentDevice:@"segment-selected"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, edgeInset, 0, edgeInset)];
     [[UISegmentedControl appearance] setBackgroundImage:segmentBackground
                                                forState:UIControlStateNormal
                                              barMetrics:UIBarMetricsDefault];
     [[UISegmentedControl appearance] setBackgroundImage:segmentBackgroundSelected
                                                forState:UIControlStateSelected
                                              barMetrics:UIBarMetricsDefault];
-    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamed:@"segment-divider-00"]
+    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamedForCurrentDevice:@"segment-divider-00"]
                                  forLeftSegmentState:UIControlStateNormal
                                    rightSegmentState:UIControlStateNormal
                                           barMetrics:UIBarMetricsDefault];
-    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamed:@"segment-divider-01"]
+    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamedForCurrentDevice:@"segment-divider-01"]
                                  forLeftSegmentState:UIControlStateNormal
                                    rightSegmentState:UIControlStateSelected
                                           barMetrics:UIBarMetricsDefault];
-    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamed:@"segment-divider-10"]
+    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamedForCurrentDevice:@"segment-divider-10"]
                                  forLeftSegmentState:UIControlStateSelected
                                    rightSegmentState:UIControlStateNormal
                                           barMetrics:UIBarMetricsDefault];
+    
+    CGFloat fontSize = IS_IPAD() ? 19.0 : 13.0;
     [[UISegmentedControl appearance] setTitleTextAttributes:@{
-                                        UITextAttributeFont:[UIFont fontWithName:kHiraKakuBoldFont size:13.0],
+                                        UITextAttributeFont:[UIFont fontWithName:kHiraKakuBoldFont size:fontSize],
                                    UITextAttributeTextColor:RGBA(140, 140, 140, 1),
                              UITextAttributeTextShadowColor:RGBA(255, 255, 255, 0.8),
                             UITextAttributeTextShadowOffset:[NSValue valueWithUIOffset:UIOffsetMake(0, 1)]}
@@ -152,14 +158,12 @@ typedef enum {
                                    UITextAttributeTextColor:RGBA(102, 102, 102, 1)}
                                                    forState:UIControlStateSelected];
     
-    CGFloat const yOffset = 4.0;
+    CGFloat yOffset = IS_IPAD()? 6.0 : 4.0;
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:2];
     [self.directionControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
     [self.directionControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
-    
-    self.rangeLabelButton.titleLabel.textAlignment = NSTextAlignmentCenter;
 }
 
 - (void)generateSequence

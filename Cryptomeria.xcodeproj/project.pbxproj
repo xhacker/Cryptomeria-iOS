@@ -49,6 +49,31 @@
 		1A67CFFD174E74120032BF9D /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A67CFFB174E74120032BF9D /* icon-72.png */; };
 		1A67CFFE174E74120032BF9D /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A67CFFC174E74120032BF9D /* icon-72@2x.png */; };
 		1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */; };
+		1A74195A179C2D3F00FCC42E /* ipad-button-decrease-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741942179C2D3F00FCC42E /* ipad-button-decrease-disabled.png */; };
+		1A74195B179C2D3F00FCC42E /* ipad-button-decrease-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741943179C2D3F00FCC42E /* ipad-button-decrease-disabled@2x.png */; };
+		1A74195C179C2D3F00FCC42E /* ipad-button-decrease-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741944179C2D3F00FCC42E /* ipad-button-decrease-pressing.png */; };
+		1A74195D179C2D3F00FCC42E /* ipad-button-decrease-pressing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741945179C2D3F00FCC42E /* ipad-button-decrease-pressing@2x.png */; };
+		1A74195E179C2D3F00FCC42E /* ipad-button-decrease.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741946179C2D3F00FCC42E /* ipad-button-decrease.png */; };
+		1A74195F179C2D3F00FCC42E /* ipad-button-decrease@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741947179C2D3F00FCC42E /* ipad-button-decrease@2x.png */; };
+		1A741960179C2D3F00FCC42E /* ipad-button-increase-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741948179C2D3F00FCC42E /* ipad-button-increase-disabled.png */; };
+		1A741961179C2D3F00FCC42E /* ipad-button-increase-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741949179C2D3F00FCC42E /* ipad-button-increase-disabled@2x.png */; };
+		1A741962179C2D3F00FCC42E /* ipad-button-increase-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A74194A179C2D3F00FCC42E /* ipad-button-increase-pressing.png */; };
+		1A741963179C2D3F00FCC42E /* ipad-button-increase-pressing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A74194B179C2D3F00FCC42E /* ipad-button-increase-pressing@2x.png */; };
+		1A741964179C2D3F00FCC42E /* ipad-button-increase.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A74194C179C2D3F00FCC42E /* ipad-button-increase.png */; };
+		1A741965179C2D3F00FCC42E /* ipad-button-increase@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A74194D179C2D3F00FCC42E /* ipad-button-increase@2x.png */; };
+		1A741966179C2D3F00FCC42E /* ipad-label-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A74194E179C2D3F00FCC42E /* ipad-label-background.png */; };
+		1A741967179C2D3F00FCC42E /* ipad-label-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A74194F179C2D3F00FCC42E /* ipad-label-background@2x.png */; };
+		1A741968179C2D3F00FCC42E /* ipad-segment-divider-00.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741950179C2D3F00FCC42E /* ipad-segment-divider-00.png */; };
+		1A741969179C2D3F00FCC42E /* ipad-segment-divider-00@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741951179C2D3F00FCC42E /* ipad-segment-divider-00@2x.png */; };
+		1A74196A179C2D3F00FCC42E /* ipad-segment-divider-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741952179C2D3F00FCC42E /* ipad-segment-divider-01.png */; };
+		1A74196B179C2D3F00FCC42E /* ipad-segment-divider-01@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741953179C2D3F00FCC42E /* ipad-segment-divider-01@2x.png */; };
+		1A74196C179C2D3F00FCC42E /* ipad-segment-divider-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741954179C2D3F00FCC42E /* ipad-segment-divider-10.png */; };
+		1A74196D179C2D3F00FCC42E /* ipad-segment-divider-10@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741955179C2D3F00FCC42E /* ipad-segment-divider-10@2x.png */; };
+		1A74196E179C2D3F00FCC42E /* ipad-segment-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741956179C2D3F00FCC42E /* ipad-segment-selected.png */; };
+		1A74196F179C2D3F00FCC42E /* ipad-segment-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741957179C2D3F00FCC42E /* ipad-segment-selected@2x.png */; };
+		1A741970179C2D3F00FCC42E /* ipad-segment.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741958179C2D3F00FCC42E /* ipad-segment.png */; };
+		1A741971179C2D3F00FCC42E /* ipad-segment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741959179C2D3F00FCC42E /* ipad-segment@2x.png */; };
+		1A741975179C2F8A00FCC42E /* UIImage+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A741974179C2F8A00FCC42E /* UIImage+Device.m */; };
 		1A750328173254BD0071D087 /* chart.html in Resources */ = {isa = PBXBuildFile; fileRef = 1A750327173254BD0071D087 /* chart.html */; };
 		1A75035517325BDD0071D087 /* chart.css in Resources */ = {isa = PBXBuildFile; fileRef = 1A75035417325BDD0071D087 /* chart.css */; };
 		1A7C320416FC990C00F5A71A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320316FC990C00F5A71A /* UIKit.framework */; };
@@ -150,6 +175,32 @@
 		1A72658F1700A33900C9A0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1A7265931700B06F00C9A0CB /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
 		1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
+		1A741942179C2D3F00FCC42E /* ipad-button-decrease-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-button-decrease-disabled.png"; path = "resources/ipad-button-decrease-disabled.png"; sourceTree = "<group>"; };
+		1A741943179C2D3F00FCC42E /* ipad-button-decrease-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-button-decrease-disabled@2x.png"; path = "resources/ipad-button-decrease-disabled@2x.png"; sourceTree = "<group>"; };
+		1A741944179C2D3F00FCC42E /* ipad-button-decrease-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-button-decrease-pressing.png"; path = "resources/ipad-button-decrease-pressing.png"; sourceTree = "<group>"; };
+		1A741945179C2D3F00FCC42E /* ipad-button-decrease-pressing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-button-decrease-pressing@2x.png"; path = "resources/ipad-button-decrease-pressing@2x.png"; sourceTree = "<group>"; };
+		1A741946179C2D3F00FCC42E /* ipad-button-decrease.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-button-decrease.png"; path = "resources/ipad-button-decrease.png"; sourceTree = "<group>"; };
+		1A741947179C2D3F00FCC42E /* ipad-button-decrease@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-button-decrease@2x.png"; path = "resources/ipad-button-decrease@2x.png"; sourceTree = "<group>"; };
+		1A741948179C2D3F00FCC42E /* ipad-button-increase-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-button-increase-disabled.png"; path = "resources/ipad-button-increase-disabled.png"; sourceTree = "<group>"; };
+		1A741949179C2D3F00FCC42E /* ipad-button-increase-disabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-button-increase-disabled@2x.png"; path = "resources/ipad-button-increase-disabled@2x.png"; sourceTree = "<group>"; };
+		1A74194A179C2D3F00FCC42E /* ipad-button-increase-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-button-increase-pressing.png"; path = "resources/ipad-button-increase-pressing.png"; sourceTree = "<group>"; };
+		1A74194B179C2D3F00FCC42E /* ipad-button-increase-pressing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-button-increase-pressing@2x.png"; path = "resources/ipad-button-increase-pressing@2x.png"; sourceTree = "<group>"; };
+		1A74194C179C2D3F00FCC42E /* ipad-button-increase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-button-increase.png"; path = "resources/ipad-button-increase.png"; sourceTree = "<group>"; };
+		1A74194D179C2D3F00FCC42E /* ipad-button-increase@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-button-increase@2x.png"; path = "resources/ipad-button-increase@2x.png"; sourceTree = "<group>"; };
+		1A74194E179C2D3F00FCC42E /* ipad-label-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-label-background.png"; path = "resources/ipad-label-background.png"; sourceTree = "<group>"; };
+		1A74194F179C2D3F00FCC42E /* ipad-label-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-label-background@2x.png"; path = "resources/ipad-label-background@2x.png"; sourceTree = "<group>"; };
+		1A741950179C2D3F00FCC42E /* ipad-segment-divider-00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-segment-divider-00.png"; path = "resources/ipad-segment-divider-00.png"; sourceTree = "<group>"; };
+		1A741951179C2D3F00FCC42E /* ipad-segment-divider-00@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-segment-divider-00@2x.png"; path = "resources/ipad-segment-divider-00@2x.png"; sourceTree = "<group>"; };
+		1A741952179C2D3F00FCC42E /* ipad-segment-divider-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-segment-divider-01.png"; path = "resources/ipad-segment-divider-01.png"; sourceTree = "<group>"; };
+		1A741953179C2D3F00FCC42E /* ipad-segment-divider-01@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-segment-divider-01@2x.png"; path = "resources/ipad-segment-divider-01@2x.png"; sourceTree = "<group>"; };
+		1A741954179C2D3F00FCC42E /* ipad-segment-divider-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-segment-divider-10.png"; path = "resources/ipad-segment-divider-10.png"; sourceTree = "<group>"; };
+		1A741955179C2D3F00FCC42E /* ipad-segment-divider-10@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-segment-divider-10@2x.png"; path = "resources/ipad-segment-divider-10@2x.png"; sourceTree = "<group>"; };
+		1A741956179C2D3F00FCC42E /* ipad-segment-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-segment-selected.png"; path = "resources/ipad-segment-selected.png"; sourceTree = "<group>"; };
+		1A741957179C2D3F00FCC42E /* ipad-segment-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-segment-selected@2x.png"; path = "resources/ipad-segment-selected@2x.png"; sourceTree = "<group>"; };
+		1A741958179C2D3F00FCC42E /* ipad-segment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-segment.png"; path = "resources/ipad-segment.png"; sourceTree = "<group>"; };
+		1A741959179C2D3F00FCC42E /* ipad-segment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-segment@2x.png"; path = "resources/ipad-segment@2x.png"; sourceTree = "<group>"; };
+		1A741973179C2F8A00FCC42E /* UIImage+Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Device.h"; sourceTree = "<group>"; };
+		1A741974179C2F8A00FCC42E /* UIImage+Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Device.m"; sourceTree = "<group>"; };
 		1A750327173254BD0071D087 /* chart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = chart.html; path = HTML/chart.html; sourceTree = "<group>"; };
 		1A75035417325BDD0071D087 /* chart.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = chart.css; path = HTML/chart.css; sourceTree = "<group>"; };
 		1A7C320016FC990C00F5A71A /* Cryptomeria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptomeria.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -320,6 +371,37 @@
 			name = "App Icons";
 			sourceTree = "<group>";
 		};
+		1A741972179C2D4300FCC42E /* Controls (iPad) */ = {
+			isa = PBXGroup;
+			children = (
+				1A741942179C2D3F00FCC42E /* ipad-button-decrease-disabled.png */,
+				1A741943179C2D3F00FCC42E /* ipad-button-decrease-disabled@2x.png */,
+				1A741944179C2D3F00FCC42E /* ipad-button-decrease-pressing.png */,
+				1A741945179C2D3F00FCC42E /* ipad-button-decrease-pressing@2x.png */,
+				1A741946179C2D3F00FCC42E /* ipad-button-decrease.png */,
+				1A741947179C2D3F00FCC42E /* ipad-button-decrease@2x.png */,
+				1A741948179C2D3F00FCC42E /* ipad-button-increase-disabled.png */,
+				1A741949179C2D3F00FCC42E /* ipad-button-increase-disabled@2x.png */,
+				1A74194A179C2D3F00FCC42E /* ipad-button-increase-pressing.png */,
+				1A74194B179C2D3F00FCC42E /* ipad-button-increase-pressing@2x.png */,
+				1A74194C179C2D3F00FCC42E /* ipad-button-increase.png */,
+				1A74194D179C2D3F00FCC42E /* ipad-button-increase@2x.png */,
+				1A74194E179C2D3F00FCC42E /* ipad-label-background.png */,
+				1A74194F179C2D3F00FCC42E /* ipad-label-background@2x.png */,
+				1A741950179C2D3F00FCC42E /* ipad-segment-divider-00.png */,
+				1A741951179C2D3F00FCC42E /* ipad-segment-divider-00@2x.png */,
+				1A741952179C2D3F00FCC42E /* ipad-segment-divider-01.png */,
+				1A741953179C2D3F00FCC42E /* ipad-segment-divider-01@2x.png */,
+				1A741954179C2D3F00FCC42E /* ipad-segment-divider-10.png */,
+				1A741955179C2D3F00FCC42E /* ipad-segment-divider-10@2x.png */,
+				1A741956179C2D3F00FCC42E /* ipad-segment-selected.png */,
+				1A741957179C2D3F00FCC42E /* ipad-segment-selected@2x.png */,
+				1A741958179C2D3F00FCC42E /* ipad-segment.png */,
+				1A741959179C2D3F00FCC42E /* ipad-segment@2x.png */,
+			);
+			name = "Controls (iPad)";
+			sourceTree = "<group>";
+		};
 		1A750353173257820071D087 /* HTML */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +524,7 @@
 			children = (
 				1A67CFFF174E74180032BF9D /* App Icons */,
 				1A3CBB3F174CB1300012A9FF /* Controls */,
+				1A741972179C2D4300FCC42E /* Controls (iPad) */,
 				1A3CBB3E174CB1270012A9FF /* TabBar */,
 				1A3CBB19174C9CFD0012A9FF /* Options */,
 				1A3CBB18174C9CF80012A9FF /* Icons */,
@@ -468,6 +551,8 @@
 				1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */,
 				1AFAFCA7173E96210057BB82 /* UIButton+AttributedString.h */,
 				1AFAFCA8173E96210057BB82 /* UIButton+AttributedString.m */,
+				1A741973179C2F8A00FCC42E /* UIImage+Device.h */,
+				1A741974179C2F8A00FCC42E /* UIImage+Device.m */,
 				1A7C322516FC990C00F5A71A /* CMTestViewController.h */,
 				1A7C322616FC990C00F5A71A /* CMTestViewController.m */,
 			);
@@ -611,6 +696,30 @@
 				1A67CFFE174E74120032BF9D /* icon-72@2x.png in Resources */,
 				1ACB44B2175A43AE00625341 /* iTunesArtwork in Resources */,
 				1ACB44B3175A43AE00625341 /* iTunesArtwork@2x in Resources */,
+				1A74195A179C2D3F00FCC42E /* ipad-button-decrease-disabled.png in Resources */,
+				1A74195B179C2D3F00FCC42E /* ipad-button-decrease-disabled@2x.png in Resources */,
+				1A74195C179C2D3F00FCC42E /* ipad-button-decrease-pressing.png in Resources */,
+				1A74195D179C2D3F00FCC42E /* ipad-button-decrease-pressing@2x.png in Resources */,
+				1A74195E179C2D3F00FCC42E /* ipad-button-decrease.png in Resources */,
+				1A74195F179C2D3F00FCC42E /* ipad-button-decrease@2x.png in Resources */,
+				1A741960179C2D3F00FCC42E /* ipad-button-increase-disabled.png in Resources */,
+				1A741961179C2D3F00FCC42E /* ipad-button-increase-disabled@2x.png in Resources */,
+				1A741962179C2D3F00FCC42E /* ipad-button-increase-pressing.png in Resources */,
+				1A741963179C2D3F00FCC42E /* ipad-button-increase-pressing@2x.png in Resources */,
+				1A741964179C2D3F00FCC42E /* ipad-button-increase.png in Resources */,
+				1A741965179C2D3F00FCC42E /* ipad-button-increase@2x.png in Resources */,
+				1A741966179C2D3F00FCC42E /* ipad-label-background.png in Resources */,
+				1A741967179C2D3F00FCC42E /* ipad-label-background@2x.png in Resources */,
+				1A741968179C2D3F00FCC42E /* ipad-segment-divider-00.png in Resources */,
+				1A741969179C2D3F00FCC42E /* ipad-segment-divider-00@2x.png in Resources */,
+				1A74196A179C2D3F00FCC42E /* ipad-segment-divider-01.png in Resources */,
+				1A74196B179C2D3F00FCC42E /* ipad-segment-divider-01@2x.png in Resources */,
+				1A74196C179C2D3F00FCC42E /* ipad-segment-divider-10.png in Resources */,
+				1A74196D179C2D3F00FCC42E /* ipad-segment-divider-10@2x.png in Resources */,
+				1A74196E179C2D3F00FCC42E /* ipad-segment-selected.png in Resources */,
+				1A74196F179C2D3F00FCC42E /* ipad-segment-selected@2x.png in Resources */,
+				1A741970179C2D3F00FCC42E /* ipad-segment.png in Resources */,
+				1A741971179C2D3F00FCC42E /* ipad-segment@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +780,7 @@
 				1ADA76A51705DC23007F6190 /* CMVocabularyCell.m in Sources */,
 				1AFAFCA9173E96210057BB82 /* UIButton+AttributedString.m in Sources */,
 				1A3CBB4A174CC0950012A9FF /* CMTabBarController.m in Sources */,
+				1A741975179C2F8A00FCC42E /* UIImage+Device.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,6 +850,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -755,6 +866,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
 			};
@@ -772,7 +885,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: LIU Dongyuan (7676B49VAW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: LIU Dongyuan (7676B49VAW)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -781,7 +894,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "C9E2C993-7F8D-4C32-89E4-95A62942191D";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C9E2C993-7F8D-4C32-89E4-95A62942191D";
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -793,10 +906,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83157F5F310744BA900CEF96 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
 				INFOPLIST_FILE = "Cryptomeria/Cryptomeria-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -806,10 +923,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83157F5F310744BA900CEF96 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
 				INFOPLIST_FILE = "Cryptomeria/Cryptomeria-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
