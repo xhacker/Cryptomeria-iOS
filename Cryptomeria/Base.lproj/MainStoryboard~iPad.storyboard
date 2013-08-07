@@ -61,7 +61,7 @@
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="wa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="644" id="Ye0-IA-1IU"/>
+                                    <constraint firstAttribute="width" constant="651" type="user" id="fbb-5t-oT2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="210"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -71,94 +71,12 @@
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="369" id="q8a-LV-P1F"/>
-                                    <constraint firstAttribute="width" constant="625" id="rAQ-M2-7h9"/>
+                                    <constraint firstAttribute="width" constant="625" id="z1R-FP-094"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="220"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-5m-Qgc">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="4vH-uH-25c"/>
-                                    <constraint firstAttribute="height" constant="44" id="lPm-7Z-OFq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="w" backgroundImage="option-normal.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.12549019607843137" green="0.33333333333333331" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="disabled">
-                                    <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="option-normal-pressing.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="Olv-RO-0to"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZV-g4-aRC">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="wdn-v8-B88"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="x" backgroundImage="option-normal.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.12549019607843137" green="0.33333333333333331" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="disabled">
-                                    <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="option-normal-pressing.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="SGy-yD-Tr6"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXy-4r-0ur">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="bSF-fB-SQs"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="y" backgroundImage="option-normal.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.12549019607843137" green="0.33333333333333331" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="disabled">
-                                    <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="option-normal-pressing.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="Mee-iE-2Hg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-c1-JIh">
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="ynC-J2-0pE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
-                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="z" backgroundImage="option-normal.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="0.12549019607843137" green="0.33333333333333331" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="disabled">
-                                    <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted" backgroundImage="option-normal-pressing.png">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="kJ9-0u-L9J"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="66 / 233" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhM-5p-Pv9">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="223" id="4ne-96-pnW"/>
@@ -220,46 +138,133 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHm-gZ-Dhn">
+                                <subviews>
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-5m-Qgc">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="9Oj-Ja-JEh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="w" backgroundImage="option-normal.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.12549019607843137" green="0.33333333333333331" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="option-normal-pressing.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="Olv-RO-0to"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZV-g4-aRC">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="oH9-WA-FUk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="x" backgroundImage="option-normal.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.12549019607843137" green="0.33333333333333331" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="option-normal-pressing.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="SGy-yD-Tr6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXy-4r-0ur">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="4di-SJ-wbh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="y" backgroundImage="option-normal.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.12549019607843137" green="0.33333333333333331" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="option-normal-pressing.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="Mee-iE-2Hg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-c1-JIh">
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="U44-25-OOg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="z" backgroundImage="option-normal.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.12549019607843137" green="0.33333333333333331" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled">
+                                            <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="option-normal-pressing.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="kJ9-0u-L9J"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="650" type="user" id="3uF-om-qIc"/>
+                                    <constraint firstAttribute="height" constant="66" type="user" id="6cc-SN-agA"/>
+                                    <constraint firstItem="zXy-4r-0ur" firstAttribute="bottom" secondItem="jHm-gZ-Dhn" secondAttribute="bottom" type="user" id="9Bi-fh-tLb"/>
+                                    <constraint firstItem="DMP-c1-JIh" firstAttribute="top" secondItem="jHm-gZ-Dhn" secondAttribute="top" type="default" id="Oik-Rw-ult"/>
+                                    <constraint firstItem="yZV-g4-aRC" firstAttribute="bottom" secondItem="jHm-gZ-Dhn" secondAttribute="bottom" type="user" id="PZh-eD-BLC"/>
+                                    <constraint firstItem="DMP-c1-JIh" firstAttribute="trailing" secondItem="jHm-gZ-Dhn" secondAttribute="trailing" type="default" id="Q1v-oe-s2a"/>
+                                    <constraint firstItem="yZV-g4-aRC" firstAttribute="leading" secondItem="jHm-gZ-Dhn" secondAttribute="leading" constant="174" id="Qb0-6i-kdU"/>
+                                    <constraint firstItem="DMP-c1-JIh" firstAttribute="bottom" secondItem="jHm-gZ-Dhn" secondAttribute="bottom" type="user" id="Slm-dR-LTL"/>
+                                    <constraint firstItem="zXy-4r-0ur" firstAttribute="top" secondItem="jHm-gZ-Dhn" secondAttribute="top" type="default" id="ehK-df-T3d"/>
+                                    <constraint firstItem="6Zk-5m-Qgc" firstAttribute="top" secondItem="jHm-gZ-Dhn" secondAttribute="top" type="default" id="epX-Vk-2LC"/>
+                                    <constraint firstItem="6Zk-5m-Qgc" firstAttribute="bottom" secondItem="jHm-gZ-Dhn" secondAttribute="bottom" type="user" id="fL4-ZC-L7J"/>
+                                    <constraint firstItem="yZV-g4-aRC" firstAttribute="top" secondItem="jHm-gZ-Dhn" secondAttribute="top" type="default" id="kqE-9E-HNP"/>
+                                    <constraint firstItem="6Zk-5m-Qgc" firstAttribute="leading" secondItem="jHm-gZ-Dhn" secondAttribute="leading" type="default" id="seJ-gO-vr2"/>
+                                    <constraint firstAttribute="trailing" secondItem="zXy-4r-0ur" secondAttribute="trailing" constant="174" id="vvj-9t-eBv"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="DMP-c1-JIh" firstAttribute="baseline" secondItem="6Zk-5m-Qgc" secondAttribute="baseline" type="user" id="0ja-A3-I2i"/>
-                            <constraint firstItem="yZV-g4-aRC" firstAttribute="top" secondItem="6Zk-5m-Qgc" secondAttribute="top" type="default" id="0ng-Gl-efX"/>
-                            <constraint firstAttribute="bottom" secondItem="zXy-4r-0ur" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="0q2-a4-I0k"/>
                             <constraint firstAttribute="centerY" secondItem="oRg-tF-7jh" secondAttribute="centerY" type="user" id="1m5-TD-5o8"/>
-                            <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="38" id="3Om-Ru-eHh"/>
-                            <constraint firstItem="DMP-c1-JIh" firstAttribute="top" secondItem="zXy-4r-0ur" secondAttribute="top" type="default" id="4Kb-TQ-n8k"/>
                             <constraint firstItem="PWS-u2-k9T" firstAttribute="bottom" secondItem="uzY-R5-eJu" secondAttribute="bottom" type="default" id="4xB-zr-uev"/>
-                            <constraint firstItem="yZV-g4-aRC" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="91" id="5jE-Jr-od3"/>
                             <constraint firstItem="ftv-zW-uyi" firstAttribute="baseline" secondItem="uzY-R5-eJu" secondAttribute="baseline" type="default" id="6dq-HF-era"/>
-                            <constraint firstAttribute="trailing" secondItem="uzY-R5-eJu" secondAttribute="trailing" constant="19" id="8vy-z0-ILj"/>
-                            <constraint firstItem="6Zk-5m-Qgc" firstAttribute="baseline" secondItem="yZV-g4-aRC" secondAttribute="baseline" type="user" id="BOj-Jz-AdA"/>
+                            <constraint firstAttribute="centerX" secondItem="jHm-gZ-Dhn" secondAttribute="centerX" type="user" id="7mh-9k-pTw"/>
                             <constraint firstItem="cWf-ms-f2g" firstAttribute="leading" secondItem="1ma-hR-1MS" secondAttribute="leading" type="default" id="CF7-Dt-5PA"/>
+                            <constraint firstAttribute="trailing" secondItem="PWS-u2-k9T" secondAttribute="trailing" constant="65" id="EHA-y7-hDv"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="17" secondAttribute="top" constant="81" id="J8C-Jh-nvB"/>
                             <constraint firstItem="uzY-R5-eJu" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="KJh-vN-Iz0"/>
                             <constraint firstItem="n4c-5R-aC4" firstAttribute="top" secondItem="oRg-tF-7jh" secondAttribute="top" type="default" id="Kfo-S3-KnE"/>
                             <constraint firstItem="PWS-u2-k9T" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="user" id="Lsb-FF-Io1"/>
                             <constraint firstAttribute="centerX" secondItem="oRg-tF-7jh" secondAttribute="centerX" type="user" id="NoL-la-cCN"/>
                             <constraint firstItem="ftv-zW-uyi" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="user" id="TDX-Zu-yOu"/>
-                            <constraint firstItem="6Zk-5m-Qgc" firstAttribute="baseline" secondItem="zXy-4r-0ur" secondAttribute="baseline" type="user" id="Teo-Mm-Y2h"/>
                             <constraint firstAttribute="trailing" secondItem="1ma-hR-1MS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="UMP-8S-fIu"/>
                             <constraint firstItem="cWf-ms-f2g" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="UlS-jT-esw"/>
-                            <constraint firstItem="DMP-c1-JIh" firstAttribute="baseline" secondItem="zXy-4r-0ur" secondAttribute="baseline" type="user" id="aHO-D4-xfa"/>
-                            <constraint firstItem="yZV-g4-aRC" firstAttribute="top" secondItem="zXy-4r-0ur" secondAttribute="top" type="default" id="avw-O9-kf9"/>
-                            <constraint firstItem="6Zk-5m-Qgc" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="18" id="bAl-iC-mvN"/>
-                            <constraint firstAttribute="bottom" secondItem="6Zk-5m-Qgc" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="dGm-jT-pJH"/>
+                            <constraint firstAttribute="bottom" secondItem="jHm-gZ-Dhn" secondAttribute="bottom" constant="44" type="user" id="aDF-K5-cRZ"/>
+                            <constraint firstAttribute="trailing" secondItem="uzY-R5-eJu" secondAttribute="trailing" constant="19" id="cRu-93-oro"/>
                             <constraint firstItem="oRg-tF-7jh" firstAttribute="centerX" secondItem="n4c-5R-aC4" secondAttribute="centerX" type="default" id="dwm-aM-ygL"/>
                             <constraint firstItem="ftv-zW-uyi" firstAttribute="baseline" secondItem="cWf-ms-f2g" secondAttribute="baseline" type="default" id="eQV-gh-ygG"/>
-                            <constraint firstItem="uzY-R5-eJu" firstAttribute="trailing" secondItem="DMP-c1-JIh" secondAttribute="trailing" type="default" id="fmM-wu-esW"/>
-                            <constraint firstItem="yZV-g4-aRC" firstAttribute="baseline" secondItem="zXy-4r-0ur" secondAttribute="baseline" type="user" id="gkh-rJ-f0P"/>
                             <constraint firstItem="ftv-zW-uyi" firstAttribute="bottom" secondItem="PWS-u2-k9T" secondAttribute="bottom" type="default" id="h5s-sI-38O"/>
                             <constraint firstAttribute="trailing" secondItem="ftv-zW-uyi" secondAttribute="trailing" constant="163" id="jUz-ke-0yq"/>
-                            <constraint firstItem="DMP-c1-JIh" firstAttribute="leading" secondItem="zXy-4r-0ur" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="kJv-ZO-WCw"/>
-                            <constraint firstAttribute="trailing" secondItem="PWS-u2-k9T" secondAttribute="trailing" constant="65" id="mTB-UK-A89"/>
-                            <constraint firstItem="DMP-c1-JIh" firstAttribute="baseline" secondItem="yZV-g4-aRC" secondAttribute="baseline" type="user" id="oMI-Fr-epJ"/>
-                            <constraint firstAttribute="bottom" secondItem="yZV-g4-aRC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="wXP-fq-9ap"/>
+                            <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="38" id="n2j-ak-kwU"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="bottom" secondItem="ftv-zW-uyi" secondAttribute="bottom" type="default" id="xH9-jh-hZc"/>
-                            <constraint firstAttribute="bottom" secondItem="DMP-c1-JIh" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="xua-Ks-MUl"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Test" image="icon-test.png" id="6"/>
@@ -442,6 +447,7 @@
             <relationships>
                 <relationship kind="action" name="directionChanged:" candidateClass="UISegmentedControl"/>
                 <relationship kind="action" name="horkChanged:" candidateClass="UISegmentedControl"/>
+                <relationship kind="action" name="optionClicked:" candidateClass="UIButton"/>
                 <relationship kind="action" name="rangeDecreased:" candidateClass="UIButton"/>
                 <relationship kind="action" name="rangeIncreased:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>

@@ -263,8 +263,12 @@ typedef enum {
 
     // refresh buttons
     for (UIButton *button in self.optionButtons) {
-        [button setBackgroundImage:[UIImage imageNamed:kNormalButtonImage] forState:UIControlStateNormal];
-        [button setBackgroundImage:[UIImage imageNamed:kNormalPressingButtonImage] forState:UIControlStateHighlighted];
+        [button setBackgroundImage:[[UIImage imageNamedForCurrentDevice:kNormalButtonImage]
+                                    resizableImageWithCapInsets:UIEdgeInsetsMake(0, 10, 0, 10)]
+                          forState:UIControlStateNormal];
+        [button setBackgroundImage:[[UIImage imageNamedForCurrentDevice:kNormalPressingButtonImage]
+                                    resizableImageWithCapInsets:UIEdgeInsetsMake(0, 10, 0, 10)]
+                          forState:UIControlStateHighlighted];
         [button setAttributedShadowWithColor:kNormalShadowColor forState:UIControlStateNormal];
     }
 }
@@ -328,12 +332,13 @@ typedef enum {
 - (void)changeFont
 {
     NSInteger direction = [self.defaults integerForKey:kDirectionKey];
+    CGFloat fontSize = IS_IPAD() ? 30.0 : 20.0;
     if (direction == KanaRomaji) {
         self.mainRomajiLabel.hidden = YES;
         self.mainKanaLabel.hidden = NO;
         self.mainLabel = self.mainKanaLabel;
         for (UIButton *optionButton in self.optionButtons) {
-            optionButton.titleLabel.font = [UIFont fontWithName:kAvenirFont size:20.0];
+            optionButton.titleLabel.font = [UIFont fontWithName:kAvenirFont size:fontSize];
         }
     }
     else {
@@ -341,7 +346,7 @@ typedef enum {
         self.mainRomajiLabel.hidden = NO;
         self.mainLabel = self.mainRomajiLabel;
         for (UIButton *optionButton in self.optionButtons) {
-            optionButton.titleLabel.font = [UIFont fontWithName:kHiraKakuFont size:20.0];
+            optionButton.titleLabel.font = [UIFont fontWithName:kHiraKakuFont size:fontSize];
         }
     }
 }
@@ -368,12 +373,20 @@ typedef enum {
     }
     else {
         self.inGuess = NO;
-        [sender setBackgroundImage:[UIImage imageNamed:kWrongButtonImage] forState:UIControlStateNormal];
-        [sender setBackgroundImage:[UIImage imageNamed:kWrongPressingButtonImage] forState:UIControlStateHighlighted];
+        [sender setBackgroundImage:[[UIImage imageNamedForCurrentDevice:kWrongButtonImage]
+                                    resizableImageWithCapInsets:UIEdgeInsetsMake(0, 10, 0, 10)]
+                          forState:UIControlStateNormal];
+        [sender setBackgroundImage:[[UIImage imageNamedForCurrentDevice:kWrongPressingButtonImage]
+                                    resizableImageWithCapInsets:UIEdgeInsetsMake(0, 10, 0, 10)]
+                          forState:UIControlStateHighlighted];
         [sender setAttributedShadowWithColor:kWrongShadowColor forState:UIControlStateNormal];
         
-        [self.rightButton setBackgroundImage:[UIImage imageNamed:kRightButtonImage] forState:UIControlStateNormal];
-        [self.rightButton setBackgroundImage:[UIImage imageNamed:kRightPressingButtonImage] forState:UIControlStateHighlighted];
+        [self.rightButton setBackgroundImage:[[UIImage imageNamedForCurrentDevice:kRightButtonImage]
+                                              resizableImageWithCapInsets:UIEdgeInsetsMake(0, 10, 0, 10)]
+                                    forState:UIControlStateNormal];
+        [self.rightButton setBackgroundImage:[[UIImage imageNamedForCurrentDevice:kRightPressingButtonImage]
+                                              resizableImageWithCapInsets:UIEdgeInsetsMake(0, 10, 0, 10)]
+                                    forState:UIControlStateHighlighted];
         [self.rightButton setAttributedShadowWithColor:kRightShadowColor forState:UIControlStateNormal];
     }
     
