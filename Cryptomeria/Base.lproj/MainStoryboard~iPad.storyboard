@@ -70,7 +70,7 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ぎょ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4c-5R-aC4">
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="369" id="q8a-LV-P1F"/>
+                                    <constraint firstAttribute="height" constant="245" id="YJl-Ou-quD"/>
                                     <constraint firstAttribute="width" constant="625" id="z1R-FP-094"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="220"/>
@@ -250,8 +250,8 @@
                             <constraint firstAttribute="trailing" secondItem="PWS-u2-k9T" secondAttribute="trailing" constant="66" id="Acj-e4-hps"/>
                             <constraint firstItem="cWf-ms-f2g" firstAttribute="leading" secondItem="1ma-hR-1MS" secondAttribute="leading" type="default" id="CF7-Dt-5PA"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="17" secondAttribute="top" constant="81" id="J8C-Jh-nvB"/>
+                            <constraint firstItem="n4c-5R-aC4" firstAttribute="centerY" secondItem="17" secondAttribute="centerY" type="default" id="K2C-ZK-rjf"/>
                             <constraint firstItem="uzY-R5-eJu" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="KJh-vN-Iz0"/>
-                            <constraint firstItem="n4c-5R-aC4" firstAttribute="top" secondItem="oRg-tF-7jh" secondAttribute="top" type="default" id="Kfo-S3-KnE"/>
                             <constraint firstItem="PWS-u2-k9T" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="user" id="Lsb-FF-Io1"/>
                             <constraint firstAttribute="centerX" secondItem="oRg-tF-7jh" secondAttribute="centerX" type="user" id="NoL-la-cCN"/>
                             <constraint firstItem="ftv-zW-uyi" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="user" id="TDX-Zu-yOu"/>

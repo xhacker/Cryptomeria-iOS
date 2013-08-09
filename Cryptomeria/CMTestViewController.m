@@ -45,9 +45,7 @@ static NSInteger  const kRangeMax = 25;
 @property (weak, nonatomic) IBOutlet UIButton *rangeIncreaseButton;
 @property (weak, nonatomic) IBOutlet UIButton *rangeLabelButton;
 @property (weak, nonatomic) IBOutlet UILabel *mainKanaLabel;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mainKanaLabelTopConstraint;
 @property (weak, nonatomic) IBOutlet UILabel *mainRomajiLabel;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mainRomajiLabelTopConstraint;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *optionButtons;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
@@ -95,7 +93,6 @@ typedef enum {
     self.flattenedHiragana = [[CMChartData hiragana] flatten];
     self.flattenedKatakana = [[CMChartData katakana] flatten];
     
-    [self configurePosition];
     [self configureStyle];
     
     self.prevHork = Katakana;
@@ -104,16 +101,6 @@ typedef enum {
     [self changeFont];
     self.inGuess = YES;
     [self next];
-}
-
-- (void)configurePosition
-{
-    if ([[UIScreen mainScreen] bounds].size.height == 568) {
-        // 肾5！壕！
-        CGFloat offset = (568 - 480) / 2;
-        self.mainKanaLabelTopConstraint.constant += offset;
-        self.mainRomajiLabelTopConstraint.constant += offset;
-    }
 }
 
 - (void)configureStyle
@@ -209,7 +196,7 @@ typedef enum {
     else if (thisHork == Katakana) {
         mainText = self.flattenedKatakana[thisID];
     }
-    self.mainLabel.text = mainText;
+    self.mainLabel.attributedText = [[NSAttributedString alloc] initWithString:mainText];
     
     CMSection section = [CMChartData getSection:thisID];
     NSUInteger lastInRange = [CMChartData lastInRow:kanaRange];
@@ -227,7 +214,7 @@ typedef enum {
     else if (thisHork == Katakana) {
         self.rightText = self.flattenedKatakana[thisID];
     }
-    [self.optionButtons[rightOption] setNoLineSpacingAttributedTitle:self.rightText forState:UIControlStateNormal];
+    [self.optionButtons[rightOption] setWhiteAttributedTitle:self.rightText forState:UIControlStateNormal];
     self.rightButton = self.optionButtons[rightOption];
     NSMutableArray *usedID = [[NSMutableArray alloc] initWithObjects:@(thisID), nil];
     
@@ -251,7 +238,7 @@ typedef enum {
         else if (thisHork == Katakana) {
             thisText = self.flattenedKatakana[optionID];
         }
-        [self.optionButtons[i] setNoLineSpacingAttributedTitle:thisText forState:UIControlStateNormal];
+        [self.optionButtons[i] setWhiteAttributedTitle:thisText forState:UIControlStateNormal];
     }
 
     // refresh buttons

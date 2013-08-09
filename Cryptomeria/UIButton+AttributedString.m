@@ -22,16 +22,11 @@
     [self setAttributedTitle:attributedString forState:state];
 }
 
-- (void)setNoLineSpacingAttributedTitle:(NSString *)title forState:(UIControlState)state
-{
-    NSMutableParagraphStyle *noSpacingParagraphStyle = [[NSMutableParagraphStyle alloc] init];
-    noSpacingParagraphStyle.lineSpacing = 0.0;
-    
+- (void)setWhiteAttributedTitle:(NSString *)title forState:(UIControlState)state
+{    
     NSAttributedString *attributedTitle = [[NSAttributedString alloc]
                                            initWithString:title
-                                           attributes:@{
-                                           NSParagraphStyleAttributeName: noSpacingParagraphStyle,
-                                           NSForegroundColorAttributeName: [UIColor whiteColor]}];
+                                           attributes:@{NSForegroundColorAttributeName: [UIColor whiteColor]}];
     [self setAttributedTitle:attributedTitle forState:state];
 }
 
