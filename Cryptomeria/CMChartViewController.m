@@ -8,7 +8,7 @@
 
 #import "CMChartViewController.h"
 
-@interface CMChartViewController () <UITableViewDataSource, UIWebViewDelegate>
+@interface CMChartViewController () <UIWebViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 

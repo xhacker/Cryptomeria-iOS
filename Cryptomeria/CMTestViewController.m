@@ -64,10 +64,6 @@ static NSInteger  const kRangeMax = 25;
 @property (strong, nonatomic) NSArray *flattenedKatakana;
 @property (nonatomic) BOOL inGuess;
 
-@property NSMutableParagraphStyle *noSpacingParagraphStyle;
-
-#define NO_LINE_SPACING(s) [[NSAttributedString alloc] initWithString:s attributes:@{NSParagraphStyleAttributeName:self.noSpacingParagraphStyle}]
-
 @end
 
 typedef enum {
@@ -88,9 +84,6 @@ typedef enum {
     [super viewDidLoad];
 	
     self.defaults = [NSUserDefaults standardUserDefaults];
-    
-    self.noSpacingParagraphStyle = [[NSMutableParagraphStyle alloc] init];
-    self.noSpacingParagraphStyle.lineSpacing = 0.0;
     
     [self updateRangeLabelAndButton];
     NSInteger direction = [self.defaults integerForKey:kDirectionKey];
@@ -234,7 +227,7 @@ typedef enum {
     else if (thisHork == Katakana) {
         self.rightText = self.flattenedKatakana[thisID];
     }
-    [self.optionButtons[rightOption] setAttributedTitle:NO_LINE_SPACING(self.rightText) forState:UIControlStateNormal];
+    [self.optionButtons[rightOption] setNoLineSpacingAttributedTitle:self.rightText forState:UIControlStateNormal];
     self.rightButton = self.optionButtons[rightOption];
     NSMutableArray *usedID = [[NSMutableArray alloc] initWithObjects:@(thisID), nil];
     
@@ -258,7 +251,7 @@ typedef enum {
         else if (thisHork == Katakana) {
             thisText = self.flattenedKatakana[optionID];
         }
-        [self.optionButtons[i] setAttributedTitle:NO_LINE_SPACING(thisText) forState:UIControlStateNormal];
+        [self.optionButtons[i] setNoLineSpacingAttributedTitle:thisText forState:UIControlStateNormal];
     }
 
     // refresh buttons

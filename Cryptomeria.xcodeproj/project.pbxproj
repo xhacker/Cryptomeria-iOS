@@ -497,9 +497,9 @@
 			isa = PBXGroup;
 			children = (
 				1A7C324E16FDB0B000F5A71A /* Data */,
-				1A7C325216FDC75100F5A71A /* CMChartView */,
-				1AD2A89716FEF383004137FE /* CMTestView */,
-				1AD2A89616FEF375004137FE /* CMVocabularyView */,
+				1A7C325216FDC75100F5A71A /* Chart */,
+				1AD2A89716FEF383004137FE /* Test */,
+				1AD2A89616FEF375004137FE /* Vocabulary */,
 				1A7C321216FC990C00F5A71A /* CMAppDelegate.h */,
 				1A7C321316FC990C00F5A71A /* CMAppDelegate.m */,
 				1A3CBB48174CC0950012A9FF /* CMTabBarController.h */,
@@ -558,14 +558,14 @@
 			name = Data;
 			sourceTree = "<group>";
 		};
-		1A7C325216FDC75100F5A71A /* CMChartView */ = {
+		1A7C325216FDC75100F5A71A /* Chart */ = {
 			isa = PBXGroup;
 			children = (
 				1A750353173257820071D087 /* HTML */,
 				1A7C321E16FC990C00F5A71A /* CMChartViewController.h */,
 				1A7C321F16FC990C00F5A71A /* CMChartViewController.m */,
 			);
-			name = CMChartView;
+			name = Chart;
 			sourceTree = "<group>";
 		};
 		1A7C325316FDC76900F5A71A /* Resources */ = {
@@ -583,7 +583,7 @@
 			path = Cryptomeria;
 			sourceTree = "<group>";
 		};
-		1AD2A89616FEF375004137FE /* CMVocabularyView */ = {
+		1AD2A89616FEF375004137FE /* Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
 				1ADA76A31705DC23007F6190 /* CMVocabularyCell.h */,
@@ -591,10 +591,10 @@
 				1A7C324916FCA5B200F5A71A /* CMVocabularyViewController.h */,
 				1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */,
 			);
-			name = CMVocabularyView;
+			name = Vocabulary;
 			sourceTree = "<group>";
 		};
-		1AD2A89716FEF383004137FE /* CMTestView */ = {
+		1AD2A89716FEF383004137FE /* Test */ = {
 			isa = PBXGroup;
 			children = (
 				1A7265931700B06F00C9A0CB /* NSMutableArray+Shuffling.h */,
@@ -606,7 +606,7 @@
 				1A7C322516FC990C00F5A71A /* CMTestViewController.h */,
 				1A7C322616FC990C00F5A71A /* CMTestViewController.m */,
 			);
-			name = CMTestView;
+			name = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

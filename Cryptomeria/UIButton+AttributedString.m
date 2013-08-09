@@ -18,8 +18,21 @@
     textShadow.shadowOffset = CGSizeMake(0, 1);
     NSDictionary *attributes = @{NSShadowAttributeName:textShadow};
     NSMutableAttributedString *attributedString = [self.currentAttributedTitle mutableCopy];
-    [attributedString setAttributes:attributes range:NSMakeRange(0, attributedString.length)];
+    [attributedString addAttributes:attributes range:NSMakeRange(0, attributedString.length)];
     [self setAttributedTitle:attributedString forState:state];
+}
+
+- (void)setNoLineSpacingAttributedTitle:(NSString *)title forState:(UIControlState)state
+{
+    NSMutableParagraphStyle *noSpacingParagraphStyle = [[NSMutableParagraphStyle alloc] init];
+    noSpacingParagraphStyle.lineSpacing = 0.0;
+    
+    NSAttributedString *attributedTitle = [[NSAttributedString alloc]
+                                           initWithString:title
+                                           attributes:@{
+                                           NSParagraphStyleAttributeName: noSpacingParagraphStyle,
+                                           NSForegroundColorAttributeName: [UIColor whiteColor]}];
+    [self setAttributedTitle:attributedTitle forState:state];
 }
 
 @end

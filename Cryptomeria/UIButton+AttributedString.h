@@ -11,5 +11,6 @@
 @interface UIButton (AttributedString)
 
 - (void)setAttributedShadowWithColor:(UIColor *)color forState:(UIControlState)state;
+- (void)setNoLineSpacingAttributedTitle:(NSString *)title forState:(UIControlState)state;
 
 @end
