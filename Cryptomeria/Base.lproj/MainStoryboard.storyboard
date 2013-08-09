@@ -210,7 +210,6 @@
                                     <constraint firstAttribute="width" constant="72" id="lew-PB-rBk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="13"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="あ-ぎょ" backgroundImage="label-background.png">
                                     <color key="titleColor" white="0.40000000000000002" alpha="1" colorSpace="calibratedWhite"/>

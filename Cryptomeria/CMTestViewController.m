@@ -11,6 +11,7 @@
 #import "NSMutableArray+Shuffling.h"
 #import "UIButton+AttributedString.h"
 #import "UIImage+Device.h"
+#import "iOSVersion.h"
 
 #define IS_IPAD() (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
@@ -138,12 +139,23 @@ typedef enum {
                                    UITextAttributeTextColor:RGBA(102, 102, 102, 1)}
                                                    forState:UIControlStateSelected];
     
-    CGFloat yOffset = IS_IPAD()? 6.0 : 4.0;
+    // adjust baseline
+    CGFloat yOffset = 0;
+    if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
+        yOffset = IS_IPAD()? 6.0 : 5.0;
+    }
+    else {
+        yOffset = IS_IPAD()? 2.0 : 1.5;
+    }
+    
+    self.rangeLabelButton.contentEdgeInsets = UIEdgeInsetsMake(yOffset * 2, 0, 0, 0);
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:2];
     [self.directionControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
     [self.directionControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
+    
+#warning remember auto shrink of main label
 }
 
 - (void)generateSequence

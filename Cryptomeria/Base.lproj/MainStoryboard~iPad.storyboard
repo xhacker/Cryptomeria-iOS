@@ -128,7 +128,6 @@
                                     <constraint firstAttribute="width" constant="98" id="wKj-Ap-X8Z"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="19"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="0.0"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="あ-ぎょ" backgroundImage="ipad-label-background.png">
                                     <color key="titleColor" white="0.40000000000000002" alpha="1" colorSpace="calibratedWhite"/>
@@ -453,9 +452,7 @@
                 <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="horkControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="mainKanaLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mainKanaLabelTopConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="mainRomajiLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="mainRomajiLabelTopConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="rangeDecreaseButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="rangeIncreaseButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="rangeLabelButton" candidateClass="UIButton"/>

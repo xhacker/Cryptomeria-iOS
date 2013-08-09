@@ -258,6 +258,7 @@
 		1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMVocabularyViewController.m; sourceTree = "<group>"; };
 		1A7C324F16FDB16200F5A71A /* CMChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMChartData.h; path = data/CMChartData.h; sourceTree = "<group>"; };
 		1A7C325016FDB16200F5A71A /* CMChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMChartData.m; path = data/CMChartData.m; sourceTree = "<group>"; };
+		1A7DD08A17B53E23000416E4 /* iOSVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSVersion.h; sourceTree = "<group>"; };
 		1A95E4F3170534AA00DB0193 /* CMVocabularyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMVocabularyData.h; path = data/CMVocabularyData.h; sourceTree = "<group>"; };
 		1A95E4F4170534AA00DB0193 /* CMVocabularyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMVocabularyData.m; path = data/CMVocabularyData.m; sourceTree = "<group>"; };
 		1A95E4F61705367B00DB0193 /* vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = vocabulary.json; path = data/vocabulary.json; sourceTree = "<group>"; };
@@ -500,6 +501,7 @@
 				1A7C325216FDC75100F5A71A /* Chart */,
 				1AD2A89716FEF383004137FE /* Test */,
 				1AD2A89616FEF375004137FE /* Vocabulary */,
+				1A7DD08B17B53E36000416E4 /* Helpers */,
 				1A7C321216FC990C00F5A71A /* CMAppDelegate.h */,
 				1A7C321316FC990C00F5A71A /* CMAppDelegate.m */,
 				1A3CBB48174CC0950012A9FF /* CMTabBarController.h */,
@@ -583,6 +585,16 @@
 			path = Cryptomeria;
 			sourceTree = "<group>";
 		};
+		1A7DD08B17B53E36000416E4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1A741973179C2F8A00FCC42E /* UIImage+Device.h */,
+				1A741974179C2F8A00FCC42E /* UIImage+Device.m */,
+				1A7DD08A17B53E23000416E4 /* iOSVersion.h */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		1AD2A89616FEF375004137FE /* Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
@@ -601,8 +613,6 @@
 				1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */,
 				1AFAFCA7173E96210057BB82 /* UIButton+AttributedString.h */,
 				1AFAFCA8173E96210057BB82 /* UIButton+AttributedString.m */,
-				1A741973179C2F8A00FCC42E /* UIImage+Device.h */,
-				1A741974179C2F8A00FCC42E /* UIImage+Device.m */,
 				1A7C322516FC990C00F5A71A /* CMTestViewController.h */,
 				1A7C322616FC990C00F5A71A /* CMTestViewController.m */,
 			);
