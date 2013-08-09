@@ -9,7 +9,7 @@
             <objects>
                 <viewController title="Chart" id="2" customClass="CMChartViewController" sceneMemberID="viewController">
                     <webView key="view" opaque="NO" contentMode="scaleToFill" id="V0i-Sn-eIE">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <connections>
@@ -30,7 +30,7 @@
             <objects>
                 <viewController title="Test" id="3" customClass="CMTestViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cWf-ms-f2g">
@@ -58,7 +58,7 @@
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="wa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="209" id="aXS-dS-1pR"/>
+                                    <constraint firstAttribute="height" constant="209" type="user" id="aXS-dS-1pR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="132"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -228,11 +228,12 @@
                             <constraint firstItem="yZV-g4-aRC" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="91" id="5jE-Jr-od3"/>
                             <constraint firstAttribute="trailing" secondItem="1ma-hR-1MS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7R4-su-IZ6"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BMB-aM-TkD"/>
+                            <constraint firstItem="oRg-tF-7jh" firstAttribute="centerY" secondItem="17" secondAttribute="centerY" type="default" id="CVw-gg-ytE"/>
+                            <constraint firstAttribute="centerY" secondItem="n4c-5R-aC4" secondAttribute="centerY" type="user" id="CkZ-kQ-07q"/>
                             <constraint firstAttribute="trailing" secondItem="DMP-c1-JIh" secondAttribute="trailing" constant="19" id="CoO-U5-o45"/>
+                            <constraint firstItem="GhM-5p-Pv9" firstAttribute="top" secondItem="17" secondAttribute="top" constant="101" type="user" id="Esm-WW-TXl"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="24" id="F4l-WK-fCX"/>
                             <constraint firstItem="PWS-u2-k9T" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" symbolic="YES" type="default" id="GS4-XM-4v5"/>
-                            <constraint firstAttribute="centerY" secondItem="oRg-tF-7jh" secondAttribute="centerY" type="user" id="Lin-5L-b9X"/>
-                            <constraint firstItem="oRg-tF-7jh" firstAttribute="top" secondItem="GhM-5p-Pv9" secondAttribute="top" type="default" id="MYB-Sq-W1V"/>
                             <constraint firstAttribute="trailing" secondItem="ftv-zW-uyi" secondAttribute="trailing" constant="121" id="Psb-Bi-ucG"/>
                             <constraint firstAttribute="trailing" secondItem="uzY-R5-eJu" secondAttribute="trailing" constant="7" id="RXg-Zi-saV"/>
                             <constraint firstItem="n4c-5R-aC4" firstAttribute="centerX" secondItem="oRg-tF-7jh" secondAttribute="centerX" type="user" id="Sn9-xb-GoX"/>
@@ -251,7 +252,6 @@
                             <constraint firstAttribute="bottom" secondItem="yZV-g4-aRC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="wXP-fq-9ap"/>
                             <constraint firstAttribute="bottom" secondItem="DMP-c1-JIh" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="xua-Ks-MUl"/>
                             <constraint firstItem="uzY-R5-eJu" firstAttribute="bottom" secondItem="ftv-zW-uyi" secondAttribute="bottom" type="default" id="zlw-E2-kN2"/>
-                            <constraint firstItem="n4c-5R-aC4" firstAttribute="top" secondItem="17" secondAttribute="top" constant="136" id="zrv-WW-qeN"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Test" image="icon-test.png" id="6"/>
@@ -280,7 +280,7 @@
             <objects>
                 <viewController title="Vocabulary" id="gIL-ql-Y7D" customClass="CMVocabularyViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="86T-21-tGh">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GEb-No-amE">
@@ -467,6 +467,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>
