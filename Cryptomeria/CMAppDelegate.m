@@ -8,6 +8,7 @@
 
 #import "CMAppDelegate.h"
 #import "TestFlight.h"
+#import "UIImage+Device.h"
 
 @implementation CMAppDelegate
 
@@ -32,8 +33,8 @@
 }
 
 - (void)configureGlobalAppearance {
-	[[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"]];
-	[[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar-selected"]];
+    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbar"]];
+    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamedForCurrentDevice:@"tabbar-selected"]];
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

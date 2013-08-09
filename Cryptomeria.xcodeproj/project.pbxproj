@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1A049712175858D400BE0E8D /* MainStoryboard~iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A049710175858D400BE0E8D /* MainStoryboard~iPad.storyboard */; };
+		1A0B9FD117B520CF0054E6AB /* ipad-tabbar-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B9FCF17B520CF0054E6AB /* ipad-tabbar-selected.png */; };
+		1A0B9FD217B520CF0054E6AB /* ipad-tabbar-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B9FD017B520CF0054E6AB /* ipad-tabbar-selected@2x.png */; };
 		1A2CBB6C1748C9C70037E20D /* option-normal-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6A1748C9C70037E20D /* option-normal-pressing.png */; };
 		1A2CBB6D1748C9C70037E20D /* option-normal-pressing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6B1748C9C70037E20D /* option-normal-pressing@2x.png */; };
 		1A2CBB721748D2430037E20D /* option-right-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6E1748D2430037E20D /* option-right-pressing.png */; };
@@ -142,6 +144,8 @@
 
 /* Begin PBXFileReference section */
 		1A049711175858D400BE0E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/MainStoryboard~iPad.storyboard"; sourceTree = "<group>"; };
+		1A0B9FCF17B520CF0054E6AB /* ipad-tabbar-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-tabbar-selected.png"; path = "resources/ipad-tabbar-selected.png"; sourceTree = "<group>"; };
+		1A0B9FD017B520CF0054E6AB /* ipad-tabbar-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-tabbar-selected@2x.png"; path = "resources/ipad-tabbar-selected@2x.png"; sourceTree = "<group>"; };
 		1A2CBB6A1748C9C70037E20D /* option-normal-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal-pressing.png"; path = "resources/option-normal-pressing.png"; sourceTree = "<group>"; };
 		1A2CBB6B1748C9C70037E20D /* option-normal-pressing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal-pressing@2x.png"; path = "resources/option-normal-pressing@2x.png"; sourceTree = "<group>"; };
 		1A2CBB6E1748D2430037E20D /* option-right-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-right-pressing.png"; path = "resources/option-right-pressing.png"; sourceTree = "<group>"; };
@@ -343,6 +347,8 @@
 		1A3CBB3E174CB1270012A9FF /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				1A0B9FCF17B520CF0054E6AB /* ipad-tabbar-selected.png */,
+				1A0B9FD017B520CF0054E6AB /* ipad-tabbar-selected@2x.png */,
 				1A3CBB38174CB1220012A9FF /* tabbar.png */,
 				1A3CBB39174CB1220012A9FF /* tabbar@2x.png */,
 				1A3CBB36174CB1220012A9FF /* tabbar-selected.png */,
@@ -776,6 +782,8 @@
 				1A5ABE4617B2496600960D0B /* ipad-option-wrong-pressing@2x.png in Resources */,
 				1A5ABE4717B2496600960D0B /* ipad-option-wrong.png in Resources */,
 				1A5ABE4817B2496600960D0B /* ipad-option-wrong@2x.png in Resources */,
+				1A0B9FD117B520CF0054E6AB /* ipad-tabbar-selected.png in Resources */,
+				1A0B9FD217B520CF0054E6AB /* ipad-tabbar-selected@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
