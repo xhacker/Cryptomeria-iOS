@@ -32,6 +32,7 @@ static NSString * const kAvenirFont = @"AvenirNext-Medium";
 static NSString * const kAvenirBoldFont = @"AvenirNext-Bold";
 static NSString * const kHiraKakuFont = @"HiraKakuProN-W3";
 static NSString * const kHiraKakuBoldFont = @"HiraKakuProN-W6";
+static NSString * const kHiraMinchoFont = @"HiraMinProN-W3";
 
 static NSString * const kKanaRangeKey = @"KanaRange";
 static NSString * const kDirectionKey = @"Direction";
@@ -165,8 +166,6 @@ typedef enum {
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:2];
     [self.directionControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
     [self.directionControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
-    
-#warning remember auto shrink of main label
 }
 
 - (void)generateSequence
@@ -219,7 +218,17 @@ typedef enum {
     else if (thisHork == Katakana) {
         mainText = self.flattenedKatakana[thisID];
     }
-    self.mainLabel.attributedText = [[NSAttributedString alloc] initWithString:mainText];
+    NSDictionary *attributes;
+    if (!IS_IPAD() && direction == KanaRomaji) {
+        CGFloat fontSize = 140;
+        if (mainText.length > 1) {
+            fontSize *= 0.85;
+        }
+        attributes = @{NSFontAttributeName: [UIFont fontWithName:kHiraMinchoFont size:fontSize]};
+    }
+    self.mainLabel.attributedText = [[NSAttributedString alloc] initWithString:mainText attributes:attributes];
+    
+
     
     CMSection section = [CMChartData getSection:thisID];
     NSUInteger lastInRange = [CMChartData lastInRow:kanaRange];
