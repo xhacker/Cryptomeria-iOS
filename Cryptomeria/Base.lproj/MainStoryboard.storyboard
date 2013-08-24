@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="13A558" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -9,7 +9,7 @@
             <objects>
                 <viewController title="Chart" id="2" customClass="CMChartViewController" sceneMemberID="viewController">
                     <webView key="view" opaque="NO" contentMode="scaleToFill" id="V0i-Sn-eIE">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <connections>
@@ -30,7 +30,7 @@
             <objects>
                 <viewController title="Test" id="3" customClass="CMTestViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cWf-ms-f2g">
@@ -226,10 +226,10 @@
                             <constraint firstAttribute="bottom" secondItem="zXy-4r-0ur" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="0q2-a4-I0k"/>
                             <constraint firstItem="uzY-R5-eJu" firstAttribute="top" secondItem="ftv-zW-uyi" secondAttribute="top" type="default" id="1G7-rE-Drj"/>
                             <constraint firstItem="yZV-g4-aRC" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="91" id="5jE-Jr-od3"/>
+                            <constraint firstItem="n4c-5R-aC4" firstAttribute="top" secondItem="17" secondAttribute="top" constant="140" type="user" id="7JU-Kz-eGg"/>
                             <constraint firstAttribute="trailing" secondItem="1ma-hR-1MS" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="7R4-su-IZ6"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="BMB-aM-TkD"/>
                             <constraint firstItem="oRg-tF-7jh" firstAttribute="centerY" secondItem="17" secondAttribute="centerY" type="default" id="CVw-gg-ytE"/>
-                            <constraint firstAttribute="centerY" secondItem="n4c-5R-aC4" secondAttribute="centerY" type="user" id="CkZ-kQ-07q"/>
                             <constraint firstAttribute="trailing" secondItem="DMP-c1-JIh" secondAttribute="trailing" constant="19" id="CoO-U5-o45"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="top" secondItem="17" secondAttribute="top" constant="101" type="user" id="Esm-WW-TXl"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="24" id="F4l-WK-fCX"/>
@@ -259,6 +259,7 @@
                         <outlet property="directionControl" destination="cWf-ms-f2g" id="8Mb-zJ-OAL"/>
                         <outlet property="horkControl" destination="1ma-hR-1MS" id="t1p-TB-Jxt"/>
                         <outlet property="mainKanaLabel" destination="n4c-5R-aC4" id="BgK-9n-mAD"/>
+                        <outlet property="mainKanaLabelTopConstraint" destination="7JU-Kz-eGg" id="Nur-El-yXD"/>
                         <outlet property="mainRomajiLabel" destination="oRg-tF-7jh" id="lUO-R8-opJ"/>
                         <outlet property="rangeDecreaseButton" destination="ftv-zW-uyi" id="Pk2-OY-FiF"/>
                         <outlet property="rangeIncreaseButton" destination="uzY-R5-eJu" id="yhI-7e-lMT"/>
@@ -280,7 +281,7 @@
             <objects>
                 <viewController title="Vocabulary" id="gIL-ql-Y7D" customClass="CMVocabularyViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="86T-21-tGh">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="64" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GEb-No-amE">
@@ -438,6 +439,7 @@
                 <relationship kind="outlet" name="directionControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="horkControl" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="mainKanaLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mainKanaLabelTopConstraint" candidateClass="NSLayoutConstraint"/>
                 <relationship kind="outlet" name="mainRomajiLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="rangeDecreaseButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="rangeIncreaseButton" candidateClass="UIButton"/>
@@ -467,6 +469,6 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

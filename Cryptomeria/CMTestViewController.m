@@ -46,6 +46,7 @@ static NSInteger  const kRangeMax = 25;
 @property (weak, nonatomic) IBOutlet UIButton *rangeIncreaseButton;
 @property (weak, nonatomic) IBOutlet UIButton *rangeLabelButton;
 @property (weak, nonatomic) IBOutlet UILabel *mainKanaLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mainKanaLabelTopConstraint;
 @property (weak, nonatomic) IBOutlet UILabel *mainRomajiLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *optionButtons;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
@@ -94,6 +95,7 @@ typedef enum {
     self.flattenedHiragana = [[CMChartData hiragana] flatten];
     self.flattenedKatakana = [[CMChartData katakana] flatten];
     
+    [self configurePosition];
     [self configureStyle];
     
     self.prevHork = Katakana;
@@ -102,6 +104,15 @@ typedef enum {
     [self changeFont];
     self.inGuess = YES;
     [self next];
+}
+
+- (void)configurePosition
+{
+    if ([[UIScreen mainScreen] bounds].size.height == 568) {
+        // 肾5！壕！
+        CGFloat offset = (568 - 480) / 2;
+        self.mainKanaLabelTopConstraint.constant += offset;
+    }
 }
 
 - (void)configureStyle
@@ -142,10 +153,10 @@ typedef enum {
     // adjust baseline
     CGFloat yOffset = 0;
     if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
-        yOffset = IS_IPAD()? 6.0 : 5.0;
+        yOffset = IS_IPAD() ? 6.0 : 5.0;
     }
     else {
-        yOffset = IS_IPAD()? 2.0 : 1.5;
+        yOffset = IS_IPAD() ? 2.0 : 1.5;
     }
     
     self.rangeLabelButton.contentEdgeInsets = UIEdgeInsetsMake(yOffset * 2, 0, 0, 0);
