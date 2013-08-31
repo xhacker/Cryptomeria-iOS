@@ -528,13 +528,6 @@
 				1A7C320C16FC990C00F5A71A /* InfoPlist.strings */,
 				1A7C320F16FC990C00F5A71A /* main.m */,
 				1A7C321116FC990C00F5A71A /* Cryptomeria-Prefix.pch */,
-				1A7C321516FC990C00F5A71A /* Default.png */,
-				1A7C321716FC990C00F5A71A /* Default@2x.png */,
-				1A7C321916FC990C00F5A71A /* Default-568h@2x.png */,
-				1AC5BD2117C88E160043B311 /* Default-Landscape@2x~ipad.png */,
-				1AC5BD2217C88E160043B311 /* Default-Landscape~ipad.png */,
-				1AC5BD2317C88E160043B311 /* Default-Portrait@2x~ipad.png */,
-				1AC5BD2417C88E160043B311 /* Default-Portrait~ipad.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -585,6 +578,7 @@
 		1A7C325316FDC76900F5A71A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1A84D3C917D1A67F0027523E /* Splashes */,
 				1A67CFFF174E74180032BF9D /* App Icons */,
 				1A3CBB3F174CB1300012A9FF /* Controls */,
 				1A741972179C2D4300FCC42E /* Controls (iPad) */,
@@ -605,6 +599,20 @@
 				1A7DD08A17B53E23000416E4 /* iOSVersion.h */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		1A84D3C917D1A67F0027523E /* Splashes */ = {
+			isa = PBXGroup;
+			children = (
+				1A7C321516FC990C00F5A71A /* Default.png */,
+				1A7C321716FC990C00F5A71A /* Default@2x.png */,
+				1A7C321916FC990C00F5A71A /* Default-568h@2x.png */,
+				1AC5BD2117C88E160043B311 /* Default-Landscape@2x~ipad.png */,
+				1AC5BD2217C88E160043B311 /* Default-Landscape~ipad.png */,
+				1AC5BD2317C88E160043B311 /* Default-Portrait@2x~ipad.png */,
+				1AC5BD2417C88E160043B311 /* Default-Portrait~ipad.png */,
+			);
+			name = Splashes;
 			sourceTree = "<group>";
 		};
 		1AD2A89616FEF375004137FE /* Vocabulary */ = {

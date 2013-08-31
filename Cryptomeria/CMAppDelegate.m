@@ -16,14 +16,50 @@
 {
     [TestFlight takeOff:@"a2473b66-161c-4b7e-9e00-5cdbd04208dd"];
     
-    CGRect screenRect = [[UIScreen mainScreen] bounds];
-    self.splashView = [[UIImageView alloc] initWithFrame:screenRect];
-    if (screenRect.size.height == 568) {
-        self.splashView.image = [UIImage imageNamed:@"Default-568h"];
+    CGRect screenRect;
+    UIImage *splashImage;
+    if (isPhone) {
+        screenRect = [[UIScreen mainScreen] bounds];
+        if (screenRect.size.height == 568) {
+            splashImage = [UIImage imageNamed:@"Default-568h"];
+        }
+        else {
+            splashImage = [UIImage imageNamed:@"Default"];
+        }
     }
     else {
-        self.splashView.image = [UIImage imageNamed:@"Default"];
+        // iPad
+        if (isPortrait) {
+            splashImage = [UIImage imageNamed:@"Default-Portrait"];
+            if (isPortraitUp) {
+                screenRect = CGRectMake(0, 20, 768, 1004);
+            }
+            else {
+                screenRect = CGRectMake(0, 0, 768, 1004);
+                splashImage = [[UIImage alloc] initWithCGImage:splashImage.CGImage
+                                                         scale:1.0
+                                                   orientation:UIImageOrientationDown];
+            }
+        }
+        else {
+            UIImage *originalImage = [UIImage imageNamed:@"Default-Landscape"];
+            if (isLandscapeLeft) {
+                screenRect = CGRectMake(20, 0, 748, 1024);
+                splashImage = [[UIImage alloc] initWithCGImage:originalImage.CGImage
+                                                         scale:1.0
+                                                   orientation:UIImageOrientationLeft];
+            }
+            else {
+                screenRect = CGRectMake(0, 0, 748, 1024);
+                splashImage = [[UIImage alloc] initWithCGImage:originalImage.CGImage
+                                                         scale:1.0
+                                                   orientation:UIImageOrientationRight];
+            }
+        }
     }
+    self.splashView = [[UIImageView alloc] initWithFrame:screenRect];
+    self.splashView.image = splashImage;
+
     [self.window addSubview:self.splashView];
     [self.window bringSubviewToFront:self.splashView];
     

@@ -13,8 +13,6 @@
 #import "UIImage+Device.h"
 #import "iOSVersion.h"
 
-#define IS_IPAD() (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
-
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 #define kNormalShadowColor RGBA(32, 85, 154, 1)
 #define kRightShadowColor RGBA(122, 163, 46, 1)
@@ -118,7 +116,7 @@ typedef enum {
 
 - (void)configureStyle
 {
-    CGFloat edgeInset = IS_IPAD() ? 7.0 : 5.0;
+    CGFloat edgeInset = isPad ? 7.0 : 5.0;
     UIImage *segmentBackground = [[UIImage imageNamedForCurrentDevice:@"segment"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, edgeInset, 0, edgeInset)];
     UIImage *segmentBackgroundSelected = [[UIImage imageNamedForCurrentDevice:@"segment-selected"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, edgeInset, 0, edgeInset)];
     [[UISegmentedControl appearance] setBackgroundImage:segmentBackground
@@ -140,7 +138,7 @@ typedef enum {
                                    rightSegmentState:UIControlStateNormal
                                           barMetrics:UIBarMetricsDefault];
     
-    CGFloat fontSize = IS_IPAD() ? 19.0 : 13.0;
+    CGFloat fontSize = isPad ? 19.0 : 13.0;
     [[UISegmentedControl appearance] setTitleTextAttributes:@{
                                         UITextAttributeFont:[UIFont fontWithName:kHiraKakuBoldFont size:fontSize],
                                    UITextAttributeTextColor:RGBA(140, 140, 140, 1),
@@ -154,10 +152,10 @@ typedef enum {
     // adjust baseline
     CGFloat yOffset = 0;
     if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
-        yOffset = IS_IPAD() ? 6.0 : 5.0;
+        yOffset = isPad ? 6.0 : 5.0;
     }
     else {
-        yOffset = IS_IPAD() ? 2.0 : 1.5;
+        yOffset = isPad ? 2.0 : 1.5;
     }
     
     self.rangeLabelButton.contentEdgeInsets = UIEdgeInsetsMake(yOffset * 2, 0, 0, 0);
@@ -219,7 +217,7 @@ typedef enum {
         mainText = self.flattenedKatakana[thisID];
     }
     NSDictionary *attributes;
-    if (!IS_IPAD() && direction == KanaRomaji) {
+    if (!isPad && direction == KanaRomaji) {
         CGFloat fontSize = 140;
         if (mainText.length > 1) {
             fontSize *= 0.85;
@@ -344,7 +342,7 @@ typedef enum {
 - (void)changeFont
 {
     NSInteger direction = [self.defaults integerForKey:kDirectionKey];
-    CGFloat fontSize = IS_IPAD() ? 30.0 : 20.0;
+    CGFloat fontSize = isPad ? 30.0 : 20.0;
     if (direction == KanaRomaji) {
         self.mainRomajiLabel.hidden = YES;
         self.mainKanaLabel.hidden = NO;
