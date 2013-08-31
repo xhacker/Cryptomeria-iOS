@@ -108,6 +108,10 @@
 		1A7C324016FC990D00F5A71A /* CryptomeriaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C323F16FC990D00F5A71A /* CryptomeriaTests.m */; };
 		1A7C324B16FCA5B200F5A71A /* CMVocabularyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C324A16FCA5B200F5A71A /* CMVocabularyViewController.m */; };
 		1A7C325116FDB16200F5A71A /* CMChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C325016FDB16200F5A71A /* CMChartData.m */; };
+		1A84D3CE17D1BF1C0027523E /* icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A84D3CA17D1BF1C0027523E /* icon-60.png */; };
+		1A84D3CF17D1BF1C0027523E /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A84D3CB17D1BF1C0027523E /* icon-60@2x.png */; };
+		1A84D3D017D1BF1C0027523E /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A84D3CC17D1BF1C0027523E /* icon-76.png */; };
+		1A84D3D117D1BF1C0027523E /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A84D3CD17D1BF1C0027523E /* icon-76@2x.png */; };
 		1A95E4F5170534AA00DB0193 /* CMVocabularyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A95E4F4170534AA00DB0193 /* CMVocabularyData.m */; };
 		1A95E4F71705367B00DB0193 /* vocabulary.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A95E4F61705367B00DB0193 /* vocabulary.json */; };
 		1A95FE3E173F4BC20008DEE5 /* segment.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A95FE3C173F4BC20008DEE5 /* segment.png */; };
@@ -263,6 +267,10 @@
 		1A7C324F16FDB16200F5A71A /* CMChartData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMChartData.h; path = data/CMChartData.h; sourceTree = "<group>"; };
 		1A7C325016FDB16200F5A71A /* CMChartData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMChartData.m; path = data/CMChartData.m; sourceTree = "<group>"; };
 		1A7DD08A17B53E23000416E4 /* iOSVersion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSVersion.h; sourceTree = "<group>"; };
+		1A84D3CA17D1BF1C0027523E /* icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60.png"; sourceTree = SOURCE_ROOT; };
+		1A84D3CB17D1BF1C0027523E /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = SOURCE_ROOT; };
+		1A84D3CC17D1BF1C0027523E /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76.png"; sourceTree = SOURCE_ROOT; };
+		1A84D3CD17D1BF1C0027523E /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = SOURCE_ROOT; };
 		1A95E4F3170534AA00DB0193 /* CMVocabularyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMVocabularyData.h; path = data/CMVocabularyData.h; sourceTree = "<group>"; };
 		1A95E4F4170534AA00DB0193 /* CMVocabularyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CMVocabularyData.m; path = data/CMVocabularyData.m; sourceTree = "<group>"; };
 		1A95E4F61705367B00DB0193 /* vocabulary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = vocabulary.json; path = data/vocabulary.json; sourceTree = "<group>"; };
@@ -423,8 +431,12 @@
 				1ACB44B1175A43AE00625341 /* iTunesArtwork@2x */,
 				1A580578174DF7DD00A21B6D /* icon-57@2x.png */,
 				1A580576174DF7D900A21B6D /* icon-57.png */,
+				1A84D3CA17D1BF1C0027523E /* icon-60.png */,
+				1A84D3CB17D1BF1C0027523E /* icon-60@2x.png */,
 				1A67CFFB174E74120032BF9D /* icon-72.png */,
 				1A67CFFC174E74120032BF9D /* icon-72@2x.png */,
+				1A84D3CC17D1BF1C0027523E /* icon-76.png */,
+				1A84D3CD17D1BF1C0027523E /* icon-76@2x.png */,
 			);
 			name = "App Icons";
 			sourceTree = "<group>";
@@ -818,6 +830,10 @@
 				1AC5BD2617C88E160043B311 /* Default-Landscape~ipad.png in Resources */,
 				1AC5BD2717C88E160043B311 /* Default-Portrait@2x~ipad.png in Resources */,
 				1AC5BD2817C88E160043B311 /* Default-Portrait~ipad.png in Resources */,
+				1A84D3CE17D1BF1C0027523E /* icon-60.png in Resources */,
+				1A84D3CF17D1BF1C0027523E /* icon-60@2x.png in Resources */,
+				1A84D3D017D1BF1C0027523E /* icon-76.png in Resources */,
+				1A84D3D117D1BF1C0027523E /* icon-76@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
