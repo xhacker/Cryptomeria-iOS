@@ -142,18 +142,19 @@ typedef enum {
                                           barMetrics:UIBarMetricsDefault];
     
     CGFloat fontSize = isPad ? 19.0 : 13.0;
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = RGBA(255, 255, 255, 0.8);
+    shadow.shadowOffset = CGSizeMake(0.0, 1.0);
     [[UISegmentedControl appearance] setTitleTextAttributes:@{
-                                        UITextAttributeFont:[UIFont fontWithName:kHiraKakuBoldFont size:fontSize],
-                                   UITextAttributeTextColor:RGBA(140, 140, 140, 1),
-                             UITextAttributeTextShadowColor:RGBA(255, 255, 255, 0.8),
-                            UITextAttributeTextShadowOffset:[NSValue valueWithUIOffset:UIOffsetMake(0, 1)]}
+                                        NSFontAttributeName:[UIFont fontWithName:kHiraKakuBoldFont size:fontSize],
+                             NSForegroundColorAttributeName:RGBA(140, 140, 140, 1),
+                                      NSShadowAttributeName:shadow}
                                                    forState:UIControlStateNormal];
     [[UISegmentedControl appearance] setTitleTextAttributes:@{
-                                   UITextAttributeTextColor:RGBA(102, 102, 102, 1)}
+                             NSForegroundColorAttributeName:RGBA(102, 102, 102, 1)}
                                                    forState:UIControlStateSelected];
     
     CGFloat yOffset = isPad ? 2.0 : 1.5;
-    
     self.rangeLabelButton.contentEdgeInsets = UIEdgeInsetsMake(yOffset * 2, 0, 0, 0);
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
