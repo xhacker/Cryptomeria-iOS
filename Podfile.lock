@@ -1,0 +1,10 @@
+PODS:
+  - TestFlightSDK (2.2.0-noadid-beta)
+
+DEPENDENCIES:
+  - TestFlightSDK
+
+SPEC CHECKSUMS:
+  TestFlightSDK: 64f333f91ab9d11985e6c4c188a71b22cc528097
+
+COCOAPODS: 0.29.0
