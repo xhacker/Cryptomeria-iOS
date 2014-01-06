@@ -122,6 +122,9 @@ typedef enum {
     [[UISegmentedControl appearance] setBackgroundImage:segmentBackground
                                                forState:UIControlStateNormal
                                              barMetrics:UIBarMetricsDefault];
+    [[UISegmentedControl appearance] setBackgroundImage:segmentBackground
+                                               forState:UIControlStateHighlighted
+                                             barMetrics:UIBarMetricsDefault];
     [[UISegmentedControl appearance] setBackgroundImage:segmentBackgroundSelected
                                                forState:UIControlStateSelected
                                              barMetrics:UIBarMetricsDefault];
@@ -149,14 +152,7 @@ typedef enum {
                                    UITextAttributeTextColor:RGBA(102, 102, 102, 1)}
                                                    forState:UIControlStateSelected];
     
-    // adjust baseline
-    CGFloat yOffset = 0;
-    if (SYSTEM_VERSION_LESS_THAN(@"7.0")) {
-        yOffset = isPad ? 6.0 : 5.0;
-    }
-    else {
-        yOffset = isPad ? 2.0 : 1.5;
-    }
+    CGFloat yOffset = isPad ? 2.0 : 1.5;
     
     self.rangeLabelButton.contentEdgeInsets = UIEdgeInsetsMake(yOffset * 2, 0, 0, 0);
     [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
