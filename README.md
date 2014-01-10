@@ -1,6 +1,6 @@
 # Cryptomeria for iOS - Learn Japanese Kana
 
-![Logo](https://raw.github.com/xhacker/cryptomeria-iOS/master/icon-76@2x.png "Logo")
+<img alt="logo" src="https://raw.github.com/xhacker/Cryptomeria-iOS/master/Cryptomeria/Images.xcassets/AppIcon.appiconset/icon-76@2x.png" width="76">
 
 [http://xhacker.im/cryptomeria](http://xhacker.im/cryptomeria)
 
@@ -8,8 +8,8 @@ Helping you learn Japanese kana with joy, for both iPhone and iPad.
 
 ## Screenshots
 
-![Screenshot 1](https://raw.github.com/xhacker/cryptomeria-iOS/master/Screenshots/iPhone-1.png "Screenshot 1")
-![Screenshot 2](https://raw.github.com/xhacker/cryptomeria-iOS/master/Screenshots/iPhone-2.png "Screenshot 2")
+<img alt="Screenshot 1" src="https://raw.github.com/xhacker/cryptomeria-iOS/master/Screenshots/iPhone-1.png" width="320">
+<img alt="Screenshot 2" src="https://raw.github.com/xhacker/cryptomeria-iOS/master/Screenshots/iPhone-2.png" width="320">
 
 ## License
 
