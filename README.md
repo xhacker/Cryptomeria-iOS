@@ -11,6 +11,10 @@ Helping you learn Japanese kana with joy, for both iPhone and iPad.
 <img alt="Screenshot 1" src="https://raw.github.com/xhacker/cryptomeria-iOS/master/Screenshots/iPhone-1.png" width="320">
 <img alt="Screenshot 2" src="https://raw.github.com/xhacker/cryptomeria-iOS/master/Screenshots/iPhone-2.png" width="320">
 
+## Icon Font?
+
+[M+ FONTS](http://mplus-fonts.sourceforge.jp)
+
 ## License
 
 Licensed under the Don’t Beat Me on the App Store Public License, Version 0.9.
