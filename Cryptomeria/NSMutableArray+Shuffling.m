@@ -17,7 +17,7 @@
     {
         // Select a random element between i and end of array to swap with.
         NSInteger nElements = count - i;
-        NSInteger n = arc4random_uniform(nElements) + i;
+        NSInteger n = arc4random_uniform((uint32_t)nElements) + i;
         [self exchangeObjectAtIndex:i withObjectAtIndex:n];
     }
 }

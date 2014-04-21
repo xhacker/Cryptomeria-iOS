@@ -397,8 +397,8 @@ typedef enum {
         [self.rightButton setAttributedShadowWithColor:kRightShadowColor forState:UIControlStateNormal];
     }
     
-    NSString *correctText = [[NSString alloc] initWithFormat:@"%d", self.correctCount];
-    NSString *totalText = [[NSString alloc] initWithFormat:@"%d", self.totalCount];
+    NSString *correctText = [[NSString alloc] initWithFormat:@"%ld", (long)self.correctCount];
+    NSString *totalText = [[NSString alloc] initWithFormat:@"%ld", (long)self.totalCount];
     NSString *scoreText = [[NSString alloc] initWithFormat:@"%@ / %@", correctText, totalText];
     NSMutableAttributedString *scoreAttributedString = [[NSMutableAttributedString alloc] initWithString:scoreText];
     NSDictionary *attributes = @{NSForegroundColorAttributeName: kScoreRightColor,
