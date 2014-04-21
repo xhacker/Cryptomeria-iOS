@@ -59,6 +59,55 @@
 		1A5ABE4617B2496600960D0B /* ipad-option-wrong-pressing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5ABE3A17B2496600960D0B /* ipad-option-wrong-pressing@2x.png */; };
 		1A5ABE4717B2496600960D0B /* ipad-option-wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5ABE3B17B2496600960D0B /* ipad-option-wrong.png */; };
 		1A5ABE4817B2496600960D0B /* ipad-option-wrong@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5ABE3C17B2496600960D0B /* ipad-option-wrong@2x.png */; };
+		1A6649011904F18B008B5644 /* jquery-2.1.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A6648FF1904F0F4008B5644 /* jquery-2.1.0.min.js */; };
+		1A6649331904F2C1008B5644 /* (e).aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649031904F2C1008B5644 /* (e).aac */; };
+		1A6649341904F2C1008B5644 /* (i).aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649041904F2C1008B5644 /* (i).aac */; };
+		1A6649351904F2C1008B5644 /* a.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649051904F2C1008B5644 /* a.aac */; };
+		1A6649361904F2C1008B5644 /* chi.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649061904F2C1008B5644 /* chi.aac */; };
+		1A6649371904F2C1008B5644 /* e.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649071904F2C1008B5644 /* e.aac */; };
+		1A6649381904F2C1008B5644 /* fu.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649081904F2C1008B5644 /* fu.aac */; };
+		1A6649391904F2C1008B5644 /* ha.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649091904F2C1008B5644 /* ha.aac */; };
+		1A66493A1904F2C1008B5644 /* he.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66490A1904F2C1008B5644 /* he.aac */; };
+		1A66493B1904F2C1008B5644 /* hi.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66490B1904F2C1008B5644 /* hi.aac */; };
+		1A66493C1904F2C1008B5644 /* ho.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66490C1904F2C1008B5644 /* ho.aac */; };
+		1A66493D1904F2C1008B5644 /* i.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66490D1904F2C1008B5644 /* i.aac */; };
+		1A66493E1904F2C1008B5644 /* ka.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66490E1904F2C1008B5644 /* ka.aac */; };
+		1A66493F1904F2C1008B5644 /* ke.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66490F1904F2C1008B5644 /* ke.aac */; };
+		1A6649401904F2C1008B5644 /* ki.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649101904F2C1008B5644 /* ki.aac */; };
+		1A6649411904F2C1008B5644 /* ko.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649111904F2C1008B5644 /* ko.aac */; };
+		1A6649421904F2C1008B5644 /* ku.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649121904F2C1008B5644 /* ku.aac */; };
+		1A6649431904F2C1008B5644 /* ma.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649131904F2C1008B5644 /* ma.aac */; };
+		1A6649441904F2C1008B5644 /* me.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649141904F2C1008B5644 /* me.aac */; };
+		1A6649451904F2C1008B5644 /* mi.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649151904F2C1008B5644 /* mi.aac */; };
+		1A6649461904F2C1008B5644 /* mo.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649161904F2C1008B5644 /* mo.aac */; };
+		1A6649471904F2C1008B5644 /* mu.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649171904F2C1008B5644 /* mu.aac */; };
+		1A6649481904F2C1008B5644 /* n.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649181904F2C1008B5644 /* n.aac */; };
+		1A6649491904F2C1008B5644 /* na.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649191904F2C1008B5644 /* na.aac */; };
+		1A66494A1904F2C1008B5644 /* ne.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66491A1904F2C1008B5644 /* ne.aac */; };
+		1A66494B1904F2C1008B5644 /* ni.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66491B1904F2C1008B5644 /* ni.aac */; };
+		1A66494C1904F2C1008B5644 /* no.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66491C1904F2C1008B5644 /* no.aac */; };
+		1A66494D1904F2C1008B5644 /* nu.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66491D1904F2C1008B5644 /* nu.aac */; };
+		1A66494E1904F2C1008B5644 /* o.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66491E1904F2C1008B5644 /* o.aac */; };
+		1A66494F1904F2C1008B5644 /* ra.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66491F1904F2C1008B5644 /* ra.aac */; };
+		1A6649501904F2C1008B5644 /* re.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649201904F2C1008B5644 /* re.aac */; };
+		1A6649511904F2C1008B5644 /* ri.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649211904F2C1008B5644 /* ri.aac */; };
+		1A6649521904F2C1008B5644 /* ro.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649221904F2C1008B5644 /* ro.aac */; };
+		1A6649531904F2C1008B5644 /* ru.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649231904F2C1008B5644 /* ru.aac */; };
+		1A6649541904F2C1008B5644 /* sa.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649241904F2C1008B5644 /* sa.aac */; };
+		1A6649551904F2C1008B5644 /* se.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649251904F2C1008B5644 /* se.aac */; };
+		1A6649561904F2C1008B5644 /* shi.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649261904F2C1008B5644 /* shi.aac */; };
+		1A6649571904F2C1008B5644 /* so.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649271904F2C1008B5644 /* so.aac */; };
+		1A6649581904F2C1008B5644 /* su.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649281904F2C1008B5644 /* su.aac */; };
+		1A6649591904F2C1008B5644 /* ta.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649291904F2C1008B5644 /* ta.aac */; };
+		1A66495A1904F2C1008B5644 /* te.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66492A1904F2C1008B5644 /* te.aac */; };
+		1A66495B1904F2C1008B5644 /* to.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66492B1904F2C1008B5644 /* to.aac */; };
+		1A66495C1904F2C1008B5644 /* tsu.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66492C1904F2C1008B5644 /* tsu.aac */; };
+		1A66495D1904F2C1008B5644 /* u.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66492D1904F2C1008B5644 /* u.aac */; };
+		1A66495E1904F2C1008B5644 /* wa.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66492E1904F2C1008B5644 /* wa.aac */; };
+		1A66495F1904F2C1008B5644 /* wo.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A66492F1904F2C1008B5644 /* wo.aac */; };
+		1A6649601904F2C1008B5644 /* ya.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649301904F2C1008B5644 /* ya.aac */; };
+		1A6649611904F2C1008B5644 /* yo.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649311904F2C1008B5644 /* yo.aac */; };
+		1A6649621904F2C1008B5644 /* yu.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649321904F2C1008B5644 /* yu.aac */; };
 		1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */; };
 		1A74195A179C2D3F00FCC42E /* ipad-button-decrease-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741942179C2D3F00FCC42E /* ipad-button-decrease-disabled.png */; };
 		1A74195B179C2D3F00FCC42E /* ipad-button-decrease-disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A741943179C2D3F00FCC42E /* ipad-button-decrease-disabled@2x.png */; };
@@ -191,6 +240,55 @@
 		1A5ABE3A17B2496600960D0B /* ipad-option-wrong-pressing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-option-wrong-pressing@2x.png"; path = "resources/ipad-option-wrong-pressing@2x.png"; sourceTree = "<group>"; };
 		1A5ABE3B17B2496600960D0B /* ipad-option-wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-option-wrong.png"; path = "resources/ipad-option-wrong.png"; sourceTree = "<group>"; };
 		1A5ABE3C17B2496600960D0B /* ipad-option-wrong@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-option-wrong@2x.png"; path = "resources/ipad-option-wrong@2x.png"; sourceTree = "<group>"; };
+		1A6648FF1904F0F4008B5644 /* jquery-2.1.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery-2.1.0.min.js"; path = "HTML/jquery-2.1.0.min.js"; sourceTree = "<group>"; };
+		1A6649031904F2C1008B5644 /* (e).aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "(e).aac"; sourceTree = "<group>"; };
+		1A6649041904F2C1008B5644 /* (i).aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "(i).aac"; sourceTree = "<group>"; };
+		1A6649051904F2C1008B5644 /* a.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.aac; sourceTree = "<group>"; };
+		1A6649061904F2C1008B5644 /* chi.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = chi.aac; sourceTree = "<group>"; };
+		1A6649071904F2C1008B5644 /* e.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = e.aac; sourceTree = "<group>"; };
+		1A6649081904F2C1008B5644 /* fu.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = fu.aac; sourceTree = "<group>"; };
+		1A6649091904F2C1008B5644 /* ha.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ha.aac; sourceTree = "<group>"; };
+		1A66490A1904F2C1008B5644 /* he.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = he.aac; sourceTree = "<group>"; };
+		1A66490B1904F2C1008B5644 /* hi.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = hi.aac; sourceTree = "<group>"; };
+		1A66490C1904F2C1008B5644 /* ho.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ho.aac; sourceTree = "<group>"; };
+		1A66490D1904F2C1008B5644 /* i.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = i.aac; sourceTree = "<group>"; };
+		1A66490E1904F2C1008B5644 /* ka.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ka.aac; sourceTree = "<group>"; };
+		1A66490F1904F2C1008B5644 /* ke.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ke.aac; sourceTree = "<group>"; };
+		1A6649101904F2C1008B5644 /* ki.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ki.aac; sourceTree = "<group>"; };
+		1A6649111904F2C1008B5644 /* ko.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ko.aac; sourceTree = "<group>"; };
+		1A6649121904F2C1008B5644 /* ku.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ku.aac; sourceTree = "<group>"; };
+		1A6649131904F2C1008B5644 /* ma.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ma.aac; sourceTree = "<group>"; };
+		1A6649141904F2C1008B5644 /* me.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = me.aac; sourceTree = "<group>"; };
+		1A6649151904F2C1008B5644 /* mi.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = mi.aac; sourceTree = "<group>"; };
+		1A6649161904F2C1008B5644 /* mo.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = mo.aac; sourceTree = "<group>"; };
+		1A6649171904F2C1008B5644 /* mu.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = mu.aac; sourceTree = "<group>"; };
+		1A6649181904F2C1008B5644 /* n.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = n.aac; sourceTree = "<group>"; };
+		1A6649191904F2C1008B5644 /* na.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = na.aac; sourceTree = "<group>"; };
+		1A66491A1904F2C1008B5644 /* ne.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ne.aac; sourceTree = "<group>"; };
+		1A66491B1904F2C1008B5644 /* ni.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ni.aac; sourceTree = "<group>"; };
+		1A66491C1904F2C1008B5644 /* no.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = no.aac; sourceTree = "<group>"; };
+		1A66491D1904F2C1008B5644 /* nu.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = nu.aac; sourceTree = "<group>"; };
+		1A66491E1904F2C1008B5644 /* o.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = o.aac; sourceTree = "<group>"; };
+		1A66491F1904F2C1008B5644 /* ra.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ra.aac; sourceTree = "<group>"; };
+		1A6649201904F2C1008B5644 /* re.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = re.aac; sourceTree = "<group>"; };
+		1A6649211904F2C1008B5644 /* ri.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ri.aac; sourceTree = "<group>"; };
+		1A6649221904F2C1008B5644 /* ro.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ro.aac; sourceTree = "<group>"; };
+		1A6649231904F2C1008B5644 /* ru.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ru.aac; sourceTree = "<group>"; };
+		1A6649241904F2C1008B5644 /* sa.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = sa.aac; sourceTree = "<group>"; };
+		1A6649251904F2C1008B5644 /* se.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = se.aac; sourceTree = "<group>"; };
+		1A6649261904F2C1008B5644 /* shi.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = shi.aac; sourceTree = "<group>"; };
+		1A6649271904F2C1008B5644 /* so.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = so.aac; sourceTree = "<group>"; };
+		1A6649281904F2C1008B5644 /* su.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = su.aac; sourceTree = "<group>"; };
+		1A6649291904F2C1008B5644 /* ta.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ta.aac; sourceTree = "<group>"; };
+		1A66492A1904F2C1008B5644 /* te.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = te.aac; sourceTree = "<group>"; };
+		1A66492B1904F2C1008B5644 /* to.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = to.aac; sourceTree = "<group>"; };
+		1A66492C1904F2C1008B5644 /* tsu.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = tsu.aac; sourceTree = "<group>"; };
+		1A66492D1904F2C1008B5644 /* u.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = u.aac; sourceTree = "<group>"; };
+		1A66492E1904F2C1008B5644 /* wa.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = wa.aac; sourceTree = "<group>"; };
+		1A66492F1904F2C1008B5644 /* wo.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = wo.aac; sourceTree = "<group>"; };
+		1A6649301904F2C1008B5644 /* ya.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = ya.aac; sourceTree = "<group>"; };
+		1A6649311904F2C1008B5644 /* yo.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = yo.aac; sourceTree = "<group>"; };
+		1A6649321904F2C1008B5644 /* yu.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = yu.aac; sourceTree = "<group>"; };
 		1A72658F1700A33900C9A0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1A7265931700B06F00C9A0CB /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
 		1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
@@ -396,6 +494,62 @@
 			name = "Options (iPad)";
 			sourceTree = "<group>";
 		};
+		1A6649021904F2C1008B5644 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1A6649031904F2C1008B5644 /* (e).aac */,
+				1A6649041904F2C1008B5644 /* (i).aac */,
+				1A6649051904F2C1008B5644 /* a.aac */,
+				1A6649061904F2C1008B5644 /* chi.aac */,
+				1A6649071904F2C1008B5644 /* e.aac */,
+				1A6649081904F2C1008B5644 /* fu.aac */,
+				1A6649091904F2C1008B5644 /* ha.aac */,
+				1A66490A1904F2C1008B5644 /* he.aac */,
+				1A66490B1904F2C1008B5644 /* hi.aac */,
+				1A66490C1904F2C1008B5644 /* ho.aac */,
+				1A66490D1904F2C1008B5644 /* i.aac */,
+				1A66490E1904F2C1008B5644 /* ka.aac */,
+				1A66490F1904F2C1008B5644 /* ke.aac */,
+				1A6649101904F2C1008B5644 /* ki.aac */,
+				1A6649111904F2C1008B5644 /* ko.aac */,
+				1A6649121904F2C1008B5644 /* ku.aac */,
+				1A6649131904F2C1008B5644 /* ma.aac */,
+				1A6649141904F2C1008B5644 /* me.aac */,
+				1A6649151904F2C1008B5644 /* mi.aac */,
+				1A6649161904F2C1008B5644 /* mo.aac */,
+				1A6649171904F2C1008B5644 /* mu.aac */,
+				1A6649181904F2C1008B5644 /* n.aac */,
+				1A6649191904F2C1008B5644 /* na.aac */,
+				1A66491A1904F2C1008B5644 /* ne.aac */,
+				1A66491B1904F2C1008B5644 /* ni.aac */,
+				1A66491C1904F2C1008B5644 /* no.aac */,
+				1A66491D1904F2C1008B5644 /* nu.aac */,
+				1A66491E1904F2C1008B5644 /* o.aac */,
+				1A66491F1904F2C1008B5644 /* ra.aac */,
+				1A6649201904F2C1008B5644 /* re.aac */,
+				1A6649211904F2C1008B5644 /* ri.aac */,
+				1A6649221904F2C1008B5644 /* ro.aac */,
+				1A6649231904F2C1008B5644 /* ru.aac */,
+				1A6649241904F2C1008B5644 /* sa.aac */,
+				1A6649251904F2C1008B5644 /* se.aac */,
+				1A6649261904F2C1008B5644 /* shi.aac */,
+				1A6649271904F2C1008B5644 /* so.aac */,
+				1A6649281904F2C1008B5644 /* su.aac */,
+				1A6649291904F2C1008B5644 /* ta.aac */,
+				1A66492A1904F2C1008B5644 /* te.aac */,
+				1A66492B1904F2C1008B5644 /* to.aac */,
+				1A66492C1904F2C1008B5644 /* tsu.aac */,
+				1A66492D1904F2C1008B5644 /* u.aac */,
+				1A66492E1904F2C1008B5644 /* wa.aac */,
+				1A66492F1904F2C1008B5644 /* wo.aac */,
+				1A6649301904F2C1008B5644 /* ya.aac */,
+				1A6649311904F2C1008B5644 /* yo.aac */,
+				1A6649321904F2C1008B5644 /* yu.aac */,
+			);
+			name = Sounds;
+			path = resources/sounds;
+			sourceTree = "<group>";
+		};
 		1A67CFFF174E74180032BF9D /* iTunes Artwork */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,6 +595,7 @@
 			children = (
 				1A750327173254BD0071D087 /* chart.html */,
 				1A75035417325BDD0071D087 /* chart.css */,
+				1A6648FF1904F0F4008B5644 /* jquery-2.1.0.min.js */,
 			);
 			name = HTML;
 			sourceTree = "<group>";
@@ -562,6 +717,7 @@
 				1A3CBB19174C9CFD0012A9FF /* Options */,
 				1A5ABE4917B2496B00960D0B /* Options (iPad) */,
 				1A3CBB18174C9CF80012A9FF /* Icons */,
+				1A6649021904F2C1008B5644 /* Sounds */,
 			);
 			name = Resources;
 			path = Cryptomeria;
@@ -680,88 +836,134 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A66493D1904F2C1008B5644 /* i.aac in Resources */,
+				1A66493B1904F2C1008B5644 /* hi.aac in Resources */,
+				1A66495A1904F2C1008B5644 /* te.aac in Resources */,
+				1A6649351904F2C1008B5644 /* a.aac in Resources */,
 				1ADA76A61705E019007F6190 /* MainStoryboard.storyboard in Resources */,
+				1A66493F1904F2C1008B5644 /* ke.aac in Resources */,
 				1A049712175858D400BE0E8D /* MainStoryboard~iPad.storyboard in Resources */,
 				1A7C320E16FC990C00F5A71A /* InfoPlist.strings in Resources */,
 				1A95E4F71705367B00DB0193 /* vocabulary.json in Resources */,
 				1A750328173254BD0071D087 /* chart.html in Resources */,
 				1A75035517325BDD0071D087 /* chart.css in Resources */,
+				1A6649011904F18B008B5644 /* jquery-2.1.0.min.js in Resources */,
 				1AFAFC9C173E65410057BB82 /* option-normal.png in Resources */,
+				1A6649431904F2C1008B5644 /* ma.aac in Resources */,
 				1AFAFC9D173E65410057BB82 /* option-normal@2x.png in Resources */,
 				1AFAFC9E173E65410057BB82 /* option-right.png in Resources */,
 				1AFAFC9F173E65410057BB82 /* option-right@2x.png in Resources */,
+				1A6649401904F2C1008B5644 /* ki.aac in Resources */,
 				1AFAFCA2173E68020057BB82 /* option-wrong.png in Resources */,
 				1AFAFCA3173E68020057BB82 /* option-wrong@2x.png in Resources */,
 				1A95FE3E173F4BC20008DEE5 /* segment.png in Resources */,
 				1A95FE3F173F4BC20008DEE5 /* segment@2x.png in Resources */,
+				1A66494D1904F2C1008B5644 /* nu.aac in Resources */,
 				1A9A11D71742260F00CD9972 /* label-background.png in Resources */,
+				1A6649411904F2C1008B5644 /* ko.aac in Resources */,
 				1A9A11D81742260F00CD9972 /* label-background@2x.png in Resources */,
 				1A9A11DD17422AB300CD9972 /* button-decrease.png in Resources */,
+				1A6649461904F2C1008B5644 /* mo.aac in Resources */,
+				1A6649571904F2C1008B5644 /* so.aac in Resources */,
+				1A6649471904F2C1008B5644 /* mu.aac in Resources */,
 				1A9A11DE17422AB300CD9972 /* button-decrease@2x.png in Resources */,
 				1A9A11DF17422AB300CD9972 /* button-increase.png in Resources */,
 				1A9A11E017422AB300CD9972 /* button-increase@2x.png in Resources */,
+				1A6649371904F2C1008B5644 /* e.aac in Resources */,
 				1A2CBB6C1748C9C70037E20D /* option-normal-pressing.png in Resources */,
 				1A2CBB6D1748C9C70037E20D /* option-normal-pressing@2x.png in Resources */,
 				1A2CBB721748D2430037E20D /* option-right-pressing.png in Resources */,
 				1A2CBB731748D2430037E20D /* option-right-pressing@2x.png in Resources */,
 				1A2CBB741748D2430037E20D /* option-wrong-pressing.png in Resources */,
 				1A2CBB751748D2430037E20D /* option-wrong-pressing@2x.png in Resources */,
+				1A66495B1904F2C1008B5644 /* to.aac in Resources */,
 				1A3CBB0C174C98960012A9FF /* button-decrease-disabled.png in Resources */,
 				1A3CBB0D174C98960012A9FF /* button-decrease-disabled@2x.png in Resources */,
+				1A6649491904F2C1008B5644 /* na.aac in Resources */,
 				1A3CBB0E174C98960012A9FF /* button-decrease-pressing.png in Resources */,
+				1A6649601904F2C1008B5644 /* ya.aac in Resources */,
 				1A3CBB0F174C98960012A9FF /* button-decrease-pressing@2x.png in Resources */,
 				1A3CBB10174C98960012A9FF /* button-increase-disabled.png in Resources */,
+				1A6649501904F2C1008B5644 /* re.aac in Resources */,
+				1A6649381904F2C1008B5644 /* fu.aac in Resources */,
 				1A3CBB11174C98960012A9FF /* button-increase-disabled@2x.png in Resources */,
+				1A66494B1904F2C1008B5644 /* ni.aac in Resources */,
 				1A3CBB12174C98960012A9FF /* button-increase-pressing.png in Resources */,
 				1A3CBB13174C98960012A9FF /* button-increase-pressing@2x.png in Resources */,
 				1A3CBB22174C9D180012A9FF /* segment-divider-00.png in Resources */,
 				1A3CBB23174C9D180012A9FF /* segment-divider-00@2x.png in Resources */,
 				1A3CBB24174C9D180012A9FF /* segment-divider-01.png in Resources */,
+				1A6649391904F2C1008B5644 /* ha.aac in Resources */,
 				1A3CBB25174C9D180012A9FF /* segment-divider-01@2x.png in Resources */,
 				1A3CBB26174C9D180012A9FF /* segment-divider-10.png in Resources */,
+				1A66494E1904F2C1008B5644 /* o.aac in Resources */,
 				1A3CBB27174C9D180012A9FF /* segment-divider-10@2x.png in Resources */,
+				1A6649521904F2C1008B5644 /* ro.aac in Resources */,
+				1A6649361904F2C1008B5644 /* chi.aac in Resources */,
 				1A3CBB2C174C9D370012A9FF /* segment-selected.png in Resources */,
 				1A3CBB2D174C9D370012A9FF /* segment-selected@2x.png in Resources */,
+				1A66495E1904F2C1008B5644 /* wa.aac in Resources */,
+				1A66494F1904F2C1008B5644 /* ra.aac in Resources */,
 				1A3CBB3A174CB1230012A9FF /* tabbar-selected.png in Resources */,
+				1A6649451904F2C1008B5644 /* mi.aac in Resources */,
+				1A6649541904F2C1008B5644 /* sa.aac in Resources */,
 				1A3CBB3B174CB1230012A9FF /* tabbar-selected@2x.png in Resources */,
+				1A66495D1904F2C1008B5644 /* u.aac in Resources */,
 				1A3CBB3C174CB1230012A9FF /* tabbar.png in Resources */,
 				1A3CBB3D174CB1230012A9FF /* tabbar@2x.png in Resources */,
 				1A3CBB5B174CCA2B0012A9FF /* icon-chart-highlight.png in Resources */,
 				1A3CBB5C174CCA2B0012A9FF /* icon-chart-highlight@2x.png in Resources */,
 				1A3CBB5D174CCA2B0012A9FF /* icon-chart.png in Resources */,
+				1A6649551904F2C1008B5644 /* se.aac in Resources */,
 				1A3CBB5E174CCA2B0012A9FF /* icon-chart@2x.png in Resources */,
 				1A3CBB5F174CCA2B0012A9FF /* icon-test-highlight.png in Resources */,
 				1A3CBB60174CCA2B0012A9FF /* icon-test-highlight@2x.png in Resources */,
+				1A66495F1904F2C1008B5644 /* wo.aac in Resources */,
 				1A3CBB61174CCA2B0012A9FF /* icon-test.png in Resources */,
+				1A66494C1904F2C1008B5644 /* no.aac in Resources */,
 				1A3CBB62174CCA2B0012A9FF /* icon-test@2x.png in Resources */,
 				1ACB44B2175A43AE00625341 /* iTunesArtwork in Resources */,
 				1ACB44B3175A43AE00625341 /* iTunesArtwork@2x in Resources */,
 				1A74195A179C2D3F00FCC42E /* ipad-button-decrease-disabled.png in Resources */,
+				1A6649581904F2C1008B5644 /* su.aac in Resources */,
 				1A74195B179C2D3F00FCC42E /* ipad-button-decrease-disabled@2x.png in Resources */,
 				1A74195C179C2D3F00FCC42E /* ipad-button-decrease-pressing.png in Resources */,
 				1A74195D179C2D3F00FCC42E /* ipad-button-decrease-pressing@2x.png in Resources */,
 				1A74195E179C2D3F00FCC42E /* ipad-button-decrease.png in Resources */,
 				1A74195F179C2D3F00FCC42E /* ipad-button-decrease@2x.png in Resources */,
+				1A6649421904F2C1008B5644 /* ku.aac in Resources */,
 				1A741960179C2D3F00FCC42E /* ipad-button-increase-disabled.png in Resources */,
 				1A741961179C2D3F00FCC42E /* ipad-button-increase-disabled@2x.png in Resources */,
+				1A6649511904F2C1008B5644 /* ri.aac in Resources */,
 				1A741962179C2D3F00FCC42E /* ipad-button-increase-pressing.png in Resources */,
 				1A741963179C2D3F00FCC42E /* ipad-button-increase-pressing@2x.png in Resources */,
 				1A741964179C2D3F00FCC42E /* ipad-button-increase.png in Resources */,
 				1A741965179C2D3F00FCC42E /* ipad-button-increase@2x.png in Resources */,
 				1A741966179C2D3F00FCC42E /* ipad-label-background.png in Resources */,
+				1A6649611904F2C1008B5644 /* yo.aac in Resources */,
 				1A741967179C2D3F00FCC42E /* ipad-label-background@2x.png in Resources */,
 				1A741968179C2D3F00FCC42E /* ipad-segment-divider-00.png in Resources */,
 				1A741969179C2D3F00FCC42E /* ipad-segment-divider-00@2x.png in Resources */,
+				1A66493A1904F2C1008B5644 /* he.aac in Resources */,
 				1A74196A179C2D3F00FCC42E /* ipad-segment-divider-01.png in Resources */,
+				1A6649481904F2C1008B5644 /* n.aac in Resources */,
+				1A6649441904F2C1008B5644 /* me.aac in Resources */,
 				1A74196B179C2D3F00FCC42E /* ipad-segment-divider-01@2x.png in Resources */,
 				1A42954F187AA7F5004FCCCD /* Images.xcassets in Resources */,
 				1A74196C179C2D3F00FCC42E /* ipad-segment-divider-10.png in Resources */,
 				1A74196D179C2D3F00FCC42E /* ipad-segment-divider-10@2x.png in Resources */,
+				1A6649341904F2C1008B5644 /* (i).aac in Resources */,
+				1A6649591904F2C1008B5644 /* ta.aac in Resources */,
+				1A66493C1904F2C1008B5644 /* ho.aac in Resources */,
+				1A6649621904F2C1008B5644 /* yu.aac in Resources */,
 				1A74196E179C2D3F00FCC42E /* ipad-segment-selected.png in Resources */,
+				1A66494A1904F2C1008B5644 /* ne.aac in Resources */,
 				1A74196F179C2D3F00FCC42E /* ipad-segment-selected@2x.png in Resources */,
 				1A741970179C2D3F00FCC42E /* ipad-segment.png in Resources */,
 				1A741971179C2D3F00FCC42E /* ipad-segment@2x.png in Resources */,
+				1A6649531904F2C1008B5644 /* ru.aac in Resources */,
 				1A5ABE3D17B2496600960D0B /* ipad-option-normal-pressing.png in Resources */,
+				1A6649331904F2C1008B5644 /* (e).aac in Resources */,
 				1A5ABE3E17B2496600960D0B /* ipad-option-normal-pressing@2x.png in Resources */,
 				1A5ABE3F17B2496600960D0B /* ipad-option-normal.png in Resources */,
 				1A5ABE4017B2496600960D0B /* ipad-option-normal@2x.png in Resources */,
@@ -769,7 +971,10 @@
 				1A5ABE4217B2496600960D0B /* ipad-option-right-pressing@2x.png in Resources */,
 				1A5ABE4317B2496600960D0B /* ipad-option-right.png in Resources */,
 				1A5ABE4417B2496600960D0B /* ipad-option-right@2x.png in Resources */,
+				1A66493E1904F2C1008B5644 /* ka.aac in Resources */,
 				1A5ABE4517B2496600960D0B /* ipad-option-wrong-pressing.png in Resources */,
+				1A6649561904F2C1008B5644 /* shi.aac in Resources */,
+				1A66495C1904F2C1008B5644 /* tsu.aac in Resources */,
 				1A5ABE4617B2496600960D0B /* ipad-option-wrong-pressing@2x.png in Resources */,
 				1A5ABE4717B2496600960D0B /* ipad-option-wrong.png in Resources */,
 				1A5ABE4817B2496600960D0B /* ipad-option-wrong@2x.png in Resources */,

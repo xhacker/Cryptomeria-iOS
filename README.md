@@ -11,6 +11,10 @@ Helping you learn Japanese kana with joy, for both iPhone and iPad.
 <img alt="Screenshot 1" src="https://raw.github.com/xhacker/cryptomeria-iOS/master/Screenshots/iPhone-1.png" width="320">
 <img alt="Screenshot 2" src="https://raw.github.com/xhacker/cryptomeria-iOS/master/Screenshots/iPhone-2.png" width="320">
 
+## Pronunciation
+
+Pronunciation files are not open-sourced. To let it work, you have to put aac files in ``Cryptomeria/resources/sounds``.
+
 ## Icon Font?
 
 [M+ FONTS](http://mplus-fonts.sourceforge.jp)
