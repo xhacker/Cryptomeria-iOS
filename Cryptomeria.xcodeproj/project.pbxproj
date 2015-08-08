@@ -58,7 +58,7 @@
 		1A5ABE4617B2496600960D0B /* ipad-option-wrong-pressing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5ABE3A17B2496600960D0B /* ipad-option-wrong-pressing@2x.png */; };
 		1A5ABE4717B2496600960D0B /* ipad-option-wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5ABE3B17B2496600960D0B /* ipad-option-wrong.png */; };
 		1A5ABE4817B2496600960D0B /* ipad-option-wrong@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5ABE3C17B2496600960D0B /* ipad-option-wrong@2x.png */; };
-		1A6649011904F18B008B5644 /* jquery-2.1.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A6648FF1904F0F4008B5644 /* jquery-2.1.0.min.js */; };
+		1A6649011904F18B008B5644 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A6648FF1904F0F4008B5644 /* jquery.min.js */; };
 		1A6649331904F2C1008B5644 /* (e).aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649031904F2C1008B5644 /* (e).aac */; };
 		1A6649341904F2C1008B5644 /* (i).aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649041904F2C1008B5644 /* (i).aac */; };
 		1A6649351904F2C1008B5644 /* a.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649051904F2C1008B5644 /* a.aac */; };
@@ -238,7 +238,7 @@
 		1A5ABE3A17B2496600960D0B /* ipad-option-wrong-pressing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-option-wrong-pressing@2x.png"; path = "resources/ipad-option-wrong-pressing@2x.png"; sourceTree = "<group>"; };
 		1A5ABE3B17B2496600960D0B /* ipad-option-wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-option-wrong.png"; path = "resources/ipad-option-wrong.png"; sourceTree = "<group>"; };
 		1A5ABE3C17B2496600960D0B /* ipad-option-wrong@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-option-wrong@2x.png"; path = "resources/ipad-option-wrong@2x.png"; sourceTree = "<group>"; };
-		1A6648FF1904F0F4008B5644 /* jquery-2.1.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = "jquery-2.1.0.min.js"; path = "HTML/jquery-2.1.0.min.js"; sourceTree = "<group>"; };
+		1A6648FF1904F0F4008B5644 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = HTML/jquery.min.js; sourceTree = "<group>"; };
 		1A6649031904F2C1008B5644 /* (e).aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "(e).aac"; sourceTree = "<group>"; };
 		1A6649041904F2C1008B5644 /* (i).aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = "(i).aac"; sourceTree = "<group>"; };
 		1A6649051904F2C1008B5644 /* a.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = a.aac; sourceTree = "<group>"; };
@@ -591,7 +591,7 @@
 			children = (
 				1A750327173254BD0071D087 /* chart.html */,
 				1A75035417325BDD0071D087 /* chart.css */,
-				1A6648FF1904F0F4008B5644 /* jquery-2.1.0.min.js */,
+				1A6648FF1904F0F4008B5644 /* jquery.min.js */,
 			);
 			name = HTML;
 			sourceTree = "<group>";
@@ -839,7 +839,7 @@
 				1A95E4F71705367B00DB0193 /* vocabulary.json in Resources */,
 				1A750328173254BD0071D087 /* chart.html in Resources */,
 				1A75035517325BDD0071D087 /* chart.css in Resources */,
-				1A6649011904F18B008B5644 /* jquery-2.1.0.min.js in Resources */,
+				1A6649011904F18B008B5644 /* jquery.min.js in Resources */,
 				1AFAFC9C173E65410057BB82 /* option-normal.png in Resources */,
 				1A6649431904F2C1008B5644 /* ma.aac in Resources */,
 				1AFAFC9D173E65410057BB82 /* option-normal@2x.png in Resources */,
