@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A049712175858D400BE0E8D /* MainStoryboard~iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A049710175858D400BE0E8D /* MainStoryboard~iPad.storyboard */; };
 		1A0B9FD117B520CF0054E6AB /* ipad-tabbar-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B9FCF17B520CF0054E6AB /* ipad-tabbar-selected.png */; };
 		1A0B9FD217B520CF0054E6AB /* ipad-tabbar-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A0B9FD017B520CF0054E6AB /* ipad-tabbar-selected@2x.png */; };
 		1A2CBB6C1748C9C70037E20D /* option-normal-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6A1748C9C70037E20D /* option-normal-pressing.png */; };
@@ -185,7 +184,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A049711175858D400BE0E8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/MainStoryboard~iPad.storyboard"; sourceTree = "<group>"; };
 		1A0B9FCF17B520CF0054E6AB /* ipad-tabbar-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-tabbar-selected.png"; path = "resources/ipad-tabbar-selected.png"; sourceTree = "<group>"; };
 		1A0B9FD017B520CF0054E6AB /* ipad-tabbar-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ipad-tabbar-selected@2x.png"; path = "resources/ipad-tabbar-selected@2x.png"; sourceTree = "<group>"; };
 		1A2CBB6A1748C9C70037E20D /* option-normal-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal-pressing.png"; path = "resources/option-normal-pressing.png"; sourceTree = "<group>"; };
@@ -640,7 +638,6 @@
 				1A3CBB48174CC0950012A9FF /* CMTabBarController.h */,
 				1A3CBB49174CC0950012A9FF /* CMTabBarController.m */,
 				1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */,
-				1A049710175858D400BE0E8D /* MainStoryboard~iPad.storyboard */,
 				1A7C320A16FC990C00F5A71A /* Supporting Files */,
 			);
 			path = Cryptomeria;
@@ -835,7 +832,6 @@
 				1A6649351904F2C1008B5644 /* a.aac in Resources */,
 				1ADA76A61705E019007F6190 /* MainStoryboard.storyboard in Resources */,
 				1A66493F1904F2C1008B5644 /* ke.aac in Resources */,
-				1A049712175858D400BE0E8D /* MainStoryboard~iPad.storyboard in Resources */,
 				1A7C320E16FC990C00F5A71A /* InfoPlist.strings in Resources */,
 				1A95E4F71705367B00DB0193 /* vocabulary.json in Resources */,
 				1A750328173254BD0071D087 /* chart.html in Resources */,
@@ -1042,14 +1038,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1A049710175858D400BE0E8D /* MainStoryboard~iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A049711175858D400BE0E8D /* Base */,
-			);
-			name = "MainStoryboard~iPad.storyboard";
-			sourceTree = "<group>";
-		};
 		1A7C320C16FC990C00F5A71A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1102,6 +1090,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -1125,6 +1114,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				STRIP_INSTALLED_PRODUCT = NO;

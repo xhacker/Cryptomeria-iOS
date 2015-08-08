@@ -12,7 +12,7 @@
 
 + (NSArray *)vocabulary
 {
-    NSString* path = [[NSBundle mainBundle] pathForResource:@"vocabulary" ofType:@"json"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"vocabulary" ofType:@"json"];
     NSArray *data = [NSJSONSerialization JSONObjectWithData:[NSData dataWithContentsOfFile:path] options:NSJSONReadingMutableContainers error:nil];
     return data;
 }
