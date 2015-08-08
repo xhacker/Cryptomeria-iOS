@@ -7,15 +7,12 @@
 //
 
 #import "CMAppDelegate.h"
-#import "TestFlight.h"
 #import "UIImage+Device.h"
 
 @implementation CMAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    [TestFlight takeOff:@"a2473b66-161c-4b7e-9e00-5cdbd04208dd"];
-    
+{    
     CGRect screenRect;
     UIImage *splashImage;
     if (isPhone) {
