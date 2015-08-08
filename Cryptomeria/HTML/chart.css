@@ -2,11 +2,20 @@
   -webkit-touch-callout: none;
   -webkit-user-select: none;
 }
+*,
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
   font-size: 12px;
   line-height: 1;
-  font-family: "Avenir Next", "Hiragino Kaku Gothic ProN", sans-serif;
+  font-family: -apple-system, "Avenir Next", "Hiragino Kaku Gothic ProN", sans-serif;
 }
 ul {
   list-style-type: none;
@@ -26,10 +35,20 @@ li {
   height: 0;
 }
 ul#kana-chart {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 0.5px solid #ddd;
+}
+@media (-webkit-min-device-pixel-ratio: 3) {
+  ul#kana-chart {
+    border-bottom: 0.6px solid #ddd;
+  }
 }
 ul#kana-chart li {
-  border-top: 1px solid #ddd;
+  border-top: 0.5px solid #ddd;
+}
+@media (-webkit-min-device-pixel-ratio: 3) {
+  ul#kana-chart li {
+    border-top: 0.6px solid #ddd;
+  }
 }
 ul#kana-chart li .head {
   float: left;
@@ -40,11 +59,12 @@ ul#kana-chart li .head .kana {
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   background-color: #aaa;
   color: #fff;
-  float: left;
+  display: inline-block;
 }
 ul#kana-chart li .head .romaji {
   font-weight: 600;
   color: #aaa;
+  clear: both;
 }
 ul#kana-chart li .item {
   float: left;
@@ -56,13 +76,13 @@ ul#kana-chart li .item .kana {
 ul#kana-chart li .dup {
   color: #aaa;
 }
-@media only screen and (device-width: 320px) and (orientation: portrait) {
+@media only screen and (max-width: 500px) and (orientation: portrait) {
   ul#kana-chart li {
     padding: 12px 5px 16px 5px;
   }
   ul#kana-chart li .head {
-    padding-top: 19px;
-    margin: 10px 16px 0 16px;
+    padding-top: 28px;
+    width: 20%;
   }
   ul#kana-chart li .head .kana {
     font-size: 28px;
@@ -75,7 +95,7 @@ ul#kana-chart li .dup {
     line-height: 38px;
   }
   ul#kana-chart li .item {
-    width: 45px;
+    width: 16%;
   }
   ul#kana-chart li .item .kana {
     font-size: 32px;
@@ -86,7 +106,7 @@ ul#kana-chart li .dup {
     font-size: 15px;
   }
   ul#kana-chart li.youon .head {
-    margin-right: 11px;
+    width: 28%;
   }
   ul#kana-chart li.youon .head .kana {
     font-size: 26px;
@@ -95,7 +115,7 @@ ul#kana-chart li .dup {
     font-size: 19px;
   }
   ul#kana-chart li.youon .item {
-    width: 66px;
+    width: 24%;
   }
   ul#kana-chart li.youon .item .kana {
     font-size: 27px;

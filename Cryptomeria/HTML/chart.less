@@ -1,10 +1,17 @@
 @import "_base.less";
 
 ul#kana-chart {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 0.5px solid #ddd;
+	@media (-webkit-min-device-pixel-ratio: 3) {
+		// HACK: 0.5px hairline is sometimes missing on 3x devices
+		border-bottom: 0.6px solid #ddd;
+	}
 
 	li {
-		border-top: 1px solid #ddd;
+		border-top: 0.5px solid #ddd;
+		@media (-webkit-min-device-pixel-ratio: 3) {
+			border-top: 0.6px solid #ddd;
+		}
 
 		.head {
 			float: left;
@@ -14,11 +21,12 @@ ul#kana-chart {
 				font-family: @JapaneseGothicFontFamily;
 				background-color: #aaa;
 				color: #fff;
-				float: left;
+				display: inline-block;
 			}
 			.romaji {
 				font-weight: 600;
 				color: #aaa;
+				clear: both;
 			}
 		}
 
@@ -37,14 +45,15 @@ ul#kana-chart {
 }
 
 // iPhone Portrait
-@media only screen and (device-width: 320px) and (orientation: portrait) {
+@media
+only screen and (max-width: 500px) and (orientation: portrait) {
 	ul#kana-chart {
 		li {
 			padding: 12px 5px 16px 5px;
 
 			.head {
-				padding-top: 19px;
-				margin: 10px 16px 0 16px;
+				padding-top: 28px;
+				width: 20%;
 				.kana {
 					font-size: 28px;
 					line-height: 28px;
@@ -58,7 +67,7 @@ ul#kana-chart {
 			}
 
 			.item {
-				width: 45px;
+				width: 16%;
 				.kana {
 					font-size: 32px;
 					line-height: 46px;
@@ -72,7 +81,7 @@ ul#kana-chart {
 
 		li.youon {
 			.head {
-				margin-right: 11px;
+				width: 28%;
 				.kana {
 					font-size: 26px;
 				}
@@ -81,7 +90,7 @@ ul#kana-chart {
 				}
 			}
 			.item {
-				width: 66px;
+				width: 24%;
 				.kana {
 					font-size: 27px;
 				}

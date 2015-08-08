@@ -3,6 +3,14 @@
 	-webkit-user-select: none;
 }
 
+*,
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
 	margin: 0;
 	font-size: 12px;
@@ -28,7 +36,7 @@ p, ul, li {
 	height: 0;
 }
 
-@UIFontFamily: "Avenir Next", "Hiragino Kaku Gothic ProN", sans-serif;
+@UIFontFamily: -apple-system, "Avenir Next", "Hiragino Kaku Gothic ProN", sans-serif;
 @UITitleFontFamily: "Myriad Pro", AvenirNext-Medium, sans-serif;
 @LatinBigFontFamily: "Gill Sans", sans-serif;
 @JapaneseGothicFontFamily: "Hiragino Kaku Gothic ProN", sans-serif;

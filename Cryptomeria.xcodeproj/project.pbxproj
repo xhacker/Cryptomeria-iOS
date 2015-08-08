@@ -164,6 +164,7 @@
 		1ACB44B3175A43AE00625341 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 1ACB44B1175A43AE00625341 /* iTunesArtwork@2x */; };
 		1ADA76A51705DC23007F6190 /* CMVocabularyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA76A41705DC23007F6190 /* CMVocabularyCell.m */; };
 		1ADA76A61705E019007F6190 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */; };
+		1AEAB0A91B75CE5A00B5FB40 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AEAB0A81B75CE5A00B5FB40 /* Launch.storyboard */; };
 		1AFAFC9C173E65410057BB82 /* option-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAFC98173E65410057BB82 /* option-normal.png */; };
 		1AFAFC9D173E65410057BB82 /* option-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAFC99173E65410057BB82 /* option-normal@2x.png */; };
 		1AFAFC9E173E65410057BB82 /* option-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFAFC9A173E65410057BB82 /* option-right.png */; };
@@ -357,6 +358,7 @@
 		1ACB44B1175A43AE00625341 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = SOURCE_ROOT; };
 		1ADA76A31705DC23007F6190 /* CMVocabularyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMVocabularyCell.h; sourceTree = "<group>"; };
 		1ADA76A41705DC23007F6190 /* CMVocabularyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMVocabularyCell.m; sourceTree = "<group>"; };
+		1AEAB0A81B75CE5A00B5FB40 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
 		1AFAFC98173E65410057BB82 /* option-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal.png"; path = "resources/option-normal.png"; sourceTree = "<group>"; };
 		1AFAFC99173E65410057BB82 /* option-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal@2x.png"; path = "resources/option-normal@2x.png"; sourceTree = "<group>"; };
 		1AFAFC9A173E65410057BB82 /* option-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-right.png"; path = "resources/option-right.png"; sourceTree = "<group>"; };
@@ -638,6 +640,7 @@
 				1A3CBB48174CC0950012A9FF /* CMTabBarController.h */,
 				1A3CBB49174CC0950012A9FF /* CMTabBarController.m */,
 				1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */,
+				1AEAB0A81B75CE5A00B5FB40 /* Launch.storyboard */,
 				1A7C320A16FC990C00F5A71A /* Supporting Files */,
 			);
 			path = Cryptomeria;
@@ -909,6 +912,7 @@
 				1A3CBB60174CCA2B0012A9FF /* icon-test-highlight@2x.png in Resources */,
 				1A66495F1904F2C1008B5644 /* wo.aac in Resources */,
 				1A3CBB61174CCA2B0012A9FF /* icon-test.png in Resources */,
+				1AEAB0A91B75CE5A00B5FB40 /* Launch.storyboard in Resources */,
 				1A66494C1904F2C1008B5644 /* no.aac in Resources */,
 				1A3CBB62174CCA2B0012A9FF /* icon-test@2x.png in Resources */,
 				1ACB44B2175A43AE00625341 /* iTunesArtwork in Resources */,
@@ -1126,7 +1130,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
@@ -1142,7 +1145,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
