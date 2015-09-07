@@ -7,10 +7,43 @@
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript">
 $(function() {
-	$("#kana-chart").on("click", ".item", function(event) {
-		var romaji = $(this).children(".romaji")[0].innerText;
+	function getAudioNameFromItemNode(node) {
+		var romaji = $(node).children(".romaji")[0].innerText;
 		var audioName = romaji + ".aac";
+		if (audioName == "n/m.aac") {
+			audioName = "n.aac";
+		}
+		return audioName;
+	}
+
+	var playlist = [];
+	$("#audio").on("ended", function(event) {
+		console.log(playlist.length);
+		var audioName = playlist.shift();
+		if (audioName) {
+			$("#audio").attr("src", audioName);
+			$("#audio")[0].play();
+		}
+	});
+	function reset() {
+		playlist = [];
+	}
+
+	$("#kana-chart").on("click", ".item", function(event) {
+		reset();
+		var audioName = getAudioNameFromItemNode(this);
 		$("#audio").attr("src", audioName);
+		$("#audio")[0].play();
+	});
+
+	$("#kana-chart").on("click", ".head", function(event) {
+		reset();
+		$(this.parentNode).children(".item").each(function (i, item) {
+			var audioName = getAudioNameFromItemNode(item);
+			playlist.push(audioName);
+		});
+		console.log(playlist.length);
+		$("#audio").attr("src", playlist.shift());
 		$("#audio")[0].play();
 	});
 });
