@@ -7,8 +7,11 @@
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<script type="text/javascript">
 $(function() {
-	$(".item").click(function() {
-		$("audio").play();
+	$("#kana-chart").on("click", ".item", function(event) {
+		var romaji = $(this).children(".romaji")[0].innerText;
+		var audioName = romaji + ".aac";
+		$("#audio").attr("src", audioName);
+		$("#audio")[0].play();
 	});
 });
 	</script>
@@ -16,7 +19,7 @@ $(function() {
 </head>
 <body>
 
-<audio src="a.aac" controls></audio>
+<audio id="audio" src="a.aac" controls></audio>
 
 <ul id="kana-chart" class="TableView">
 	<li class="clearfix basic">
