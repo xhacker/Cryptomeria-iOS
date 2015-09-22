@@ -10,7 +10,8 @@
 
 @interface CMChartViewController () <UIWebViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property (nonatomic) IBOutlet UIWebView *webView;
+@property (nonatomic) IBOutlet NSLayoutConstraint *separatorHeightConstraint;
 
 @end
 
@@ -25,6 +26,8 @@
             shadowView.hidden = YES;
         }
     }
+    
+    self.separatorHeightConstraint.constant = 0.5;
 
     self.webView.scrollView.decelerationRate = UIScrollViewDecelerationRateNormal;
     
