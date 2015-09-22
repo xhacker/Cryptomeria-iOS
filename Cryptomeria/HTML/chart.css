@@ -34,6 +34,9 @@ li {
   line-height: 0;
   height: 0;
 }
+audio {
+  display: none;
+}
 ul#kana-chart {
   border-bottom: 0.5px solid #ddd;
 }
