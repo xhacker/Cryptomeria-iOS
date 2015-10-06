@@ -39,28 +39,28 @@ static NSInteger  const kRangeMax = 25;
 
 @interface CMTestViewController ()
 
-@property (weak, nonatomic) IBOutlet UISegmentedControl *directionControl;
-@property (weak, nonatomic) IBOutlet UISegmentedControl *horkControl;
-@property (weak, nonatomic) IBOutlet UIButton *rangeDecreaseButton;
-@property (weak, nonatomic) IBOutlet UIButton *rangeIncreaseButton;
-@property (weak, nonatomic) IBOutlet UIButton *rangeLabelButton;
-@property (weak, nonatomic) IBOutlet UILabel *mainKanaLabel;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *mainKanaLabelTopConstraint;
-@property (weak, nonatomic) IBOutlet UILabel *mainRomajiLabel;
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *optionButtons;
-@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (nonatomic) IBOutlet UISegmentedControl *directionControl;
+@property (nonatomic) IBOutlet UISegmentedControl *horkControl;
+@property (nonatomic) IBOutlet UIButton *rangeDecreaseButton;
+@property (nonatomic) IBOutlet UIButton *rangeIncreaseButton;
+@property (nonatomic) IBOutlet UIButton *rangeLabelButton;
+@property (nonatomic) IBOutlet UILabel *mainKanaLabel;
+@property (nonatomic) IBOutlet NSLayoutConstraint *mainKanaLabelTopConstraint;
+@property (nonatomic) IBOutlet UILabel *mainRomajiLabel;
+@property (nonatomic) IBOutletCollection(UIButton) NSArray *optionButtons;
+@property (nonatomic) IBOutlet UILabel *scoreLabel;
 
 @property (weak, nonatomic) UILabel *mainLabel;
-@property (strong, nonatomic) NSUserDefaults *defaults;
-@property (strong, nonatomic) NSMutableArray *sequence;
+@property (nonatomic) NSUserDefaults *defaults;
+@property (nonatomic) NSMutableArray *sequence;
 @property (nonatomic) NSInteger prevHork;
-@property (strong, nonatomic) NSString *rightText;
-@property (strong, nonatomic) UIButton *rightButton;
+@property (nonatomic) NSString *rightText;
+@property (nonatomic) UIButton *rightButton;
 @property (nonatomic) NSInteger correctCount;
 @property (nonatomic) NSInteger totalCount;
-@property (strong, nonatomic) NSArray *flattenedRomaji;
-@property (strong, nonatomic) NSArray *flattenedHiragana;
-@property (strong, nonatomic) NSArray *flattenedKatakana;
+@property (nonatomic) NSArray *flattenedRomaji;
+@property (nonatomic) NSArray *flattenedHiragana;
+@property (nonatomic) NSArray *flattenedKatakana;
 @property (nonatomic) BOOL inGuess;
 
 @end
@@ -94,73 +94,12 @@ typedef enum {
     self.flattenedHiragana = [[CMChartData hiragana] flatten];
     self.flattenedKatakana = [[CMChartData katakana] flatten];
     
-    [self configurePosition];
-    [self configureStyle];
-    
     self.prevHork = Katakana;
     [self generateSequence];
     [self resetScore];
     [self changeFont];
     self.inGuess = YES;
     [self next];
-}
-
-- (void)configurePosition
-{
-    if ([[UIScreen mainScreen] bounds].size.height == 568) {
-        // 肾5！壕！
-        CGFloat offset = (568 - 480) / 2;
-        self.mainKanaLabelTopConstraint.constant += offset;
-    }
-}
-
-- (void)configureStyle
-{
-    CGFloat edgeInset = isPad ? 7.0 : 5.0;
-    UIImage *segmentBackground = [[UIImage imageNamedForCurrentDevice:@"segment"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, edgeInset, 0, edgeInset)];
-    UIImage *segmentBackgroundSelected = [[UIImage imageNamedForCurrentDevice:@"segment-selected"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, edgeInset, 0, edgeInset)];
-    [[UISegmentedControl appearance] setBackgroundImage:segmentBackground
-                                               forState:UIControlStateNormal
-                                             barMetrics:UIBarMetricsDefault];
-    [[UISegmentedControl appearance] setBackgroundImage:segmentBackground
-                                               forState:UIControlStateHighlighted
-                                             barMetrics:UIBarMetricsDefault];
-    [[UISegmentedControl appearance] setBackgroundImage:segmentBackgroundSelected
-                                               forState:UIControlStateSelected
-                                             barMetrics:UIBarMetricsDefault];
-    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamedForCurrentDevice:@"segment-divider-00"]
-                                 forLeftSegmentState:UIControlStateNormal
-                                   rightSegmentState:UIControlStateNormal
-                                          barMetrics:UIBarMetricsDefault];
-    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamedForCurrentDevice:@"segment-divider-01"]
-                                 forLeftSegmentState:UIControlStateNormal
-                                   rightSegmentState:UIControlStateSelected
-                                          barMetrics:UIBarMetricsDefault];
-    [[UISegmentedControl appearance] setDividerImage:[UIImage imageNamedForCurrentDevice:@"segment-divider-10"]
-                                 forLeftSegmentState:UIControlStateSelected
-                                   rightSegmentState:UIControlStateNormal
-                                          barMetrics:UIBarMetricsDefault];
-    
-    CGFloat fontSize = isPad ? 19.0 : 13.0;
-    NSShadow *shadow = [[NSShadow alloc] init];
-    shadow.shadowColor = RGBA(255, 255, 255, 0.8);
-    shadow.shadowOffset = CGSizeMake(0.0, 1.0);
-    [[UISegmentedControl appearance] setTitleTextAttributes:@{
-                                        NSFontAttributeName:[UIFont fontWithName:kHiraKakuBoldFont size:fontSize],
-                             NSForegroundColorAttributeName:RGBA(140, 140, 140, 1),
-                                      NSShadowAttributeName:shadow}
-                                                   forState:UIControlStateNormal];
-    [[UISegmentedControl appearance] setTitleTextAttributes:@{
-                             NSForegroundColorAttributeName:RGBA(102, 102, 102, 1)}
-                                                   forState:UIControlStateSelected];
-    
-    CGFloat yOffset = isPad ? 2.0 : 1.5;
-    self.rangeLabelButton.contentEdgeInsets = UIEdgeInsetsMake(yOffset * 2, 0, 0, 0);
-    [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
-    [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
-    [self.horkControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:2];
-    [self.directionControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:0];
-    [self.directionControl setContentOffset:CGSizeMake(0, yOffset) forSegmentAtIndex:1];
 }
 
 - (void)generateSequence
