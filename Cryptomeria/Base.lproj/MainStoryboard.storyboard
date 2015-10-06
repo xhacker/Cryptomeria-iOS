@@ -78,23 +78,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cWf-ms-f2g">
-                                <rect key="frame" x="20" y="30" width="141" height="29"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CVi-yd-AsW">
+                                <rect key="frame" x="20" y="30" width="560" height="36"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cWf-ms-f2g">
+                                        <rect key="frame" x="0.0" y="4" width="275" height="29"/>
+                                        <animations/>
+                                        <segments>
+                                            <segment title="あ→a"/>
+                                            <segment title="a→あ"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="directionChanged:" destination="3" eventType="valueChanged" id="Gnk-zr-UKX"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Orr-W1-U6j">
+                                        <rect key="frame" x="285" y="5" width="275" height="25"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftv-zW-uyi">
+                                                <rect key="frame" x="0.0" y="0.0" width="45.5" height="25"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <inset key="contentEdgeInsets" minX="6" minY="6" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="-"/>
+                                                <connections>
+                                                    <action selector="rangeDecreased:" destination="3" eventType="touchUpInside" id="fmz-pj-7Ss"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWS-u2-k9T">
+                                                <rect key="frame" x="45.5" y="0.0" width="153" height="25"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="13"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                <state key="normal" title="あ-ぎょ"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzY-R5-eJu">
+                                                <rect key="frame" x="198" y="0.0" width="76.5" height="25"/>
+                                                <animations/>
+                                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="6" maxX="12" maxY="0.0"/>
+                                                <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="rangeIncreased:" destination="3" eventType="touchUpInside" id="WY6-lg-ldo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
                                 <animations/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="jeH-rT-xCM"/>
+                                    <constraint firstAttribute="height" constant="36" id="DxI-dl-7Hf"/>
                                 </constraints>
-                                <segments>
-                                    <segment title="あ→a"/>
-                                    <segment title="a→あ"/>
-                                </segments>
-                                <connections>
-                                    <action selector="directionChanged:" destination="3" eventType="valueChanged" id="Gnk-zr-UKX"/>
-                                </connections>
-                            </segmentedControl>
+                            </stackView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1ma-hR-1MS">
-                                <rect key="frame" x="20" y="66" width="560" height="29"/>
+                                <rect key="frame" x="20" y="72" width="560" height="29"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="6fE-rb-nT9"/>
+                                </constraints>
                                 <segments>
                                     <segment title="あ"/>
                                     <segment title="ア"/>
@@ -105,91 +147,24 @@
                                 </connections>
                             </segmentedControl>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="wa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
-                                <rect key="frame" x="0.0" y="196" width="600" height="209"/>
+                                <rect key="frame" x="224" y="224" width="151.5" height="152"/>
                                 <animations/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="209" id="aXS-dS-1pR"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="132"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="66 / 233" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhM-5p-Pv9">
-                                <rect key="frame" x="24" y="111" width="81" height="21"/>
+                                <rect key="frame" x="22" y="115" width="66" height="23.5"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="81" id="ChH-EL-O50"/>
-                                    <constraint firstAttribute="height" constant="21" id="Zjg-Aa-oTp"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftv-zW-uyi">
-                                <rect key="frame" x="443" y="18" width="36" height="48"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="36" id="5c8-jI-ZQR"/>
-                                    <constraint firstAttribute="height" constant="48" id="DrL-wm-h84"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <inset key="contentEdgeInsets" minX="6" minY="6" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="-" image="button-decrease.png">
-                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="button-decrease-disabled.png"/>
-                                <state key="highlighted" image="button-decrease-pressing.png">
-                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="rangeDecreased:" destination="3" eventType="touchUpInside" id="fmz-pj-7Ss"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzY-R5-eJu">
-                                <rect key="frame" x="551" y="18" width="42" height="48"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="q4p-8l-DXu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <inset key="contentEdgeInsets" minX="0.0" minY="6" maxX="12" maxY="0.0"/>
-                                <state key="normal" title="+" image="button-increase.png">
-                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="disabled" image="button-increase-disabled.png"/>
-                                <state key="highlighted" image="button-increase-pressing.png">
-                                    <color key="titleColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="rangeIncreased:" destination="3" eventType="touchUpInside" id="WY6-lg-ldo"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWS-u2-k9T">
-                                <rect key="frame" x="479" y="30" width="72" height="30"/>
-                                <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="XBY-4N-TLd"/>
-                                    <constraint firstAttribute="width" constant="72" id="lew-PB-rBk"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="13"/>
-                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="あ-ぎょ" backgroundImage="label-background.png">
-                                    <color key="titleColor" white="0.40000000000000002" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ぎょ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4c-5R-aC4">
-                                <rect key="frame" x="167" y="221" width="267.5" height="158"/>
+                                <rect key="frame" x="167" y="230" width="267.5" height="140.5"/>
                                 <animations/>
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="158" id="z0e-2D-R1l"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="140"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -197,8 +172,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YoQ-mf-tqc">
                                 <rect key="frame" x="20" y="495" width="560" height="44"/>
                                 <subviews>
-                                    <button opaque="NO" tag="103" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-c1-JIh">
-                                        <rect key="frame" x="0.0" y="0.0" width="133" height="44"/>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-c1-JIh">
+                                        <rect key="frame" x="0.0" y="0.0" width="132.5" height="44"/>
                                         <animations/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
@@ -216,7 +191,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXy-4r-0ur">
-                                        <rect key="frame" x="143" y="0.0" width="133" height="44"/>
+                                        <rect key="frame" x="142" y="0.0" width="132.5" height="44"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -232,8 +207,8 @@
                                             <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="Mee-iE-2Hg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="101" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZV-g4-aRC">
-                                        <rect key="frame" x="285" y="0.0" width="133" height="44"/>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZV-g4-aRC">
+                                        <rect key="frame" x="285" y="0.0" width="132.5" height="44"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -250,7 +225,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-5m-Qgc">
-                                        <rect key="frame" x="428" y="0.0" width="133" height="44"/>
+                                        <rect key="frame" x="427" y="0.0" width="132.5" height="44"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -268,37 +243,27 @@
                                     </button>
                                 </subviews>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="8jc-XB-MuC"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="oRg-tF-7jh" firstAttribute="leading" secondItem="17" secondAttribute="leading" id="0RA-aW-9Wn"/>
-                            <constraint firstItem="uzY-R5-eJu" firstAttribute="top" secondItem="ftv-zW-uyi" secondAttribute="top" id="1G7-rE-Drj"/>
-                            <constraint firstAttribute="centerX" secondItem="n4c-5R-aC4" secondAttribute="centerX" id="24E-pw-tJu"/>
+                            <constraint firstItem="CVi-yd-AsW" firstAttribute="leading" secondItem="17" secondAttribute="leadingMargin" id="2Jm-W5-zVY"/>
+                            <constraint firstItem="CVi-yd-AsW" firstAttribute="top" secondItem="hAE-60-wA7" secondAttribute="bottom" constant="10" id="4q3-q3-wQS"/>
+                            <constraint firstItem="dTL-TY-znF" firstAttribute="top" secondItem="YoQ-mf-tqc" secondAttribute="bottom" constant="12" id="5do-TK-wg7"/>
+                            <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leadingMargin" id="6pU-ir-Lq9"/>
                             <constraint firstItem="n4c-5R-aC4" firstAttribute="top" secondItem="17" secondAttribute="top" constant="140" id="7JU-Kz-eGg"/>
-                            <constraint firstAttribute="trailing" secondItem="1ma-hR-1MS" secondAttribute="trailing" constant="20" symbolic="YES" id="7R4-su-IZ6"/>
-                            <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" id="BMB-aM-TkD"/>
-                            <constraint firstItem="GhM-5p-Pv9" firstAttribute="top" secondItem="17" secondAttribute="top" constant="111" id="Esm-WW-TXl"/>
-                            <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="24" id="F4l-WK-fCX"/>
-                            <constraint firstItem="PWS-u2-k9T" firstAttribute="top" secondItem="17" secondAttribute="top" constant="30" id="GS4-XM-4v5"/>
-                            <constraint firstAttribute="trailing" secondItem="ftv-zW-uyi" secondAttribute="trailing" constant="121" id="Psb-Bi-ucG"/>
-                            <constraint firstAttribute="trailing" secondItem="uzY-R5-eJu" secondAttribute="trailing" constant="7" id="RXg-Zi-saV"/>
-                            <constraint firstItem="ftv-zW-uyi" firstAttribute="top" secondItem="17" secondAttribute="top" constant="18" id="Tsf-SL-0RE"/>
-                            <constraint firstAttribute="centerY" secondItem="oRg-tF-7jh" secondAttribute="centerY" id="W6r-65-yDB"/>
-                            <constraint firstItem="YoQ-mf-tqc" firstAttribute="leading" secondItem="17" secondAttribute="leadingMargin" id="XB6-SK-QVB"/>
-                            <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="cWf-ms-f2g" secondAttribute="bottom" constant="8" symbolic="YES" id="XPq-gY-wyh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YoQ-mf-tqc" secondAttribute="trailing" id="anQ-ck-zk8"/>
-                            <constraint firstItem="cWf-ms-f2g" firstAttribute="top" secondItem="17" secondAttribute="top" constant="30" id="dMh-UB-Z6x"/>
-                            <constraint firstItem="n4c-5R-aC4" firstAttribute="centerY" secondItem="17" secondAttribute="centerY" id="m3w-wS-nIb"/>
-                            <constraint firstAttribute="trailing" secondItem="PWS-u2-k9T" secondAttribute="trailing" constant="49" id="plg-1A-Fdb"/>
-                            <constraint firstItem="cWf-ms-f2g" firstAttribute="leading" secondItem="17" secondAttribute="leading" constant="20" symbolic="YES" id="qw5-hh-Vln"/>
-                            <constraint firstItem="oRg-tF-7jh" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" id="teG-lT-ldo"/>
-                            <constraint firstItem="dTL-TY-znF" firstAttribute="top" secondItem="YoQ-mf-tqc" secondAttribute="bottom" constant="12" id="wcd-X3-tF6"/>
-                            <constraint firstItem="uzY-R5-eJu" firstAttribute="bottom" secondItem="ftv-zW-uyi" secondAttribute="bottom" id="zlw-E2-kN2"/>
+                            <constraint firstItem="GhM-5p-Pv9" firstAttribute="top" secondItem="1ma-hR-1MS" secondAttribute="bottom" constant="15" id="9u2-CE-nKU"/>
+                            <constraint firstItem="YoQ-mf-tqc" firstAttribute="leading" secondItem="17" secondAttribute="leadingMargin" id="DSK-UA-Rcu"/>
+                            <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="CVi-yd-AsW" secondAttribute="bottom" constant="6" id="WdA-YJ-fUD"/>
+                            <constraint firstItem="1ma-hR-1MS" firstAttribute="trailing" secondItem="17" secondAttribute="trailingMargin" id="Wdc-x5-ujH"/>
+                            <constraint firstItem="n4c-5R-aC4" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" id="Woi-4r-oVm"/>
+                            <constraint firstItem="n4c-5R-aC4" firstAttribute="centerY" secondItem="17" secondAttribute="centerY" id="YVv-QI-98m"/>
+                            <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leadingMargin" constant="2" id="bcT-FV-WwK"/>
+                            <constraint firstItem="oRg-tF-7jh" firstAttribute="centerY" secondItem="17" secondAttribute="centerY" id="gN3-TL-TCy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YoQ-mf-tqc" secondAttribute="trailing" id="hZ7-4P-3u0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CVi-yd-AsW" secondAttribute="trailing" id="lNe-Ha-HAO"/>
+                            <constraint firstItem="oRg-tF-7jh" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" id="o6v-Ye-hwN"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -475,16 +440,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="button-decrease-disabled.png" width="30" height="30"/>
-        <image name="button-decrease-pressing.png" width="30" height="30"/>
-        <image name="button-decrease.png" width="30" height="30"/>
-        <image name="button-increase-disabled.png" width="30" height="30"/>
-        <image name="button-increase-pressing.png" width="30" height="30"/>
-        <image name="button-increase.png" width="30" height="30"/>
         <image name="first" width="16" height="16"/>
         <image name="icon-chart.png" width="30" height="30"/>
         <image name="icon-test.png" width="30" height="30"/>
-        <image name="label-background.png" width="1" height="30"/>
         <image name="option-normal-pressing.png" width="64" height="44"/>
         <image name="option-normal.png" width="64" height="44"/>
     </resources>
