@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A11E6201BC3630600E7FDBB /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A11E61F1BC3630600E7FDBB /* BorderedButton.swift */; settings = {ASSET_TAGS = (); }; };
 		1A2CBB6C1748C9C70037E20D /* option-normal-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6A1748C9C70037E20D /* option-normal-pressing.png */; };
 		1A2CBB6D1748C9C70037E20D /* option-normal-pressing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6B1748C9C70037E20D /* option-normal-pressing@2x.png */; };
 		1A2CBB721748D2430037E20D /* option-right-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6E1748D2430037E20D /* option-right-pressing.png */; };
@@ -123,6 +124,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A11E61E1BC3630500E7FDBB /* Cryptomeria-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cryptomeria-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A11E61F1BC3630600E7FDBB /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		1A2CBB6A1748C9C70037E20D /* option-normal-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal-pressing.png"; path = "resources/option-normal-pressing.png"; sourceTree = "<group>"; };
 		1A2CBB6B1748C9C70037E20D /* option-normal-pressing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal-pressing@2x.png"; path = "resources/option-normal-pressing@2x.png"; sourceTree = "<group>"; };
 		1A2CBB6E1748D2430037E20D /* option-right-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-right-pressing.png"; path = "resources/option-right-pressing.png"; sourceTree = "<group>"; };
@@ -425,6 +428,7 @@
 				1A7C321316FC990C00F5A71A /* CMAppDelegate.m */,
 				1A3CBB48174CC0950012A9FF /* CMTabBarController.h */,
 				1A3CBB49174CC0950012A9FF /* CMTabBarController.m */,
+				1A11E61E1BC3630500E7FDBB /* Cryptomeria-Bridging-Header.h */,
 				1A7C321B16FC990C00F5A71A /* MainStoryboard.storyboard */,
 				1AEAB0A81B75CE5A00B5FB40 /* Launch.storyboard */,
 				1A7C320A16FC990C00F5A71A /* Supporting Files */,
@@ -529,6 +533,7 @@
 				1AFAFCA8173E96210057BB82 /* UIButton+AttributedString.m */,
 				1A7C322516FC990C00F5A71A /* CMTestViewController.h */,
 				1A7C322616FC990C00F5A71A /* CMTestViewController.m */,
+				1A11E61F1BC3630600E7FDBB /* BorderedButton.swift */,
 			);
 			name = Test;
 			sourceTree = "<group>";
@@ -579,6 +584,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CM;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Xhacker;
 				TargetAttributes = {
@@ -733,6 +739,7 @@
 				1A7C322716FC990C00F5A71A /* CMTestViewController.m in Sources */,
 				1A7C324B16FCA5B200F5A71A /* CMVocabularyViewController.m in Sources */,
 				1A7C325116FDB16200F5A71A /* CMChartData.m in Sources */,
+				1A11E6201BC3630600E7FDBB /* BorderedButton.swift in Sources */,
 				1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */,
 				1A5980E51703E25300A7F34B /* NSArray+Flatten.m in Sources */,
 				1A95E4F5170534AA00DB0193 /* CMVocabularyData.m in Sources */,
@@ -851,12 +858,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
 				INFOPLIST_FILE = "Cryptomeria/Cryptomeria-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Xhacker.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cryptomeria/Cryptomeria-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -867,12 +878,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
 				INFOPLIST_FILE = "Cryptomeria/Cryptomeria-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Xhacker.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Cryptomeria/Cryptomeria-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

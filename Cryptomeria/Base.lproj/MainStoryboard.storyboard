@@ -92,29 +92,37 @@
                                         </connections>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Orr-W1-U6j">
-                                        <rect key="frame" x="285" y="3" width="275" height="29"/>
+                                        <rect key="frame" x="285" y="4" width="275" height="29"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftv-zW-uyi">
-                                                <rect key="frame" x="0.0" y="0.0" width="39.5" height="29"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftv-zW-uyi" customClass="LeftRoundedButton" customModule="Cryptomeria" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="29"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="JlE-Qs-vWb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <inset key="contentEdgeInsets" minX="6" minY="6" maxX="0.0" maxY="0.0"/>
                                                 <state key="normal" title="-"/>
                                                 <connections>
                                                     <action selector="rangeDecreased:" destination="3" eventType="touchUpInside" id="fmz-pj-7Ss"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWS-u2-k9T">
-                                                <rect key="frame" x="39.5" y="0.0" width="169" height="29"/>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWS-u2-k9T" customClass="TopBottomBorderedButton" customModule="Cryptomeria" customModuleProvider="target">
+                                                <rect key="frame" x="36" y="0.0" width="203" height="29"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="あ－ぎょ"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzY-R5-eJu">
-                                                <rect key="frame" x="208" y="0.0" width="66.5" height="29"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzY-R5-eJu" customClass="RightRoundedButton" customModule="Cryptomeria" customModuleProvider="target">
+                                                <rect key="frame" x="239" y="0.0" width="36" height="29"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="HeS-Rp-6J0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <inset key="contentEdgeInsets" minX="0.0" minY="6" maxX="12" maxY="0.0"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
@@ -128,7 +136,19 @@
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="DxI-dl-7Hf"/>
+                                    <constraint firstItem="Orr-W1-U6j" firstAttribute="leading" secondItem="cWf-ms-f2g" secondAttribute="trailing" id="KTi-RA-6la"/>
+                                    <constraint firstAttribute="bottom" secondItem="cWf-ms-f2g" secondAttribute="bottom" constant="4" id="L9e-3v-sPB"/>
+                                    <constraint firstItem="cWf-ms-f2g" firstAttribute="leading" secondItem="CVi-yd-AsW" secondAttribute="leading" id="iVH-7p-85w"/>
+                                    <constraint firstItem="cWf-ms-f2g" firstAttribute="top" secondItem="CVi-yd-AsW" secondAttribute="top" constant="4" id="nXX-cp-sYL"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="L9e-3v-sPB"/>
+                                        <exclude reference="iVH-7p-85w"/>
+                                        <exclude reference="nXX-cp-sYL"/>
+                                        <exclude reference="KTi-RA-6la"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="1ma-hR-1MS">
                                 <rect key="frame" x="20" y="72" width="560" height="29"/>
@@ -172,7 +192,7 @@
                                 <rect key="frame" x="20" y="495" width="560" height="44"/>
                                 <subviews>
                                     <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-c1-JIh">
-                                        <rect key="frame" x="0.0" y="0.0" width="132.5" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="44"/>
                                         <animations/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
@@ -189,7 +209,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXy-4r-0ur">
-                                        <rect key="frame" x="142" y="0.0" width="132.5" height="44"/>
+                                        <rect key="frame" x="143" y="0.0" width="133" height="44"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -205,7 +225,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZV-g4-aRC">
-                                        <rect key="frame" x="285" y="0.0" width="132.5" height="44"/>
+                                        <rect key="frame" x="285" y="0.0" width="133" height="44"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -221,7 +241,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-5m-Qgc">
-                                        <rect key="frame" x="427" y="0.0" width="132.5" height="44"/>
+                                        <rect key="frame" x="428" y="0.0" width="133" height="44"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
