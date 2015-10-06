@@ -1054,7 +1054,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
 				INFOPLIST_FILE = "Cryptomeria/Cryptomeria-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Xhacker.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1070,7 +1069,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cryptomeria/Cryptomeria-Prefix.pch";
 				INFOPLIST_FILE = "Cryptomeria/Cryptomeria-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Xhacker.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
