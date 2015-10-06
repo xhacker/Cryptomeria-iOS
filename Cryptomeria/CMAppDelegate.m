@@ -60,7 +60,20 @@
     [self.window addSubview:self.splashView];
     [self.window bringSubviewToFront:self.splashView];
     
+    [self setupAppearance];
+    
     return YES;
+}
+
+- (void)setupAppearance
+{
+    [[UITabBarItem appearance] setTitleTextAttributes:@{
+        NSForegroundColorAttributeName: [UIColor colorWithWhite:1 alpha:0.7]
+    } forState:UIControlStateNormal];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{
+        NSForegroundColorAttributeName: [UIColor whiteColor]
+    } forState:UIControlStateSelected];
+    [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar-selected-background"]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

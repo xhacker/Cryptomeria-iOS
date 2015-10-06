@@ -14,9 +14,6 @@
 #import "iOSVersion.h"
 
 #define RGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
-#define kNormalShadowColor RGBA(32, 85, 154, 1)
-#define kRightShadowColor RGBA(122, 163, 46, 1)
-#define kWrongShadowColor RGBA(153, 48, 32, 1)
 #define kScoreRightColor RGBA(103, 153, 32, 1)
 
 static NSString * const kNormalButtonImage = @"option-normal";
@@ -215,7 +212,6 @@ typedef enum {
         [button setBackgroundImage:[[UIImage imageNamedForCurrentDevice:kNormalPressingButtonImage]
                                     resizableImageWithCapInsets:UIEdgeInsetsMake(0, 10, 0, 10)]
                           forState:UIControlStateHighlighted];
-        [button setAttributedShadowWithColor:kNormalShadowColor forState:UIControlStateNormal];
     }
 }
 
@@ -325,7 +321,6 @@ typedef enum {
         [sender setBackgroundImage:[[UIImage imageNamedForCurrentDevice:kWrongPressingButtonImage]
                                     resizableImageWithCapInsets:UIEdgeInsetsMake(0, 10, 0, 10)]
                           forState:UIControlStateHighlighted];
-        [sender setAttributedShadowWithColor:kWrongShadowColor forState:UIControlStateNormal];
         
         [self.rightButton setBackgroundImage:[[UIImage imageNamedForCurrentDevice:kRightButtonImage]
                                               resizableImageWithCapInsets:UIEdgeInsetsMake(0, 10, 0, 10)]
@@ -333,7 +328,6 @@ typedef enum {
         [self.rightButton setBackgroundImage:[[UIImage imageNamedForCurrentDevice:kRightPressingButtonImage]
                                               resizableImageWithCapInsets:UIEdgeInsetsMake(0, 10, 0, 10)]
                                     forState:UIControlStateHighlighted];
-        [self.rightButton setAttributedShadowWithColor:kRightShadowColor forState:UIControlStateNormal];
     }
     
     NSString *correctText = [[NSString alloc] initWithFormat:@"%ld", (long)self.correctCount];

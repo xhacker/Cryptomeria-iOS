@@ -56,7 +56,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <tabBarItem key="tabBarItem" title="Chart" image="icon-chart.png" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Chart" image="tabbar-chart" selectedImage="tabbar-chart-selected" id="7"/>
                     <connections>
                         <outlet property="separatorHeightConstraint" destination="rWX-ZL-MCK" id="UZo-kS-8lC"/>
                         <outlet property="webView" destination="P8l-P2-tjX" id="t8b-ae-ZVm"/>
@@ -75,7 +75,7 @@
                         <viewControllerLayoutGuide type="bottom" id="dTL-TY-znF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="17">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CVi-yd-AsW">
@@ -106,7 +106,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWS-u2-k9T">
-                                                <rect key="frame" x="45.5" y="0.0" width="153" height="25"/>
+                                                <rect key="frame" x="45" y="0.0" width="153" height="25"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="13"/>
                                                 <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -147,7 +147,7 @@
                                 </connections>
                             </segmentedControl>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="wa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
-                                <rect key="frame" x="224" y="224" width="151.5" height="152"/>
+                                <rect key="frame" x="224" y="199" width="151.5" height="152"/>
                                 <animations/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="132"/>
@@ -162,7 +162,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ぎょ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4c-5R-aC4">
-                                <rect key="frame" x="167" y="230" width="267.5" height="140.5"/>
+                                <rect key="frame" x="167" y="205" width="267.5" height="140.5"/>
                                 <animations/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="140"/>
@@ -180,7 +180,6 @@
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
                                         <state key="normal" title="z" backgroundImage="option-normal.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" red="0.12549019607843137" green="0.33333333333333331" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -197,7 +196,6 @@
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
                                         <state key="normal" title="y" backgroundImage="option-normal.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" red="0.12549019607843137" green="0.33333333333333331" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -214,7 +212,6 @@
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
                                         <state key="normal" title="x" backgroundImage="option-normal.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" red="0.12549019607843137" green="0.33333333333333331" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -231,7 +228,6 @@
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
                                         <state key="normal" title="w" backgroundImage="option-normal.png">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" red="0.12549019607843137" green="0.33333333333333331" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -271,7 +267,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Test" image="icon-test.png" id="6"/>
+                    <tabBarItem key="tabBarItem" title="Test" image="tabbar-test" selectedImage="tabbar-test-selected" id="6"/>
                     <connections>
                         <outlet property="directionControl" destination="cWf-ms-f2g" id="8Mb-zJ-OAL"/>
                         <outlet property="horkControl" destination="1ma-hR-1MS" id="t1p-TB-Jxt"/>
@@ -422,12 +418,13 @@
             <objects>
                 <tabBarController id="4" customClass="CMTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="5">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                        <color key="barTintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
@@ -441,10 +438,12 @@
     </scenes>
     <resources>
         <image name="first" width="16" height="16"/>
-        <image name="icon-chart.png" width="30" height="30"/>
-        <image name="icon-test.png" width="30" height="30"/>
         <image name="option-normal-pressing.png" width="64" height="44"/>
         <image name="option-normal.png" width="64" height="44"/>
+        <image name="tabbar-chart" width="22" height="22"/>
+        <image name="tabbar-chart-selected" width="22" height="22"/>
+        <image name="tabbar-test" width="29" height="26"/>
+        <image name="tabbar-test-selected" width="29" height="26"/>
     </resources>
     <color key="tintColor" red="0.22352942824363708" green="0.60000002384185791" blue="0.84705889225006104" alpha="1" colorSpace="deviceRGB"/>
 </document>
