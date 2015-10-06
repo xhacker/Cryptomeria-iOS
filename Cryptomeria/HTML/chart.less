@@ -48,9 +48,7 @@ ul#kana-chart {
 	}
 }
 
-// iPhone Portrait
-@media
-only screen and (max-width: 500px) and (orientation: portrait) {
+@media only screen and (max-width: 525px) {
 	ul#kana-chart {
 		li {
 			padding: 12px 5px 16px 5px;
@@ -103,19 +101,19 @@ only screen and (max-width: 500px) and (orientation: portrait) {
 	}
 }
 
-// iPad
-@media only screen and (device-width: 768px) {
+@media only screen and (min-width: 525px) {
 	ul#kana-chart {
 		li {
 			padding: 20px 0 24px 0;
 
 			.inner {
 				width: 768px;
+				max-width: 100%;
 				margin: 0 auto;
 
 				.head {
 					padding-top: 44px;
-					margin: 10px 36px 0px 72px;
+					margin: 10px 5% 0px 9%;
 					.kana {
 						font-size: 40px;
 						line-height: 40px;
@@ -129,7 +127,7 @@ only screen and (max-width: 500px) and (orientation: portrait) {
 				}
 
 				.item {
-					width: 108px;
+					width: 14%;
 					.kana {
 						font-size: 50px;
 						line-height: 76px;
@@ -144,7 +142,7 @@ only screen and (max-width: 500px) and (orientation: portrait) {
 
 		li.youon {
 			.item {
-				width: 165px;
+				width: 21.5%;
 			}
 		}
 	}
