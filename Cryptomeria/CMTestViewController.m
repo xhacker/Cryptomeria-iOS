@@ -258,7 +258,7 @@ typedef enum {
         self.rangeIncreaseButton.enabled = YES;
     }
     
-    NSString *rangeText = [NSString stringWithFormat:@"あ-%@", [CMChartData hiragana][range][0]];
+    NSString *rangeText = [NSString stringWithFormat:@"あ－%@", [CMChartData hiragana][range][0]];
     [self.rangeLabelButton setTitle:rangeText forState:UIControlStateNormal];
 }
 

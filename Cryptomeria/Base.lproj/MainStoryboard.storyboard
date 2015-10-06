@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="AvenirNext.ttc">
             <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Medium</string>
             <string>AvenirNext-DemiBold</string>
             <string>AvenirNext-DemiBold</string>
-            <string>AvenirNext-Medium</string>
-            <string>AvenirNext-Medium</string>
-            <string>AvenirNext-Medium</string>
-            <string>AvenirNext-Medium</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -93,10 +92,10 @@
                                         </connections>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Orr-W1-U6j">
-                                        <rect key="frame" x="285" y="5" width="275" height="25"/>
+                                        <rect key="frame" x="285" y="3" width="275" height="29"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftv-zW-uyi">
-                                                <rect key="frame" x="0.0" y="0.0" width="45.5" height="25"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39.5" height="29"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <inset key="contentEdgeInsets" minX="6" minY="6" maxX="0.0" maxY="0.0"/>
@@ -106,14 +105,14 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWS-u2-k9T">
-                                                <rect key="frame" x="45" y="0.0" width="153" height="25"/>
+                                                <rect key="frame" x="39.5" y="0.0" width="169" height="29"/>
                                                 <animations/>
-                                                <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="13"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                 <size key="titleShadowOffset" width="0.0" height="1"/>
-                                                <state key="normal" title="あ-ぎょ"/>
+                                                <state key="normal" title="あ－ぎょ"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzY-R5-eJu">
-                                                <rect key="frame" x="198" y="0.0" width="76.5" height="25"/>
+                                                <rect key="frame" x="208" y="0.0" width="66.5" height="29"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <inset key="contentEdgeInsets" minX="0.0" minY="6" maxX="12" maxY="0.0"/>
@@ -347,7 +346,7 @@
                                                         <constraint firstAttribute="height" constant="58" id="z9s-xC-3j3"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="30"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="love" textAlignment="right" lineBreakMode="tailTruncation" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xey-3P-07N">

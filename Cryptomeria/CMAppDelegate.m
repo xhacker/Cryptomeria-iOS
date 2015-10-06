@@ -74,6 +74,10 @@
         NSForegroundColorAttributeName: [UIColor whiteColor]
     } forState:UIControlStateSelected];
     [[UITabBar appearance] setSelectionIndicatorImage:[UIImage imageNamed:@"tabbar-selected-background"]];
+    
+    [[UISegmentedControl appearance] setTitleTextAttributes:@{
+        NSFontAttributeName: [UIFont boldSystemFontOfSize:14]
+    } forState:UIControlStateNormal];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
