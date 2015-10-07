@@ -41,7 +41,7 @@ enum KanaSet: Int {
 
 class TestViewController: UIViewController {
     @IBOutlet var directionControl: UISegmentedControl!
-    @IBOutlet var horkControl: UISegmentedControl!
+    @IBOutlet var kanaSetControl: UISegmentedControl!
     @IBOutlet var rangeDecreaseButton: UIButton!
     @IBOutlet var rangeIncreaseButton: UIButton!
     @IBOutlet var rangeLabelButton: UIButton!
@@ -78,8 +78,8 @@ class TestViewController: UIViewController {
         updateRangeLabelAndButton()
         let direction = defaults.integerForKey(kDirectionKey)
         directionControl.selectedSegmentIndex = direction
-        let hork = defaults.integerForKey(kKanaSetKey)
-        horkControl.selectedSegmentIndex = hork
+        let kanaSet = defaults.integerForKey(kKanaSetKey)
+        kanaSetControl.selectedSegmentIndex = kanaSet
         
         generateSequence()
         resetScore()
@@ -260,8 +260,7 @@ class TestViewController: UIViewController {
         }
     }
     
-    // TODO: rename
-    @IBAction func horkChanged(sender: UISegmentedControl) {
+    @IBAction func kanaSetChanged(sender: UISegmentedControl) {
         defaults.setInteger(sender.selectedSegmentIndex, forKey: kKanaSetKey)
         generateSequence()
         resetScore()

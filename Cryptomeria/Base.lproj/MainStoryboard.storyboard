@@ -162,7 +162,7 @@
                                     <segment title="あ+ア"/>
                                 </segments>
                                 <connections>
-                                    <action selector="horkChanged:" destination="3" eventType="valueChanged" id="wtc-ii-XWf"/>
+                                    <action selector="kanaSetChanged:" destination="3" eventType="valueChanged" id="Af0-Tb-qTP"/>
                                 </connections>
                             </segmentedControl>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="wa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
@@ -289,7 +289,7 @@
                     <tabBarItem key="tabBarItem" title="Test" image="tabbar-test" selectedImage="tabbar-test-selected" id="6"/>
                     <connections>
                         <outlet property="directionControl" destination="cWf-ms-f2g" id="8Mb-zJ-OAL"/>
-                        <outlet property="horkControl" destination="1ma-hR-1MS" id="t1p-TB-Jxt"/>
+                        <outlet property="kanaSetControl" destination="1ma-hR-1MS" id="pws-kR-sSn"/>
                         <outlet property="mainKanaLabel" destination="n4c-5R-aC4" id="BgK-9n-mAD"/>
                         <outlet property="mainKanaLabelTopConstraint" destination="7JU-Kz-eGg" id="Nur-El-yXD"/>
                         <outlet property="mainRomajiLabel" destination="oRg-tF-7jh" id="lUO-R8-opJ"/>
