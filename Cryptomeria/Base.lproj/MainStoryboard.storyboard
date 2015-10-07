@@ -84,26 +84,24 @@
                                         <rect key="frame" x="0.0" y="4" width="275" height="29"/>
                                         <animations/>
                                         <segments>
-                                            <segment title="あ→a"/>
-                                            <segment title="a→あ"/>
+                                            <segment title="あ → a"/>
+                                            <segment title="a → あ"/>
                                         </segments>
                                         <connections>
                                             <action selector="directionChanged:" destination="3" eventType="valueChanged" id="Gnk-zr-UKX"/>
                                         </connections>
                                     </segmentedControl>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Orr-W1-U6j">
-                                        <rect key="frame" x="285" y="4" width="275" height="29"/>
+                                        <rect key="frame" x="285" y="3" width="275" height="29"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftv-zW-uyi" customClass="LeftRoundedButton" customModule="Cryptomeria" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftv-zW-uyi" customClass="LeftRoundedButton" customModule="Cryptomeria" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="29"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="JlE-Qs-vWb"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <inset key="contentEdgeInsets" minX="6" minY="6" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="-"/>
+                                                <state key="normal" image="button-decrease"/>
                                                 <connections>
                                                     <action selector="rangeDecreased:" destination="3" eventType="touchUpInside" id="fmz-pj-7Ss"/>
                                                 </connections>
@@ -111,20 +109,22 @@
                                             <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWS-u2-k9T" customClass="TopBottomBorderedButton" customModule="Cryptomeria" customModuleProvider="target">
                                                 <rect key="frame" x="36" y="0.0" width="203" height="29"/>
                                                 <animations/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="29" id="OiV-dm-d9T"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
                                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                                 <state key="normal" title="あ－ぎょ"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzY-R5-eJu" customClass="RightRoundedButton" customModule="Cryptomeria" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzY-R5-eJu" customClass="RightRoundedButton" customModule="Cryptomeria" customModuleProvider="target">
                                                 <rect key="frame" x="239" y="0.0" width="36" height="29"/>
                                                 <animations/>
                                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="HeS-Rp-6J0"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <inset key="contentEdgeInsets" minX="0.0" minY="6" maxX="12" maxY="0.0"/>
-                                                <state key="normal" title="+"/>
+                                                <state key="normal" image="button-increase"/>
                                                 <connections>
                                                     <action selector="rangeIncreased:" destination="3" eventType="touchUpInside" id="WY6-lg-ldo"/>
                                                 </connections>
@@ -159,14 +159,14 @@
                                 <segments>
                                     <segment title="あ"/>
                                     <segment title="ア"/>
-                                    <segment title="あ+ア"/>
+                                    <segment title="あ＋ア"/>
                                 </segments>
                                 <connections>
                                     <action selector="kanaSetChanged:" destination="3" eventType="valueChanged" id="Af0-Tb-qTP"/>
                                 </connections>
                             </segmentedControl>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="wa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
-                                <rect key="frame" x="224" y="204.5" width="151.5" height="152"/>
+                                <rect key="frame" x="224" y="204" width="151.5" height="152"/>
                                 <animations/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="132"/>
@@ -181,18 +181,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ぎょ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4c-5R-aC4">
-                                <rect key="frame" x="167" y="221.5" width="267.5" height="140.5"/>
+                                <rect key="frame" x="167" y="221" width="267.5" height="140.5"/>
                                 <animations/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="140"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YoQ-mf-tqc">
-                                <rect key="frame" x="20" y="495" width="560" height="42"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YoQ-mf-tqc">
+                                <rect key="frame" x="20" y="497" width="560" height="42"/>
                                 <subviews>
                                     <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-c1-JIh">
-                                        <rect key="frame" x="0.0" y="0.0" width="133" height="42"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="132.5" height="42"/>
                                         <animations/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
@@ -208,7 +208,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXy-4r-0ur">
-                                        <rect key="frame" x="143" y="0.0" width="133" height="42"/>
+                                        <rect key="frame" x="142" y="0.0" width="132.5" height="42"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -223,7 +223,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZV-g4-aRC">
-                                        <rect key="frame" x="285" y="0.0" width="133" height="42"/>
+                                        <rect key="frame" x="285" y="0.0" width="132.5" height="42"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -238,7 +238,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-5m-Qgc">
-                                        <rect key="frame" x="428" y="0.0" width="133" height="42"/>
+                                        <rect key="frame" x="427" y="0.0" width="132.5" height="42"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -452,6 +452,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button-decrease" width="29" height="29"/>
+        <image name="button-increase" width="29" height="29"/>
         <image name="first" width="16" height="16"/>
         <image name="option-normal" width="11" height="42"/>
         <image name="tabbar-chart" width="22" height="22"/>

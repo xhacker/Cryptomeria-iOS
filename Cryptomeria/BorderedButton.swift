@@ -36,6 +36,18 @@ class RoundedButton: UIButton {
     let borderLayer = CAShapeLayer()
     var roundingCorners: UIRectCorner = []
     
+    override var highlighted: Bool {
+        didSet {
+            if highlighted {
+                let color = tintColor.colorWithAlphaComponent(0.15)
+                borderLayer.fillColor = color.CGColor
+            }
+            else {
+                borderLayer.fillColor = UIColor.clearColor().CGColor
+            }
+        }
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         borderLayer.fillColor = UIColor.clearColor().CGColor
         borderLayer.lineWidth = 1
@@ -54,6 +66,7 @@ class RoundedButton: UIButton {
         borderLayer.path = path.CGPath
         borderLayer.strokeColor = tintColor.CGColor
     }
+
 }
 
 class LeftRoundedButton: RoundedButton {
