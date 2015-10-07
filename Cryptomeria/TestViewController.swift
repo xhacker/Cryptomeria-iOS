@@ -170,21 +170,21 @@ class TestViewController: UIViewController {
             if i == rightOption {
                 continue
             }
-            var optionID: Int!
+            var kanaID: Int!
             repeat {
-                optionID = section.first + Int(arc4random()) % (section.last - section.first + 1)
-            } while usedIDs.contains(optionID)
-            usedIDs.append(optionID)
+                kanaID = section.first + Int(arc4random()) % (section.last - section.first + 1)
+            } while !isValidOption(usedIDs, newKanaID: kanaID)
+            usedIDs.append(kanaID)
         
             var thisText = ""
             if direction == .KanaRomaji {
-                thisText = flattenedRomaji[optionID]
+                thisText = flattenedRomaji[kanaID]
             }
             else if thisKanaSet == .Hiragana {
-                thisText = flattenedHiragana[optionID]
+                thisText = flattenedHiragana[kanaID]
             }
             else if thisKanaSet == .Katakana {
-                thisText = flattenedKatakana[optionID]
+                thisText = flattenedKatakana[kanaID]
             }
             optionButtons[i].setWhiteAttributedTitle(thisText, forState: .Normal)
         }
@@ -194,6 +194,19 @@ class TestViewController: UIViewController {
             button.setBackgroundImage(UIImage(namedForCurrentDevice: kNormalButtonImage).resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Normal)
             button.setBackgroundImage(UIImage(namedForCurrentDevice: kNormalPressingButtonImage).resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Highlighted)
         }
+    }
+    
+    func isValidOption(existingIDs: [Int], newKanaID: Int) -> Bool {
+        if existingIDs.contains(newKanaID) {
+            return false
+        }
+        
+        let existingRomajis = existingIDs.map({ self.flattenedRomaji[$0] })
+        if existingRomajis.contains(flattenedRomaji[newKanaID]) {
+            return false
+        }
+        
+        return true
     }
     
     @IBAction func rangeDecreased(sender: UIButton) {

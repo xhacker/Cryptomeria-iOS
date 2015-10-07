@@ -481,9 +481,9 @@
 		1A7C325216FDC75100F5A71A /* Chart */ = {
 			isa = PBXGroup;
 			children = (
-				1A750353173257820071D087 /* HTML */,
 				1A7C321E16FC990C00F5A71A /* CMChartViewController.h */,
 				1A7C321F16FC990C00F5A71A /* CMChartViewController.m */,
+				1A750353173257820071D087 /* HTML */,
 			);
 			name = Chart;
 			sourceTree = "<group>";
@@ -525,10 +525,10 @@
 		1AD2A89716FEF383004137FE /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				1A1844921BC4A3E30050D2BC /* TestViewController.swift */,
 				1A1844961BC4C1C40050D2BC /* ArrayExtensions.swift */,
 				1AFAFCA7173E96210057BB82 /* UIButton+AttributedString.h */,
 				1AFAFCA8173E96210057BB82 /* UIButton+AttributedString.m */,
-				1A1844921BC4A3E30050D2BC /* TestViewController.swift */,
 				1A11E61F1BC3630600E7FDBB /* BorderedButton.swift */,
 			);
 			name = Test;
