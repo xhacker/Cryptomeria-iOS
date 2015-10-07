@@ -8,7 +8,7 @@
 
 import UIKit
 
-let kScoreRightColor = UIColor(red: 103.0/255.0, green: 153.0/255.0, blue: 32.0/255.0, alpha: 1)
+let kScoreRightColor = UIColor(red: 103.0/255.0, green: 180.0/255.0, blue: 32.0/255.0, alpha: 1)
 
 let kNormalButtonImage = "option-normal"
 let kWrongButtonImage = "option-wrong"
@@ -188,7 +188,7 @@ class TestViewController: UIViewController {
         
         // refresh buttons
         for button in optionButtons {
-            button.setBackgroundImage(UIImage(named: kNormalButtonImage)!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Normal)
+            button.setBackgroundImage(UIImage(named: kNormalButtonImage), forState: .Normal)
         }
     }
     
@@ -290,9 +290,9 @@ class TestViewController: UIViewController {
         }
         else {
             inGuess = false
-            sender.setBackgroundImage(UIImage(named: kWrongButtonImage)!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Normal)
+            sender.setBackgroundImage(UIImage(named: kWrongButtonImage), forState: .Normal)
 
-            rightButton.setBackgroundImage(UIImage(named: kRightButtonImage)!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Normal)
+            rightButton.setBackgroundImage(UIImage(named: kRightButtonImage), forState: .Normal)
         }
         
         let correctText = "\(correctCount)"

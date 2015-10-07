@@ -2,7 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "option-wrong.pdf"
+      "filename" : "option-wrong.pdf",
+      "resizing" : {
+        "mode" : "3-part-horizontal",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1
+        },
+        "cap-insets" : {
+          "right" : 5,
+          "left" : 5
+        }
+      }
     }
   ],
   "info" : {

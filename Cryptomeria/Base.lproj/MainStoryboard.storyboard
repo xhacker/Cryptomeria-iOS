@@ -166,7 +166,7 @@
                                 </connections>
                             </segmentedControl>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="wa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
-                                <rect key="frame" x="224" y="199" width="151.5" height="152"/>
+                                <rect key="frame" x="224" y="204.5" width="151.5" height="152"/>
                                 <animations/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="132"/>
@@ -177,11 +177,11 @@
                                 <rect key="frame" x="22" y="115" width="66" height="23.5"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ぎょ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4c-5R-aC4">
-                                <rect key="frame" x="167" y="205" width="267.5" height="140.5"/>
+                                <rect key="frame" x="167" y="221.5" width="267.5" height="140.5"/>
                                 <animations/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="140"/>
@@ -269,9 +269,9 @@
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="CVi-yd-AsW" secondAttribute="bottom" constant="6" id="WdA-YJ-fUD"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="trailing" secondItem="17" secondAttribute="trailingMargin" id="Wdc-x5-ujH"/>
                             <constraint firstItem="n4c-5R-aC4" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" id="Woi-4r-oVm"/>
-                            <constraint firstItem="n4c-5R-aC4" firstAttribute="centerY" secondItem="17" secondAttribute="centerY" id="YVv-QI-98m"/>
+                            <constraint firstItem="n4c-5R-aC4" firstAttribute="centerY" secondItem="17" secondAttribute="centerY" constant="16" id="YVv-QI-98m"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leadingMargin" constant="2" id="bcT-FV-WwK"/>
-                            <constraint firstItem="oRg-tF-7jh" firstAttribute="centerY" secondItem="17" secondAttribute="centerY" id="gN3-TL-TCy"/>
+                            <constraint firstItem="oRg-tF-7jh" firstAttribute="centerY" secondItem="17" secondAttribute="centerY" constant="5" id="gN3-TL-TCy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YoQ-mf-tqc" secondAttribute="trailing" id="hZ7-4P-3u0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CVi-yd-AsW" secondAttribute="trailing" id="lNe-Ha-HAO"/>
                             <constraint firstItem="oRg-tF-7jh" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" id="o6v-Ye-hwN"/>
@@ -453,11 +453,11 @@
     </scenes>
     <resources>
         <image name="first" width="16" height="16"/>
-        <image name="option-normal" width="64" height="42"/>
+        <image name="option-normal" width="11" height="42"/>
         <image name="tabbar-chart" width="22" height="22"/>
         <image name="tabbar-chart-selected" width="22" height="22"/>
         <image name="tabbar-test" width="29" height="27"/>
         <image name="tabbar-test-selected" width="29" height="27"/>
     </resources>
-    <color key="tintColor" red="0.22352942824363708" green="0.60000002384185791" blue="0.84705889225006104" alpha="1" colorSpace="deviceRGB"/>
+    <color key="tintColor" red="0.31264334862385323" green="0.66640386085626913" blue="0.90101777522935778" alpha="1" colorSpace="deviceRGB"/>
 </document>
