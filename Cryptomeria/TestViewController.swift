@@ -11,11 +11,8 @@ import UIKit
 let kScoreRightColor = UIColor(red: 103.0/255.0, green: 153.0/255.0, blue: 32.0/255.0, alpha: 1)
 
 let kNormalButtonImage = "option-normal"
-let kNormalPressingButtonImage = "option-normal-pressing"
 let kWrongButtonImage = "option-wrong"
-let kWrongPressingButtonImage = "option-wrong-pressing"
 let kRightButtonImage = "option-right"
-let kRightPressingButtonImage = "option-right-pressing"
 
 let kAvenirFont = "AvenirNext-Medium"
 let kAvenirBoldFont = "AvenirNext-Bold"
@@ -191,8 +188,7 @@ class TestViewController: UIViewController {
         
         // refresh buttons
         for button in optionButtons {
-            button.setBackgroundImage(UIImage(namedForCurrentDevice: kNormalButtonImage).resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Normal)
-            button.setBackgroundImage(UIImage(namedForCurrentDevice: kNormalPressingButtonImage).resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Highlighted)
+            button.setBackgroundImage(UIImage(named: kNormalButtonImage)!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Normal)
         }
     }
     
@@ -294,11 +290,9 @@ class TestViewController: UIViewController {
         }
         else {
             inGuess = false
-            sender.setBackgroundImage(UIImage(namedForCurrentDevice: kWrongButtonImage).resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Normal)
-            sender.setBackgroundImage(UIImage(namedForCurrentDevice: kWrongPressingButtonImage).resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Highlighted)
+            sender.setBackgroundImage(UIImage(named: kWrongButtonImage)!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Normal)
 
-            rightButton.setBackgroundImage(UIImage(namedForCurrentDevice: kRightButtonImage).resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Normal)
-            rightButton.setBackgroundImage(UIImage(namedForCurrentDevice: kRightPressingButtonImage).resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Highlighted)
+            rightButton.setBackgroundImage(UIImage(named: kRightButtonImage)!.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 10, 0, 10)), forState: .Normal)
         }
         
         let correctText = "\(correctCount)"

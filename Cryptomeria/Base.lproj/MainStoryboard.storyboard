@@ -188,70 +188,66 @@
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YoQ-mf-tqc">
-                                <rect key="frame" x="20" y="495" width="560" height="44"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YoQ-mf-tqc">
+                                <rect key="frame" x="20" y="495" width="560" height="42"/>
                                 <subviews>
-                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-c1-JIh">
-                                        <rect key="frame" x="0.0" y="0.0" width="133" height="44"/>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-c1-JIh">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="42"/>
                                         <animations/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
-                                        <state key="normal" title="z" backgroundImage="option-normal.png">
+                                        <state key="normal" title="z" backgroundImage="option-normal">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="highlighted" backgroundImage="option-normal-pressing.png"/>
                                         <connections>
                                             <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="kJ9-0u-L9J"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXy-4r-0ur">
-                                        <rect key="frame" x="143" y="0.0" width="133" height="44"/>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXy-4r-0ur">
+                                        <rect key="frame" x="143" y="0.0" width="133" height="42"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
-                                        <state key="normal" title="y" backgroundImage="option-normal.png">
+                                        <state key="normal" title="y" backgroundImage="option-normal">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="highlighted" backgroundImage="option-normal-pressing.png"/>
                                         <connections>
                                             <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="Mee-iE-2Hg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZV-g4-aRC">
-                                        <rect key="frame" x="285" y="0.0" width="133" height="44"/>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZV-g4-aRC">
+                                        <rect key="frame" x="285" y="0.0" width="133" height="42"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
-                                        <state key="normal" title="x" backgroundImage="option-normal.png">
+                                        <state key="normal" title="x" backgroundImage="option-normal">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="highlighted" backgroundImage="option-normal-pressing.png"/>
                                         <connections>
                                             <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="SGy-yD-Tr6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-5m-Qgc">
-                                        <rect key="frame" x="428" y="0.0" width="133" height="44"/>
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-5m-Qgc">
+                                        <rect key="frame" x="428" y="0.0" width="133" height="42"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
-                                        <state key="normal" title="w" backgroundImage="option-normal.png">
+                                        <state key="normal" title="w" backgroundImage="option-normal">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="disabled">
                                             <color key="titleColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         </state>
-                                        <state key="highlighted" backgroundImage="option-normal-pressing.png"/>
                                         <connections>
                                             <action selector="optionClicked:" destination="3" eventType="touchUpInside" id="Olv-RO-0to"/>
                                         </connections>
@@ -457,8 +453,7 @@
     </scenes>
     <resources>
         <image name="first" width="16" height="16"/>
-        <image name="option-normal-pressing.png" width="64" height="44"/>
-        <image name="option-normal.png" width="64" height="44"/>
+        <image name="option-normal" width="64" height="42"/>
         <image name="tabbar-chart" width="22" height="22"/>
         <image name="tabbar-chart-selected" width="22" height="22"/>
         <image name="tabbar-test" width="29" height="27"/>

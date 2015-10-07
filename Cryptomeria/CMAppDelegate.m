@@ -7,7 +7,6 @@
 //
 
 #import "CMAppDelegate.h"
-#import "UIImage+Device.h"
 
 @implementation CMAppDelegate
 

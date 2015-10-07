@@ -5,5 +5,4 @@
 
 #import "CMChartData.h"
 #import "UIButton+AttributedString.h"
-#import "UIImage+Device.h"
 #import "iOSVersion.h"
