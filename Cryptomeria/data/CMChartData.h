@@ -12,16 +12,16 @@
 @interface CMChartData : NSObject
 
 typedef struct _CMSection {
-    NSUInteger first;
-    NSUInteger last;
+    NSInteger first;
+    NSInteger last;
 } CMSection;
 
-CMSection CMMakeSection(NSUInteger first, NSUInteger last);
+CMSection CMMakeSection(NSInteger first, NSInteger last);
 
 + (NSArray *)romaji;
 + (NSArray *)hiragana;
 + (NSArray *)katakana;
-+ (NSUInteger)lastInRow:(NSUInteger)row;
-+ (CMSection)getSection:(NSUInteger)kanaId;
++ (NSInteger)lastInRow:(NSInteger)row;
++ (CMSection)getSection:(NSInteger)kanaId;
 
 @end

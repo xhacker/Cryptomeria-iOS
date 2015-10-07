@@ -68,7 +68,7 @@
         <!--Test-->
         <scene sceneID="13">
             <objects>
-                <viewController title="Test" id="3" customClass="CMTestViewController" sceneMemberID="viewController">
+                <viewController title="Test" id="3" customClass="TestViewController" customModule="Cryptomeria" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hAE-60-wA7"/>
                         <viewControllerLayoutGuide type="bottom" id="dTL-TY-znF"/>
@@ -297,10 +297,10 @@
                         <outlet property="rangeIncreaseButton" destination="uzY-R5-eJu" id="yhI-7e-lMT"/>
                         <outlet property="rangeLabelButton" destination="PWS-u2-k9T" id="uL7-tx-Uer"/>
                         <outlet property="scoreLabel" destination="GhM-5p-Pv9" id="8rq-B1-Lqg"/>
-                        <outletCollection property="optionButtons" destination="6Zk-5m-Qgc" id="ZvK-9K-dKA"/>
-                        <outletCollection property="optionButtons" destination="yZV-g4-aRC" id="kzZ-ih-Tj7"/>
-                        <outletCollection property="optionButtons" destination="zXy-4r-0ur" id="ZiJ-eV-nuk"/>
-                        <outletCollection property="optionButtons" destination="DMP-c1-JIh" id="U5y-Em-abV"/>
+                        <outletCollection property="optionButtons" destination="6Zk-5m-Qgc" collectionClass="NSMutableArray" id="ZvK-9K-dKA"/>
+                        <outletCollection property="optionButtons" destination="yZV-g4-aRC" collectionClass="NSMutableArray" id="kzZ-ih-Tj7"/>
+                        <outletCollection property="optionButtons" destination="zXy-4r-0ur" collectionClass="NSMutableArray" id="ZiJ-eV-nuk"/>
+                        <outletCollection property="optionButtons" destination="DMP-c1-JIh" collectionClass="NSMutableArray" id="U5y-Em-abV"/>
                         <segue destination="gIL-ql-Y7D" kind="presentation" identifier="wordlist" id="u0E-eF-ecF"/>
                     </connections>
                 </viewController>
@@ -461,8 +461,8 @@
         <image name="option-normal.png" width="64" height="44"/>
         <image name="tabbar-chart" width="22" height="22"/>
         <image name="tabbar-chart-selected" width="22" height="22"/>
-        <image name="tabbar-test" width="29" height="26"/>
-        <image name="tabbar-test-selected" width="29" height="26"/>
+        <image name="tabbar-test" width="29" height="27"/>
+        <image name="tabbar-test-selected" width="29" height="27"/>
     </resources>
     <color key="tintColor" red="0.22352942824363708" green="0.60000002384185791" blue="0.84705889225006104" alpha="1" colorSpace="deviceRGB"/>
 </document>

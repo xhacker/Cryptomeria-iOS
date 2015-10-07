@@ -10,7 +10,7 @@
 
 @implementation CMChartData
 
-CMSection CMMakeSection(NSUInteger first, NSUInteger last) {
+CMSection CMMakeSection(NSInteger first, NSInteger last) {
     CMSection section = {first, last};
     return section;
 }
@@ -114,7 +114,7 @@ CMSection CMMakeSection(NSUInteger first, NSUInteger last) {
     return data;
 }
 
-+ (NSUInteger)lastInRow:(NSUInteger)row
++ (NSInteger)lastInRow:(NSInteger)row
 {
     NSUInteger lastID[] = {4, 9, 14, 19, 24, 29, 34, 37, 42, 44, 45,
         49, 54, 59, 64, 69,
@@ -124,7 +124,7 @@ CMSection CMMakeSection(NSUInteger first, NSUInteger last) {
 
 // I like MAGIC NUMBERS!
 
-+ (CMSection)getSection:(NSUInteger)kanaID
++ (CMSection)getSection:(NSInteger)kanaID
 {
     if (kanaID <= 45) {
         return CMMakeSection(0, 45);

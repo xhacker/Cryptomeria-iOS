@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1A11E6201BC3630600E7FDBB /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A11E61F1BC3630600E7FDBB /* BorderedButton.swift */; settings = {ASSET_TAGS = (); }; };
+		1A1844931BC4A3E30050D2BC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1844921BC4A3E30050D2BC /* TestViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		1A1844971BC4C1C40050D2BC /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1844961BC4C1C40050D2BC /* ArrayExtensions.swift */; settings = {ASSET_TAGS = (); }; };
 		1A2CBB6C1748C9C70037E20D /* option-normal-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6A1748C9C70037E20D /* option-normal-pressing.png */; };
 		1A2CBB6D1748C9C70037E20D /* option-normal-pressing@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6B1748C9C70037E20D /* option-normal-pressing@2x.png */; };
 		1A2CBB721748D2430037E20D /* option-right-pressing.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CBB6E1748D2430037E20D /* option-right-pressing.png */; };
@@ -78,7 +80,6 @@
 		1A6649601904F2C1008B5644 /* ya.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649301904F2C1008B5644 /* ya.aac */; };
 		1A6649611904F2C1008B5644 /* yo.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649311904F2C1008B5644 /* yo.aac */; };
 		1A6649621904F2C1008B5644 /* yu.aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649321904F2C1008B5644 /* yu.aac */; };
-		1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */; };
 		1A741975179C2F8A00FCC42E /* UIImage+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A741974179C2F8A00FCC42E /* UIImage+Device.m */; };
 		1A750328173254BD0071D087 /* chart.html in Resources */ = {isa = PBXBuildFile; fileRef = 1A750327173254BD0071D087 /* chart.html */; };
 		1A75035517325BDD0071D087 /* chart.css in Resources */ = {isa = PBXBuildFile; fileRef = 1A75035417325BDD0071D087 /* chart.css */; };
@@ -89,7 +90,6 @@
 		1A7C321016FC990C00F5A71A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C320F16FC990C00F5A71A /* main.m */; };
 		1A7C321416FC990C00F5A71A /* CMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C321316FC990C00F5A71A /* CMAppDelegate.m */; };
 		1A7C322016FC990C00F5A71A /* CMChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C321F16FC990C00F5A71A /* CMChartViewController.m */; };
-		1A7C322716FC990C00F5A71A /* CMTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7C322616FC990C00F5A71A /* CMTestViewController.m */; };
 		1A7C323316FC990D00F5A71A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C323216FC990D00F5A71A /* SenTestingKit.framework */; };
 		1A7C323416FC990D00F5A71A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320316FC990C00F5A71A /* UIKit.framework */; };
 		1A7C323516FC990D00F5A71A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7C320516FC990C00F5A71A /* Foundation.framework */; };
@@ -126,6 +126,8 @@
 /* Begin PBXFileReference section */
 		1A11E61E1BC3630500E7FDBB /* Cryptomeria-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cryptomeria-Bridging-Header.h"; sourceTree = "<group>"; };
 		1A11E61F1BC3630600E7FDBB /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		1A1844921BC4A3E30050D2BC /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		1A1844961BC4C1C40050D2BC /* ArrayExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
 		1A2CBB6A1748C9C70037E20D /* option-normal-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal-pressing.png"; path = "resources/option-normal-pressing.png"; sourceTree = "<group>"; };
 		1A2CBB6B1748C9C70037E20D /* option-normal-pressing@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-normal-pressing@2x.png"; path = "resources/option-normal-pressing@2x.png"; sourceTree = "<group>"; };
 		1A2CBB6E1748D2430037E20D /* option-right-pressing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "option-right-pressing.png"; path = "resources/option-right-pressing.png"; sourceTree = "<group>"; };
@@ -199,8 +201,6 @@
 		1A6649311904F2C1008B5644 /* yo.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = yo.aac; sourceTree = "<group>"; };
 		1A6649321904F2C1008B5644 /* yu.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = yu.aac; sourceTree = "<group>"; };
 		1A72658F1700A33900C9A0CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1A7265931700B06F00C9A0CB /* NSMutableArray+Shuffling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffling.h"; sourceTree = "<group>"; };
-		1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffling.m"; sourceTree = "<group>"; };
 		1A741973179C2F8A00FCC42E /* UIImage+Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Device.h"; sourceTree = "<group>"; };
 		1A741974179C2F8A00FCC42E /* UIImage+Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Device.m"; sourceTree = "<group>"; };
 		1A750327173254BD0071D087 /* chart.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = chart.html; path = HTML/chart.html; sourceTree = "<group>"; };
@@ -217,8 +217,6 @@
 		1A7C321316FC990C00F5A71A /* CMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMAppDelegate.m; sourceTree = "<group>"; };
 		1A7C321E16FC990C00F5A71A /* CMChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMChartViewController.h; sourceTree = "<group>"; };
 		1A7C321F16FC990C00F5A71A /* CMChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMChartViewController.m; sourceTree = "<group>"; };
-		1A7C322516FC990C00F5A71A /* CMTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMTestViewController.h; sourceTree = "<group>"; };
-		1A7C322616FC990C00F5A71A /* CMTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMTestViewController.m; sourceTree = "<group>"; };
 		1A7C323116FC990D00F5A71A /* CryptomeriaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptomeriaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7C323216FC990D00F5A71A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1A7C323A16FC990D00F5A71A /* CryptomeriaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CryptomeriaTests-Info.plist"; sourceTree = "<group>"; };
@@ -527,12 +525,10 @@
 		1AD2A89716FEF383004137FE /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				1A7265931700B06F00C9A0CB /* NSMutableArray+Shuffling.h */,
-				1A7265941700B06F00C9A0CB /* NSMutableArray+Shuffling.m */,
+				1A1844961BC4C1C40050D2BC /* ArrayExtensions.swift */,
 				1AFAFCA7173E96210057BB82 /* UIButton+AttributedString.h */,
 				1AFAFCA8173E96210057BB82 /* UIButton+AttributedString.m */,
-				1A7C322516FC990C00F5A71A /* CMTestViewController.h */,
-				1A7C322616FC990C00F5A71A /* CMTestViewController.m */,
+				1A1844921BC4A3E30050D2BC /* TestViewController.swift */,
 				1A11E61F1BC3630600E7FDBB /* BorderedButton.swift */,
 			);
 			name = Test;
@@ -734,15 +730,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A7C321016FC990C00F5A71A /* main.m in Sources */,
+				1A1844971BC4C1C40050D2BC /* ArrayExtensions.swift in Sources */,
 				1A7C321416FC990C00F5A71A /* CMAppDelegate.m in Sources */,
 				1A7C322016FC990C00F5A71A /* CMChartViewController.m in Sources */,
-				1A7C322716FC990C00F5A71A /* CMTestViewController.m in Sources */,
 				1A7C324B16FCA5B200F5A71A /* CMVocabularyViewController.m in Sources */,
 				1A7C325116FDB16200F5A71A /* CMChartData.m in Sources */,
 				1A11E6201BC3630600E7FDBB /* BorderedButton.swift in Sources */,
-				1A7265951700B06F00C9A0CB /* NSMutableArray+Shuffling.m in Sources */,
 				1A5980E51703E25300A7F34B /* NSArray+Flatten.m in Sources */,
 				1A95E4F5170534AA00DB0193 /* CMVocabularyData.m in Sources */,
+				1A1844931BC4A3E30050D2BC /* TestViewController.swift in Sources */,
 				1ADA76A51705DC23007F6190 /* CMVocabularyCell.m in Sources */,
 				1AFAFCA9173E96210057BB82 /* UIButton+AttributedString.m in Sources */,
 				1A3CBB4A174CC0950012A9FF /* CMTabBarController.m in Sources */,
