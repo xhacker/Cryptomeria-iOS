@@ -84,7 +84,7 @@ class TestViewController: UIViewController {
         
         generateSequence()
         resetScore()
-        changeFont()
+        updateOptionsFont()
         next()
     }
     
@@ -183,7 +183,7 @@ class TestViewController: UIViewController {
         
         // refresh buttons
         for button in optionButtons {
-            button.setBackgroundImage(UIImage(named: kNormalButtonImage), forState: .Normal)
+            button.setBackgroundImage(UIImage(named: kNormalButtonImage, inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: view.traitCollection), forState: .Normal)
         }
     }
     
@@ -239,28 +239,8 @@ class TestViewController: UIViewController {
         defaults.setInteger(sender.selectedSegmentIndex, forKey: kDirectionKey)
         generateSequence()
         resetScore()
-        changeFont()
+        updateOptionsFont()
         next()
-    }
-    
-    func changeFont() {
-        let fontSize: CGFloat = 20
-        if direction == .KanaRomaji {
-            mainRomajiLabel.hidden = true
-            mainKanaLabel.hidden = false
-            mainLabel = mainKanaLabel
-            for optionButton in optionButtons {
-                optionButton.titleLabel?.font = UIFont(name: kAvenirFont, size: fontSize)
-            }
-        }
-        else {
-            mainKanaLabel.hidden = true
-            mainRomajiLabel.hidden = false
-            mainLabel = mainRomajiLabel
-            for optionButton in optionButtons {
-                optionButton.titleLabel?.font = UIFont(name: kHiraKakuFont, size: fontSize)
-            }
-        }
     }
     
     @IBAction func kanaSetChanged(sender: UISegmentedControl) {
@@ -284,9 +264,9 @@ class TestViewController: UIViewController {
         }
         else {
             inGuess = false
-            sender.setBackgroundImage(UIImage(named: kWrongButtonImage), forState: .Normal)
+            sender.setBackgroundImage(UIImage(named: kWrongButtonImage, inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: view.traitCollection), forState: .Normal)
 
-            rightButton.setBackgroundImage(UIImage(named: kRightButtonImage), forState: .Normal)
+            rightButton.setBackgroundImage(UIImage(named: kRightButtonImage, inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: view.traitCollection), forState: .Normal)
         }
         
         let correctText = "\(correctCount)"
@@ -319,7 +299,28 @@ class TestViewController: UIViewController {
         }
     }
     
+    func updateOptionsFont() {
+        let fontSize: CGFloat = (view.traitCollection.horizontalSizeClass == .Regular) ? 23 : 20
+        if direction == .KanaRomaji {
+            mainRomajiLabel.hidden = true
+            mainKanaLabel.hidden = false
+            mainLabel = mainKanaLabel
+            for optionButton in optionButtons {
+                optionButton.titleLabel?.font = UIFont(name: kAvenirFont, size: fontSize)
+            }
+        }
+        else {
+            mainKanaLabel.hidden = true
+            mainRomajiLabel.hidden = false
+            mainLabel = mainRomajiLabel
+            for optionButton in optionButtons {
+                optionButton.titleLabel?.font = UIFont(name: kHiraKakuFont, size: fontSize)
+            }
+        }
+    }
+    
     override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
         updateMainLabelFont()
+        updateOptionsFont()
     }
 }

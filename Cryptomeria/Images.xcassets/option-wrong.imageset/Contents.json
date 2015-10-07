@@ -14,6 +14,22 @@
           "left" : 5
         }
       }
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "option-wrong-ipad.pdf",
+      "width-class" : "regular",
+      "resizing" : {
+        "mode" : "3-part-horizontal",
+        "center" : {
+          "mode" : "tile",
+          "width" : 1
+        },
+        "cap-insets" : {
+          "right" : 5,
+          "left" : 5
+        }
+      }
     }
   ],
   "info" : {

@@ -3,6 +3,11 @@
     {
       "idiom" : "universal",
       "filename" : "tabbar-selected-background.pdf"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "tabbar-selected-background-ipad.pdf",
+      "width-class" : "regular"
     }
   ],
   "info" : {
