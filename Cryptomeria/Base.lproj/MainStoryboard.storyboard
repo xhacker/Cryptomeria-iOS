@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="AvenirNext.ttc">
@@ -166,33 +167,29 @@
                                 </connections>
                             </segmentedControl>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="wa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRg-tF-7jh">
-                                <rect key="frame" x="224" y="204" width="151.5" height="152"/>
+                                <rect key="frame" x="219.5" y="199.5" width="160.5" height="161"/>
                                 <animations/>
                                 <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="132"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="140"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="66 / 233" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhM-5p-Pv9">
-                                <rect key="frame" x="22" y="115" width="66" height="23.5"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=regular">
+                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="180"/>
+                                </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ぎょ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="none" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4c-5R-aC4">
-                                <rect key="frame" x="167" y="221" width="267.5" height="140.5"/>
+                                <rect key="frame" x="118" y="196" width="363" height="190"/>
                                 <animations/>
                                 <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="140"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="190"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YoQ-mf-tqc">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="YoQ-mf-tqc">
                                 <rect key="frame" x="20" y="497" width="560" height="42"/>
                                 <subviews>
                                     <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMP-c1-JIh">
-                                        <rect key="frame" x="0.0" y="0.0" width="132.5" height="42"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="42"/>
                                         <animations/>
                                         <gestureRecognizers/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
@@ -208,7 +205,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXy-4r-0ur">
-                                        <rect key="frame" x="142" y="0.0" width="132.5" height="42"/>
+                                        <rect key="frame" x="146" y="0.0" width="122.5" height="42"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -223,7 +220,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZV-g4-aRC">
-                                        <rect key="frame" x="285" y="0.0" width="132.5" height="42"/>
+                                        <rect key="frame" x="291" y="0.0" width="123" height="42"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -238,7 +235,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zk-5m-Qgc">
-                                        <rect key="frame" x="427" y="0.0" width="132.5" height="42"/>
+                                        <rect key="frame" x="437" y="0.0" width="122.5" height="42"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                         <size key="titleShadowOffset" width="0.0" height="1"/>
@@ -255,30 +252,59 @@
                                 </subviews>
                                 <animations/>
                             </stackView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="66 / 233" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GhM-5p-Pv9">
+                                <rect key="frame" x="22" y="115" width="77.5" height="27.5"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="CVi-yd-AsW" secondAttribute="leading" id="0bw-ER-155"/>
                             <constraint firstItem="CVi-yd-AsW" firstAttribute="leading" secondItem="17" secondAttribute="leadingMargin" id="2Jm-W5-zVY"/>
                             <constraint firstItem="CVi-yd-AsW" firstAttribute="top" secondItem="hAE-60-wA7" secondAttribute="bottom" constant="10" id="4q3-q3-wQS"/>
-                            <constraint firstItem="dTL-TY-znF" firstAttribute="top" secondItem="YoQ-mf-tqc" secondAttribute="bottom" constant="12" id="5do-TK-wg7"/>
+                            <constraint firstItem="dTL-TY-znF" firstAttribute="top" secondItem="YoQ-mf-tqc" secondAttribute="bottom" constant="12" id="5do-TK-wg7">
+                                <variation key="widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="leading" secondItem="17" secondAttribute="leadingMargin" id="6pU-ir-Lq9"/>
                             <constraint firstItem="n4c-5R-aC4" firstAttribute="top" secondItem="17" secondAttribute="top" constant="140" id="7JU-Kz-eGg"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="top" secondItem="1ma-hR-1MS" secondAttribute="bottom" constant="15" id="9u2-CE-nKU"/>
-                            <constraint firstItem="YoQ-mf-tqc" firstAttribute="leading" secondItem="17" secondAttribute="leadingMargin" id="DSK-UA-Rcu"/>
+                            <constraint firstItem="YoQ-mf-tqc" firstAttribute="leading" secondItem="17" secondAttribute="leadingMargin" id="DSK-UA-Rcu">
+                                <variation key="widthClass=regular" constant="4"/>
+                            </constraint>
+                            <constraint firstItem="GhM-5p-Pv9" firstAttribute="top" secondItem="hAE-60-wA7" secondAttribute="bottom" constant="10" id="I9H-kL-RZc">
+                                <variation key="widthClass=regular" constant="14"/>
+                            </constraint>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="top" secondItem="CVi-yd-AsW" secondAttribute="bottom" constant="6" id="WdA-YJ-fUD"/>
                             <constraint firstItem="1ma-hR-1MS" firstAttribute="trailing" secondItem="17" secondAttribute="trailingMargin" id="Wdc-x5-ujH"/>
                             <constraint firstItem="n4c-5R-aC4" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" id="Woi-4r-oVm"/>
                             <constraint firstItem="n4c-5R-aC4" firstAttribute="centerY" secondItem="17" secondAttribute="centerY" constant="16" id="YVv-QI-98m"/>
+                            <constraint firstItem="CVi-yd-AsW" firstAttribute="width" secondItem="17" secondAttribute="width" multiplier="0.5" id="am0-c9-97n"/>
                             <constraint firstItem="GhM-5p-Pv9" firstAttribute="leading" secondItem="17" secondAttribute="leadingMargin" constant="2" id="bcT-FV-WwK"/>
                             <constraint firstItem="oRg-tF-7jh" firstAttribute="centerY" secondItem="17" secondAttribute="centerY" constant="5" id="gN3-TL-TCy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="YoQ-mf-tqc" secondAttribute="trailing" id="hZ7-4P-3u0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YoQ-mf-tqc" secondAttribute="trailing" id="hZ7-4P-3u0">
+                                <variation key="widthClass=regular" constant="4"/>
+                            </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="CVi-yd-AsW" secondAttribute="trailing" id="lNe-Ha-HAO"/>
                             <constraint firstItem="oRg-tF-7jh" firstAttribute="centerX" secondItem="17" secondAttribute="centerX" id="o6v-Ye-hwN"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="I9H-kL-RZc"/>
                                 <exclude reference="7JU-Kz-eGg"/>
+                                <exclude reference="am0-c9-97n"/>
+                                <exclude reference="6pU-ir-Lq9"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="9u2-CE-nKU"/>
+                                <include reference="I9H-kL-RZc"/>
+                                <exclude reference="2Jm-W5-zVY"/>
+                                <include reference="am0-c9-97n"/>
                             </mask>
                         </variation>
                     </view>

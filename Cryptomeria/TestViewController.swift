@@ -61,6 +61,10 @@ class TestViewController: UIViewController {
     let flattenedKatakana: [String]
     var inGuess = true
     
+    var direction: Direction {
+        return Direction(rawValue: defaults.integerForKey(kDirectionKey))!
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         flattenedRomaji = (CMChartData.romaji() as NSArray).flatten() as! [String]
         flattenedHiragana = (CMChartData.hiragana() as NSArray).flatten() as! [String]
@@ -73,8 +77,8 @@ class TestViewController: UIViewController {
         super.viewDidLoad()
         
         updateRangeLabelAndButton()
-        let direction = defaults.integerForKey(kDirectionKey)
-        directionControl.selectedSegmentIndex = direction
+        let directionIndex = defaults.integerForKey(kDirectionKey)
+        directionControl.selectedSegmentIndex = directionIndex
         let kanaSet = defaults.integerForKey(kKanaSetKey)
         kanaSetControl.selectedSegmentIndex = kanaSet
         
@@ -104,7 +108,6 @@ class TestViewController: UIViewController {
     
     func next() {
         let kanaSet = KanaSet(rawValue: defaults.integerForKey(kKanaSetKey))!
-        let direction = Direction(rawValue: defaults.integerForKey(kDirectionKey))!
         let kanaRange = defaults.integerForKey(kKanaRangeKey)
         
         if sequence.count == 0 {
@@ -131,16 +134,8 @@ class TestViewController: UIViewController {
         else if thisKanaSet == .Katakana {
             mainText = flattenedKatakana[thisID]
         }
-        var attributes = [String: AnyObject]()
-        if direction == .KanaRomaji {
-            var fontSize: CGFloat = 140
-            if mainText.characters.count > 1 {
-                fontSize *= 0.85
-            }
-            attributes = [NSFontAttributeName: UIFont(name: kHiraMinchoFont, size: fontSize)!]
-        }
-        mainLabel.attributedText = NSAttributedString(string: mainText, attributes: attributes)
-        
+        mainLabel.text = mainText
+        updateMainLabelFont()
         
         
         var section = CMChartData.getSection(thisID)
@@ -249,7 +244,6 @@ class TestViewController: UIViewController {
     }
     
     func changeFont() {
-        let direction = Direction(rawValue: defaults.integerForKey(kDirectionKey))!
         let fontSize: CGFloat = 20
         if direction == .KanaRomaji {
             mainRomajiLabel.hidden = true
@@ -308,5 +302,24 @@ class TestViewController: UIViewController {
         
         scoreLabel.hidden = false
         scoreLabel.attributedText = scoreAttributedString
+    }
+    
+    // MARK: - Appearance
+    
+    func updateMainLabelFont() {
+        if direction == .KanaRomaji {
+            let mainText = mainLabel.text ?? ""
+            var fontSize: CGFloat = (view.traitCollection.horizontalSizeClass == .Regular) ? 190 : 140
+            if mainText.characters.count > 1 {
+                fontSize *= 0.85
+            }
+            
+            let attributes = [NSFontAttributeName: UIFont(name: kHiraMinchoFont, size: fontSize)!]
+            mainLabel.attributedText = NSAttributedString(string: mainText, attributes: attributes)
+        }
+    }
+    
+    override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
+        updateMainLabelFont()
     }
 }
