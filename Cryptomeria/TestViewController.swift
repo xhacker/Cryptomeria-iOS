@@ -164,7 +164,8 @@ class TestViewController: UIViewController {
             }
             var kanaID: Int!
             repeat {
-                kanaID = section.first + Int(arc4random()) % (section.last - section.first + 1)
+                let sectionLength = section.last - section.first + 1
+                kanaID = section.first + Int(UInt(arc4random()) % UInt(sectionLength))
             } while !isValidOption(usedIDs, newKanaID: kanaID)
             usedIDs.append(kanaID)
         
