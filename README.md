@@ -4,7 +4,11 @@
 
 [http://xhacker.im/cryptomeria](http://xhacker.im/cryptomeria)
 
-Helping you learn Japanese kana with joy, for both iPhone and iPad.
+Learn Japanese kana with joy, for iPhone and iPad.
+
+* Kana chart with pronunciation
+* Test yourself through the intuitive interface
+* Start with the first 5, and then build 5 at a time
 
 ## Screenshots
 
