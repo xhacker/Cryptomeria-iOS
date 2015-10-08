@@ -173,6 +173,9 @@
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="140"/>
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact">
+                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="100"/>
+                                </variation>
                                 <variation key="widthClass=regular">
                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="180"/>
                                 </variation>

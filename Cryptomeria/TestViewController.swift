@@ -288,8 +288,15 @@ class TestViewController: UIViewController {
     
     func updateMainLabelFont() {
         if direction == .KanaRomaji {
+            var fontSize: CGFloat = 140
+            if view.traitCollection.horizontalSizeClass == .Regular {
+                fontSize = 190
+            }
+            if view.traitCollection.verticalSizeClass == .Compact {
+                fontSize = 100
+            }
+            
             let mainText = mainLabel.text ?? ""
-            var fontSize: CGFloat = (view.traitCollection.horizontalSizeClass == .Regular) ? 190 : 140
             if mainText.characters.count > 1 {
                 fontSize *= 0.85
             }
