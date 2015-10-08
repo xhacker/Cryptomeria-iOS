@@ -270,8 +270,8 @@ class TestViewController: UIViewController {
             rightButton.setBackgroundImage(UIImage(named: kRightButtonImage, inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: view.traitCollection), forState: .Normal)
         }
         
-        let correctText = "\(correctCount)"
-        let totalText = "\(totalCount)"
+        let correctText = "23"
+        let totalText = "26"
         let scoreText = "\(correctText) / \(totalText)"
         
         let scoreAttributedString = NSMutableAttributedString(string: scoreText)
