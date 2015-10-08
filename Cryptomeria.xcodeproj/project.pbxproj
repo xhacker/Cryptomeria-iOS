@@ -12,6 +12,8 @@
 		1A1844971BC4C1C40050D2BC /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1844961BC4C1C40050D2BC /* ArrayExtensions.swift */; settings = {ASSET_TAGS = (); }; };
 		1A3CBB4A174CC0950012A9FF /* CMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CBB49174CC0950012A9FF /* CMTabBarController.m */; };
 		1A42954F187AA7F5004FCCCD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A42954E187AA7F5004FCCCD /* Images.xcassets */; };
+		1A4540991BC5F25D0026D5C5 /* sound.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1A4540981BC5F25D0026D5C5 /* sound.svg */; settings = {ASSET_TAGS = (); }; };
+		1A45409B1BC5F6DF0026D5C5 /* sound-big.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1A45409A1BC5F6DF0026D5C5 /* sound-big.svg */; settings = {ASSET_TAGS = (); }; };
 		1A5980E51703E25300A7F34B /* NSArray+Flatten.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5980E41703E25300A7F34B /* NSArray+Flatten.m */; };
 		1A6649011904F18B008B5644 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A6648FF1904F0F4008B5644 /* jquery.min.js */; };
 		1A6649331904F2C1008B5644 /* (e).aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649031904F2C1008B5644 /* (e).aac */; };
@@ -106,6 +108,8 @@
 		1A3CBB48174CC0950012A9FF /* CMTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMTabBarController.h; sourceTree = "<group>"; };
 		1A3CBB49174CC0950012A9FF /* CMTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMTabBarController.m; sourceTree = "<group>"; };
 		1A42954E187AA7F5004FCCCD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1A4540981BC5F25D0026D5C5 /* sound.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = sound.svg; path = HTML/sound.svg; sourceTree = "<group>"; };
+		1A45409A1BC5F6DF0026D5C5 /* sound-big.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "sound-big.svg"; path = "HTML/sound-big.svg"; sourceTree = "<group>"; };
 		1A5980E31703E25300A7F34B /* NSArray+Flatten.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+Flatten.h"; path = "data/NSArray+Flatten.h"; sourceTree = "<group>"; };
 		1A5980E41703E25300A7F34B /* NSArray+Flatten.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Flatten.m"; path = "data/NSArray+Flatten.m"; sourceTree = "<group>"; };
 		1A6648FF1904F0F4008B5644 /* jquery.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.min.js; path = HTML/jquery.min.js; sourceTree = "<group>"; };
@@ -290,6 +294,8 @@
 				1A750327173254BD0071D087 /* chart.html */,
 				1A75035417325BDD0071D087 /* chart.css */,
 				1A6648FF1904F0F4008B5644 /* jquery.min.js */,
+				1A4540981BC5F25D0026D5C5 /* sound.svg */,
+				1A45409A1BC5F6DF0026D5C5 /* sound-big.svg */,
 			);
 			name = HTML;
 			sourceTree = "<group>";
@@ -535,6 +541,7 @@
 				1A6649401904F2C1008B5644 /* ki.aac in Resources */,
 				1A66494D1904F2C1008B5644 /* nu.aac in Resources */,
 				1A6649411904F2C1008B5644 /* ko.aac in Resources */,
+				1A45409B1BC5F6DF0026D5C5 /* sound-big.svg in Resources */,
 				1A6649461904F2C1008B5644 /* mo.aac in Resources */,
 				1A6649571904F2C1008B5644 /* so.aac in Resources */,
 				1A6649471904F2C1008B5644 /* mu.aac in Resources */,
@@ -561,6 +568,7 @@
 				1ACB44B2175A43AE00625341 /* iTunesArtwork in Resources */,
 				1ACB44B3175A43AE00625341 /* iTunesArtwork@2x in Resources */,
 				1A6649581904F2C1008B5644 /* su.aac in Resources */,
+				1A4540991BC5F25D0026D5C5 /* sound.svg in Resources */,
 				1A6649421904F2C1008B5644 /* ku.aac in Resources */,
 				1A6649511904F2C1008B5644 /* ri.aac in Resources */,
 				1A6649611904F2C1008B5644 /* yo.aac in Resources */,

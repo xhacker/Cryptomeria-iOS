@@ -69,6 +69,15 @@ ul#kana-chart li .head .romaji {
   color: #aaa;
   clear: both;
 }
+ul#kana-chart li .head .pronounce {
+  display: inline-block;
+  background-image: url("sound-big.svg");
+  background-size: 15px 18px;
+  width: 15px;
+  height: 18px;
+  margin-left: 7px;
+  margin-bottom: -1px;
+}
 ul#kana-chart li .item {
   float: left;
   text-align: center;
@@ -96,6 +105,13 @@ ul#kana-chart li .dup {
   ul#kana-chart li .head .romaji {
     font-size: 20px;
     line-height: 38px;
+  }
+  ul#kana-chart li .head .pronounce {
+    width: 10px;
+    height: 13px;
+    background-size: 10px 13px;
+    margin-left: 4px;
+    margin-bottom: -0.5px;
   }
   ul#kana-chart li .item {
     width: 16%;
