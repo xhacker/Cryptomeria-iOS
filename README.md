@@ -1,5 +1,7 @@
 # Cryptomeria for iOS - Learn Japanese Kana
 
+*To my beloved [Svenja](https://github.com/csvenja).*
+
 <img alt="logo" src="https://raw.github.com/xhacker/Cryptomeria-iOS/master/Cryptomeria/Images.xcassets/AppIcon.appiconset/icon-76@2x.png" width="76">
 
 [http://xhacker.im/cryptomeria](http://xhacker.im/cryptomeria)
