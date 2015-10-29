@@ -19,7 +19,7 @@ Learn Japanese kana with joy, for iPhone and iPad.
 
 ## Pronunciation
 
-Pronunciation files are not open-sourced. To let it work, you have to put aac files in ``Cryptomeria/resources/sounds``.
+Pronunciation files are not open-sourced. For them to work you need to put aac files in ``Cryptomeria/resources/sounds``.
 
 ## Icon Font?
 
