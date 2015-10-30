@@ -2,9 +2,9 @@
 
 *To my beloved [Svenja](https://github.com/csvenja).*
 
-<img alt="logo" src="https://raw.github.com/xhacker/Cryptomeria-iOS/master/Cryptomeria/Images.xcassets/AppIcon.appiconset/icon-76@2x.png" width="76">
+[<img alt="logo" src="https://raw.github.com/xhacker/Cryptomeria-iOS/master/Cryptomeria/Images.xcassets/AppIcon.appiconset/icon-76@2x.png" width="76">](https://itunes.apple.com/app/cryptomeria-learn-japanese/id652897313)
 
-[http://xhacker.im/cryptomeria](http://xhacker.im/cryptomeria)
+[<img src="https://cloud.githubusercontent.com/assets/219689/5575342/963e0ee8-9013-11e4-8091-7ece67d64729.png" width="135" height="40" alt="AppStore"/>](https://itunes.apple.com/app/cryptomeria-learn-japanese/id652897313)
 
 Learn Japanese kana with joy, for iPhone and iPad.
 
