@@ -8,7 +8,7 @@
 
 Learn Japanese kana with joy, for iPhone and iPad.
 
-* Kana chart with pronunciation
+* Learn from kana chart with pronunciations
 * Test yourself through the intuitive interface
 * Start with the first 5, and then build 5 at a time
 

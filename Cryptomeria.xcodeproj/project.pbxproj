@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A11E6201BC3630600E7FDBB /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A11E61F1BC3630600E7FDBB /* BorderedButton.swift */; settings = {ASSET_TAGS = (); }; };
-		1A1844931BC4A3E30050D2BC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1844921BC4A3E30050D2BC /* TestViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		1A1844971BC4C1C40050D2BC /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1844961BC4C1C40050D2BC /* ArrayExtensions.swift */; settings = {ASSET_TAGS = (); }; };
+		1A11E6201BC3630600E7FDBB /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A11E61F1BC3630600E7FDBB /* BorderedButton.swift */; };
+		1A1844931BC4A3E30050D2BC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1844921BC4A3E30050D2BC /* TestViewController.swift */; };
+		1A1844971BC4C1C40050D2BC /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1844961BC4C1C40050D2BC /* ArrayExtensions.swift */; };
 		1A3CBB4A174CC0950012A9FF /* CMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3CBB49174CC0950012A9FF /* CMTabBarController.m */; };
 		1A42954F187AA7F5004FCCCD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A42954E187AA7F5004FCCCD /* Images.xcassets */; };
-		1A4540991BC5F25D0026D5C5 /* sound.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1A4540981BC5F25D0026D5C5 /* sound.svg */; settings = {ASSET_TAGS = (); }; };
-		1A45409B1BC5F6DF0026D5C5 /* sound-big.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1A45409A1BC5F6DF0026D5C5 /* sound-big.svg */; settings = {ASSET_TAGS = (); }; };
+		1A4540991BC5F25D0026D5C5 /* sound.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1A4540981BC5F25D0026D5C5 /* sound.svg */; };
+		1A45409B1BC5F6DF0026D5C5 /* sound-big.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1A45409A1BC5F6DF0026D5C5 /* sound-big.svg */; };
 		1A5980E51703E25300A7F34B /* NSArray+Flatten.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5980E41703E25300A7F34B /* NSArray+Flatten.m */; };
 		1A6649011904F18B008B5644 /* jquery.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A6648FF1904F0F4008B5644 /* jquery.min.js */; };
 		1A6649331904F2C1008B5644 /* (e).aac in Resources */ = {isa = PBXBuildFile; fileRef = 1A6649031904F2C1008B5644 /* (e).aac */; };
@@ -494,6 +494,7 @@
 			attributes = {
 				CLASSPREFIX = CM;
 				LastSwiftUpdateCheck = 0700;
+				LastTestingUpgradeCheck = 0730;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Xhacker;
 				TargetAttributes = {
