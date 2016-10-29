@@ -15,7 +15,7 @@ CMSection CMMakeSection(NSInteger first, NSInteger last) {
     return section;
 }
 
-+ (NSArray *)romaji
++ (NSArray<NSArray *> *)romaji
 {
     NSArray *data = @[
                     @[@"a",   @"i",   @"u",   @"e",   @"o"],
@@ -48,7 +48,7 @@ CMSection CMMakeSection(NSInteger first, NSInteger last) {
     return data;
 }
 
-+ (NSArray *)hiragana
++ (NSArray<NSArray *> *)hiragana
 {
     NSArray *data = @[
                     @[@"あ",  @"い",  @"う",  @"え",  @"お"],
@@ -81,7 +81,7 @@ CMSection CMMakeSection(NSInteger first, NSInteger last) {
     return data;
 }
 
-+ (NSArray *)katakana
++ (NSArray<NSArray *> *)katakana
 {
     NSArray *data = @[
                       @[@"ア",  @"イ",  @"ウ",  @"エ",  @"オ"],
