@@ -500,6 +500,7 @@
 				TargetAttributes = {
 					1A7C31FF16FC990C00F5A71A = {
 						DevelopmentTeam = 7676B49VAW;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -756,6 +757,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Cryptomeria/Cryptomeria-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -774,6 +776,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Xhacker.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Cryptomeria/Cryptomeria-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

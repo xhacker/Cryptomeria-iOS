@@ -18,9 +18,9 @@ typedef struct _CMSection {
 
 CMSection CMMakeSection(NSInteger first, NSInteger last);
 
-+ (NSArray *)romaji;
-+ (NSArray *)hiragana;
-+ (NSArray *)katakana;
++ (NSArray<NSArray *> *)romaji;
++ (NSArray<NSArray *> *)hiragana;
++ (NSArray<NSArray *> *)katakana;
 + (NSInteger)lastInRow:(NSInteger)row;
 + (CMSection)getSection:(NSInteger)kanaId;
 

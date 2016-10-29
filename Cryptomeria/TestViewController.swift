@@ -26,14 +26,14 @@ let kKanaSetKey = "Hork"
 let kRangeMax = 25
 
 enum Direction: Int {
-    case KanaRomaji = 0
-    case RomajiKana
+    case kanaRomaji = 0
+    case romajiKana
 }
 
 enum KanaSet: Int {
-    case Hiragana = 0
-    case Katakana
-    case Both
+    case hiragana = 0
+    case katakana
+    case both
 }
 
 class TestViewController: UIViewController {
@@ -49,9 +49,9 @@ class TestViewController: UIViewController {
     @IBOutlet var scoreLabel: UILabel!
     
     weak var mainLabel: UILabel!
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     var sequence: [Int] = []
-    var prevKanaSet: KanaSet = .Katakana
+    var prevKanaSet: KanaSet = .katakana
     var rightText: String = ""
     weak var rightButton: UIButton!
     var correctCount: Int = 0
@@ -62,7 +62,7 @@ class TestViewController: UIViewController {
     var inGuess = true
     
     var direction: Direction {
-        return Direction(rawValue: defaults.integerForKey(kDirectionKey))!
+        return Direction(rawValue: defaults.integer(forKey: kDirectionKey))!
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -77,9 +77,9 @@ class TestViewController: UIViewController {
         super.viewDidLoad()
         
         updateRangeLabelAndButton()
-        let directionIndex = defaults.integerForKey(kDirectionKey)
+        let directionIndex = defaults.integer(forKey: kDirectionKey)
         directionControl.selectedSegmentIndex = directionIndex
-        let kanaSet = defaults.integerForKey(kKanaSetKey)
+        let kanaSet = defaults.integer(forKey: kKanaSetKey)
         kanaSetControl.selectedSegmentIndex = kanaSet
         
         generateSequence()
@@ -90,8 +90,8 @@ class TestViewController: UIViewController {
     
     func generateSequence() {
         sequence = []
-        let kanaRange = defaults.integerForKey(kKanaRangeKey)
-        let last = CMChartData.lastInRow(kanaRange)
+        let kanaRange = defaults.integer(forKey: kKanaRangeKey)
+        let last = CMChartData.last(inRow: kanaRange)
         
         for i in 0...last {
             sequence.append(i)
@@ -103,12 +103,12 @@ class TestViewController: UIViewController {
     func resetScore() {
         correctCount = 0
         totalCount = 0
-        scoreLabel.hidden = true
+        scoreLabel.isHidden = true
     }
     
     func next() {
-        let kanaSet = KanaSet(rawValue: defaults.integerForKey(kKanaSetKey))!
-        let kanaRange = defaults.integerForKey(kKanaRangeKey)
+        let kanaSet = KanaSet(rawValue: defaults.integer(forKey: kKanaSetKey))!
+        let kanaRange = defaults.integer(forKey: kKanaRangeKey)
         
         if sequence.count == 0 {
             generateSequence()
@@ -118,20 +118,20 @@ class TestViewController: UIViewController {
         sequence.removeLast()
         
         var thisKanaSet = kanaSet
-        if kanaSet == .Both {
-            thisKanaSet = (prevKanaSet == .Hiragana) ? .Katakana : .Hiragana
+        if kanaSet == .both {
+            thisKanaSet = (prevKanaSet == .hiragana) ? .katakana : .hiragana
             prevKanaSet = thisKanaSet
         }
         
         // main label
         var mainText = ""
-        if direction == .RomajiKana {
+        if direction == .romajiKana {
             mainText = flattenedRomaji[thisID]
         }
-        else if thisKanaSet == .Hiragana {
+        else if thisKanaSet == .hiragana {
             mainText = flattenedHiragana[thisID]
         }
-        else if thisKanaSet == .Katakana {
+        else if thisKanaSet == .katakana {
             mainText = flattenedKatakana[thisID]
         }
         mainLabel.text = mainText
@@ -139,22 +139,22 @@ class TestViewController: UIViewController {
         
         
         var section = CMChartData.getSection(thisID)
-        let lastInRange = CMChartData.lastInRow(kanaRange)
+        let lastInRange = CMChartData.last(inRow: kanaRange)
         if section.last > lastInRange {
             section.last = lastInRange
         }
         
         let rightOption = Int(arc4random() % 4);
-        if direction == .KanaRomaji {
+        if direction == .kanaRomaji {
             rightText = flattenedRomaji[thisID]
         }
-        else if thisKanaSet == .Hiragana {
+        else if thisKanaSet == .hiragana {
             rightText = flattenedHiragana[thisID]
         }
-        else if thisKanaSet == .Katakana {
+        else if thisKanaSet == .katakana {
             rightText = flattenedKatakana[thisID]
         }
-        optionButtons[rightOption].setWhiteAttributedTitle(rightText, forState: .Normal)
+        optionButtons[rightOption].setWhiteAttributedTitle(rightText, for: UIControlState())
         rightButton = optionButtons[rightOption]
         var usedIDs = [thisID]
         
@@ -170,25 +170,25 @@ class TestViewController: UIViewController {
             usedIDs.append(kanaID)
         
             var thisText = ""
-            if direction == .KanaRomaji {
+            if direction == .kanaRomaji {
                 thisText = flattenedRomaji[kanaID]
             }
-            else if thisKanaSet == .Hiragana {
+            else if thisKanaSet == .hiragana {
                 thisText = flattenedHiragana[kanaID]
             }
-            else if thisKanaSet == .Katakana {
+            else if thisKanaSet == .katakana {
                 thisText = flattenedKatakana[kanaID]
             }
-            optionButtons[i].setWhiteAttributedTitle(thisText, forState: .Normal)
+            optionButtons[i].setWhiteAttributedTitle(thisText, for: UIControlState())
         }
         
         // refresh buttons
         for button in optionButtons {
-            button.setBackgroundImage(UIImage(named: kNormalButtonImage, inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: view.traitCollection), forState: .Normal)
+            button.setBackgroundImage(UIImage(named: kNormalButtonImage, in: Bundle.main, compatibleWith: view.traitCollection), for: UIControlState())
         }
     }
     
-    func isValidOption(existingIDs: [Int], newKanaID: Int) -> Bool {
+    func isValidOption(_ existingIDs: [Int], newKanaID: Int) -> Bool {
         if existingIDs.contains(newKanaID) {
             return false
         }
@@ -201,21 +201,21 @@ class TestViewController: UIViewController {
         return true
     }
     
-    @IBAction func rangeDecreased(sender: UIButton) {
-        var range = defaults.integerForKey(kKanaRangeKey)
+    @IBAction func rangeDecreased(_ sender: UIButton) {
+        var range = defaults.integer(forKey: kKanaRangeKey)
         if range > 0 {
             range -= 1
         }
-        defaults.setInteger(range, forKey: kKanaRangeKey)
+        defaults.set(range, forKey: kKanaRangeKey)
         rangeChanged()
     }
     
-    @IBAction func rangeIncreased(sender: UIButton) {
-        var range = defaults.integerForKey(kKanaRangeKey)
+    @IBAction func rangeIncreased(_ sender: UIButton) {
+        var range = defaults.integer(forKey: kKanaRangeKey)
         if range < kRangeMax {
             range += 1
         }
-        defaults.setInteger(range, forKey: kKanaRangeKey)
+        defaults.set(range, forKey: kKanaRangeKey)
         rangeChanged()
     }
     
@@ -227,31 +227,31 @@ class TestViewController: UIViewController {
     }
     
     func updateRangeLabelAndButton() {
-        let range = defaults.integerForKey(kKanaRangeKey)
+        let range = defaults.integer(forKey: kKanaRangeKey)
         
-        rangeDecreaseButton.enabled = (range > 0)
-        rangeIncreaseButton.enabled = (range < kRangeMax)
+        rangeDecreaseButton.isEnabled = (range > 0)
+        rangeIncreaseButton.isEnabled = (range < kRangeMax)
         
         let rangeText = "あ－\(CMChartData.hiragana()[range][0])"
-        rangeLabelButton.setTitle(rangeText, forState: .Normal)
+        rangeLabelButton.setTitle(rangeText, for: .normal)
     }
     
-    @IBAction func directionChanged(sender: UISegmentedControl) {
-        defaults.setInteger(sender.selectedSegmentIndex, forKey: kDirectionKey)
+    @IBAction func directionChanged(_ sender: UISegmentedControl) {
+        defaults.set(sender.selectedSegmentIndex, forKey: kDirectionKey)
         generateSequence()
         resetScore()
         updateOptionsFont()
         next()
     }
     
-    @IBAction func kanaSetChanged(sender: UISegmentedControl) {
-        defaults.setInteger(sender.selectedSegmentIndex, forKey: kKanaSetKey)
+    @IBAction func kanaSetChanged(_ sender: UISegmentedControl) {
+        defaults.set(sender.selectedSegmentIndex, forKey: kKanaSetKey)
         generateSequence()
         resetScore()
         next()
     }
     
-    @IBAction func optionClicked(sender: UIButton) {
+    @IBAction func optionClicked(_ sender: UIButton) {
         if inGuess {
             totalCount += 1
         }
@@ -265,9 +265,9 @@ class TestViewController: UIViewController {
         }
         else {
             inGuess = false
-            sender.setBackgroundImage(UIImage(named: kWrongButtonImage, inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: view.traitCollection), forState: .Normal)
+            sender.setBackgroundImage(UIImage(named: kWrongButtonImage, in: Bundle.main, compatibleWith: view.traitCollection), for: UIControlState())
 
-            rightButton.setBackgroundImage(UIImage(named: kRightButtonImage, inBundle: NSBundle.mainBundle(), compatibleWithTraitCollection: view.traitCollection), forState: .Normal)
+            rightButton.setBackgroundImage(UIImage(named: kRightButtonImage, in: Bundle.main, compatibleWith: view.traitCollection), for: UIControlState())
         }
         
         let correctText = "\(correctCount)"
@@ -281,19 +281,19 @@ class TestViewController: UIViewController {
         ]
         scoreAttributedString.addAttributes(attributes, range: NSMakeRange(0, correctText.characters.count))
         
-        scoreLabel.hidden = false
+        scoreLabel.isHidden = false
         scoreLabel.attributedText = scoreAttributedString
     }
     
     // MARK: - Appearance
     
     func updateMainLabelFont() {
-        if direction == .KanaRomaji {
+        if direction == .kanaRomaji {
             var fontSize: CGFloat = 140
-            if view.traitCollection.horizontalSizeClass == .Regular {
+            if view.traitCollection.horizontalSizeClass == .regular {
                 fontSize = 190
             }
-            if view.traitCollection.verticalSizeClass == .Compact {
+            if view.traitCollection.verticalSizeClass == .compact {
                 fontSize = 100
             }
             
@@ -308,18 +308,18 @@ class TestViewController: UIViewController {
     }
     
     func updateOptionsFont() {
-        let fontSize: CGFloat = (view.traitCollection.horizontalSizeClass == .Regular) ? 23 : 20
-        if direction == .KanaRomaji {
-            mainRomajiLabel.hidden = true
-            mainKanaLabel.hidden = false
+        let fontSize: CGFloat = (view.traitCollection.horizontalSizeClass == .regular) ? 23 : 20
+        if direction == .kanaRomaji {
+            mainRomajiLabel.isHidden = true
+            mainKanaLabel.isHidden = false
             mainLabel = mainKanaLabel
             for optionButton in optionButtons {
                 optionButton.titleLabel?.font = UIFont(name: kAvenirFont, size: fontSize)
             }
         }
         else {
-            mainKanaLabel.hidden = true
-            mainRomajiLabel.hidden = false
+            mainKanaLabel.isHidden = true
+            mainRomajiLabel.isHidden = false
             mainLabel = mainRomajiLabel
             for optionButton in optionButtons {
                 optionButton.titleLabel?.font = UIFont(name: kHiraKakuFont, size: fontSize)
@@ -327,7 +327,7 @@ class TestViewController: UIViewController {
         }
     }
     
-    override func traitCollectionDidChange(previousTraitCollection: UITraitCollection?) {
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         updateMainLabelFont()
         updateOptionsFont()
     }
